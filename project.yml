@@ -8,7 +8,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   search: ontap-system-manager-classic
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+  langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
   - title: System Manager Classic 문서
