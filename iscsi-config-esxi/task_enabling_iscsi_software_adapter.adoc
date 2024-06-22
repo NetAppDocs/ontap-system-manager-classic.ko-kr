@@ -1,0 +1,25 @@
+---
+permalink: iscsi-config-esxi/task_enabling_iscsi_software_adapter.html 
+sidebar: sidebar 
+keywords: iscsi, software, adapter, create, connection, esx, host, operating, system, enable, enable the iscsi software adapter, esxi 
+summary: iSCSI 소프트웨어 어댑터는 ESX 호스트에 iSCSI 접속을 생성합니다. 운영 체제에 내장되어 있지만 사용하려면 먼저 활성화해야 합니다. 
+---
+= iSCSI 소프트웨어 어댑터를 활성화합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+iSCSI 소프트웨어 어댑터는 ESXi 호스트에 iSCSI 연결을 생성합니다. 운영 체제에 내장되어 있지만 사용하려면 먼저 활성화해야 합니다.
+
+.시작하기 전에
+워크스테이션에 VMware vSphere Client가 설치되어 있거나 vSphere Web Client에 액세스할 수 있어야 합니다.
+
+.단계
+. vSphere Client에 로그인합니다.
+. 인벤토리 창에서 ESX 호스트를 선택합니다.
+. 구성 * > * 스토리지 어댑터 * 를 클릭합니다.
+. iSCSI 소프트웨어 어댑터를 선택하고 * 속성 * > * 구성 * 을 클릭합니다.
+. Enabled * 를 선택한 다음 * OK * 를 클릭합니다.
+

@@ -1,0 +1,55 @@
+---
+permalink: fc-config-windows/task_installing_windows_unified_host_utilities.html 
+sidebar: sidebar 
+keywords: windows, unified, host, utilities, installation, program, set, registry, hba, parameter, netapp, ontap, e-series, platform, install windows unified host utilities 
+summary: Windows Unified Host Utilities에는 Windows 호스트에서 NetApp ONTAP 및 E-Series 플랫폼의 스토리지 시스템 동작을 올바르게 처리하도록 필요한 Windows 레지스트리 및 HBA 매개 변수를 설정하는 설치 프로그램이 포함되어 있습니다. 
+---
+= Windows Unified Host Utilities를 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows Unified Host Utilities에는 Windows 호스트에서 NetApp ONTAP 및 E-Series 플랫폼의 스토리지 시스템 동작을 올바르게 처리하도록 필요한 Windows 레지스트리 및 HBA 매개 변수를 설정하는 설치 프로그램이 포함되어 있습니다.
+
+.시작하기 전에
+다음 작업을 완료해야 합니다.
+
+* 상호 운용성 매트릭스 에서 지원되는 구성을 확인하십시오
++
+https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"]
+
+* 상호 운용성 매트릭스에서 필요한 Windows 핫픽스 식별
++
+https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"]
+
+* FCP 라이센스를 추가하고 대상 서비스를 시작합니다
+* 케이블 연결을 확인합니다
++
+자세한 케이블 연결 및 구성 정보는 NetApp Support 사이트의 ONTAP 버전 또는 E-Series 스토리지 시스템에 대한 _SAN 구성_을 참조하십시오.
+
+
+
+.이 작업에 대해
+Windows Unified Host Utilities 소프트웨어 패키지를 설치할 때 다중 경로 지원을 포함할지 여부를 지정해야 합니다. Windows 호스트 또는 가상 시스템에서 스토리지 시스템까지 경로가 둘 이상인 경우 MPIO 를 선택합니다. 스토리지 시스템에 대한 단일 경로를 사용하는 경우에만 MPIO를 선택하지 않습니다.
+
+[NOTE]
+====
+MPIO 선택은 Windows XP 및 Windows Vista 시스템에서는 사용할 수 없으며, 다중 경로 I/O는 이러한 게스트 운영 체제에서 지원되지 않습니다.
+
+====
+Hyper-V 게스트의 경우 다중 경로 지원을 선택한 경우 원시(통과) 디스크가 게스트 OS에 나타나지 않습니다. 원시 디스크를 사용하거나 MPIO를 사용할 수 있지만 게스트 OS에서 둘 다 사용할 수는 없습니다.
+
+자세한 설치 정보는 에서 확인할 수 있습니다 link:https://docs.netapp.com/us-en/ontap-sanhost/hu_wuhu_71.html#installing-the-host-utilities["Windows Unified 호스트 설치"].
+
+https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"]
+
+.단계
+. NetApp Support 사이트에서 해당 버전의 Windows Unified Host Utilities를 다운로드하십시오.
++
+https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"]
+
+. 실행 파일을 실행하고 화면의 지침을 따릅니다.
+. 메시지가 나타나면 Windows 호스트를 재부팅합니다.
+

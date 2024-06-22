@@ -1,0 +1,38 @@
+---
+section: fc-config-esxi
+title: VSC를 사용하는 ESXi를 위한 FC 구성
+entries:
+- title: 개요
+  url: "/fc-config-esxi/index.html"
+- title: FC 구성 워크플로우
+  url: "/fc-config-esxi/concept_fc_configuration_workflow.html"
+  entries:
+  - title: FC 구성이 지원되는지 확인합니다
+    url: "/fc-config-esxi/task_verifying_that_iscsi_fc_configuration_is_supported.html"
+  - title: FC 구성 워크시트를 작성합니다
+    url: "/fc-config-esxi/reference_completing_iscsi_configuration_worksheet.html"
+  - title: Virtual Storage Console을 설치합니다
+    url: "/fc-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html"
+  - title: 스토리지 클러스터 또는 SVM을 VMware vSphere용 VSC에 추가합니다
+    url: "/fc-config-esxi/task_adding_storage_cluster_to_virtual_storage_cluster.html"
+  - title: HBA 드라이버, 펌웨어 및 BIOS를 업데이트합니다
+    url: "/fc-config-esxi/task_updating_hba_firmware.html"
+  - title: ESXi 호스트 Best Practice 설정을 구성합니다
+    url: "/fc-config-esxi/task_configuring_esxi_host_best_practice_settings.html"
+  - title: Aggregate를 생성합니다
+    url: "/fc-config-esxi/task_creating_aggregate.html"
+  - title: 볼륨 용량을 할당할 위치를 결정합니다
+    url: "/fc-config-esxi/task_deciding_where_to_provision_volume.html"
+    entries:
+    - title: FC 서비스가 기존 SVM에서 실행되고 있는지 확인합니다
+      url: "/fc-config-esxi/task_verifying_that_fc_service_is_running_on_existing_svm.html"
+    - title: 기존 SVM에서 FC를 구성합니다
+      url: "/fc-config-esxi/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html"
+    - title: 새 SVM을 생성합니다
+      url: "/fc-config-esxi/task_creating_svm.html"
+  - title: FC 스위치를 호스트 및 LIF WWPN으로 조닝(Zoning)합니다
+    url: "/fc-config-esxi/task_zoning_fc_switches_by_host_lif_wwpns.html"
+  - title: 데이터 저장소를 프로비저닝하고 포함된 LUN 및 볼륨을 생성합니다
+    url: "/fc-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html"
+  - title: 호스트가 LUN에 쓰고 읽을 수 있는지 확인합니다
+    url: "/fc-config-esxi/task_verifying_host_can_write_to_read_from_lun.html"

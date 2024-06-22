@@ -1,0 +1,15 @@
+---
+section: volume-restore-snapvault
+title: SnapVault를 사용한 볼륨 복원 관리
+entries:
+- title: 개요
+  url: "/volume-restore-snapvault/index.html"
+- title: 볼륨 복원 워크플로우
+  url: "/volume-restore-snapvault/concept_volume_restore_workflow.html"
+  entries:
+  - title: SnapVault 백업 대상 볼륨을 식별합니다
+    url: "/volume-restore-snapvault/task_identifying_snapvault_backup_destination_volume.html"
+  - title: SnapVault 백업에서 데이터를 복원합니다
+    url: "/volume-restore-snapvault/task_restoring_data_from_snapvault_backup.html"
+  - title: 복구 작업을 확인합니다
+    url: "/volume-restore-snapvault/task_verifying_restore_operation.html"

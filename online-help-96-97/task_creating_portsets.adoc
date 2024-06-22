@@ -1,0 +1,57 @@
+---
+permalink: online-help-96-97/task_creating_portsets.html 
+sidebar: sidebar 
+keywords: system, manager, port, set, create, online, help, lun, delete, edit, manage 
+summary: ONTAP System Manager Classic을 사용하여 포트 세트를 생성, 삭제 및 편집할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 포트 세트를 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 및 이전 버전에서 사용 가능)을 사용하여 포트 세트를 생성, 삭제 및 편집할 수 있습니다.
+
+
+
+== 포틀세트를 생성합니다
+
+ONTAP 시스템 관리자의 기존 방식을 사용하여 LUN에 대한 액세스를 제한하는 포트 세트를 생성할 수 있습니다.
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. Portsets * 탭에서 * Create * 를 클릭합니다.
+. Create Portset * (포트 세트 생성 *) 대화 상자에서 프로토콜 유형을 선택합니다.
+. 포트셋 와 연결할 네트워크 인터페이스를 선택합니다.
+. Create * 를 클릭합니다.
+
+
+
+
+== 포트 세트를 삭제합니다
+
+System Manager를 사용하면 더 이상 필요하지 않은 포트셋 삭제 작업을 수행할 수 있습니다.
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. Portsets * 탭에서 하나 이상의 포트 세트를 선택하고 * Delete * 를 클릭합니다.
+. 삭제 * 를 클릭하여 삭제를 확인합니다.
+
+
+
+
+== 포트 세트를 편집합니다
+
+System Manager의 Portsets 탭을 사용하여 포트 세트와 관련된 설정을 편집할 수 있습니다.
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. Portsets * 탭에서 편집할 포트셋 를 선택하고 * Edit * 를 클릭합니다.
+. [포트세트 편집] * 대화 상자에서 필요한 사항을 변경합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:task_configuring_iscsi_protocol_on_svms.adoc[SVM에서 iSCSI 프로토콜 구성]

@@ -1,0 +1,92 @@
+---
+permalink: online-help-96-97/task_viewing_flexcache_volume_information.html 
+sidebar: sidebar 
+keywords: system, manager, flexcache, volume, information, online, help 
+summary: System Manager 9.6부터 FlexCache 볼륨에 대한 정보를 볼 수 있습니다. 할당된 공간과 FlexCache 볼륨의 성능을 그래픽으로 표시할 수 있습니다. 
+---
+= FlexCache 볼륨 정보 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager 9.6부터 FlexCache 볼륨에 대한 정보를 볼 수 있습니다. 할당된 공간과 FlexCache 볼륨의 성능을 그래픽으로 표시할 수 있습니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 표시된 볼륨 목록에서 정보를 보려는 FlexCache 볼륨을 선택합니다.
++
+style * 열은 FlexCache 볼륨에 대해 "FlexCache"를 표시합니다.
+
++
+선택하면 선택한 FlexCache 볼륨에 대한 볼륨 창이 표시됩니다.
+
+. 처음에는 * Volume * (볼륨 *) 창에 * Overview * (개요 *) 탭이 표시됩니다. FlexCache 볼륨에 대한 추가 세부 정보를 보려면 탭을 클릭합니다.
++
+|===
+| 이 탭을 클릭합니다... | 세부 정보를 보려면... 
+
+
+ a| 
+* 개요 *
+ a| 
+FlexCache 볼륨, FlexCache 볼륨에 할당된 공간 및 FlexCache 볼륨에 대한 성능 정보에 대한 일반 정보입니다.
+
+
+
+ a| 
+* 스토리지 효율성 *
+ a| 
+FlexCache 볼륨의 스토리지 효율성 설정입니다.
+
+
+
+ a| 
+* 성능 *
+ a| 
+지연 시간, IOPS 및 처리량을 기준으로 FlexCache 볼륨의 평균 성능 메트릭, 읽기 성능 메트릭 및 쓰기 성능 메트릭 캐시 적중 또는 캐시 비적중 비율도 표시됩니다.
+
+|===
+. * 선택 사항: * 추가 작업 * 을 클릭하여 추가 정보를 확인하고 드롭다운 메뉴의 선택 사항에서 조치를 취하십시오.
++
+|===
+| 조치 | 설명 
+
+
+ a| 
+상태를 변경합니다
+ a| 
+FlexCache 볼륨의 상태를 변경할 수 있습니다. 을 참조하십시오 link:task_changing_status_flexcache_volume.html["FlexCache 볼륨의 상태를 변경합니다"].
+
+
+
+ a| 
+크기 조정
+ a| 
+FlexCache 볼륨의 크기를 조정할 수 있습니다. 을 참조하십시오 link:task_resizing_flexcache_volumes.html["FlexCache 볼륨 크기 조정"].
+
+
+
+ a| 
+스토리지 효율성
+ a| 
+매개 변수를 조정하여 FlexCache 볼륨의 스토리지 효율성을 개선할 수 있습니다.
+
+
+
+ a| 
+스토리지 QoS
+ a| 
+FlexCache 볼륨의 최소 및 최대 스토리지 제한을 조정할 수 있습니다.
+
+
+
+ a| 
+암호화 키를 다시 입력하다
+ a| 
+암호화 키를 재설정할 수 있습니다(FlexCache 볼륨을 포함하는 피어 클러스터에서 암호화를 활성화한 경우에만).
+
+|===
+

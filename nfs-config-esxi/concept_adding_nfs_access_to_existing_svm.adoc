@@ -1,0 +1,53 @@
+---
+permalink: nfs-config-esxi/concept_adding_nfs_access_to_existing_svm.html 
+sidebar: sidebar 
+keywords: nfs, access, exist, create, data, logical, interface, lif, configure, esxi, host, verify, add, add nfs access to an existing SVM 
+summary: '기존 SVM에 NFS 액세스를 추가하려면 먼저 데이터 논리 인터페이스(LIF)를 생성해야 합니다. 그런 다음 ESXi 호스트에서 NFS 액세스를 구성하고 가상 스토리지 콘솔을 사용하여 ESXi에 NFS가 설정되어 있는지 확인할 수 있습니다.' 
+---
+= 기존 SVM에 NFS 액세스를 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 SVM에 NFS 액세스를 추가하려면 먼저 데이터 논리 인터페이스(LIF)를 생성해야 합니다. 그런 다음 ESXi 호스트에서 NFS 액세스를 구성하고 가상 스토리지 콘솔을 사용하여 ESXi에 NFS가 설정되어 있는지 확인할 수 있습니다.
+
+.시작하기 전에
+* 에서 사용할 네트워킹 구성 요소는 다음 중 어느 것입니까?
++
+** 노드 및 데이터 LIF가 생성되는 해당 노드의 특정 포트입니다
+** 데이터 LIF의 IP 주소를 프로비저닝할 서브넷 또는 선택적으로 데이터 LIF에 할당할 특정 IP 주소를 지정합니다
+
+
+* 모든 외부 방화벽은 네트워크 서비스에 대한 액세스를 허용하도록 적절하게 구성되어야 합니다.
+* SVM에서 NFS 프로토콜을 허용해야 합니다.
++
+다른 프로토콜을 구성하면서 SVM을 생성하기 위해 이 절차를 따르지 않은 경우에 해당됩니다.
+
+
+
+.단계
+. SVM의 프로토콜을 구성할 수 있는 * Details * 창으로 이동합니다.
++
+.. 구성할 SVM을 선택합니다.
+.. Details * 창에서 * Protocols * 옆에 있는 * NFS * 를 클릭합니다.
++
+image::../media/svm_add_protocol_nfs_nfs_esxi.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+
+
+. NFS 프로토콜 구성 * 대화 상자에서 데이터 LIF를 생성합니다.
++
+.. 지정한 서브넷에서 자동으로 LIF에 IP 주소를 할당하거나 수동으로 주소를 입력합니다.
+.. 찾아보기 * 를 클릭하고 LIF와 연결할 노드와 포트를 선택합니다.
++
+image::../media/svm_setup_cifs_nfs_page_lif_multi_nas_nfs_esxi.gif[이 그래픽은 주변 텍스트로 설명됩니다.]
+
+
+
++
+볼륨 용량을 할당할 정보를 입력하지 마십시오. 나중에 Virtual Storage Console을 사용하여 데이터 저장소를 프로비저닝할 수 있습니다.
+
+. 제출 및 닫기 * 를 클릭한 다음 * 확인 * 을 클릭합니다.
+

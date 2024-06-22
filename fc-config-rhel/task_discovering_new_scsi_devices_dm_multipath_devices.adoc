@@ -1,0 +1,44 @@
+---
+permalink: fc-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html 
+sidebar: sidebar 
+keywords: lun, storage, cluster, linux, host, scsi, device, i/o, dm-multipath, aggregate, device, multipath, automatic, rescan, discover new scsi device luns and multipath device 
+summary: '스토리지 클러스터의 LUN은 Linux 호스트에 SCSI 디바이스로 표시되며, 이는 DM 다중 경로가 다중 경로 디바이스라고 하는 새 디바이스로 취합되는 입출력 경로입니다. 호스트가 시스템에 추가한 새 SCSI 디바이스(LUN)를 자동으로 검색하지 않습니다. 이를 검색하려면 수동으로 다시 스캔해야 합니다.' 
+---
+= 새로운 SCSI 디바이스(LUN) 및 다중 경로 디바이스를 검색합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 클러스터의 LUN은 Linux 호스트에 SCSI 디바이스로 표시되며, 이는 DM 다중 경로가 다중 경로 디바이스라고 하는 새 디바이스로 취합되는 입출력 경로입니다. 호스트가 시스템에 추가한 새 SCSI 디바이스(LUN)를 자동으로 검색하지 않습니다. 이를 검색하려면 수동으로 다시 스캔해야 합니다.
+
+.시작하기 전에
+의 복사본이 있어야 합니다 `rescan` 스크립트 - 에 있습니다 `sg3_utils` Linux OS 배포판의 일부인 패키지입니다.
+
+.단계
+. 새 SCSI 디바이스(LUN)를 검색하고 해당 LUN용 다중 경로 디바이스를 생성합니다. `/usr/bin/rescan-scsi-bus.sh`
+. DM 다중 경로 구성 확인:
++
+`multipath -ll`
+
++
+각 NetApp LUN에 대한 권장 설정을 나열하는 다음 출력 유형을 표시합니다.
+
++
+[listing]
+----
+3600a0980324666546e2b443251655177 dm-2 NETAPP,LUN C-Mode
+size=10G features='4 queue_if_no_path pg_init_retries 50 retain_attached_hw_handle' hwhandler='1 alua' wp=rw
+|-+- policy='round-robin 0' prio=50 status=active
+| |- 0:0:1:0 sdb 8:16  active ready  running
+| |- 0:0:0:0 sda 8:0   active ready  running
+| |- 1:0:0:0 sde 8:64  active ready  running
+| `- 1:0:1:0 sdf 8:80  active ready  running
+`-+- policy='round-robin 0' prio=10 status=enabled
+  |- 0:0:3:0 sdd 8:48  active ready  running
+  |- 1:0:3:0 sdh 8:112 active ready  running
+  |- 0:0:2:0 sdc 8:32  active ready  running
+  `- 1:0:2:0 sdg 8:96  active ready  running
+----
+

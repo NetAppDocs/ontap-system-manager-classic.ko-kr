@@ -1,0 +1,54 @@
+---
+permalink: expansion/task_installing_controllers.html 
+sidebar: sidebar 
+keywords: install, controller, exist, cluster, installation, setup, instruction, install the controllers 
+summary: 기존 클러스터에 추가될 컨트롤러를 설치할 때는 해당 설치 및 설정 지침의 처음 3단계를 따라야 합니다. 
+---
+= 컨트롤러를 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 클러스터에 추가될 컨트롤러를 설치할 때 해당 _설치 및 설정 지침_ 의 처음 3단계를 따라야 합니다.
+
+[NOTE]
+.이 작업에 대해
+====
+ONTAP 9.0에서는 새 하드웨어에서 HA 모드가 기본적으로 활성화됩니다.
+
+====
+.단계
+. 클러스터에 추가할 컨트롤러 모듈의 FAS 모델 번호에 해당하는 _설치 및 설정 지침_을 확인하십시오.
++
+** 새 컨트롤러 모듈의 경우 상자에서 문서를 사용할 수 있습니다.
+** 용도 변경된 컨트롤러 모듈의 경우 문서를 다운로드할 수 있습니다.
+https://mysupport.netapp.com/site/docs-and-kb["NetApp 문서"]
+
+
+. 다음 예외 사항을 제외하고 _PREPARE for installation_섹션을 따릅니다.
++
+** 소프트웨어 또는 워크시트 다운로드에 대한 지침은 건너뛸 수 있습니다.
+** 설치 및 설정 지침 _ 에 언급되어 있지 않더라도 직렬 콘솔 연결을 제공해야 합니다.
++
+노드 관리 LIF를 구성하려면 notes지옥의 CLI를 사용해야 하므로 시리얼 콘솔이 필요합니다.
+
++
+ONTAP 섹션에 직렬 콘솔이 없으면 7-Mode 섹션을 참조하십시오.
+
+
+
+. 하드웨어 설치 섹션을 따릅니다.
+. 케이블 보관_섹션을 따릅니다.
+. 다음과 같은 경우를 제외하고 _전체 시스템 설치 프로그램_ 항목의 대부분을 건너뜁니다.
++
+** 지시가 있는 경우 모든 디스크 쉘프의 전원을 켜고 ID를 확인해야 합니다.
+** 노드에 액세스할 수 있도록 시리얼 콘솔에 케이블을 연결해야 합니다.
++
+ONTAP 섹션에 직렬 콘솔이 없으면 7-Mode 섹션을 참조하십시오.
+
+
+
+. 전체 구성 섹션을 건너뜁니다.
+

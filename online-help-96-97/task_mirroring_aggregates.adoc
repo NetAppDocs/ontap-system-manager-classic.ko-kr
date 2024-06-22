@@ -1,0 +1,38 @@
+---
+permalink: online-help-96-97/task_mirroring_aggregates.html 
+sidebar: sidebar 
+keywords: mirror, aggregate, system, manager, data, lun, array, online, help 
+summary: System Manager를 사용하면 데이터를 보호하고 단일 애그리게이트 내에서 실시간으로 데이터를 미러링하여 복원력을 높일 수 있습니다. 미러링 애그리게이트는 디스크 및 어레이 LUN에 연결할 때 단일 장애 지점을 제거합니다. 
+---
+= 시스템 관리자-ONTAP 9.7 이하를 사용하여 애그리게이트 미러링
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 방식을 사용하면 데이터를 보호하고 단일 애그리게이트 내에서 실시간으로 데이터를 미러링하여 복원력을 높일 수 있습니다. 미러링 애그리게이트는 디스크 및 어레이 LUN에 연결할 때 단일 장애 지점을 제거합니다.
+
+.시작하기 전에
+다른 풀에는 Aggregate를 미러링하기에 충분한 가용 디스크가 있어야 합니다.
+
+.이 작업에 대해
+캐시 소스가 스토리지 풀인 경우 Flash Pool 애그리게이트를 미러링할 수 없습니다.
+
+.단계
+. 다음 방법 중 하나를 선택합니다.
++
+** Applications & Tiers * > * Storage Tiers * 를 클릭합니다.
+** 스토리지 * > * 애그리게이트 및 디스크 * > * 애그리게이트 * 를 클릭합니다.
+
+
+. 미러링할 집계를 선택한 다음 메뉴 추가 작업 [미러]를 클릭합니다.
++
+[NOTE]
+====
+SyncMirror는 FabricPool 지원 애그리게이트에서는 지원되지 않습니다.
+
+====
+. Mirror this aggregate * 대화 상자에서 * Mirror * 를 클릭하여 미러링을 시작합니다.
+

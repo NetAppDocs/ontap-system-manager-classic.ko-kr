@@ -1,0 +1,14 @@
+---
+permalink: nfs-config/task_creating_protocol_enabled_svm.html 
+sidebar: sidebar 
+keywords: nfs-enabled, svm, create, creating, nfs, volume, export, policy, root, client, access, create a new nfs-enabled svm 
+summary: NFS 지원 SVM을 설정하려면 NFS 볼륨과 내보내기를 통해 새 SVM을 생성하고 SVM 루트 볼륨의 기본 엑스포트 정책을 연 다음 UNIX 관리 호스트에서 NFS 액세스를 확인해야 합니다. 그런 다음 NFS 클라이언트 액세스를 구성할 수 있습니다. 
+---
+= 새 NFS 지원 SVM을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NFS 지원 SVM을 설정하려면 NFS 볼륨과 내보내기를 통해 새 SVM을 생성하고 SVM 루트 볼륨의 기본 엑스포트 정책을 연 다음 UNIX 관리 호스트에서 NFS 액세스를 확인해야 합니다. 그런 다음 NFS 클라이언트 액세스를 구성할 수 있습니다.

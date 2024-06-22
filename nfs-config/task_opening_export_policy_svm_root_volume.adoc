@@ -1,0 +1,40 @@
+---
+permalink: nfs-config/task_opening_export_policy_svm_root_volume.html 
+sidebar: sidebar 
+keywords: add, rule, default, export, policy, allow, client, access, storage, virtual, machine, svm, volume, open the export policy of the svm root volume, create a new nfs-enabled svm 
+summary: 'NFSv3을 통해 모든 클라이언트가 액세스할 수 있도록 기본 엑스포트 정책에 규칙을 추가해야 합니다. 이 규칙이 없으면 모든 NFS 클라이언트가 SVM(스토리지 가상 머신) 및 볼륨에 액세스할 수 없습니다.' 
+---
+= SVM 루트 볼륨의 엑스포트 정책을 엽니다(새 NFS 지원 SVM 생성).
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NFSv3을 통해 모든 클라이언트가 액세스할 수 있도록 기본 엑스포트 정책에 규칙을 추가해야 합니다. 이 규칙이 없으면 모든 NFS 클라이언트가 SVM(스토리지 가상 머신) 및 볼륨에 액세스할 수 없습니다.
+
+.이 작업에 대해
+모든 NFS 액세스를 기본 엑스포트 정책으로 지정하고 나중에 개별 볼륨에 대한 사용자 지정 엑스포트 정책을 생성하여 개별 볼륨에 대한 액세스를 제한해야 합니다.
+
+.단계
+. SVM * 창으로 이동합니다.
+. SVM 설정 * 탭을 클릭합니다.
+. Policies * 창에서 * Export Policies * 를 클릭합니다.
+. SVM 루트 볼륨에 적용되는 * default * 라는 엑스포트 정책을 선택합니다.
+. 아래 창에서 * 추가 * 를 클릭합니다.
+. 내보내기 규칙 생성 * 대화 상자에서 NFS 클라이언트의 모든 클라이언트에 대한 액세스를 여는 규칙을 생성합니다.
++
+.. 클라이언트 사양 * 필드에 을 입력합니다 `0.0.0.0/0` 규칙이 모든 클라이언트에 적용되도록 합니다.
+.. 규칙 인덱스의 경우 기본값을 * 1 * 로 유지합니다.
+.. NFSv3 * 를 선택합니다.
+.. 읽기 전용 * 아래의 * UNIX * 확인란을 제외한 모든 확인란의 선택을 취소합니다.
+.. 확인 * 을 클릭합니다.
+
+
++
+image::../media/export_rule_for_root_volume_nfs.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+
+
+.결과
+이제 NFSv3 클라이언트가 SVM에서 생성된 모든 볼륨에 액세스할 수 있습니다.

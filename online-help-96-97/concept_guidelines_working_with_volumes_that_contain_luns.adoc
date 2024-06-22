@@ -1,0 +1,51 @@
+---
+permalink: online-help-96-97/concept_guidelines_working_with_volumes_that_contain_luns.html 
+sidebar: sidebar 
+keywords: guidelines, flexvol, volume, lun, change, default, settings, snapshot, copy, simplify, administration 
+summary: LUN이 포함된 FlexVol 볼륨으로 작업하는 경우 스냅샷 복사본에 대한 기본 설정을 변경해야 합니다. LUN 레이아웃을 최적화하여 관리를 간소화할 수도 있습니다. 
+---
+= System Manager로 LUN을 포함하는 FlexVol 볼륨에 대한 작업 지침 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)에서는 LUN이 포함된 FlexVol 볼륨으로 작업하는 경우 스냅샷 복사본에 대한 기본 설정을 변경해야 합니다. LUN 레이아웃을 최적화하여 관리를 간소화할 수도 있습니다.
+
+스냅샷 복사본은 SnapMirror, SyncMirror, 덤프 및 복원, ndmpcopy와 같은 여러 선택적 기능에 필요합니다.
+
+볼륨을 생성할 때 ONTAP는 자동으로 다음을 수행합니다.
+
+* Snapshot 복사본을 위한 공간의 5%를 예약합니다
+* Snapshot 복사본을 예약합니다
+
+
+ONTAP에서 스냅샷 복사본을 생성하기 위한 내부 예약 메커니즘이 LUN 내의 데이터가 일관된 상태를 유지하는지 여부를 확인하지 않으므로 다음 작업을 수행하여 스냅샷 복사본 설정을 변경해야 합니다.
+
+* 자동 스냅샷 복사본 스케줄을 해제합니다.
+* 기존 스냅샷 복사본을 모두 삭제합니다
+* 스냅샷 복사본에 예약된 공간의 비율을 0으로 설정합니다.
+
+
+다음 지침을 사용하여 LUN이 포함된 볼륨을 생성해야 합니다.
+
+* 시스템의 루트 볼륨에 LUN을 생성하지 마십시오.
++
+ONTAP는 이 볼륨을 사용하여 스토리지 시스템을 관리합니다. 기본 루트 볼륨은 /vol/vol0입니다.
+
+* SAN 볼륨을 사용하여 LUN을 포함해야 합니다.
+* LUN이 포함된 볼륨에 다른 파일이나 디렉토리가 없는지 확인해야 합니다.
++
+이것이 가능하지 않고 LUN과 파일을 동일한 볼륨에 저장하는 경우 LUN을 포함하기 위해 별도의 qtree를 사용해야 합니다.
+
+* 여러 호스트가 동일한 볼륨을 공유하는 경우 동일한 호스트에 대한 모든 LUN을 저장할 수 있도록 볼륨에 qtree를 생성해야 합니다.
++
+이는 LUN 관리 및 추적을 단순화하는 모범 사례입니다.
+
+* 관리를 간소화하려면 LUN 및 볼륨의 소유권 또는 사용 방식을 반영하는 볼륨 명명 규칙을 사용해야 합니다.
+
+
+* 관련 정보 *
+
+https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"]

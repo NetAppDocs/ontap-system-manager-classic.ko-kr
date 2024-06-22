@@ -1,0 +1,32 @@
+---
+permalink: online-help-96-97/concept_fc_fcoe_nvme_adapters.html 
+sidebar: sidebar 
+keywords: system, manager, manage, fc, fcoe, nvme, adapter, online, help, edit, adapter, speed, settings 
+summary: System Manager를 사용하여 FC/FCoE 및 NVMe 어댑터를 관리할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 FC/FCoE 및 NVMe 어댑터를 관리하십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하여 FC/FCoE 및 NVMe 어댑터를 관리할 수 있습니다.
+
+
+
+== FC/FCoE 및 NVMe 어댑터 속도 설정을 편집합니다
+
+System Manager에서 FC/FCoE 및 NVMe 어댑터 설정 편집 대화 상자를 사용하여 FC/FCoE 및 NVMe 어댑터 속도 설정을 수정할 수 있습니다.
+
+.단계
+. Network * > * FC/FCoE 및 NVMe Adapters * 를 클릭합니다.
+. 편집할 어댑터를 선택한 다음 * 편집 * 을 클릭합니다.
+. FC/FCoE 및 NVMe 어댑터 설정 편집 * 대화 상자에서 어댑터 속도를 * 수동 * 또는 * 자동 * 으로 설정한 다음 * 저장 * 을 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_network_window.adoc[네트워크 창]
+
+https://docs.netapp.com/us-en/ontap/networking/index.html["네트워크 관리"]

@@ -1,0 +1,56 @@
+---
+permalink: online-help-96-97/task_viewing_system_manager_log_files.html 
+sidebar: sidebar 
+keywords: view, ontap, system, manager, log, file, online, help 
+summary: System Manager를 사용할 때 문제가 발생하면 기술 지원 부서에 로그 파일을 보내 문제를 해결할 수 있습니다. System Manager 로그 파일은 ONTAP 로그 파일과 함께 mlog 디렉터리에 있습니다. 
+---
+= System Manager 로그 파일 보기 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하 버전에서 사용 가능)을 사용할 때 문제가 발생하면 로그 파일을 보내 NetApp 지원 팀의 지시에 따라 문제를 해결할 수 있습니다. System Manager 로그 파일은 에 있습니다 `mlog` 디렉토리와 ONTAP 로그 파일
+
+.단계
+. 클러스터 관리 LIF를 호스팅하는 노드를 식별합니다.
+. 웹 브라우저에 다음 URL을 입력합니다. `+https://cluster-mgmt-LIF/spi+`
++
+`cluster-mgmt-LIF` 은 클러스터 관리 LIF의 IP 주소입니다.
+
+. 클러스터 관리자 자격 증명을 입력한 다음 * 확인 * 을 클릭합니다.
+. Data ONTAP - 루트 볼륨 파일 액세스 * 창에서 클러스터 관리 LIF를 호스팅하는 노드에 대한 * 로그 * 링크를 클릭합니다.
+. 로 이동합니다 `mlog` 디렉터리 - System Manager 로그 파일에 액세스합니다.
++
+발생한 문제 유형에 따라 다음 로그 파일이 필요할 수 있습니다.
+
++
+** `sysmgr.log`
++
+이 파일에는 System Manager에 대한 최신 로그가 들어 있습니다.
+
+** `mgwd.log`
+** `php.log`
+** `apache_access.log`
+** `messages.log`
+
+
+
+
+
+
+== 시스템 로깅 작동 방식
+
+시스템 로깅은 응용 프로그램 문제 해결을 위한 필수 도구입니다. 응용 프로그램에 문제가 있는 경우 문제를 찾을 수 있도록 시스템 로깅을 활성화해야 합니다. 런타임 시 응용 프로그램 바이너리를 수정하지 않고 System Manager 로깅을 활성화할 수 있습니다.
+
+로그 출력은 볼륨을 높일 수 있으므로 관리하기가 어려울 수 있습니다. System Manager를 사용하면 출력할 로그 문 유형을 선택하여 로깅 출력을 구체화할 수 있습니다. 기본적으로 시스템 로깅은 Info로 설정됩니다. 다음 로그 수준 중 하나를 선택할 수 있습니다.
+
+* 꺼짐
+* 오류
+* 경고
+* 정보
+* 디버그
+
+
+이러한 수준은 계층적으로 작동합니다. 로그 수준이 꺼짐으로 설정되면 메시지가 로깅되지 않습니다.

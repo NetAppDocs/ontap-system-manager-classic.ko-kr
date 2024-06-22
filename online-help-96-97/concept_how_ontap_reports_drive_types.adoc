@@ -1,0 +1,131 @@
+---
+permalink: online-help-96-97/concept_how_ontap_reports_drive_types.html 
+sidebar: sidebar 
+keywords: ontap, report, disk, type, industry, standards, sas, fc, storage, array, online, help 
+summary: ONTAP는 모든 디스크에 유형을 연결합니다. ONTAP에서는 일부 디스크 유형을 업계 표준과 다르게 보고합니다. 혼란을 방지하기 위해 ONTAP 디스크 유형이 산업 표준에 매핑되는 방법을 이해해야 합니다. 
+---
+= ONTAP가 System Manager-ONTAP 9.7 이하에서 디스크 유형을 보고하는 방법
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)은 모든 디스크와 유형을 연결합니다. ONTAP에서는 일부 디스크 유형을 업계 표준과 다르게 보고합니다. 혼란을 방지하기 위해 ONTAP 디스크 유형이 산업 표준에 매핑되는 방법을 이해해야 합니다.
+
+ONTAP 설명서에서 디스크 유형을 참조하는 경우 달리 지정하지 않는 한 ONTAP에서 사용하는 유형입니다. _RAID 디스크 유형_은 특정 디스크가 RAID에 대해 재생하는 역할을 나타냅니다. RAID 디스크 유형은 ONTAP 디스크 유형과 관련이 없습니다.
+
+특정 구성의 경우 지원되는 디스크 유형은 스토리지 시스템 모델, 쉘프 유형 및 시스템에 설치된 I/O 모듈에 따라 다릅니다.
+
+다음 표에서는 ONTAP 디스크 유형이 SAS 및 FC 스토리지 연결 유형 및 스토리지 배열에 대한 산업 표준 디스크 유형과 매핑되는 방식을 보여 줍니다.
+
+
+
+== SAS 연결 스토리지
+
+|===
+| ONTAP 디스크 유형입니다 | 디스크 클래스 | 업계 표준 디스크 유형입니다 | 설명 
+
+
+ a| 
+BSAS
+ a| 
+용량
+ a| 
+SATA를 클릭합니다
+ a| 
+SAS 연결 스토리지 쉘프에 연결할 수 있도록 하드웨어가 추가된 브리지 SAS-SATA 디스크
+
+
+
+ a| 
+CSA
+ a| 
+용량
+ a| 
+NL-SAS
+ a| 
+니어라인 SAS
+
+
+
+ a| 
+mSATA
+ a| 
+용량
+ a| 
+SATA를 클릭합니다
+ a| 
+SATA 디스크는 다중 디스크 캐리어 스토리지 쉘프에 있습니다
+
+
+
+ a| 
+SAS를 참조하십시오
+ a| 
+성능
+ a| 
+SAS를 참조하십시오
+ a| 
+직렬 연결 SCSI
+
+
+
+ a| 
+SSD를 지원합니다
+ a| 
+최고의 성능
+ a| 
+SSD를 지원합니다
+ a| 
+솔리드 스테이트 드라이브
+
+|===
+
+
+== FC 연결 스토리지
+
+|===
+| ONTAP 디스크 유형입니다 | 디스크 클래스 | 업계 표준 디스크 유형입니다 
+
+
+ a| 
+아타
+ a| 
+용량
+ a| 
+SATA를 클릭합니다
+
+
+
+ a| 
+FCAL(보정
+ a| 
+성능
+ a| 
+FC
+
+|===
+
+
+== 지원합니다
+
+|===
+| ONTAP 디스크 유형입니다 | 디스크 클래스 | 업계 표준 디스크 유형입니다 | 설명 
+
+
+ a| 
+LUN을 클릭합니다
+ a| 
+해당 없음
+ a| 
+LUN을 클릭합니다
+ a| 
+스토리지 시스템에 의해 백업되고 ONTAP에서 디스크로 사용되는 논리적 스토리지 디바이스입니다. 이러한 LUN을 _array LUNs_라고 하며 ONTAP가 클라이언트에 제공하는 LUN과 구분합니다.
+
+|===
+* 관련 정보 *
+
+https://hwu.netapp.com["NetApp Hardware Universe를 참조하십시오"^]
+
+http://www.netapp.com/us/media/tr-3437.pdf["NetApp 기술 보고서 3437: 스토리지 서브시스템 복원력"^]

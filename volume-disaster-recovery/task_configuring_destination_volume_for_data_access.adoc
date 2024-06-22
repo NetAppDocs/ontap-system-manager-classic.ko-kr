@@ -1,0 +1,50 @@
+---
+permalink: volume-disaster-recovery/task_configuring_destination_volume_for_data_access.html 
+sidebar: sidebar 
+keywords: activating, activate, destination, volume, configure, data, access, nas, client, san, host, access, data, source, reactivate, configure the destination volume for data access 
+summary: 대상 볼륨을 활성화한 후 데이터 액세스를 위해 볼륨을 구성해야 합니다. 소스 볼륨이 다시 활성화될 때까지 NAS 클라이언트와 SAN 호스트가 대상 볼륨의 데이터에 액세스할 수 있습니다. 
+---
+= 데이터 액세스를 위한 대상 볼륨을 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+대상 볼륨을 활성화한 후 데이터 액세스를 위해 볼륨을 구성해야 합니다. 소스 볼륨이 다시 활성화될 때까지 NAS 클라이언트와 SAN 호스트가 대상 볼륨의 데이터에 액세스할 수 있습니다.
+
+.이 작업에 대해
+대상 * 클러스터에서 이 작업을 수행해야 합니다.
+
+
+
+== 절차를 참조하십시오
+
+* NAS 환경:
++
+.. 소스 볼륨이 소스 SVM에 마운트된 것과 동일한 접합 경로를 사용하여 NAS 볼륨을 네임스페이스에 마운트합니다.
+.. 대상 볼륨의 CIFS 공유에 적절한 ACL을 적용합니다.
+.. 대상 볼륨에 NFS 내보내기 정책을 할당합니다.
+.. 대상 볼륨에 할당량 규칙을 적용합니다.
+.. DNS 이름 확인 변경과 같은 필요한 단계를 수행하여 클라이언트를 대상 볼륨으로 리디렉션합니다.
+.. 클라이언트에서 NFS 및 CIFS 공유를 다시 마운트합니다.
+
+
+* SAN 환경:
++
+.. LUN을 적절한 이니시에이터 그룹에 매핑하여 볼륨의 LUN을 SAN 클라이언트에서 사용할 수 있도록 합니다.
+.. iSCSI의 경우 SAN 호스트 이니시에이터에서 SAN LIF로 iSCSI 세션을 생성합니다.
+.. SAN 클라이언트에서 스토리지 재검색을 수행하여 연결된 LUN을 검색합니다.
+
+
+
+
+
+
+== 다음 단계
+
+소스 볼륨을 사용할 수 없게 된 문제를 해결해야 합니다. 가능하면 소스 볼륨을 다시 온라인으로 만든 다음 소스 볼륨을 재동기화하여 다시 활성화해야 합니다.
+
+* 관련 정보 *
+
+https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"]

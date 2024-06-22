@@ -1,0 +1,14 @@
+---
+permalink: nfs-config/task_configuring_access_to_existing_svm.html 
+sidebar: sidebar 
+keywords: access, nfs, clients, exist, svm, configuration, export, policy, root, volume, ldap, unix, configure, configure nfs access to an existing svm 
+summary: 기존 SVM에 NFS 클라이언트에 대한 액세스를 추가하려면 SVM에 NFS 구성을 추가하고, SVM 루트 볼륨의 엑스포트 정책을 열고, LDAP를 선택적으로 구성하고, UNIX 관리 호스트에서 NFS 액세스를 확인해야 합니다. 그런 다음 NFS 클라이언트 액세스를 구성할 수 있습니다. 
+---
+= 기존 SVM에 대한 NFS 액세스를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 SVM에 NFS 클라이언트에 대한 액세스를 추가하려면 SVM에 NFS 구성을 추가하고, SVM 루트 볼륨의 엑스포트 정책을 열고, LDAP를 선택적으로 구성하고, UNIX 관리 호스트에서 NFS 액세스를 확인해야 합니다. 그런 다음 NFS 클라이언트 액세스를 구성할 수 있습니다.

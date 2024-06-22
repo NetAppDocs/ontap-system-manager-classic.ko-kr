@@ -1,0 +1,121 @@
+---
+permalink: online-help-96-97/reference_storage_tiers_window.html 
+sidebar: sidebar 
+keywords: online, help, storage, tier, window, command, button 
+summary: Storage Tiers 창을 사용하여 클러스터 전체 공간 세부 정보를 확인하고 애그리게이트 세부 정보를 추가 및 볼 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 및 그 이전 버전의 Storage Tiers 창
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 및 Earier에서 사용 가능)에서 Storage Tiers 창을 사용하여 클러스터 전체 공간 세부 정보를 보고 애그리게이트 세부 정보를 추가 및 볼 수 있습니다.
+
+Internal Tier 패널 또는 Performance Tier 패널에 클러스터에 All-Flash(All-SSD) 애그리게이트가 포함된 경우, 클러스터 전반의 공간 세부 정보가 표시됩니다. 예를 들어, 모든 애그리게이트의 총 크기 합계, 클러스터 내 애그리게이트가 사용하는 공간, 클러스터에서 사용 가능한 공간입니다.
+
+클라우드 계층 패널에는 클러스터에 있는 라이센스가 부여된 총 클라우드 계층, 클러스터에 사용된 라이센스 공간 및 클러스터에서 사용 가능한 라이센스 공간이 표시됩니다. Cloud Tier 패널에는 사용 중인 라이센스가 없는 클라우드 용량도 표시됩니다.
+
+Aggregate는 유형별로 그룹화되며 애그리게이트 패널에는 총 애그리게이트 공간, 사용된 공간 및 사용 가능한 공간에 대한 세부 정보가 표시됩니다. 비활성(콜드) 데이터를 SSD(Solid State Drive) 또는 All Flash FAS 애그리게이트에서 사용할 수 있는 경우 사용하는 공간도 표시됩니다. 집계를 선택하고 집계 관련 작업을 수행할 수 있습니다.
+
+
+
+== 명령 버튼
+
+* * 집계 추가 *
++
+Aggregate를 생성할 수 있습니다.
+
+* * 조치 *
++
+에서는 다음 옵션을 제공합니다.
+
++
+** * 상태를 * 로 변경합니다
++
+선택한 애그리게이트의 상태를 다음 상태 중 하나로 변경합니다.
+
++
+*** * 온라인 *
++
+이 애그리게이트에 포함된 볼륨에 대한 읽기 및 쓰기 액세스가 허용됩니다.
+
+*** * 오프라인 *
++
+읽기 및 쓰기 액세스가 허용되지 않습니다.
+
+*** * 제한 *
++
+패리티 재구성과 같은 일부 작업은 허용되지만 데이터 액세스는 허용되지 않습니다.
+
+
+
+** * 용량 추가 *
++
+용량(HDD 또는 SSD)을 기존 애그리게이트에 추가할 수 있도록 지원
+
+** * 캐시 추가 *
++
+캐시 디스크(SSD)를 기존 HDD 애그리게이트 또는 Flash Pool 애그리게이트에 추가할 수 있습니다.
+
++
+FabricPool 지원 애그리게이트에는 캐시 디스크를 추가할 수 없습니다.
+
++
+All-Flash 최적화 속성을 가진 노드가 포함된 클러스터에서는 이 옵션을 사용할 수 없습니다.
+
+** * 미러 *
++
+애그리게이트를 미러링할 수 있습니다.
+
+** * 볼륨 이동 *
++
+FlexVol 볼륨을 이동할 수 있습니다.
+
+
+
+
+
+
+
+== 세부 정보 영역
+
+애그리게이트 이름을 클릭하여 애그리게이트에 대한 자세한 정보를 확인할 수 있습니다.
+
+* * 개요 탭 *
++
+선택한 Aggregate에 대한 자세한 정보를 표시하고 애그리게이트의 공간 할당, 애그리게이트의 공간 절약 및 애그리게이트의 성능을 그림 형식으로 표시합니다.
+
+* * 디스크 정보 탭 *
++
+선택한 애그리게이트의 디스크 레이아웃 정보를 표시합니다.
+
+* 볼륨 탭 *
++
+Aggregate의 총 볼륨 수, 총 애그리게이트 공간 및 Aggregate에 커밋된 공간에 대한 세부 정보를 표시합니다.
+
+* * 성능 탭 *
++
+처리량 및 IOPS를 포함하여 애그리게이트의 성능 메트릭을 보여주는 그래프를 표시합니다. 처리량 및 IOPS를 위해 읽기, 쓰기, 총 전송에 대한 성능 메트릭 데이터가 표시되고, SSD와 HDD의 데이터는 별도로 기록됩니다.
+
++
+클라이언트 시간대 또는 클러스터 시간대를 변경하면 성능 메트릭 그래프에 영향을 줍니다. 클라이언트 시간대 또는 클러스터 시간대를 변경하는 경우 브라우저를 새로 고쳐 업데이트된 그래프를 확인해야 합니다.
+
+
+
+* 관련 정보 *
+
+xref:task_adding_cloud_tier.adoc[클라우드 계층 추가]
+
+xref:task_attaching_aggregate_to_cloud_tier.adoc[클라우드 계층에 애그리게이트 연결]
+
+xref:task_deleting_cloud_tier.adoc[클라우드 계층 삭제]
+
+xref:task_editing_cloud_tier.adoc[클라우드 계층 편집]
+
+xref:task_provisioning_storage_through_aggregates.adoc[애그리게이트를 통한 스토리지 프로비저닝]
+
+xref:task_deleting_aggregates.adoc[애그리게이트 삭제]
+
+xref:task_editing_aggregates.adoc[집계 편집]

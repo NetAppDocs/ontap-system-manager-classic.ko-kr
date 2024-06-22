@@ -1,0 +1,109 @@
+---
+permalink: online-help-96-97/concept_ldap.html 
+sidebar: sidebar 
+keywords: ldap, system, manager, configure, server, online, help, user, information 
+summary: System Manager를 사용하여 사용자 정보를 중앙에서 관리하는 LDAP 서버를 구성할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 LDAP 서버를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 사용자 정보를 중앙에서 관리하는 LDAP 서버를 구성할 수 있습니다.
+
+
+
+== LDAP 클라이언트 구성을 봅니다
+
+System Manager를 사용하면 클러스터의 SVM(스토리지 가상 머신)에 구성된 LDAP 클라이언트를 볼 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]*.
+. Setup * 창에서 * LDAP * 를 클릭합니다.
++
+LDAP 클라이언트 목록이 LDAP 창에 표시됩니다.
+
+
+
+
+
+== LDAP 서비스를 사용합니다
+
+LDAP 서버를 사용하면 사용자 정보를 중앙에서 관리할 수 있습니다. 사용자 데이터베이스를 환경의 LDAP 서버에 저장하는 경우 SVM(스토리지 가상 머신)을 구성하여 기존 LDAP 데이터베이스에서 사용자 정보를 찾을 수 있습니다.
+
+.이 작업에 대해
+ONTAP는 사용자 인증, 파일 액세스 인증, NFS와 CIFS 간의 사용자 조회 및 매핑 서비스를 위해 LDAP를 지원합니다.
+
+
+
+== LDAP 창입니다
+
+LDAP 창을 사용하여 사용자 인증, 파일 액세스 인증 및 사용자 검색을 위한 LDAP 클라이언트를 보고 클러스터 수준에서 NFS와 CIFS 간에 서비스를 매핑할 수 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 추가 *
++
+LDAP 클라이언트를 생성 및 구성할 수 있는 Create LDAP Client 대화 상자를 엽니다.
+
+* * 편집 *
++
+LDAP 클라이언트 구성을 편집할 수 있는 Edit LDAP Client 대화 상자를 엽니다. 활성 LDAP 클라이언트를 편집할 수도 있습니다.
+
+* * 삭제 *
++
+LDAP 클라이언트 구성을 삭제할 수 있는 LDAP 클라이언트 삭제 대화 상자를 엽니다. 활성 LDAP 클라이언트를 삭제할 수도 있습니다.
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+
+
+
+
+=== LDAP 클라이언트 목록입니다
+
+LDAP 클라이언트에 대한 세부 정보를 표 형식으로 표시합니다.
+
+* * LDAP 클라이언트 구성 *
++
+지정한 LDAP 클라이언트 구성의 이름을 표시합니다.
+
+* * 스토리지 가상 머신 *
++
+각 LDAP 클라이언트 구성의 SVM(스토리지 가상 머신) 이름을 표시합니다.
+
+* * 스키마 *
++
+각 LDAP 클라이언트에 대한 스키마를 표시합니다.
+
+* * 최소 바인딩 레벨 *
++
+각 LDAP 클라이언트의 최소 바인딩 수준을 표시합니다.
+
+* * Active Directory 도메인 *
++
+각 LDAP 클라이언트 구성에 대한 Active Directory 도메인을 표시합니다.
+
+* * LDAP 서버 *
++
+각 LDAP 클라이언트 구성에 대한 LDAP 서버를 표시합니다.
+
+* * 기본 Active Directory 서버 *
++
+각 LDAP 클라이언트 구성에 대한 기본 Active Directory 서버를 표시합니다.
+
+
+
+* 관련 정보 *
+
+xref:task_adding_ldap_client_configuration.adoc[LDAP 클라이언트 구성 추가]
+
+xref:task_deleting_ldap_client_configuration.adoc[LDAP 클라이언트 구성을 삭제하는 중입니다]
+
+xref:task_editing_ldap_client_configuration.adoc[LDAP 클라이언트 구성 편집]

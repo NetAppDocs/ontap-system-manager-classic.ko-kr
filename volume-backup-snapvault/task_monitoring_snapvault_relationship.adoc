@@ -1,0 +1,51 @@
+---
+permalink: volume-backup-snapvault/task_monitoring_snapvault_relationship.html 
+sidebar: sidebar 
+keywords: periodically, monitor, status, snapvault, relationship, ensure, data, back, up, volume, schedule, monitor the snapvault relationship 
+summary: SnapVault 관계의 상태를 주기적으로 모니터링하여 지정된 스케줄에 따라 데이터가 대상 볼륨에 백업되도록 해야 합니다. 
+---
+= SnapVault 관계를 모니터링합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapVault 관계의 상태를 주기적으로 모니터링하여 지정된 스케줄에 따라 데이터가 대상 볼륨에 백업되도록 해야 합니다.
+
+.이 작업에 대해
+대상 * 클러스터에서 이 작업을 수행해야 합니다.
+
+.단계
+. 실행 중인 System Manager 버전에 따라 다음 단계 중 하나를 수행하십시오.
++
+** ONTAP 9.4 이하: * 보호 * > * 관계 * 를 클릭합니다.
+** ONTAP 9.5부터 * 보호 * > * 볼륨 관계 * 를 클릭합니다.
+
+
+. 소스와 대상 볼륨 간의 SnapVault 관계를 선택한 다음 * Details * Bottom 탭에서 상태를 확인합니다.
++
+SnapVault 관계 상태, 전송 오류 및 지연 시간이 표시됩니다.
+
++
+** IS health(정상 상태) 필드가 표시되어야 합니다 `Yes`.
++
+대부분의 데이터 전송 실패의 경우 필드가 표시됩니다 `No`. 그러나 오류가 발생할 경우 필드가 계속 표시됩니다 `Yes`. 데이터 전송 오류가 발생하지 않았는지 확인하려면 세부 정보 섹션에서 전송 오류를 확인해야 합니다.
+
+** 관계 상태 필드가 표시되어야 합니다 `Snapmirrored`.
+** 지연 시간은 전송 일정 간격보다 클 수 없습니다.
++
+예를 들어, 전송 스케줄이 매일 인 경우 지연 시간은 1일을 초과할 수 없습니다.
+
++
+SnapVault 관계의 모든 문제를 해결해야 합니다. SnapMirror 관계에 대한 문제 해결 절차도 SnapVault 관계에 적용됩니다.
+
++
+http://www.netapp.com/us/media/tr-4015.pdf["NetApp 기술 보고서 4015: ONTAP 9.1, 9.2에 대한 SnapMirror 구성 및 모범 사례"^]
+
++
+image::../media/monitor_sv.gif[모니터 SV]
+
+
+
+

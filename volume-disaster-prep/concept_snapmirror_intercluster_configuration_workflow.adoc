@@ -1,0 +1,23 @@
+---
+permalink: volume-disaster-prep/concept_snapmirror_intercluster_configuration_workflow.html 
+sidebar: sidebar 
+keywords: preparing, prepare, volume, disaster, recovery, verify, cluster, peer, relationship, snapmirror, residing, reside, peer, destination, periodical, volume disaster recovery preparation workflow 
+summary: 재해 복구를 위한 볼륨을 준비하려면 클러스터 피어 관계를 확인하고, 피어링된 클러스터에 있는 볼륨 간에 SnapMirror 관계를 구축하고, 데이터 액세스를 위한 대상 SVM을 설정하고, SnapMirror 관계를 정기적으로 모니터링해야 합니다. 
+---
+= 볼륨 재해 복구 준비 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+재해 복구를 위한 볼륨을 준비하려면 클러스터 피어 관계를 확인하고, 피어링된 클러스터에 있는 볼륨 간에 SnapMirror 관계를 구축하고, 데이터 액세스를 위한 대상 SVM을 설정하고, SnapMirror 관계를 정기적으로 모니터링해야 합니다.
+
+image::../media/snapmirror_intercluster_cfg_workflow.gif[이 그림은 볼륨 재해 복구 준비 워크플로의 흐름도입니다. 워크플로의 단계가 항목과 일치합니다.]
+
+재해 복구 설정을 테스트하거나 재해가 발생할 때 대상 볼륨을 활성화하는 데 도움이 되는 추가 설명서가 제공됩니다. 재해 발생 후 소스 볼륨을 다시 활성화하는 방법에 대해서도 자세히 알아볼 수 있습니다.
+
+xref:../volume-disaster-recovery/index.html[볼륨 재해 복구]
+
+를 누릅니다
+재해 발생 후 대상 볼륨을 빠르게 활성화한 다음 ONTAP에서 소스 볼륨을 다시 활성화하는 방법에 대해 설명합니다.

@@ -1,0 +1,44 @@
+---
+permalink: volume-restore-snapvault/index.html 
+sidebar: sidebar 
+keywords: content, restore, volume, snapvault, vault, backup, ontap, data, loss, volume restore using snapvault overview 
+summary: 데이터 손실이 발생할 경우 ONTAP의 SnapVault 백업에서 볼륨을 빠르게 복원할 수 있습니다. 
+---
+= SnapVault를 사용한 볼륨 복원 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 손실이 발생할 경우 ONTAP의 SnapVault 백업에서 볼륨을 빠르게 복원할 수 있습니다.
+
+볼트 백업에서 다음과 같은 방법으로 복원하려는 경우 이 절차를 사용합니다.
+
+* ONTAP 9를 실행하는 클러스터로 작업하고 있습니다.
+* 클러스터 관리자입니다.
+* 에 설명된 절차에 따라 볼트 관계를 구성했습니다 xref:../volume-backup-snapvault/index.html[SnapVault를 사용한 볼륨 백업]
+* 단일 파일 또는 LUN 복원을 수행하지 않습니다.
+* 사용 가능한 모든 옵션을 탐색하는 것이 아니라 모범 사례를 사용하려고 합니다.
+* 많은 개념적 배경을 읽고 싶지 않습니다.
+* ONTAP 9.7 이상을 위한 ONTAP 시스템 관리자 UI가 아니라 ONTAP 9.7 이전 릴리즈용 System Manager 클래식 인터페이스를 사용하려는 경우
+
+
+이러한 가정이 현재 상황에 맞지 않거나 보다 개념적인 배경 정보를 원하는 경우 다음 리소스를 참조하십시오.
+
+link:http://www.netapp.com/us/media/tr-4183.pdf["NetApp 기술 보고서 4183: SnapVault 모범 사례"^]
+
+
+
+== ONTAP에서 이 작업을 수행하는 다른 방법
+
+[cols="2"]
+|===
+| 에서 이러한 작업을 수행하려면... | 이 콘텐츠 보기... 
+
+
+| 재설계된 System Manager(ONTAP 9.7 이상에서 사용 가능) | link:https://docs.netapp.com/us-en/ontap/task_dp_restore_from_vault.html["이전 스냅샷 복사본에서 볼륨을 복원합니다"^] 
+
+
+| ONTAP 명령줄 인터페이스입니다 | link:https://docs.netapp.com/us-en/ontap/data-protection/restore-volume-snapvault-backup-task.html["SnapMirror 대상에서 볼륨 내용을 복원합니다"^] 
+|===

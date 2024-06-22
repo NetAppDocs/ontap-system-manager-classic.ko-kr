@@ -1,0 +1,23 @@
+---
+permalink: snmp-config/task_testing_snmp_traps.html 
+sidebar: sidebar 
+keywords: communication, traphost, automatic, validate, add, snmp, traphost, correct, trap, test, test snmp traps 
+summary: 'ONTAP 9.7 이하와 ONTAP System Manager의 "클래식" 인터페이스를 사용하여 SNMP 트랩을 테스트할 수 있습니다. traphost와의 통신은 추가 시 자동으로 검증되지 않으므로 SNMP traphost가 트랩을 올바르게 수신할 수 있는지 확인해야 합니다.' 
+---
+= SNMP 트랩을 테스트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.7 이하와 함께 ONTAP System Manager_CLASSIC_INTERFACE를 사용하여 SNMP 트랩을 테스트할 수 있습니다. traphost와의 통신은 추가 시 자동으로 검증되지 않으므로 SNMP traphost가 트랩을 올바르게 수신할 수 있는지 확인해야 합니다.
+
+.단계
+. SNMP * 화면으로 이동합니다.
+. Traphost를 추가한 클러스터에서 트랩을 생성하려면 * Test Trap Host * 를 클릭합니다.
+. 트랩 호스트 위치에서 트랩이 수신되었는지 확인합니다.
++
+SNMP traaphost를 관리하는 데 일반적으로 사용하는 소프트웨어가 무엇이든 사용합니다.
+
+

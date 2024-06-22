@@ -1,0 +1,89 @@
+---
+permalink: online-help-96-97/task_creating_qos_policy_groups.html 
+sidebar: sidebar 
+keywords: online, help, create, qos, policy, groups, system, manager, quality, service 
+summary: 'System Manager를 사용하여 스토리지 QoS(서비스 품질) 정책 그룹을 생성하여 워크로드의 처리량을 제한하고 워크로드 성능을 모니터링할 수 있습니다.' 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 QoS 정책 그룹을 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 스토리지 QoS(서비스 품질) 정책 그룹을 생성하여 워크로드 처리량을 제한하고 워크로드 성능을 모니터링할 수 있습니다.
+
+
+
+== QoS 정책 그룹을 생성합니다
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. Policies * 창에서 * QoS Policy Groups * 를 클릭합니다.
+. QoS Policy Groups * 창에서 * Create * 를 클릭합니다.
+. Create Policy Group * 대화 상자에서 정책의 그룹 이름을 지정합니다.
+. 최소 처리량 제한을 지정합니다.
++
+** System Manager 9.5에서는 성능 기반 All-Flash 최적화 개인성에만 최소 처리량 제한을 설정할 수 있습니다. System Manager 9.6에서는 ONTAP Select 프리미엄 시스템의 최소 처리량 제한도 설정할 수 있습니다.
+** FabricPool 지원 애그리게이트에서 볼륨의 최소 처리량 한도를 설정할 수 없습니다.
+** 최소 처리량 값을 지정하지 않거나 최소 처리량 값이 0으로 설정되어 있으면 시스템은 자동으로 ""없음""을 값으로 표시합니다.
++
+이 값은 대/소문자를 구분합니다.
+
+
+
+. 최대 처리량 제한을 지정합니다.
++
+** 최소 처리량 제한과 최대 처리량 제한은 단위 유형이 동일해야 합니다.
+** 최소 처리량 제한을 지정하지 않으면 IOPS 및 B/s, KB/s, MB/s 등의 최대 처리량 제한을 설정할 수 있습니다.
+** 최대 처리량 제한을 지정하지 않으면 시스템은 자동으로 ""무제한""을 값으로 표시합니다.
++
+이 값은 대/소문자를 구분합니다. 지정하는 단위는 최대 처리량에 영향을 주지 않습니다.
+
+
+
+. 확인 * 을 클릭합니다.
+
+
+
+
+== QoS 정책 그룹을 삭제합니다
+
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 더 이상 필요하지 않은 스토리지 QoS(서비스 품질) 정책 그룹을 삭제할 수 있습니다.
+
+.시작하기 전에
+정책 그룹에 할당된 모든 스토리지 객체를 할당 해제해야 합니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. Policies * 창에서 * QoS Policy Groups * 를 클릭합니다.
+. QoS 정책 그룹 * 창에서 삭제할 정책 그룹을 선택한 다음 * 삭제 * 를 클릭합니다.
+. 확인 대화 상자에서 * 삭제 * 를 클릭합니다.
+
+
+
+
+== QoS 정책 그룹을 편집합니다
+
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)의 정책 그룹 편집 대화 상자를 사용하여 기존 스토리지 QoS(서비스 품질) 정책 그룹의 이름과 최대 처리량을 수정할 수 있습니다.
+
+.이 작업에 대해
+* System Manager 9.5에서는 성능 기반 All-Flash 최적화 개인성에만 최소 처리량 제한을 설정할 수 있습니다. System Manager 9.6에서는 ONTAP Select 프리미엄 시스템의 최소 처리량 제한도 설정할 수 있습니다.
+* FabricPool 지원 애그리게이트에서 볼륨의 최소 처리량 한도를 설정할 수 없습니다.
+
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. Policies * 창에서 * QoS Policy Groups * 를 클릭합니다.
+. 편집할 QoS 정책 그룹을 선택한 다음 * 편집 * 을 클릭합니다.
++
+** 최소 처리량 제한과 최대 처리량 제한은 단위 유형이 동일해야 합니다.
+** 최소 처리량 제한을 지정하지 않으면 IOPS 및 B/s, KB/s, MB/s 등의 최대 처리량 제한을 설정할 수 있습니다.
+** 최대 처리량 제한을 지정하지 않으면 값이 무제한으로 설정되고 지정한 단위는 최대 처리량에 영향을 주지 않습니다.
+
+
+. Edit Policy Group * 대화 상자에서 QoS 정책 그룹 세부 정보를 편집한 다음 * Save * 를 클릭합니다.
+

@@ -1,0 +1,16 @@
+---
+permalink: nfs-config-esxi/task_nfs_client_configuration_for_esxi_workflow.html 
+sidebar: sidebar 
+keywords: nfs, client, configuration, esxi, workflow, nfs client configuration for esxi workflow 
+summary: NFS를 사용하여 ESXi 호스트에서 스토리지를 사용할 수 있게 하면 용 에서 볼륨을 프로비저닝하고 ESXi 호스트에서 NFS 내보내기에 연결합니다. 
+---
+= ESXi 워크플로우를 위한 NFS 클라이언트 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NFS를 사용하여 ESXi 호스트에서 스토리지를 사용할 수 있게 하면 용 에서 볼륨을 프로비저닝하고 ESXi 호스트에서 NFS 내보내기에 연결합니다.
+
+image::../media/nfs_client_configuration_with_vaai_workflow.gif[ESX용 VAAI를 사용한 NFS 클라이언트 구성]

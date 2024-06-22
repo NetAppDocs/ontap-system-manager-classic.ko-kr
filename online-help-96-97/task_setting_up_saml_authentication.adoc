@@ -1,0 +1,106 @@
+---
+permalink: online-help-96-97/task_setting_up_saml_authentication.html 
+sidebar: sidebar 
+keywords: set, up, saml, authentication, security, assertion, markup, idp, online, help, system, manager,  language, secure, identity, provide, 
+summary: 'SAML(Security Assertion Markup Language) 인증을 설정하여 원격 사용자가 System Manager에 로그인하기 전에 IDP(Secure Identity Provider)를 통해 인증되도록 할 수 있습니다.' 
+---
+= 시스템 관리자 - ONTAP 9.7 이하를 사용하여 SAML 인증을 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 및 이전 버전에서 사용 가능)을 사용하여 SAML(Security Assertion Markup Language) 인증을 설정할 수 있습니다. 원격 사용자는 System Manager에 로그인하기 전에 IDP(Secure Identity Provider)를 통해 인증됩니다.
+
+image::../media/mfa_workflow.gif[MFA 워크플로]
+
+
+
+== SAML 인증을 활성화합니다
+
+System Manager를 사용하여 SAML(Security Assertion Markup Language) 인증을 구성하면 원격 사용자가 IDP(Secure Identity Provider)를 사용하여 로그인할 수 있습니다.
+
+.시작하기 전에
+* 원격 인증에 사용하려는 IDP를 구성해야 합니다.
++
+[NOTE]
+====
+구성한 IDP에서 제공하는 설명서를 참조하십시오.
+
+====
+* IDP의 URI가 있어야 합니다.
+
+
+.이 작업에 대해
+다음 IdP는 System Manager에서 검증되었습니다.
+
+* Active Directory 페더레이션 서비스
+* Cisco Duo(다음 ONTAP 버전에서 검증:)
++
+** 9.7P21 이상 9.7 릴리스
+** 9.8P17 이상 9.8 릴리스
+** 9.9.1P13 이상 9.9 릴리스
+** 9.10.1P9 이상 9.10 릴리스
+** 9.11.1P4 이상 9.11 릴리즈
+** 9.12.1 이상 릴리즈
+
+
+* 시바볼레스
+
+
+[NOTE]
+====
+SAML 인증이 활성화된 후에는 원격 사용자만 System Manager GUI에 액세스할 수 있습니다. SAML 인증이 활성화된 후에는 로컬 사용자가 System Manager GUI에 액세스할 수 없습니다.
+
+====
+.단계
+. 구성 * > * 클러스터 * > * 인증 * 을 클릭합니다.
+. SAML 인증 활성화 * 확인란을 선택합니다.
+. SAML 인증을 사용하도록 System Manager 구성:
++
+.. IDP의 URI를 입력합니다.
+.. 호스트 시스템의 IP 주소를 입력합니다.
+.. * 선택 사항: * 필요한 경우 호스트 시스템 인증서를 변경합니다.
+
+
+. 호스트 URI 및 호스트 메타데이터 정보를 검색하려면 * 호스트 메타데이터 검색 * 을 클릭합니다.
+. 호스트 URI 또는 호스트 메타데이터 세부 정보를 복사하고 IDP에 액세스한 다음 IDP 창에서 호스트 URI 또는 호스트 메타데이터 세부 정보와 신뢰 규칙을 지정합니다.
++
+[NOTE]
+====
+구성한 IDP에서 제공하는 설명서를 참조하십시오.
+
+====
+. 저장 * 을 클릭합니다.
++
+IDP 로그인 창이 표시됩니다.
+
+. IDP 로그인 창을 사용하여 System Manager에 로그인합니다.
++
+IDP를 구성한 후 사용자가 FQDN(정규화된 도메인 이름), IPv6 또는 클러스터 관리 LIF를 사용하여 로그인하려고 하면 IDP 구성 중에 지정된 호스트 시스템의 IP 주소로 IP 주소가 자동으로 변경됩니다.
+
+
+
+
+
+== SAML 인증을 비활성화합니다
+
+System Manager에 대한 원격 액세스를 비활성화하거나 SAML 구성을 편집하려면 SAML(Security Assertion Markup Language) 인증을 비활성화할 수 있습니다.
+
+.이 작업에 대해
+SAML 인증을 비활성화해도 SAML 구성은 삭제되지 않습니다.
+
+.단계
+. 구성 * > * 클러스터 * > * 인증 * 을 클릭합니다.
+. SAML 인증 활성화 * 확인란의 선택을 취소합니다.
+. 저장 * 을 클릭합니다.
++
+System Manager가 다시 시작됩니다.
+
+. 클러스터 자격 증명을 사용하여 System Manager에 로그인합니다.
+
+
+* 관련 정보 *
+
+xref:task_accessing_cluster_by_using_system_manager_brower_based_gui.adoc[ONTAP System Manager의 브라우저 기반 그래픽 인터페이스를 사용하여 클러스터에 액세스]

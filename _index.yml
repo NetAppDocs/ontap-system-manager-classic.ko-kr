@@ -1,0 +1,71 @@
+---
+indexpage:
+  title: ONTAP System Manager 클래식 설명서
+  summary: ONTAP System Manager는 ONTAP 클러스터를 쉽게 구성 및 관리할 수 있는 단순하고 유연한 제품입니다. System
+    Manager는 볼륨, LUN, Qtree, 공유 및 엑스포트 생성과 같은 공통 스토리지 작업을 간소화합니다. 시간을 절약하고 오류를 방지할
+    수 있습니다.
+  keywords: ontap, netapp, documentation, system, manager
+  lead: System Manager 클래식 인터페이스는 ONTAP 9.7 및 이전 ONTAP 9 릴리즈에서 사용할 수 있습니다. 이 사이트에서
+    System Manager Classic을 사용하는 구성 워크플로우와 ONTAP 9.6 및 9.7에 대한 System Manager Classic
+    온라인 도움말을 참조하십시오.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: System Manager 클래식 이해
+      url: "/online-help-96-97/index.html"
+    - title: ONTAP 9.7 이상을 위한 차세대 System Manager로 ONTAP를 관리하십시오
+      url: https://docs.netapp.com/us-en/ontap/concept_administration_overview.html
+    - title: CLI를 사용하여 ONTAP를 관리합니다
+      url: https://docs.netapp.com/us-en/ontap/system-admin/index.html
+  - title: NAS 스토리지를 프로비저닝합니다
+    links:
+    - title: NFS 구성
+      url: "/nfs-config/index.html"
+    - title: VSC를 사용한 ESXi용 NFS 구성
+      url: "/nfs-config-esxi/index.html"
+    - title: SMB 및 NFS 멀티 프로토콜 구성
+      url: "/nas-multiprotocol-config/index.html"
+    - title: SMB 구성
+      url: "/smb-config/index.html"
+  - title: SAN 스토리지 용량 할당
+    links:
+    - title: VSC를 사용한 ESXi에 대한 FC 구성
+      url: "/fc-config-esxi/index.html"
+    - title: Red Hat Enterprise Linux용 FC 구성
+      url: "/fc-config-rhel/index.html"
+    - title: Windows용 FC 구성
+      url: "/fc-config-windows/index.html"
+    - title: VSC를 사용한 ESXi용 iSCSI 구성
+      url: "/iscsi-config-esxi/index.html"
+    - title: Red Hat Enterprise Linux용 iSCSI 구성
+      url: "/iscsi-config-rhel/index.html"
+    - title: Windows용 iSCSI 구성
+      url: "/iscsi-config-windows/index.html"
+  - title: 데이터 보호 및 재해 복구
+    links:
+    - title: 클러스터 및 SVM 피어링 구성
+      url: "/peering/index.html"
+    - title: 볼륨 재해 복구
+      url: "/volume-disaster-recovery/index.html"
+    - title: 볼륨 재해 복구 준비
+      url: "/volume-disaster-prep/index.html"
+    - title: 볼륨 백업 SnapVault
+      url: "/volume-backup-snapvault/index.html"
+    - title: SnapVault를 사용한 볼륨 복원 관리
+      url: "/volume-restore-snapvault/index.html"
+  - title: 클러스터 관리
+    links:
+    - title: 클러스터 확장 구성
+      url: "/expansion/index.html"
+    - title: 볼륨 이동 관리
+      url: "/volume-move/index.html"
+    - title: SNMP 구성
+      url: "/snmp-config/index.html"
+    - title: System Manger 9.6 및 9.7을 사용한 클러스터 관리
+      url: "/online-help-96-97/index.html"
+  - title: 더 많은 리소스
+    links:
+    - title: ONTAP 9 설명서
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: 자동화 및 REST API 문서
+      url: https://docs.netapp.com/us-en/ontap-automation/index.html

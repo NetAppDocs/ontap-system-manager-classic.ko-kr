@@ -1,0 +1,88 @@
+---
+permalink: online-help-96-97/concept_dns_ddns_services.html 
+sidebar: sidebar 
+keywords: dns, ddns, service, system, manager, manage, online, help, edit, settings, command, button 
+summary: System Manager를 사용하여 DNS/DDNS 서비스를 관리할 수 있습니다. 
+---
+= 시스템 관리자 - ONTAP 9.7 이전 버전을 사용하여 DNS/DDNS 서비스를 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 시스템 관리자 클래식(ONTAP 9.7 및 이전 버전에서 사용 가능)을 사용하여 DNS/DDNS 서비스를 관리할 수 있습니다.
+
+
+
+== DDNS를 활성화 또는 비활성화합니다
+
+System Manager를 사용하여 스토리지 시스템에서 DDNS를 활성화 또는 비활성화할 수 있습니다.
+
+.이 작업에 대해
+* DNS는 기본적으로 사용하도록 설정되어 있습니다.
+* DDNS는 기본적으로 비활성화되어 있습니다.
+* System Manager는 DNS 및 DDNS 설정에 대한 유효성 검사를 수행하지 않습니다.
+
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 서비스 * 창에서 * DNS/DDNS * 를 클릭합니다.
+. DNS/DDNS 서비스 * 창에서 * 편집 * 을 클릭합니다.
+. DNS/DDNS 설정 편집 * 대화 상자에서 * DDNS 서비스 * 확인란을 선택하여 DDNS를 활성화합니다.
++
+DDNS 서비스 * 확인란을 선택 취소하여 DDNS를 비활성화할 수 있습니다.
+
+. 확인 * 을 클릭합니다.
+
+
+
+
+== DNS 및 DDNS 설정을 편집합니다
+
+DNS를 사용하여 중앙에서 호스트 정보를 관리할 수 있습니다. System Manager를 사용하여 스토리지 시스템의 DNS 도메인 이름을 추가하거나 수정할 수 있습니다. 스토리지 시스템에서 DDNS를 활성화하여 DNS 서버에서 이름 서버를 자동으로 업데이트할 수도 있습니다.
+
+.시작하기 전에
+보안 DDNS가 작동하려면 SVM(스토리지 가상 머신)에 대한 CIFS 서버 또는 Active Directory 계정을 설정해야 합니다.
+
+.이 작업에 대해
+System Manager는 DNS 및 DDNS 설정에 대한 유효성 검사를 수행하지 않습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 서비스 * 창에서 * DNS/DDNS * 를 클릭합니다.
+. 편집 * 을 클릭합니다.
+. DNS 도메인 및 이름 서버 * 영역에서 DNS 도메인 이름과 IP 주소를 추가하거나 수정합니다.
+. DDNS 서비스를 활성화하려면 * DDNS 서비스 * 확인란을 선택합니다.
++
+.. 보안 DDNS를 활성화하려면 * 보안 DDNS * 활성화 확인란을 선택합니다.
+.. DDNS 서비스에 대한 FQDN(정규화된 도메인 이름)과 라이브 시간 값을 지정합니다.
++
+기본적으로 Time to live는 24시간으로 설정되고 FQDN은 로 설정됩니다 `SVM name. domain name`.
+
+
+
+. 변경 사항을 저장하려면 * 확인 * 을 클릭합니다.
+
+
+
+
+== DNS/DDNS 서비스 창
+
+DNS/DDNS 서비스 창에서 시스템의 현재 DNS 및 DDNS 설정을 보고 편집할 수 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 편집 *
++
+DNS 또는 DDNS 세부 정보를 추가하거나 수정하는 데 사용할 수 있는 DNS/DDNS 설정 편집 대화 상자를 엽니다. DDNS를 활성화 또는 비활성화할 수도 있습니다.
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+

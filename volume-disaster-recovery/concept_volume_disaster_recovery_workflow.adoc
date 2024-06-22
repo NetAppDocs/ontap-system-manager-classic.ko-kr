@@ -1,0 +1,28 @@
+---
+permalink: volume-disaster-recovery/concept_volume_disaster_recovery_workflow.html 
+sidebar: sidebar 
+keywords: volume, disaster recovery, workflow, activating, activate, destination, configuring, configure, access, reactivate, reactivating, original, source, volume disaster recovery workflow 
+summary: 볼륨 재해 복구 워크플로우에는 대상 볼륨 활성화, 데이터 액세스를 위한 대상 볼륨 구성, 원래 소스 볼륨 재활성화가 포함됩니다. 
+---
+= 볼륨 재해 복구 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 재해 복구 워크플로우에는 대상 볼륨 활성화, 데이터 액세스를 위한 대상 볼륨 구성, 원래 소스 볼륨 재활성화가 포함됩니다.
+
+image::../media/snapmirror_failover_resync_workflow_eg.gif[이 그림은 SnapMirror 클러스터 간 페일오버 및 재동기화 워크플로우를 보여 주는 흐름도입니다. 워크플로의 단계가 항목과 일치합니다.]
+
+볼륨 레벨 재해 복구 관계를 관리하는 데 도움이 되는 추가 정보를 제공하고 데이터 리소스의 가용성을 보호하는 다른 재해 복구 방법을 제공합니다.
+
+* xref:../volume-backup-snapvault/index.html[SnapVault를 사용한 볼륨 백업]
++
+서로 다른 ONTAP 클러스터에 있는 볼륨 간의 백업 볼트 관계를 빠르게 구성하는 방법에 대해 설명합니다.
+
+* xref:../volume-restore-snapvault/index.html[SnapVault를 사용한 볼륨 복원 관리]
++
+ONTAP의 백업 볼트에서 볼륨을 빠르게 복원하는 방법에 대해 설명합니다.
+
+

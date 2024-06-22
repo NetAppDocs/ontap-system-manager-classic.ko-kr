@@ -1,0 +1,16 @@
+---
+permalink: iscsi-config-esxi/concept_iscsi_configuration_provisioning_workflow.html 
+sidebar: sidebar 
+keywords: storage, esx, iscsi, provision, volume, lun, virtual, machine, svm, vmware, host, configuration, workflow, esxi 
+summary: iSCSI를 사용하여 ESXi 호스트에서 스토리지를 사용할 수 있게 하면 VMware vSphere용 Virtual Storage Console을 사용하여 스토리지 가상 머신에 볼륨 및 LUN을 프로비저닝하고 호스트에서 LUN에 접속합니다. 
+---
+= iSCSI 구성 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+iSCSI를 사용하여 ESXi 호스트에서 스토리지를 사용할 수 있게 하면 VMware vSphere용 Virtual Storage Console을 사용하여 SVM(스토리지 가상 머신)에서 볼륨 및 LUN을 프로비저닝하고 호스트에서 LUN에 연결합니다.
+
+image::../media/iscsi_esx_workflow.gif[이 그림은 iSCSI 워크플로의 순서도입니다. 워크플로의 단계가 항목과 일치합니다.]

@@ -1,0 +1,19 @@
+---
+section: volume-move
+title: 볼륨 이동 관리
+entries:
+- title: 개요
+  url: "/volume-move/index.html"
+- title: 볼륨 이동 워크플로우
+  url: "/volume-move/concept_volume_move_workflow.html"
+  entries:
+  - title: 볼륨 이동 방법 및 시간을 계획합니다
+    url: "/volume-move/task_planning_method_timing_volume_move.html"
+  - title: System Manager를 사용하여 볼륨을 이동합니다
+    url: "/volume-move/task_moving_volume_using_system_manager.html"
+  - title: 볼륨을 이동한 후 LUN 보고 노드를 확인합니다
+    url: "/volume-move/task_verifying_lun_reporting_nodes_after_moving_volume.html"
+  - title: 볼륨을 이동한 후 LUN 보고 노드를 업데이트합니다
+    url: "/volume-move/task_updating_lun_reporting_nodes_after_moving_volume.html"
+  - title: 볼륨을 이동한 후 NDMP 백업을 업데이트합니다
+    url: "/volume-move/task_updating_ndmp_backup_after_moving_volume.html"

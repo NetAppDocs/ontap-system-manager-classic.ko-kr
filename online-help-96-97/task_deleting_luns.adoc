@@ -1,0 +1,29 @@
+---
+permalink: online-help-96-97/task_deleting_luns.html 
+sidebar: sidebar 
+keywords: delete, lun, system, manager, online, help, aggregate 
+summary: System Manager를 사용하면 LUN을 삭제하고 LUN에서 사용되는 공간을 포함된 Aggregate 또는 볼륨에 반환할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 LUN을 삭제합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하면 LUN을 삭제하고 LUN에서 사용되는 공간을 포함된 Aggregate 또는 볼륨으로 반환할 수 있습니다.
+
+.시작하기 전에
+* LUN은 오프라인 상태여야 합니다.
+* LUN이 모든 이니시에이터 호스트에서 매핑 해제되어야 합니다.
+
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. LUN 관리 * 탭에서 삭제할 LUN을 하나 이상 선택한 다음 * 삭제 * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * 삭제 * 를 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_luns_window.adoc[LUN 창]

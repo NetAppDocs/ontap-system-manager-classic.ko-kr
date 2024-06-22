@@ -1,0 +1,40 @@
+---
+permalink: iscsi-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html 
+sidebar: sidebar 
+keywords: linux, unified, host, utilities, sanlun, utility, netapp, lun, report, tool, display, information, storage, cluster, node, enable, netapp, install linux unified host utilities and optimizing i/o performance 
+summary: Linux Unified Host Utilities 소프트웨어에는 스토리지 클러스터 노드에 대한 정보를 표시하는 데 사용할 수 있는 NetApp LUN 보고 툴인 sanlun 유틸리티가 포함되어 있습니다. 
+---
+= Linux Unified Host Utilities를 설치하고 I/O 성능을 최적화합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux Unified Host Utilities 소프트웨어에는 가 포함되어 있습니다 `sanlun` 유틸리티로, 스토리지 클러스터 노드에 대한 정보를 표시하는 데 사용할 수 있는 NetApp LUN 보고 툴입니다. 또한 NetApp 스토리지 성능을 최적화하려면 Linux 호스트에서 올바른 서버 프로필을 활성화해야 합니다.
+
+.시작하기 전에
+상호 운용성 매트릭스를 사용하여 구성에서 지원되는 Linux Unified Host Utilities 버전을 식별해야 합니다. 또한 가 있어야 합니다 `tuned` 패키지 - Linux OS 배포판의 일부이며 이 포함되어 있습니다 `tuned-adm` 호스트에서 서버 프로파일을 설정하는 데 사용하는 명령입니다.
+
+.단계
+. NetApp Support 사이트에서 지원되는 Linux Unified Host Utilities 버전을 다운로드하십시오.
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp 다운로드: 소프트웨어"]
+
+. 설치 설명서의 지침에 따라 Linux Unified Host Utilities 소프트웨어를 설치합니다.
+. 를 누릅니다 `tuned` 패키지가 설치되어 있지 않으면 다음 명령을 입력합니다.
++
+`yum install tuned`
+
+. 물리적 호스트의 경우 를 설정했는지 확인합니다 `enterprise-storage` 프로필:
++
+`tuned-adm profile enterprise-storage`
+
+. 가상 호스트의 경우 를 설정했는지 확인합니다 `virtual-guest` 프로필:
++
+`tuned-adm profile virtual-guest`
+
+
+
+* 관련 정보 *
+https://docs.netapp.com/us-en/ontap-sanhost/hu_luhu_71.html["Linux Unified Host Utilities 7.1 설치"]

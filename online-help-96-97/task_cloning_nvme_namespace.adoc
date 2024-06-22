@@ -1,0 +1,34 @@
+---
+permalink: online-help-96-97/task_cloning_nvme_namespace.html 
+sidebar: sidebar 
+keywords: system, manager, clone, nvme, namespace, nqn, online, help 
+summary: System Manager를 사용하면 네임스페이스를 클론하도록 선택하여 동일한 구성의 다른 네임스페이스를 빠르게 생성할 수 있습니다. 새로 클론 생성된 네임스페이스를 다른 호스트 NQN에 매핑할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 NVMe 네임스페이스를 클론 복제합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하면 네임스페이스를 클론하도록 선택하여 동일한 구성에서 다른 네임스페이스를 빠르게 생성할 수 있습니다. 새로 클론 생성된 네임스페이스를 다른 호스트 NQN에 매핑할 수 있습니다.
+
+.시작하기 전에
+네임스페이스를 클론 복제하려면 FlexClone 라이센스가 있어야 합니다.
+
+.이 작업에 대해
+선택한 호스트 매핑으로 네임스페이스를 클론 복제하고 다른 서브시스템과 연결할 수 있습니다.
+
+.단계
+. NVMe * > * NVMe namespaces * 를 클릭합니다.
+. NVMe 네임스페이스 창 * 에서 복제할 네임스페이스를 선택합니다.
+. 특정 이름이 필요하지만 필요하지 않은 경우에는 복제된 네임스페이스의 이름을 바꿀 수 있습니다.
++
+이 대화 상자는 복제할 네임스페이스의 기본 이름을 제공합니다.
+
+. 복제된 네임스페이스에 대한 하위 시스템 매핑을 수정합니다.
+. 확인 * 을 클릭합니다.
++
+온라인 매핑 네임스페이스가 동일한 SVM 내에서 서로 다른 이름으로 복제됩니다. 호스트 매핑은 복제되지 않습니다.
+
+

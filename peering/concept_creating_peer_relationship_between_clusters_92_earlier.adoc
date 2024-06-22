@@ -1,0 +1,16 @@
+---
+permalink: peering/concept_creating_peer_relationship_between_clusters_92_earlier.html 
+sidebar: sidebar 
+keywords: relationship, define, network, connection, enable, cluster, svm, exchange, data, secure, peer, relationship, peer, configure peer relationship, ontap 9.2 and earlier 
+summary: 'ONTAP 9.2 또는 이전 ONTAP 9 릴리즈의 ONTAP 시스템 관리자 "클래식" 인터페이스를 사용하여 SVM 피어 관계를 생성할 수 있습니다.' 
+---
+= 피어 관계 구성(ONTAP 9.2 이하)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.2 또는 이전 ONTAP 9 릴리즈의 ONTAP System Manager_CLASSIC_INTERFACE를 사용하여 SVM 피어 관계를 생성할 수 있습니다.
+
+피어 관계는 클러스터와 SVM이 데이터를 안전하게 교환할 수 있도록 네트워크 연결을 정의합니다. SVM 피어 관계를 생성하려면 먼저 클러스터 피어 관계를 생성해야 합니다.

@@ -1,0 +1,30 @@
+---
+permalink: nfs-config-esxi/task_configuring_host_iscsi_ports_vswitches.html 
+sidebar: sidebar 
+keywords: esxi, host, network, port, nfs, connection, storage, cluster, configure, configure host ports and vswitches 
+summary: ESXi 호스트에는 스토리지 클러스터에 대한 NFS 접속을 위한 네트워크 포트가 필요합니다. 
+---
+= 호스트 포트 및 vSwitch를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ESXi 호스트에는 스토리지 클러스터에 대한 NFS 접속을 위한 네트워크 포트가 필요합니다.
+
+.이 작업에 대해
+단일 vSwitch에 단일 VMkernel 포트가 필요한 NIC 팀 구성 정책으로 IP 해시를 사용하는 것이 좋습니다.
+
+NFS에 사용되는 호스트 포트와 스토리지 클러스터 포트는 동일한 서브넷에 있는 IP 주소를 가지고 있어야 합니다.
+
+이 작업에는 ESXi 호스트를 구성하기 위한 상위 단계가 나와 있습니다. 자세한 지침이 필요한 경우 사용 중인 ESXi 버전에 대한 VMware publication_Storage_를 참조하십시오.
+
+http://www.vmware.com["VMware"]
+
+.단계
+. vSphere Client에 로그인한 다음 인벤토리 창에서 ESXi 호스트를 선택합니다.
+. 관리 * 탭에서 * 네트워킹 * 을 클릭합니다.
+. Add Networking * 을 클릭한 다음 * VMkernel * 및 * Create a vSphere standard switch * 를 선택하여 VMkernel 포트 및 vSwitch를 생성합니다.
+. vSwitch에 대해 점보 프레임을 구성합니다(사용하는 경우 MTU 크기 9000).
+

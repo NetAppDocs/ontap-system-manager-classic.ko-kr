@@ -1,0 +1,16 @@
+---
+permalink: smb-config/concept_cifs_nfs_configuration_workflow.html 
+sidebar: sidebar 
+keywords: configure, configuring, smb, cifs, creating, create, aggregate, workflow, goal-creating, cifs-enabled, svm, smb/cifs configuration workflow 
+summary: SMB/CIFS를 구성하려면 필요에 따라 애그리게이트를 생성한 다음, 특정 목적에 맞는 워크플로우를 선택해야 합니다. 즉, 새 CIFS 지원 SVM을 생성하고, 기존 SVM에 대한 CIFS 액세스를 구성하거나, CIFS 액세스를 위해 이미 완전히 구성된 기존 SVM에 CIFS 볼륨을 추가하면 됩니다. 
+---
+= SMB/CIFS 구성 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SMB/CIFS를 구성하려면 필요에 따라 애그리게이트를 생성한 다음, 특정 목적에 맞는 워크플로우를 선택해야 합니다. 즉, 새 CIFS 지원 SVM을 생성하고, 기존 SVM에 CIFS 액세스를 구성하거나, CIFS 액세스를 이미 CIFS 액세스가 완벽하게 구성된 기존 SVM에 CIFS 볼륨을 추가하면 됩니다.
+
+image::../media/cifs_config.gif[에서는 ONTAP에서 CIFS를 설정하는 단계에 대한 개요를 보여 줍니다.]

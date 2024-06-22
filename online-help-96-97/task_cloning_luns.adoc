@@ -1,0 +1,39 @@
+---
+permalink: online-help-96-97/task_cloning_luns.html 
+sidebar: sidebar 
+keywords: clone, lun, create, multiple, copy, system, manager, online, help 
+summary: LUN 클론을 사용하면 읽기 및 쓰기 가능한 여러 LUN 복사본을 생성할 수 있습니다. System Manager를 사용하면 운영 데이터에 대한 액세스 권한을 제공하지 않고도 테스트를 위해 LUN의 임시 복사본을 생성하거나 추가 사용자가 데이터의 복사본을 사용할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 LUN 클론 복제
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 운영 데이터에 대한 액세스 권한을 제공하지 않고도 테스트를 위해 LUN의 임시 복사본을 생성하거나 추가 사용자에게 데이터 복사본을 제공할 수 있습니다. LUN 클론을 사용하면 읽기 및 쓰기 가능한 여러 LUN 복사본을 생성할 수 있습니다.
+
+.시작하기 전에
+* 스토리지 시스템에 FlexClone 라이센스가 설치되어 있어야 합니다.
+* LUN에서 공간 예약을 사용하지 않도록 설정한 경우 LUN이 포함된 볼륨에 클론의 변경 사항을 수용할 수 있는 충분한 공간이 있어야 합니다.
+
+
+.이 작업에 대해
+* LUN 클론을 생성하면 System Manager에서 LUN 클론을 자동으로 삭제할 수 있습니다.
++
+ONTAP이 공간을 절약하기 위해 자동 삭제를 트리거하면 LUN 클론이 삭제됩니다.
+
+* SnapLock 볼륨에 있는 LUN은 클론 복제할 수 없습니다.
+
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. LUN 관리 * 탭에서 클론 복제할 LUN을 선택한 다음 * 클론 * 을 클릭합니다.
+. 기본 이름을 변경하려면 LUN 클론의 새 이름을 지정합니다.
+. 클론 * 을 클릭합니다.
+. 생성한 LUN 클론이 * LUNs * 창에 표시되는지 확인합니다.
+
+
+* 관련 정보 *
+
+xref:reference_luns_window.adoc[LUN 창]

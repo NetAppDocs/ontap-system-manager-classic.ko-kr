@@ -1,0 +1,27 @@
+---
+permalink: online-help-96-97/task_changing_status_flexcache_volume.html 
+sidebar: sidebar 
+keywords: flexcache, volume, change, status,online, help 
+summary: System Manager 9.6부터는 FlexCache 볼륨을 오프라인으로 전환하거나 FlexCache 볼륨을 온라인으로 전환하거나 FlexCache 볼륨 액세스를 제한하려는 경우 System Manager 9.6부터 볼륨 상태를 변경할 수 있습니다. 
+---
+= FlexCache 볼륨의 상태를 변경합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager 9.6부터는 FlexCache 볼륨을 오프라인으로 전환하거나 FlexCache 볼륨을 온라인으로 전환하거나 FlexCache 볼륨 액세스를 제한하려는 경우 System Manager 9.6부터 볼륨 상태를 변경할 수 있습니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 상태를 수정할 FlexCache 볼륨을 선택합니다.
+. More Actions * > * Change status to * 를 클릭한 다음 필요한 상태를 선택하여 FlexCache 볼륨 상태를 업데이트합니다.
++
+[NOTE]
+====
+FlexCache 볼륨을 오프라인으로 전환하고 상태를 "제한됨"으로 변경하려면 먼저 볼륨을 마운트 해제해야 합니다.
+
+====
+

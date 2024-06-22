@@ -1,0 +1,45 @@
+---
+permalink: expansion/task_generating_autosupport_message_about_completing_expansion.html 
+sidebar: sidebar 
+keywords: expand, cluster, autosupport, indicate, expansion, process, complete, message, communicate, internal, external, support, staff, complete, troubleshoot, generate, generate an autosupport, message about completing expansion 
+summary: 클러스터를 확장한 후 확장 프로세스가 완료되었음을 나타내는 AutoSupport 메시지를 보내야 합니다. 
+---
+= 확장 완료에 대한 AutoSupport 메시지를 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터를 확장한 후 확장 프로세스가 완료되었음을 나타내는 AutoSupport 메시지를 보내야 합니다. 이 메시지는 내부 및 외부 지원 담당자에게 확장이 완료되었으며 나중에 필요할 수 있는 문제 해결을 위한 타임 스탬프로 기능한다는 것을 알립니다.
+
+.시작하기 전에
+AutoSupport를 설정해야 합니다.
+
+.단계
+. 클러스터의 각 노드에 대해 를 사용하여 AutoSupport 메시지를 보냅니다 `system node autosupport invoke` 명령.
++
+새로 추가된 노드를 비롯하여 클러스터의 각 노드에 대해 메시지를 한 번 실행해야 합니다.
+
++
+2노드 클러스터에 노드 2개를 추가한 경우 메시지를 4번 보내야 합니다.
+
++
+[listing]
+----
+cluster1::> system node autosupport invoke -node * -message "cluster expansion complete" -type all
+The AutoSupport was successfully invoked on node "cluster1-1". To view the status
+of the AutoSupport, use the "system node autosupport history show" command.
+Note: It may take several minutes for the AutoSupport to appear in the history list.
+The AutoSupport was successfully invoked on node "cluster1-2". To view the status
+of the AutoSupport, use the "system node autosupport history show" command.
+Note: It may take several minutes for the AutoSupport to appear in the history list.
+The AutoSupport was successfully invoked on node "cluster1-3". To view the status
+of the AutoSupport, use the "system node autosupport history show" command.
+Note: It may take several minutes for the AutoSupport to appear in the history list.
+The AutoSupport was successfully invoked on node "cluster1-4". To view the status
+of the AutoSupport, use the "system node autosupport history show" command.
+Note: It may take several minutes for the AutoSupport to appear in the history list.
+4 entries were acted on.
+----
+

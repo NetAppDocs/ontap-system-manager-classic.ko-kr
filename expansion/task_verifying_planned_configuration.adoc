@@ -1,0 +1,92 @@
+---
+permalink: expansion/task_verifying_planned_configuration.html 
+sidebar: sidebar 
+keywords: expand, cluster, ensure, follow, plan, configuration, support, require, license, exist, ontap, verify, verify the planned configuration 
+summary: 클러스터를 확장하려면 계획된 구성이 지원되고, 필요한 라이센스가 존재하고, 사이트가 준비 중이고, 클러스터 스위치가 확장을 지원하고, 기존 노드가 동일한 버전의 ONTAP 9를 사용하고 있는지 확인해야 합니다. 
+---
+= 계획된 구성을 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터를 확장하려면 계획된 구성이 지원되고, 필요한 라이센스가 존재하고, 사이트가 준비 중이고, 클러스터 스위치가 확장을 지원하고, 기존 노드가 동일한 버전의 ONTAP 9를 사용하고 있는지 확인해야 합니다.
+
+.시작하기 전에
+두 개의 자격 증명 세트, 즉 관리자로 클러스터에 로그인하는 데 필요한 사용자 이름과 암호, NetApp Support 사이트에 로그인하는 데 필요한 사용자 이름과 암호가 있어야 합니다.
+
+.단계
+. 계획된 구성을 확인합니다.
++
+.. 새 컨트롤러의 플랫폼을 클러스터의 기존 컨트롤러와 혼합할 수 있는지 확인합니다.
+.. 확장된 클러스터가 플랫폼의 시스템 제한을 초과하지 않는지 확인합니다.
++
+https://hwu.netapp.com["NetApp Hardware Universe를 참조하십시오"^]
+
+.. 클러스터가 SAN에 대해 구성된 경우 확장된 클러스터가 FC, FCoE 및 iSCSI의 구성 제한을 초과하지 않는지 확인합니다.
++
+https://docs.netapp.com/us-en/ontap/san-config/index.html["SAN 구성"^]
+
+
+
++
+이러한 요구 사항이 충족되지 않으면 확장을 계속할 수 없습니다.
+
+. 라이센스가 새 노드를 포함하는지 확인합니다.
++
+.. 기존 클러스터에서 을 사용하여 라이센스를 확인합니다 `system license show` 명령.
++
+[listing]
+----
+cluster1::> system license show
+
+Serial Number: 9-99-999999
+Owner: cluster1
+Package           Type    Description           Expiration
+----------------- ------- --------------------- --------------------
+Base              site    Cluster Base License  -
+NFS               license NFS License           -
+CIFS              license CIFS License          -
+...
+----
+.. 출력을 검토하여 노드 잠김 라이센스(유형으로 식별됨)를 확인합니다 `license`) 추가 노드에 필요합니다.
+.. 추가 노드에 포함된 라이센스가 클러스터의 기존 노드 잠김 라이센스와 일치하는지 확인합니다.
++
+http://mysupport.netapp.com/licenses["NetApp 소프트웨어 라이센스 검색"^]
+
+
+
++
+추가 노드에 필요한 라이센스가 없는 경우 계속하기 전에 추가 라이센스를 구입해야 합니다.
+
+. 시험기관에서 모든 새 장비를 사용할 준비가 되었는지 확인합니다.
++
+https://hwu.netapp.com["NetApp Hardware Universe를 참조하십시오"^]
+
++
+사이트가 준비되지 않은 경우 확장을 계속하기 전에 사이트를 준비해야 합니다.
+
+. 기존 스위치가 추가 컨트롤러를 지원하는지 확인합니다.
++
+https://hwu.netapp.com["NetApp Hardware Universe를 참조하십시오"^]
+
++
+스위치가 없는 클러스터이거나 기존 스위치가 추가 노드를 지원하지 않는 경우, 클러스터 스위치를 구해야 합니다. 이 스위치를 나중에 확장 프로세스에서 설치할 수 있습니다.
+
+. 를 사용하여 기존 클러스터의 모든 노드가 동일한 버전의 ONTAP 9를 실행하고 있는지 확인합니다. 여기에는 동일한 부 릴리스 및 패치가 포함됩니다(해당되는 경우) `cluster image show` 명령.
++
+[listing]
+----
+cluster1::> cluster image show
+                 Current                 Installation
+Node             Version                 Date
+---------------- ----------------------- ------------
+cluster1-1       8.3RC1                  12/15/2014 17:37:26
+cluster1-2       8.3RC1                  12/15/2014 17:37:42
+2 entries were displayed.
+----
++
+이 워크플로의 뒷부분에서 참조할 수 있도록 ONTAP 소프트웨어 버전을 기록해 두어야 합니다.
+
+

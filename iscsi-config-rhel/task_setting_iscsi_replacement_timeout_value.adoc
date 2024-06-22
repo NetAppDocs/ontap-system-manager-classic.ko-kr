@@ -1,0 +1,26 @@
+---
+permalink: iscsi-config-rhel/task_setting_iscsi_replacement_timeout_value.html 
+sidebar: sidebar 
+keywords: support, multipath, modify, replacement, timeout, value, iscsi, configuration, file, set, set the iscsi replacement timeout value 
+summary: 다중 경로를 지원하려면 iSCSI 구성 파일에서 교체 시간 초과 값을 수정해야 합니다. 
+---
+= iSCSI 교체 시간 초과 값을 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+다중 경로를 지원하려면 iSCSI 구성 파일에서 교체 시간 초과 값을 수정해야 합니다.
+
+.단계
+. 에서 교체 시간 초과 값을 변경합니다 `/etc/iscsi/iscsid.conf` 파일 기본값 120 ~ 5.
++
+교체 시간 초과 값은 에서 다음과 같습니다 `iscsid.conf`:
+
++
+[listing]
+----
+node.session.timeo.replacement_timeout = 5
+----
+

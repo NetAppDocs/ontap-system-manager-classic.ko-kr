@@ -1,0 +1,97 @@
+---
+permalink: online-help-96-97/task_setting_up_branchcache.html 
+sidebar: sidebar 
+keywords: cifs, svm, system, manager, online, help, branchcache, set, up, modify, settings, delete 
+summary: 'System Manager를 사용하여 CIFS 지원 SVM(스토리지 가상 머신)에서 BranchCache를 구성하여 요청한 클라이언트의 로컬 컴퓨터에 있는 콘텐츠를 캐싱할 수 있습니다.' 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 BranchCache를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 및 이전 버전에서 사용 가능)을 사용하여 CIFS 지원 SVM(스토리지 가상 머신)에서 BranchCache를 구성하여 요청한 클라이언트의 로컬 컴퓨터에 있는 콘텐츠를 캐싱할 수 있습니다.
+
+.시작하기 전에
+* CIFS 라이센스가 있어야 하며 CIFS 서버를 구성해야 합니다.
+* BranchCache 버전 1의 경우 SMB 2.1 이상이 활성화되어 있어야 합니다.
+* BranchCache 버전 2의 경우 SMB 3.0을 사용하도록 설정해야 하며 원격 Windows 클라이언트가 BranchCache 2를 지원해야 합니다.
+
+
+.이 작업에 대해
+* SVM에서 BranchCache를 구성할 수 있습니다.
+* CIFS 서버의 모든 SMB 공유 내에 포함된 모든 콘텐츠에 대해 캐싱 서비스를 제공하려는 경우 모든 공유 BranchCache 구성을 생성할 수 있습니다.
+* CIFS 서버의 선택한 SMB 공유 내에 포함된 콘텐츠에 대한 캐싱 서비스를 제공하려는 경우 공유당 BranchCache 구성을 생성할 수 있습니다.
+
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. BranchCache * 탭에서 * 설정 * 을 클릭합니다.
+. BranchCache 설정 * 대화 상자에서 다음 정보를 입력합니다.
++
+.. 해시 저장소의 경로를 지정합니다.
++
+경로는 해시 데이터를 저장할 기존 디렉토리일 수 있습니다. 대상 경로는 읽기/쓰기가 가능해야 합니다. 스냅샷 디렉토리와 같은 읽기 전용 경로는 허용되지 않습니다.
+
+.. 해시 데이터 저장소의 최대 크기(KB, MB, GB, TB 또는 PB)를 지정합니다.
++
+해시 데이터가 이 값을 초과하면 새 해시를 위한 공간을 제공하기 위해 이전 해시가 삭제됩니다. 해시 저장소의 기본 크기는 1GB입니다.
+
+.. BranchCache 구성의 운영 모드를 지정합니다.
++
+기본 작동 모드는 모든 공유로 설정됩니다.
+
+.. 클라이언트가 BranchCache 서버를 가장하지 못하도록 서버 키를 지정합니다.
++
+여러 서버가 동일한 파일에 BranchCache 데이터를 제공하는 경우 클라이언트는 동일한 서버 키를 사용하는 모든 서버의 해시를 사용할 수 있도록 서버 키를 특정 값으로 설정할 수 있습니다. 서버 키에 공백이 있으면 서버 키를 따옴표로 묶어야 합니다.
+
+.. 필요한 BranchCache 버전을 선택합니다.
++
+기본적으로 클라이언트에서 지원하는 모든 버전이 선택됩니다.
+
+
+
+. 설정 * 을 클릭합니다.
+
+
+
+
+== BranchCache 설정을 수정합니다
+
+System Manager의 CIFS 창을 사용하여 CIFS 지원 SVM(스토리지 가상 머신)에 맞게 구성된 BranchCache 설정을 수정할 수 있습니다. 해시 저장소 경로, 해시 저장소 크기, 운영 모드 및 지원되는 BranchCache 버전을 변경할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. BranchCache * 탭에서 * 편집 * 을 클릭합니다.
+. BranchCache 설정 수정 * 대화 상자에서 필요한 정보를 수정합니다.
++
+** 해시 저장 경로입니다
++
+해시 저장소 경로를 수정하면 이전 해시 저장소의 캐시된 해시 데이터를 유지할 수 있는 옵션이 제공됩니다.
+
+** 해시 저장 크기입니다
+** 작동 모드
+** BranchCache 버전입니다
+
+
+. Modify * 를 클릭합니다.
+
+
+
+
+== BranchCache 구성을 삭제합니다
+
+BranchCache용으로 구성된 SVM(스토리지 가상 머신)에 캐싱 서비스를 더 이상 제공하지 않으려는 경우 System Manager를 사용하여 BranchCache 구성을 삭제할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. BranchCache * 탭에서 * 삭제 * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * 삭제 * 를 클릭합니다.
++
+해시 저장소에서 기존 해시를 제거할 수도 있습니다.
+
+

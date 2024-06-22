@@ -1,0 +1,62 @@
+---
+permalink: online-help-96-97/task_moving_luns.html 
+sidebar: sidebar 
+keywords: move, lun, qtree, storage, virtual, machine, svm, online, help 
+summary: 'System Manager를 사용하면 스토리지 가상 시스템(SVM) 내에서 LUN을 포함하는 볼륨에서 다른 볼륨 또는 qtree로 이동할 수 있습니다. LUN을 고성능 디스크가 포함된 애그리게이트에서 호스팅되는 볼륨으로 이동할 수 있으므로 LUN에 액세스할 때 성능이 향상됩니다.' 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 LUN을 이동합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 LUN을 포함하는 볼륨에서 SVM(스토리지 가상 시스템) 내의 다른 볼륨 또는 qtree로 이동할 수 있습니다. LUN을 고성능 디스크가 포함된 애그리게이트에서 호스팅되는 볼륨으로 이동할 수 있으므로 LUN에 액세스할 때 성능이 향상됩니다.
+
+.이 작업에 대해
+* 동일한 볼륨 내에서 LUN을 qtree로 이동할 수 없습니다.
+* CLI(Command-Line Interface)를 사용하여 파일에서 LUN을 생성한 경우 System Manager를 사용하여 LUN을 이동할 수 없습니다.
+* LUN 이동 작업은 무중단으로 수행할 수 있으며 LUN이 온라인 상태가 되고 데이터를 제공할 때 수행할 수 있습니다.
+* 타겟 볼륨에 LUN이 포함될 만큼 할당된 공간이 충분하지 않거나 볼륨에 자동 확장 이 활성화되어 있는 경우에도 System Manager를 사용하여 LUN을 이동할 수 없습니다.
++
+대신 CLI를 사용해야 합니다.
+
+* SnapLock 볼륨에서 LUN을 이동할 수 없습니다.
+
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. LUN 관리 * 탭의 LUN 목록에서 이동할 LUN을 선택한 다음 * 이동 * 을 클릭합니다.
+. * 선택 사항: * LUN 이동 * 대화 상자의 * 이동 옵션 * 영역에서 기본 이름을 변경하려면 LUN의 새 이름을 지정합니다.
+. LUN을 이동할 스토리지 객체를 선택하고 다음 작업 중 하나를 수행합니다.
++
+|===
+| LUN을 이동할 대상... | 그러면... 
+
+
+ a| 
+새 볼륨
+ a| 
+.. 새 볼륨을 생성할 애그리게이트를 선택합니다.
+.. 볼륨의 이름을 지정합니다.
+
+
+
+
+ a| 
+기존 볼륨 또는 qtree
+ a| 
+.. LUN을 이동할 볼륨을 선택합니다.
+.. 선택한 볼륨에 qtree가 포함되어 있는 경우 LUN을 이동할 qtree를 선택합니다.
+
+
+|===
+. 이동 * 을 클릭합니다.
+. LUN 이동 작업을 확인하고 * Continue * 를 클릭합니다.
++
+잠시 동안 LUN이 원본 볼륨과 대상 볼륨 모두에 표시됩니다. 이동 작업이 완료되면 LUN이 타겟 볼륨에 표시됩니다.
+
++
+타겟 볼륨 또는 qtree가 LUN의 새 컨테이너 경로로 표시됩니다.
+
+

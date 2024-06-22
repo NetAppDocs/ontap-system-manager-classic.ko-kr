@@ -1,0 +1,27 @@
+---
+permalink: online-help-96-97/task_editing_initiators.html 
+sidebar: sidebar 
+keywords: edit, initiator, online, help, group, dialog, system, manager 
+summary: System Manager의 이니시에이터 그룹 편집 대화 상자를 사용하여 이니시에이터 그룹에 있는 기존 이니시에이터의 이름을 변경할 수 있습니다. 
+---
+= System Manager로 이니시에이터 편집 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)의 이니시에이터 그룹 * 편집 대화 상자를 사용하여 이니시에이터 그룹에 있는 기존 이니시에이터의 이름을 변경할 수 있습니다.
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. 이니시에이터 그룹 * 탭에서 이니시에이터가 속해 있는 이니시에이터 그룹을 선택한 다음 * 편집 * 을 클릭합니다.
+. 이니시에이터 그룹 편집 * 대화 상자에서 * 이니시에이터 * 를 클릭합니다.
+. 편집할 이니시에이터를 선택하고 * Edit * 를 클릭합니다.
+. 이름을 변경하고 * OK * 를 클릭합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_luns_window.adoc[LUN 창]

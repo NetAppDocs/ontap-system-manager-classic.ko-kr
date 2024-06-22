@@ -1,0 +1,45 @@
+---
+permalink: expansion/task_configuring_node_details_system_manager.html 
+sidebar: sidebar 
+keywords: system, manager, configure, node, management, lif, service, processor, setting, add, configure the node details in system manager 
+summary: System Manager를 사용하여 노드 관리 LIF 및 새로 추가된 노드의 서비스 프로세서 설정을 구성할 수 있습니다. 
+---
+= System Manager에서 노드 세부 정보를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager를 사용하여 노드 관리 LIF 및 새로 추가된 노드의 서비스 프로세서 설정을 구성할 수 있습니다.
+
+.시작하기 전에
+* LIF 생성을 위한 기본 IPspace에 충분한 포트 수가 있어야 합니다.
+* 모든 포트가 실행 중이어야 합니다.
+
+
+.단계
+. 노드 관리 구성:
++
+.. IP 주소 * 필드에 IP 주소를 입력합니다.
+.. Port * 필드에서 노드 관리용 포트를 선택합니다.
+.. 넷마스크 및 게이트웨이 세부 정보를 입력합니다.
+
+
+. 서비스 프로세서 설정 구성:
++
+.. 기본값을 무시하려면 * Override defaults * 확인란을 선택합니다.
+.. IP 주소, 넷마스크 및 게이트웨이 세부 정보를 입력합니다.
+
+
+. Submit을 클릭하고 계속 * 을 클릭하여 노드의 네트워크 구성을 완료합니다.
+. 요약 * 페이지에서 노드의 세부 정보를 확인합니다.
+
+
+
+
+== 다음 단계
+
+* 클러스터가 보호되는 경우 부분 피어링과 비정상적인 보호를 방지하기 위해 새로 추가된 노드에 필요한 수의 인터클러스터 LIF를 생성해야 합니다.
+* 클러스터에서 SAN 데이터 프로토콜이 활성화되어 있는 경우 데이터를 제공하는 데 필요한 수의 SAN 데이터 LIF를 생성해야 합니다.
+

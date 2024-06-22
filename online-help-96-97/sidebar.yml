@@ -1,0 +1,495 @@
+---
+section: online-help-96-97
+title: System Manager 9.6 및 9.7을 사용한 클러스터 관리
+entries:
+- title: System Manager 이해
+  url: "/online-help-96-97/index.html"
+- title: ONTAP 시스템 관리자를 사용하여 클러스터를 설정합니다
+  entries:
+  - title: 템플릿 파일을 사용하여 클러스터를 설정합니다
+    url: "/online-help-96-97/task_setting_up_cluster_using_template_file.html"
+    entries:
+    - title: 클러스터를 생성합니다
+      url: "/online-help-96-97/task_creating_cluster.html"
+    - title: 네트워크를 설정합니다
+      url: "/online-help-96-97/task_setting_up_network.html"
+    - title: 지원 페이지를 설정합니다
+      url: "/online-help-96-97/task_setting_up_support_page.html"
+    - title: 스토리지 권장 사항을 검토합니다
+      url: "/online-help-96-97/task_reviewing_storage_recommendations.html"
+    - title: SVM을 생성합니다
+      url: "/online-help-96-97/task_creating_svm.html"
+- title: ONTAP System Manager의 브라우저 기반 그래픽 인터페이스를 사용하여 클러스터에 액세스합니다
+  url: "/online-help-96-97/task_accessing_cluster_using_system_manager.html"
+- title: System Manager 옵션을 구성합니다
+  url: "/online-help-96-97/task_configuring_system_manager_options.html"
+- title: ONTAP 시스템 관리자 로그 파일을 봅니다
+  url: "/online-help-96-97/task_viewing_system_manager_log_files.html"
+- title: 클러스터를 설정합니다
+  entries:
+  - title: 클러스터를 설정합니다
+    url: "/online-help-96-97/task_updating_cluster_name.html"
+  - title: 라이센스를 추가합니다
+    url: "/online-help-96-97/task_adding_licenses.html"
+  - title: 클러스터의 시간대 설정
+    url: "/online-help-96-97/task_setting_time_zone_for_cluster.html"
+  - title: HA 쌍을 모니터링합니다
+    url: "/online-help-96-97/task_monitoring_ha_pairs.html"
+- title: 네트워크를 설정합니다
+  url: "/online-help-96-97/concept_setting_up_network.html"
+- title: 물리적 스토리지 설정
+  entries:
+  - title: 노드에 디스크 할당
+    url: "/online-help-96-97/task_assigning_disks_to_nodes.html"
+  - title: 스페어 디스크를 제로화하는 중입니다
+    url: "/online-help-96-97/task_zeroing_disks.html"
+  - title: 애그리게이트를 통한 스토리지 프로비저닝
+    url: "/online-help-96-97/task_provisioning_storage_through_aggregates.html"
+- title: SVM을 생성합니다
+  url: "/online-help-96-97/task_creating_svms.html"
+  entries:
+  - title: SVM에서 CIFS 및 NFS 프로토콜을 구성합니다
+    url: "/online-help-96-97/task_configuring_cifs_nfs_protocols_on_svms.html"
+  - title: SVM에서 iSCSI 프로토콜을 구성합니다
+    url: "/online-help-96-97/task_configuring_iscsi_protocol_on_svms.html"
+  - title: SVM에서 FC 프로토콜 및 FCoE 프로토콜을 구성합니다
+    url: "/online-help-96-97/task_configuring_fc_fcoe_protocol_on_svms.html"
+  - title: SVM에서 NVMe 프로토콜을 구성합니다
+    url: "/online-help-96-97/task_configuring_nvme_protocol_on_svms.html"
+  - title: 관리를 SVM 관리자에게 위임
+    url: "/online-help-96-97/task_delegating_administration_to_svm_administrators.html"
+  - title: FlexVol 볼륨을 생성합니다
+    url: "/online-help-96-97/task_creating_flexvol_volumes.html"
+  - title: SnapLock 볼륨을 생성합니다
+    url: "/online-help-96-97/task_creating_snaplock_volumes.html"
+- title: SAML 인증을 설정합니다
+  url: "/online-help-96-97/task_setting_up_saml_authentication.html"
+- title: 피어링을 설정합니다
+  url: "/online-help-96-97/task_setting_up_peering.html"
+- title: 클러스터 관리
+  entries:
+  - title: 대시보드 창
+    url: "/online-help-96-97/reference_dashboard_window.html"
+  - title: MetroCluster 전환 및 스위치백
+    entries:
+    - title: MetroCluster 전환 및 스위치백 워크플로우
+      url: "/online-help-96-97/concept_metrocluster_switchover_switchback_workflow.html"
+    - title: 스위치오버 및 스위치백 작업을 준비합니다
+      url: "/online-help-96-97/task_preparing_for_switchover_switchback_operations.html"
+    - title: 협상된 전환 수행
+      url: "/online-help-96-97/task_performing_negotiated_planned_switchover.html"
+    - title: 계획되지 않은 전환 수행
+      url: "/online-help-96-97/task_performing_unplanned_switchover.html"
+    - title: 스위치백을 수행합니다
+      url: "/online-help-96-97/task_performing_switchback.html"
+    - title: MetroCluster 전환 및 스위치백 작업 창
+      url: "/online-help-96-97/reference_metrocluster_switchover_switchback_window.html"
+- title: 응용 프로그램
+  url: "/online-help-96-97/concept_applications.html"
+  entries:
+  - title: 기본 템플릿 프로비저닝
+    url: "/online-help-96-97/task_provisioning_basic_template.html"
+  - title: 스토리지 서비스 정의
+    url: "/online-help-96-97/reference_storage_service_definitions.html"
+  - title: SAN을 통해 Microsoft SQL Server를 System Manager에 추가합니다
+    url: "/online-help-96-97/task_adding_microsoft_sql_server_over_san_to_system_manager.html"
+  - title: 애플리케이션 프로비저닝 설정
+    url: "/online-help-96-97/reference_application_provisioning_settings.html"
+  - title: 응용 프로그램을 편집합니다
+    url: "/online-help-96-97/task_editing_application.html"
+  - title: 응용 프로그램을 삭제합니다
+    url: "/online-help-96-97/task_deleting_application.html"
+  - title: 응용 프로그램 창
+    url: "/online-help-96-97/reference_applications_window.html"
+- title: 구성 업데이트
+  url: "/online-help-96-97/concept_configuration_update.html"
+- title: 서비스 프로세서
+  url: "/online-help-96-97/concept_service_processors.html"
+- title: 클러스터 피어
+  url: "/online-help-96-97/concept_cluster_peers.html"
+- title: 고가용성
+  url: "/online-help-96-97/concept_high_availability.html"
+- title: 추가 수익 실적을
+  url: "/online-help-96-97/concept_licenses.html"
+- title: 클러스터 확장
+  url: "/online-help-96-97/concept_cluster_expansion.html"
+- title: 클러스터 업데이트
+  url: "/online-help-96-97/concept_updating_clusters.html"
+  entries:
+  - title: 비 MetroCluster 구성에서 클러스터를 업데이트합니다
+    url: "/online-help-96-97/concept_updating_clusters_non_metrocluster_configuration.html"
+  - title: MetroCluster 구성에서 클러스터를 업데이트합니다
+    url: "/online-help-96-97/concept_updating_clusters_metrocluster_configuration.html"
+  - title: ONTAP 소프트웨어 이미지를 가져오는 중입니다
+    url: "/online-help-96-97/task_obtaining_ontap_software_images.html"
+  - title: 단일 노드 클러스터 업데이트
+    url: "/online-help-96-97/task_updating_single_node_clusters.html"
+  - title: 클러스터를 무중단으로 업데이트합니다
+    url: "/online-help-96-97/task_updating_cluster_nondisruptively.html"
+  - title: Cluster Update 창
+    url: "/online-help-96-97/reference_cluster_update_window.html"
+- title: 클러스터의 날짜 및 시간 설정입니다
+  url: "/online-help-96-97/concept_date_time.html"
+- title: SNMP를 선택합니다
+  url: "/online-help-96-97/concept_snmp.html"
+- title: LDAP를 지원합니다
+  url: "/online-help-96-97/concept_ldap.html"
+- title: 사용자
+  url: "/online-help-96-97/concept_cluster_user_accounts.html"
+- title: 역할
+  url: "/online-help-96-97/concept_roles.html"
+- title: 네트워크를 관리합니다
+  url: "/online-help-96-97/concept_managing_network.html"
+- title: IPspace
+  url: "/online-help-96-97/concept_ipspaces.html"
+- title: 브로드캐스트 도메인
+  url: "/online-help-96-97/concept_broadcast_domains.html"
+- title: 서브넷
+  url: "/online-help-96-97/concept_subnets.html"
+- title: 네트워크 인터페이스
+  url: "/online-help-96-97/concept_network_interfaces.html"
+- title: 이더넷 포트
+  url: "/online-help-96-97/concept_ethernet_ports.html"
+- title: FC/FCoE 및 NVMe 어댑터
+  url: "/online-help-96-97/concept_fc_fcoe_nvme_adapters.html"
+- title: 제공합니다
+  entries:
+  - title: 애그리게이트 편집
+    url: "/online-help-96-97/task_editing_aggregates.html"
+  - title: 애그리게이트를 삭제합니다
+    url: "/online-help-96-97/task_deleting_aggregates.html"
+  - title: Aggregate를 생성할 때 RAID 구성을 변경합니다
+    url: "/online-help-96-97/task_changing_raid_configuration_when_creating_aggregate.html"
+  - title: SSD를 추가하여 캐시 프로비저닝
+    url: "/online-help-96-97/task_provisioning_cache_by_adding_disks.html"
+  - title: 용량 디스크를 추가합니다
+    url: "/online-help-96-97/task_adding_capacity_disks.html"
+  - title: 용량 디스크를 추가할 때 RAID 그룹을 변경합니다
+    url: "/online-help-96-97/task_changing_raid_group_when_adding_capacity_disks.html"
+  - title: FlexVol 볼륨 이동
+    url: "/online-help-96-97/task_moving_flexvol_volumes.html"
+  - title: Aggregate 미러링
+    url: "/online-help-96-97/task_mirroring_aggregates.html"
+  - title: 집계 정보를 봅니다
+    url: "/online-help-96-97/task_viewing_aggregate_information.html"
+  - title: StorageGRID를 사용하는 경우 CA 인증서 설치
+    url: "/online-help-96-97/task_installing_ca_certificate_if_you_use_storagegrid_webscale.html"
+  - title: HDD를 혼합하여 사용할 수 있는 효율적인 ONTAP 디스크 유형을 사용하는 방법
+    url: "/online-help-96-97/reference_effective_data_ontap_disk_types.html"
+  - title: 호환되는 스페어 디스크입니다
+    url: "/online-help-96-97/concept_what_compatible_spare_disks_are.html"
+  - title: System Manager를 핫 스페어와 함께 사용하는 방법
+    url: "/online-help-96-97/concept_how_system_manager_calculates_hot_spares.html"
+  - title: 디스크 유형 및 디스크 RPM 표시 규칙
+    url: "/online-help-96-97/concept_rules_for_mixing_disk_types_disk_rpms.html"
+  - title: Aggregate 생성을 위한 스토리지 권장 사항입니다
+    url: "/online-help-96-97/concept_storage_recommendations_for_creating_aggregates.html"
+  - title: Storage Tiers 창
+    url: "/online-help-96-97/reference_storage_tiers_window.html"
+- title: 클라우드 계층 구성 및 관리
+  url: "/online-help-96-97/task_configuring_managing_cloud_tiers.html"
+- title: 애그리게이트
+  url: "/online-help-96-97/concept_aggregates.html"
+- title: 지원합니다
+  url: "/online-help-96-97/concept_storage_pools.html"
+- title: 디스크를 노드에 다시 할당합니다
+  url: "/online-help-96-97/task_reassigning_disks_to_nodes.html"
+- title: 디스크
+  entries:
+  - title: 디스크 정보를 봅니다
+    url: "/online-help-96-97/task_viewing_disk_information.html"
+  - title: ONTAP에서 디스크 유형을 보고하는 방법
+    url: "/online-help-96-97/concept_how_ontap_reports_drive_types.html"
+  - title: 다중 디스크 캐리어를 제거해도 안전한지 확인합니다
+    url: "/online-help-96-97/concept_how_to_determine_when_safe_to_remove_multi_disk_carrier.html"
+  - title: 디스크 창
+    url: "/online-help-96-97/reference_disks_window.html"
+- title: 스토리지 LUN입니다
+  url: "/online-help-96-97/concept_array_luns.html"
+- title: 노드
+  url: "/online-help-96-97/concept_nodes.html"
+- title: 하드웨어 캐시
+  url: "/online-help-96-97/concept_hardware_cache.html"
+- title: 이벤트
+  url: "/online-help-96-97/concept_events.html"
+- title: 시스템 경고
+  url: "/online-help-96-97/concept_system_alerts.html"
+- title: AutoSupport 알림
+  url: "/online-help-96-97/concept_autosupport.html"
+- title: 작업
+  url: "/online-help-96-97/concept_jobs.html"
+- title: Flash Pool 통계
+  url: "/online-help-96-97/concept_flash_pool_statistics.html"
+- title: SVM 대시보드 창
+  url: "/online-help-96-97/reference_svm_dashboard_window.html"
+  entries:
+  - title: SVM 모니터링
+    url: "/online-help-96-97/task_monitoring_svm_using_dashboard.html"
+  - title: SVM 설정을 편집합니다
+    url: "/online-help-96-97/task_editing_svm_settings.html"
+  - title: SVM을 삭제합니다
+    url: "/online-help-96-97/task_deleting_svms.html"
+  - title: SVM을 시작합니다
+    url: "/online-help-96-97/task_starting_svms.html"
+  - title: SVM을 중지합니다
+    url: "/online-help-96-97/task_stopping_svms.html"
+  - title: SVM 관리
+    url: "/online-help-96-97/reference_managing_svms.html"
+  - title: 파일 액세스를 추적하여 SVM의 액세스 오류를 진단합니다
+    url: "/online-help-96-97/task_tracing_file_access_to_diagnose_access_errors_on_svms.html"
+  - title: SVM에 대해
+    url: "/online-help-96-97/concept_why_you_use_svms.html"
+  - title: ONTAP 이름 서비스 스위치 구성에 대해 설명합니다
+    url: "/online-help-96-97/concept_how_data_ontap_name_service_switch_configuration_works.html"
+  - title: Storage Virtual Machines 창이 나타납니다
+    url: "/online-help-96-97/reference_svm_window.html"
+  - title: 추적 파일 액세스 창
+    url: "/online-help-96-97/reference_trace_file_access_window.html"
+- title: 볼륨
+  entries:
+  - title: 볼륨 속성을 편집합니다
+    url: "/online-help-96-97/task_editing_volume_properties.html"
+  - title: 데이터 보호 볼륨을 편집합니다
+    url: "/online-help-96-97/task_editing_data_protection_volumes.html"
+  - title: 볼륨을 삭제합니다
+    url: "/online-help-96-97/task_deleting_volumes.html"
+  - title: FlexClone 볼륨을 생성합니다
+    url: "/online-help-96-97/task_creating_flexclone_volumes.html"
+  - title: FlexClone 파일을 생성합니다
+    url: "/online-help-96-97/task_creating_flexclone_files.html"
+  - title: 상위 볼륨에서 FlexClone 볼륨 분할
+    url: "/online-help-96-97/task_splitting_flexclone_volume_from_its_parent_volume.html"
+  - title: FlexClone 볼륨 계층 구조를 봅니다
+    url: "/online-help-96-97/task_viewing_flexclone_volumes_hierarchy.html"
+  - title: 볼륨의 상태를 변경합니다
+    url: "/online-help-96-97/task_changing_status_volume.html"
+  - title: 저장된 스냅샷 복사본 목록을 봅니다
+    url: "/online-help-96-97/task_viewing_list_saved_snapshot_copies.html"
+  - title: 정의된 일정 이외의 스냅샷 복사본 생성
+    url: "/online-help-96-97/task_creating_snapshot_copies_outside_defined_schedule.html"
+  - title: 스냅샷 복사본 예약 공간 설정
+    url: "/online-help-96-97/task_setting_snapshot_copy_reserve.html"
+  - title: 스냅샷 복사본 디렉토리 숨기기
+    url: "/online-help-96-97/task_hiding_snapshot_copy_directory.html"
+  - title: Snapshot 복사본의 자동 생성을 예약하고 있습니다
+    url: "/online-help-96-97/task_scheduling_automatic_creation_snapshot_copies.html"
+  - title: 스냅샷 복사본에서 볼륨을 복원합니다
+    url: "/online-help-96-97/task_restoring_volume_from_snapshot_copy.html"
+  - title: 스냅샷 복사본의 만료 날짜를 연장합니다
+    url: "/online-help-96-97/task_extending_expiry_date_snapshot_copies.html"
+  - title: 스냅샷 복사본의 이름을 바꿉니다
+    url: "/online-help-96-97/task_renaming_snapshot_copies.html"
+  - title: 스냅샷 복사본을 삭제합니다
+    url: "/online-help-96-97/task_deleting_snapshot_copies.html"
+  - title: 볼륨 크기 조정
+    url: "/online-help-96-97/task_resizing_volumes.html"
+  - title: 볼륨에서 스토리지 효율성 실현
+    url: "/online-help-96-97/task_enabling_storage_efficiency_on_volume.html"
+  - title: 중복 제거 일정을 변경합니다
+    url: "/online-help-96-97/task_changing_deduplication_schedule.html"
+  - title: 중복 제거 작업을 실행합니다
+    url: "/online-help-96-97/task_running_deduplication_operations.html"
+  - title: Aggregate 또는 노드 간에 FlexVol 볼륨 이동
+    url: "/online-help-96-97/task_moving_flexvol_volumes_between_aggregates_or_nodes.html"
+  - title: 스토리지 QoS에 볼륨 할당
+    url: "/online-help-96-97/task_assigning_volumes_to_storage_qos.html"
+  - title: 소스 SVM에서 미러 관계를 생성합니다
+    url: "/online-help-96-97/task_creating_mirror_relationship_from_source_volume.html"
+  - title: 소스 SVM에서 볼트 관계를 생성합니다
+    url: "/online-help-96-97/task_creating_vault_relationship_from_source_svm.html"
+  - title: 소스 SVM에서 미러 및 소산 관계를 생성합니다
+    url: "/online-help-96-97/task_creating_mirror_vault_relationship_from_source_svm.html"
+  - title: VMware용 NFS 데이터 저장소를 생성합니다
+    url: "/online-help-96-97/task_creating_nfs_datastore_for_vmware.html"
+  - title: 볼륨의 계층화 정책을 변경합니다
+    url: "/online-help-96-97/task_changing_tiering_policy_volume_destination_topic_delete.html"
+  - title: FlexGroup 볼륨을 생성합니다
+    url: "/online-help-96-97/task_creating_flexgroup_volumes.html"
+  - title: FlexGroup 볼륨 정보를 봅니다
+    url: "/online-help-96-97/task_viewing_flexgroup_volume_information.html"
+  - title: FlexGroup 볼륨을 편집합니다
+    url: "/online-help-96-97/task_editing_flexgroup_volumes.html"
+  - title: FlexGroup 볼륨에 대한 고급 옵션 지정
+    url: "/online-help-96-97/task_specifying_advanced_options_for_flexgroup_volume.html"
+  - title: FlexGroup 볼륨 크기 조정
+    url: "/online-help-96-97/task_resizing_flexgroup_volumes.html"
+  - title: FlexGroup 볼륨의 상태를 변경합니다
+    url: "/online-help-96-97/task_changing_status_flexgroup_volume.html"
+  - title: FlexGroup 볼륨을 삭제합니다
+    url: "/online-help-96-97/task_deleting_flexgroup_volumes.html"
+  - title: FlexCache 볼륨을 생성합니다
+    url: "/online-help-96-97/task_creating_flexcache_volumes.html"
+  - title: FlexCache 볼륨 정보를 봅니다
+    url: "/online-help-96-97/task_viewing_flexcache_volume_information.html"
+  - title: FlexCache 볼륨을 편집합니다
+    url: "/online-help-96-97/task_editing_flexcache_volumes.html"
+  - title: FlexCache 볼륨에 대한 고급 옵션 지정
+    url: "/online-help-96-97/task_specifying_advanced_options_for_flexcache_volume.html"
+  - title: FlexCache 볼륨 크기 조정
+    url: "/online-help-96-97/task_resizing_flexcache_volumes.html"
+  - title: FlexCache 볼륨의 상태를 변경합니다
+    url: "/online-help-96-97/task_changing_status_flexcache_volume.html"
+  - title: FlexCache 볼륨을 삭제합니다
+    url: "/online-help-96-97/task_deleting_flexcache_volumes.html"
+  - title: FlexVol 볼륨에서 볼륨을 보장하는 방법
+    url: "/online-help-96-97/concept_how_volume_guarantees_work_for_flexvol_volumes.html"
+  - title: FlexVol 볼륨에 공간 예약 사용
+    url: "/online-help-96-97/concept_using_space_reservation_with_flexvol_volumes.html"
+  - title: 볼륨 크기 조정 옵션
+    url: "/online-help-96-97/concept_options_for_resizing_volumes.html"
+  - title: 볼륨 창
+    url: "/online-help-96-97/reference_volumes_window.html"
+- title: 접합 경로
+  url: "/online-help-96-97/concept_namespace.html"
+- title: 공유
+  url: "/online-help-96-97/concept_shares.html"
+- title: LUN을 클릭합니다
+  url: "/online-help-96-97/concept_luns.html"
+  entries:
+  - title: FC SAN에 최적화된 LUN을 생성합니다
+    url: "/online-help-96-97/task_creating_fc_san_optimized_luns.html"
+  - title: 애플리케이션별 LUN 설정
+    url: "/online-help-96-97/reference_application_specific_lun_settings.html"
+  - title: LUN을 생성합니다
+    url: "/online-help-96-97/task_creating_luns.html"
+  - title: LUN을 삭제합니다
+    url: "/online-help-96-97/task_deleting_luns.html"
+  - title: 이니시에이터 그룹을 관리합니다
+    url: "/online-help-96-97/task_creating_initiator_groups.html"
+  - title: 포틀세트를 생성합니다
+    url: "/online-help-96-97/task_creating_portsets.html"
+  - title: LUN 클론 복제
+    url: "/online-help-96-97/task_cloning_luns.html"
+  - title: LUN을 편집합니다
+    url: "/online-help-96-97/task_editing_luns.html"
+  - title: LUN을 온라인 상태로 전환하는 중입니다
+    url: "/online-help-96-97/task_bringing_luns_online.html"
+  - title: LUN을 오프라인 상태로 전환합니다
+    url: "/online-help-96-97/task_taking_luns_offline.html"
+  - title: LUN 이동 중
+    url: "/online-help-96-97/task_moving_luns.html"
+  - title: 스토리지 QoS에 LUN 할당
+    url: "/online-help-96-97/task_assigning_luns_to_storage_qos.html"
+  - title: 이니시에이터 그룹을 편집합니다
+    url: "/online-help-96-97/task_editing_initiator_groups.html"
+  - title: 이니시에이터를 편집합니다
+    url: "/online-help-96-97/task_editing_initiators.html"
+  - title: LUN 정보를 봅니다
+    url: "/online-help-96-97/task_viewing_lun_information.html"
+  - title: 이니시에이터 그룹을 봅니다
+    url: "/online-help-96-97/task_viewing_initiator_groups.html"
+  - title: LUN이 포함된 FlexVol 볼륨의 작업 지침
+    url: "/online-help-96-97/concept_guidelines_working_with_volumes_that_contain_luns.html"
+  - title: LUN의 공간 예약을 이해합니다
+    url: "/online-help-96-97/concept_using_space_reservation_for_luns.html"
+  - title: LUN 멀티프로토콜 유형 사용 지침
+    url: "/online-help-96-97/concept_lun_multiprotocol_type_guidelines.html"
+  - title: LUN 창
+    url: "/online-help-96-97/reference_luns_window.html"
+- title: Qtree
+  url: "/online-help-96-97/concept_qtrees.html"
+- title: 할당량
+  url: "/online-help-96-97/concept_quotas.html"
+- title: CIFS 프로토콜
+  url: "/online-help-96-97/concept_cifs_protocol.html"
+  entries:
+  - title: 홈 디렉토리 경로를 추가합니다
+    url: "/online-help-96-97/task_adding_home_directory_paths.html"
+  - title: CIFS 도메인 컨트롤러를 재설정합니다
+    url: "/online-help-96-97/task_resetting_cifs_domain_controllers.html"
+  - title: CIFS 그룹 정책 구성을 업데이트합니다
+    url: "/online-help-96-97/task_updating_cifs_group_policy_configuration.html"
+  - title: BranchCache를 설정합니다
+    url: "/online-help-96-97/task_setting_up_branchcache.html"
+  - title: 기본 도메인 컨트롤러를 추가합니다
+    url: "/online-help-96-97/task_adding_preferred_domain_controllers.html"
+  - title: CIFS 도메인 정보를 봅니다
+    url: "/online-help-96-97/task_viewing_cifs_domain_information.html"
+  - title: CIFS 창
+    url: "/online-help-96-97/reference_cifs_window.html"
+- title: NFS 프로토콜
+  url: "/online-help-96-97/concept_nfs_protocol.html"
+- title: NVMe를 설정합니다
+  url: "/online-help-96-97/concept_setting_up_nvme.html"
+  entries:
+  - title: NVMe 네임스페이스를 생성합니다
+    url: "/online-help-96-97/task_creating_nvme_namespace.html"
+  - title: NVMe 네임스페이스를 편집합니다
+    url: "/online-help-96-97/task_editing_nvme_namespace.html"
+  - title: NVMe 네임스페이스 클론 복제
+    url: "/online-help-96-97/task_cloning_nvme_namespace.html"
+  - title: NVMe 서비스를 시작 및 중지합니다
+    url: "/online-help-96-97/task_starting_or_stopping_nvme_service.html"
+  - title: NVMe 서브시스템이란
+    url: "/online-help-96-97/concept_what_nvme_subsystem_is.html"
+- title: iSCSI 프로토콜
+  url: "/online-help-96-97/concept_iscsi_protocol.html"
+- title: FC/FCoE 프로토콜
+  url: "/online-help-96-97/concept_fc_fcoe_protocol.html"
+- title: 엑스포트 정책
+  url: "/online-help-96-97/concept_export_policies.html"
+- title: 효율성 정책
+  url: "/online-help-96-97/concept_efficiency_policies.html"
+- title: QoS 정책 그룹 관리
+  url: "/online-help-96-97/task_creating_qos_policy_groups.html"
+  entries:
+  - title: 정책 그룹에 스토리지 객체를 할당하는 규칙입니다
+    url: "/online-help-96-97/concept_rules_for_assigning_storage_objects_to_policy_groups.html"
+- title: NIS 서비스
+  url: "/online-help-96-97/concept_nis_services.html"
+- title: LDAP 클라이언트 서비스
+  url: "/online-help-96-97/concept_ldap_client_services.html"
+- title: LDAP 구성 서비스
+  url: "/online-help-96-97/concept_ldap_configuration_services.html"
+- title: Kerberos 영역 서비스
+  url: "/online-help-96-97/concept_kerberos_realm_services.html"
+- title: DNS/DDNS 서비스
+  url: "/online-help-96-97/concept_dns_ddns_services.html"
+- title: SVM 사용자
+  url: "/online-help-96-97/concept_svm_user_accounts.html"
+- title: Unix
+  url: "/online-help-96-97/concept_unix.html"
+- title: 로컬 Windows 그룹
+  entries:
+  - title: 로컬 Windows 그룹을 관리합니다
+    url: "/online-help-96-97/task_editing_local_windows_group_properties.html"
+- title: 이름 매핑
+  url: "/online-help-96-97/concept_name_mapping.html"
+- title: 관계 대칭 복사
+  entries:
+  - title: 미러 관계를 관리합니다
+    url: "/online-help-96-97/task_editing_mirror_relationships.html"
+  - title: SnapMirror 관계 끊기
+    url: "/online-help-96-97/task_breaking_snapmirror_relationships.html"
+  - title: 미러 관계를 역재동기화합니다
+    url: "/online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html"
+  - title: 미러 전송을 중단합니다
+    url: "/online-help-96-97/task_aborting_mirror_relationships.html"
+  - title: 미러 관계의 볼륨을 복구합니다
+    url: "/online-help-96-97/task_restoring_volume_mirror_relationship.html"
+- title: 볼트 관계
+  entries:
+  - title: 볼트 관계 관리
+    url: "/online-help-96-97/task_editing_vault_relationships.html"
+  - title: 스냅샷 복사본 전송을 중단합니다
+    url: "/online-help-96-97/task_aborting_vault_relationships.html"
+  - title: 볼트 관계의 볼륨을 복원합니다
+    url: "/online-help-96-97/task_restoring_volume_vault_relationship.html"
+- title: 대칭 복사 및 볼트 관계
+  entries:
+  - title: 미러 및 볼트 관계 관리
+    url: "/online-help-96-97/task_editing_mirror_vault_relationships.html"
+  - title: 대칭 복사 및 볼트 관계를 중단합니다
+    url: "/online-help-96-97/task_aborting_mirror_vault_relationships.html"
+  - title: 미러 및 볼트 관계의 볼륨을 복구합니다
+    url: "/online-help-96-97/task_restoring_volume_mirror_vault_relationship.html"
+- title: 보호 윈도우
+  url: "/online-help-96-97/reference_protection_window.html"
+- title: SVM 관계
+  url: "/online-help-96-97/concept_svm_relationships.html"
+- title: 보호 정책 관리
+  url: "/online-help-96-97/concept_protection_policies.html"
+- title: 스냅샷 정책 관리
+  url: "/online-help-96-97/concept_snapshot_policies.html"
+- title: 일정을 관리합니다
+  url: "/online-help-96-97/concept_schedules.html"

@@ -1,0 +1,30 @@
+---
+permalink: volume-move/task_updating_ndmp_backup_after_moving_volume.html 
+sidebar: sidebar 
+keywords: volume, move, tape, ndmp, configuration, moving, baseline, migrate, backup, lif, contain, update ndmp backup after moving a volume 
+summary: 이전에 이동한 볼륨이 특정 구성에서 NDMP를 사용하여 테이프에 백업된 경우 볼륨을 이동한 후 다음 작업 중 하나를 수행하여 볼륨이 성공적으로 백업되도록 할 수 있습니다. 기준을 생성하거나 백업 LIF를 이동한 볼륨이 포함된 노드로 마이그레이션합니다. 
+---
+= 볼륨을 이동한 후 NDMP 백업을 업데이트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이전에 이동한 볼륨이 특정 구성에서 NDMP를 사용하여 테이프에 백업된 경우 볼륨을 이동한 후 다음 작업 중 하나를 수행하여 볼륨이 성공적으로 백업되도록 할 수 있습니다. 기준을 생성하거나 백업 LIF를 이동한 볼륨이 포함된 노드로 마이그레이션합니다.
+
+.이 작업에 대해
+* 이 절차는 백업 애플리케이션이 CAB(Cluster-Aware Backup) 확장을 지원하지 않고 백업 프로세스에서 노드 범위의 NDMP를 사용하는 경우에만 필요합니다.
++
+백업 애플리케이션이 CAB을 지원하고 SVM 범위의 NDMP 모드를 사용하도록 구성된 경우 이 절차를 건너뛸 수 있습니다.
+
+* 이러한 작업 중 하나만 수행해야 하며 둘 다 수행할 수는 없습니다.
+
+
+
+
+== 절차를 참조하십시오
+
+* 백업 애플리케이션에서 새 기준을 생성합니다.
+* 백업 프로세스에 대해 구성된 LIF를 식별한 다음, LIF를 볼륨이 현재 상주하는 노드로 마이그레이션합니다.
+

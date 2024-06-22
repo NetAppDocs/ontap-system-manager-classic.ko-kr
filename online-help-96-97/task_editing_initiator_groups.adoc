@@ -1,0 +1,26 @@
+---
+permalink: online-help-96-97/task_editing_initiator_groups.html 
+sidebar: sidebar 
+keywords: edit, initiator, group, system, manager, online, help, port, set, dialog, box 
+summary: System Manager의 이니시에이터 그룹 편집 대화 상자를 사용하여 기존 이니시에이터 그룹 및 해당 운영 체제의 이름을 변경할 수 있습니다. 이니시에이터를 이니시에이터 그룹에 추가하거나 이니시에이터 그룹에서 제거할 수 있습니다. 또한 이니시에이터 그룹과 연결된 포트셋 를 변경할 수도 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 이니시에이터 그룹을 편집합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)의 이니시에이터 그룹 * 편집 대화 상자를 사용하여 기존 이니시에이터 그룹 및 운영 체제의 이름을 변경할 수 있습니다. 이니시에이터를 이니시에이터 그룹에 추가하거나 이니시에이터 그룹에서 제거할 수 있습니다. 또한 이니시에이터 그룹과 연결된 포트셋 를 변경할 수도 있습니다.
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. 이니시에이터 그룹 * 탭에서 수정할 이니시에이터 그룹을 선택한 다음 * 편집 * 을 클릭합니다.
+. 필요한 사항을 변경합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+. 이니시에이터 그룹 * 탭에서 이니시에이터 그룹의 변경 사항을 확인합니다.
+
+
+* 관련 정보 *
+
+xref:reference_luns_window.adoc[LUN 창]

@@ -1,0 +1,103 @@
+---
+permalink: volume-disaster-prep/task_creating_snapmirror_relationships_92_earlier.html 
+sidebar: sidebar 
+keywords: create, snapmirror, relationship, source, volume, cluster, destination, peer, replacting, replacate, data, disaster, recovery, create the snapmirror relationship, ontap 9.2 or earlier 
+summary: 한 클러스터의 소스 볼륨과 재해 복구를 위한 데이터 복제를 위한 피어링된 클러스터의 타겟 볼륨 간에 SnapMirror 관계를 생성해야 합니다. 
+---
+= SnapMirror 관계 생성(ONTAP 9.2 이하)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+한 클러스터의 소스 볼륨과 재해 복구를 위한 데이터 복제를 위한 피어링된 클러스터의 타겟 볼륨 간에 SnapMirror 관계를 생성해야 합니다.
+
+.시작하기 전에
+* 대상 클러스터에 대한 클러스터 관리자 사용자 이름과 암호가 있어야 합니다.
+* 대상 Aggregate에 사용 가능한 공간이 있어야 합니다.
+* 사용자 액세스, 인증 및 클라이언트 액세스를 위한 환경 요구 사항을 충족하도록 두 클러스터를 적절히 구성 및 설정해야 합니다.
+
+
+.이 작업에 대해
+소스 * 클러스터에서 이 작업을 수행해야 합니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 볼륨 * 탭을 클릭합니다.
+. 미러 관계를 생성할 볼륨을 선택한 다음 * 보호 * 를 클릭합니다.
++
+보호 관계 생성 창이 표시됩니다.
+
+. 관계 유형 * 섹션의 * 관계 유형 * 드롭다운 목록에서 * 미러 * 를 선택합니다.
+. 대상 볼륨 * 섹션에서 피어링된 클러스터를 선택합니다.
+. 타겟 볼륨에 SVM을 지정합니다.
++
+|===
+| SVM이... | 그러면... 
+
+
+ a| 
+자세히 들여다보았습니다
+ a| 
+목록에서 피어링된 SVM을 선택합니다.
+
+
+
+ a| 
+피어링되지 않았습니다
+ a| 
+.. SVM을 선택합니다.
+.. 인증 * 을 클릭합니다.
+.. 피어링된 클러스터의 클러스터 관리자 자격 증명을 입력하고 * Create * 를 클릭합니다.
+
+
+|===
+. 새 대상 볼륨 생성:
++
+.. 새 볼륨 * 옵션을 선택합니다.
+.. 기본 볼륨 이름을 사용하거나 새 볼륨 이름을 지정합니다.
+.. 대상 애그리게이트를 선택합니다.
+
+
++
+image::../media/destination_volume_settings.gif[대상 볼륨 설정]
+
+. 구성 세부 정보 * 섹션에서 미러 정책으로 * MirrorAllSnapshots * 를 선택합니다.
++
+`DPDefault` 및 `MirrorLatest` 는 SnapMirror 관계에 사용할 수 있는 다른 기본 미러 정책입니다.
+
+. 스케줄 목록에서 보호 스케줄을 선택합니다.
+. 관계 초기화 * 확인란이 선택되어 있는지 확인한 다음 * 작성 * 을 클릭합니다.
++
+SnapMirror 관계를 초기화하면 타겟 볼륨에 소스 볼륨 보호를 시작할 기준이 있습니다.
+
++
+image::../media/create_snapmirror_relationship_window.gif[SnapMirror 창 생성]
+
++
+소스 볼륨에서 타겟 볼륨으로 데이터의 기본 전송을 시작하여 관계가 초기화됩니다.
+
++
+초기화 작업에는 약간의 시간이 걸릴 수 있습니다. 상태 섹션에는 각 작업의 상태가 표시됩니다.
+
++
+image::../media/snapmirror_create_3_successful.gif[SnapMirror를 성공적으로 생성했습니다]
+
+. SnapMirror 관계의 관계 상태를 확인합니다.
++
+.. 볼륨 * 목록에서 SnapMirror 관계를 생성한 볼륨을 선택한 다음 * 데이터 보호 * 를 클릭합니다.
+.. Data Protection * 탭에서 생성한 SnapMirror 관계가 나열되고 관계 상태가 인지 확인합니다 `Snapmirrored`.
++
+image::../media/snapmirror_create_4_verify.gif[관계가 생성되었는지 확인합니다]
+
+
+
+
+
+
+
+== 다음 단계
+
+씬 프로비저닝, 중복제거, 압축, 자동 확장 등과 같은 소스 볼륨의 설정을 기록해야 합니다. 이 정보를 사용하여 SnapMirror 관계를 끊을 때 대상 볼륨 설정을 확인할 수 있습니다.

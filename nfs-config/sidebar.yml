@@ -1,0 +1,50 @@
+---
+section: nfs-config
+title: NFS 구성
+entries:
+- title: 개요
+  url: "/nfs-config/index.html"
+- title: NFS 구성 워크플로우
+  url: "/nfs-config/concept_cifs_nfs_configuration_workflow.html"
+  entries:
+  - title: Aggregate를 생성합니다
+    url: "/nfs-config/task_creating_aggregate.html"
+  - title: 새 볼륨을 프로비저닝할 위치를 결정합니다
+    url: "/nfs-config/task_deciding_where_to_provision_new_volume.html"
+- title: 새 NFS 지원 SVM을 생성합니다
+  url: "/nfs-config/task_creating_protocol_enabled_svm.html"
+  entries:
+  - title: NFS 볼륨으로 새 SVM을 생성하고 내보냅니다
+    url: "/nfs-config/task_creating_new_svm.html"
+  - title: SVM 루트 볼륨의 엑스포트 정책을 엽니다(새 NFS 지원 SVM 생성).
+    url: "/nfs-config/task_opening_export_policy_svm_root_volume.html"
+  - title: LDAP 구성(새 NFS 지원 SVM 생성)
+    url: "/nfs-config/task_configuring_ldap_new_svm.html"
+  - title: UNIX 관리 호스트에서 NFS 액세스를 확인합니다
+    url: "/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html"
+  - title: NFS 클라이언트 액세스 구성 및 확인(새 NFS 지원 SVM 생성)
+    url: "/nfs-config/task_configuring_verifying_client_access_new_svm.html"
+- title: 기존 SVM에 대한 NFS 액세스를 구성합니다
+  url: "/nfs-config/task_configuring_access_to_existing_svm.html"
+  entries:
+  - title: 기존 SVM에 NFS 액세스를 추가합니다
+    url: "/nfs-config/concept_adding_nas_access_to_existing_svm.html"
+  - title: SVM 루트 볼륨의 엑스포트 정책을 엽니다(기존 SVM에 대한 NFS 액세스 구성).
+    url: "/nfs-config/task_opening_export_policy_svm_root_volume_existing_svm.html"
+  - title: LDAP 구성(기존 SVM에 대한 NFS 액세스 구성)
+    url: "/nfs-config/task_configuring_ldap_existing_svm.html"
+  - title: UNIX 관리 호스트에서 NFS 액세스를 확인합니다
+    url: "/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html"
+  - title: NFS 클라이언트 액세스 구성 및 확인(기존 SVM에 대한 NFS 액세스 구성)
+    url: "/nfs-config/task_configuring_verifying_client_access_add_nfs_existing_svm.html"
+- title: NFS 지원 SVM에 NFS 볼륨을 추가합니다
+  url: "/nfs-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html"
+  entries:
+  - title: 볼륨을 생성하고 구성합니다
+    url: "/nfs-config/task_creating_configuring_volume.html"
+  - title: 볼륨에 대한 엑스포트 정책을 생성합니다
+    url: "/nfs-config/task_creating_export_policy_for_volume.html"
+  - title: UNIX 관리 호스트에서 NFS 액세스를 확인합니다
+    url: "/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html"
+  - title: NFS 클라이언트 액세스 구성 및 확인(NFS 볼륨을 NFS 지원 SVM에 추가)
+    url: "/nfs-config/task_configuring_verifying_client_access_add_vol_existing_nfs_svm.html"

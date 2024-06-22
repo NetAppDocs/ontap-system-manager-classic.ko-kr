@@ -1,0 +1,27 @@
+---
+permalink: iscsi-config-rhel/task_recording_iscsi_node_name.html 
+sidebar: sidebar 
+keywords: record, iscsi, initiator, node, linux, host, configure, storage, system, record the iscsi node name 
+summary: 스토리지 시스템을 구성할 때 iSCSI 이니시에이터 노드 이름을 Linux 호스트에 기록하도록 해야 합니다. 
+---
+= iSCSI 노드 이름을 기록합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 시스템을 구성할 때 iSCSI 이니시에이터 노드 이름을 Linux 호스트에 기록하도록 해야 합니다.
+
+.단계
+. 텍스트 편집기를 사용하여 를 엽니다 `/etc/iscsi/initiatorname.iscsi` 노드 이름이 포함된 파일입니다.
+. 노드 이름을 기록하거나 텍스트 파일에 복사합니다.
++
+iSCSI 이니시에이터 노드 이름은 다음과 같습니다.
+
++
+[listing]
+----
+iqn.1994-05.com.redhat:127
+----
+

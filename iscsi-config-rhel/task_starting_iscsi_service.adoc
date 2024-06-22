@@ -1,0 +1,58 @@
+---
+permalink: iscsi-config-rhel/task_starting_iscsi_service.html 
+sidebar: sidebar 
+keywords: iscsi, configuration, file, service, host, discover, target, access, lun, run, start the iscsi service 
+summary: iSCSI 구성 파일을 편집한 후에는 호스트에서 타겟을 검색하고 LUN을 액세스할 수 있도록 iSCSI 서비스를 시작해야 합니다. iSCSI 서비스가 실행 중이면 다시 시작해야 합니다. 
+---
+= iSCSI 서비스를 시작합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+iSCSI 구성 파일을 편집한 후에는 호스트에서 타겟을 검색하고 LUN을 액세스할 수 있도록 iSCSI 서비스를 시작해야 합니다. iSCSI 서비스가 실행 중이면 다시 시작해야 합니다.
+
+.단계
+. Linux 호스트 명령 프롬프트에서 iSCSI 서비스를 시작합니다.
++
+|===
+| 사용 중인 경우... | 입력... 
+
+
+ a| 
+Red Hat Enterprise Linux 7 시리즈 및 SUSE Linux Enterprise 12 시리즈
+ a| 
+`systemctl start iscsid`
+
+
+
+ a| 
+Red Hat Enterprise Linux 6 시리즈
+
+[NOTE]
+====
+Red Hat Enterprise Linux 6 시리즈와 Oracle Linux 6 시리즈를 실행하는 호스트에서 iSCSI 서비스를 처음 시작할 때 이 명령을 실행해야 합니다. 를 실행할 경우 `/etc/init.d/iscsi start` 이전에 실행하지 않은 경우 `service iscsid force-start`, 오류 메시지가 표시됩니다.
+
+==== a| 
+`service iscsid force-start`
+
+
+
+ a| 
+Red Hat Enterprise Linux 5 또는 4 시리즈와 Oracle Linux 5 시리즈, Red Hat Enterprise Virtualization, Oracle Linux 및 Oracle VM
+ a| 
+`/etc/init.d/iscsi start`
+
+
+
+ a| 
+SUSE Linux Enterprise Server 10 또는 11 시리즈
+ a| 
+`/etc/init.d/open-iscsi start`
+
+|===
++
+Citrix에서는 iscsiadm 도구를 사용하지 않습니다. 네이티브 XAPI 스택은 iSCSI 서비스 시작 및 중지 작업, 부팅 시 자동 로그인 및 기타 iSCSI 작업을 수행합니다.
+
+

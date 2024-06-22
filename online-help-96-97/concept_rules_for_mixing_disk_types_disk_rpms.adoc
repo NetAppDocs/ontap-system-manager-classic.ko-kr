@@ -1,0 +1,18 @@
+---
+permalink: online-help-96-97/concept_rules_for_mixing_disk_types_disk_rpms.html 
+sidebar: sidebar 
+keywords: rule, online, help, create, aggregate, add, capacity, disk, rpm 
+summary: Aggregate를 생성하고 용량 디스크를 Aggregate에 추가할 경우, 디스크 유형 및 디스크 RPM이 표시될 때 적용되는 규칙을 이해해야 합니다. 
+---
+= System Manager - ONTAP 9.7 및 그 이전 버전에서 디스크 유형 및 디스크 RPM을 표시하는 규칙을 나타냅니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aggregate를 생성하여 Aggregate에 용량 디스크를 추가할 경우, ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)에 디스크 유형과 디스크 RPM을 표시할 때 적용되는 규칙을 이해해야 합니다.
+
+디스크 유형 혼합 및 디스크 RPM 혼합 옵션이 활성화되지 않은 경우 실제 디스크 유형 및 실제 디스크 RPM이 표시됩니다.
+
+이러한 혼합 옵션을 활성화하면 실제 디스크 유형과 실제 디스크 RPM 대신 유효 디스크 유형과 유효 디스크 RPM이 표시됩니다. 예를 들어, 디스크 혼합 옵션을 사용하면 System Manager에서 BSAS 디스크를 SSA로 표시합니다. 마찬가지로, 디스크 RPM 혼합 옵션이 활성화된 경우 디스크의 RPM이 10K와 15K인 경우 System Manager는 유효 RPM을 10K로 표시합니다.

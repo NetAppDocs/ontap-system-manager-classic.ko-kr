@@ -1,0 +1,73 @@
+---
+permalink: online-help-96-97/reference_effective_data_ontap_disk_types.html 
+sidebar: sidebar 
+keywords: ontap, disk, type, online, help 
+summary: Data ONTAP 8.1부터 특정 ONTAP 디스크 유형은 Aggregate를 생성 및 추가하고 스페어를 관리할 때 동일한 용도로 사용됩니다. ONTAP는 각 디스크 유형에 대해 유효한 디스크 유형을 할당합니다. 동일한 유효 디스크 유형의 HDD를 혼합할 수 있습니다. 
+---
+= HDD를 시스템 관리자-ONTAP 9.7 이하와 함께 사용하는 경우 효율적인 ONTAP 디스크 유형을 사용하십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data ONTAP 8.1부터 특정 ONTAP 디스크 유형은 Aggregate를 생성 및 추가하고 스페어를 관리할 때 동일한 용도로 사용됩니다. ONTAP는 각 디스크 유형에 대해 유효한 디스크 유형을 할당합니다. ONTAP System Manager 클래식(9.7 이하에서 사용 가능)을 사용하면 동일한 유효 디스크 유형의 HDD를 혼합할 수 있습니다.
+
+를 누릅니다 `raid.disktype.enable` 옵션이 로 설정되어 있습니다 `off`또한 특정 유형의 HDD를 동일한 애그리게이트 내에서 혼합할 수 있습니다. 를 누릅니다 `raid.disktype.enable` 옵션이 로 설정되어 있습니다 `on`, 유효 디스크 유형은 ONTAP 디스크 유형과 동일합니다. 애그리게이트는 한 가지 디스크 유형만 사용하여 생성할 수 있습니다. 의 기본값입니다 `raid.disktype.enable` 옵션은 입니다 `off`.
+
+Data ONTAP 8.2부터는 옵션이 제공됩니다 `raid.mix.hdd.disktype.capacity` 을(를) 로 설정해야 합니다 `on` BSAS, FSA 및 ATA 유형의 디스크를 혼합합니다. 옵션을 선택합니다 `raid.mix.hdd.disktype.performance` 을(를) 로 설정해야 합니다 `on` FCAL 및 SAS 유형의 디스크를 혼합합니다.
+
+다음 표에서는 디스크 유형이 효과적인 디스크 유형에 매핑되는 방법을 보여 줍니다.
+
+|===
+| ONTAP 디스크 유형입니다 | 유효 디스크 유형입니다 
+
+
+ a| 
+FCAL(보정
+ a| 
+SAS를 참조하십시오
+
+
+
+ a| 
+SAS를 참조하십시오
+ a| 
+SAS를 참조하십시오
+
+
+
+ a| 
+아타
+ a| 
+CSA
+
+
+
+ a| 
+BSAS
+ a| 
+CSA
+
+
+
+ a| 
+FCAL 및 SAS
+ a| 
+SAS를 참조하십시오
+
+
+
+ a| 
+mSATA
+ a| 
+mSATA
+
+
+
+ a| 
+CSA
+ a| 
+CSA
+
+|===

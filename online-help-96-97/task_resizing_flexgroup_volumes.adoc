@@ -1,0 +1,41 @@
+---
+permalink: online-help-96-97/task_resizing_flexgroup_volumes.html 
+sidebar: sidebar 
+keywords: system, manager, online, help, resize, flexgroup, volume, resources 
+summary: System Manager를 사용하면 기존 리소스의 크기를 조정하거나 새 리소스를 추가하여 FlexGroup 볼륨의 크기를 조정할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 FlexGroup 볼륨의 크기를 조정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 기존 리소스의 크기를 조정하거나 새 리소스를 추가하여 FlexGroup 볼륨의 크기를 조정할 수 있습니다.
+
+.시작하기 전에
+* FlexGroup 볼륨의 크기를 조정하려면 기존 애그리게이트에 충분한 여유 공간이 있어야 합니다.
+* FlexGroup 볼륨을 확장하려면 Aggregate에 확장을 위해 사용 중인 충분한 여유 공간이 있어야 합니다.
+
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 크기를 조정할 FlexGroup 볼륨을 선택한 다음 * 추가 작업 * > * 크기 조정 * 을 클릭합니다.
+. FlexGroup 볼륨 크기 조정 * 창에서 FlexGroup 볼륨의 크기를 조정할 크기를 지정합니다.
++
+기본적으로 기존 애그리게이트는 FlexGroup 볼륨의 크기를 조정하는 데 사용됩니다. System Manager 9.6부터 볼륨에 허용되는 최소 크기가 크기 필드 옆에 표시됩니다.
+
++
+[NOTE]
+====
+새 리소스를 추가하여 FlexGroup 볼륨을 확장하려면 를 클릭합니다 image:../media/advanced_options.gif[""] (고급 옵션).
+
+====
+. 스냅샷 복사본 예약 공간의 비율을 지정합니다.
+. 크기 조정 * 을 클릭하여 FlexGroup 볼륨의 크기를 조정합니다.
+
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]

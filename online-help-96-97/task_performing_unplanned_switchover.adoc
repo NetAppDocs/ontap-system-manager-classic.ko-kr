@@ -1,0 +1,59 @@
+---
+permalink: online-help-96-97/task_performing_unplanned_switchover.html 
+sidebar: sidebar 
+keywords: perform, unplanned, switchover, system, manager, metrocluster, site, online, help 
+summary: System Manager 9.6부터 MetroCluster 사이트의 계획되지 않은 전환을 시작할 수 있습니다. 이 작업은 중단 이벤트 또는 재해 이벤트 후에 유용합니다. 
+---
+= 계획되지 않은 전환 수행
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager 9.6부터 MetroCluster 사이트의 계획되지 않은 전환을 시작할 수 있습니다. 이 작업은 중단 이벤트 또는 재해 이벤트 후에 유용합니다.
+
+.시작하기 전에
+MetroCluster가 정상 작동 상태에서 실행되고 있지만 로컬 클러스터(사이트 A)의 노드가 작동 중이지만 원격 클러스터(사이트 B)의 노드가 다운되었습니다.
+
+.단계
+. [[step1]] 사이트 B가 실제로 다운되었는지 확인합니다.
++
+연결 오류가 발생하면 사이트 B가 다운된 것으로 나타날 수 있습니다.
+
++
+[NOTE]
+====
+사이트 B가 설치된 상태에서 전환 프로세스를 시작하면 심각한 결과가 초래될 수 있습니다.
+
+====
+. System Manager에서 클러스터 관리자 자격 증명을 사용하여 로컬 MetroCluster 사이트(사이트 A)에 로그온합니다.
+. 구성 * > * MetroCluster * 을 클릭합니다
++
+MetroCluster 스위치오버/스위치백 운영 창이 표시됩니다.
+
+. 다음 * 을 클릭합니다.
++
+MetroCluster 전환/스위치백 작업 창에는 작업 상태가 표시되고 시스템 관리자는 협상된 전환이 가능한지 여부를 확인합니다.
+
+. 검증 프로세스가 완료되면 * 사이트 B에서 사이트 A * 로 전환 을 클릭하여 전환 프로세스를 시작합니다.
++
+스위치오버 작업이 사이트 B에서 사이트 A로 제어를 전환한다는 경고 메시지가 표시됩니다 사이트 B의 상태는 "Unreachable(연결할 수 없음)"이어야 하며 모든 사이트 B 노드는 빨간색 텍스트로 표시됩니다.
+
++
+[NOTE]
+====
+단계에서 설명한 대로 link:#step1["1"]사이트 B는 단순히 연결되지 않은 것이 아니라 실제로 다운되어야 합니다. 또한, 전환 작업으로 인해 데이터 손실이 발생할 수 있음을 알아야 합니다.
+
+====
+. 계속 진행하려면 확인란이 선택되어 있는지 확인한 다음 * 예 * 를 클릭합니다.
++
+전환 프로세스가 시작됩니다. 사이트 A와 사이트 B의 상태는 해당 구성의 그래픽 표현 위에 표시됩니다. 전환 작업이 실패하면 오류 메시지가 표시됩니다. 닫기 * 를 클릭합니다. 오류를 수정하고 단계에서 다시 시작합니다 link:task_performing_negotiated_planned_switchover.html#step1["1"]
+
+. 사이트 B에 필요한 모든 유지 보수 작업을 수행합니다
+. 사이트 B가 작동 중인지 확인합니다.
++
+복구 프로세스가 시작됩니다. System Manager에서 복구가 완료된 것으로 표시되면 사이트 B가 작동 중이고 시스템이 스위치백 프로세스를 준비합니다. 창 하단에 * 사이트 A에서 사이트 B * 로 전환 버튼이 나타납니다.
+
+. 로 진행합니다 xref:task_performing_switchback.adoc[스위치백을 수행합니다] 을 눌러 스위치백 작업을 시작합니다.
+

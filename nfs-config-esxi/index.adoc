@@ -1,0 +1,38 @@
+---
+permalink: nfs-config-esxi/index.html 
+sidebar: sidebar 
+keywords: nfs, access, esxi, host, datastores, ontap, volume, configuration, overview, vsc 
+summary: 'ONTAP System Manager 클래식 인터페이스(ONTAP 9.7 이하)를 사용하면 ONTAP 볼륨을 사용하여 ESXi 호스트에 대한 NFS 액세스를 데이터 저장소에 빠르게 설정할 수 있습니다.' 
+---
+= VSC 개요를 사용한 ESXi용 NFS 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식 인터페이스(ONTAP 9.7 이하)를 사용하면 ONTAP 볼륨을 사용하여 ESXi 호스트에 대한 NFS 액세스를 데이터 저장소에 빠르게 설정할 수 있습니다.
+
+다음 경우에 이 절차를 사용합니다.
+
+* 지원되는 버전의 VMware vSphere(VSC)용 가상 스토리지 콘솔을 사용하여 데이터 저장소를 프로비저닝하고 볼륨을 생성하고 있습니다.
++
+** VSC 7.0부터는 VSC가 의 일부입니다 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere용 ONTAP 툴"^] VSC, VASA(vStorage APIs for Storage Awareness) 공급자, VMware vSphere 기능을 위한 SRA(Storage Replication Adapter)를 포함하는 가상 어플라이언스
+** 를 확인하십시오 https://imt.netapp.com/matrix/["NetApp 상호 운용성 매트릭스 툴"^] 현재 ONTAP 및 VSC 릴리스 간의 호환성을 확인합니다.
+
+
+* 데이터 네트워크는 기본 IPspace, 기본 브로드캐스트 도메인 및 기본 페일오버 그룹을 사용합니다.
++
+데이터 네트워크가 평평하게 되어 있는 경우, 이 기본 오브젝트는 링크 장애 시 LIF가 올바르게 페일오버되도록 규정합니다. 기본 개체를 사용하지 않는 경우 을 참조해야 합니다 https://docs.netapp.com/us-en/ontap/networking/index.html["네트워크 관리"^] LIF 경로 페일오버를 구성하는 방법에 대한 자세한 내용은 를 참조하십시오.
+
+* VMware VAAI용 플러그인을 사용하려는 경우
++
+** VAAI(VMware vStorage APIs for Array Integration)를 사용하면 복제 오프로드 및 공간 예약을 수행할 수 있습니다. VMware VAAI용 플러그인은 ESXi 호스트를 통과할 필요가 없으므로 ONTAP에서 공간 및 시간 효율성이 뛰어난 클론 생성을 활용할 수 있으므로 이를 사용하여 호스트 성능을 향상시킵니다.
+** 데이터 저장소 용량 할당에 VMware VAAI를 사용하는 것이 Best Practice입니다.
+** VMware VAAI용 NFS 플러그인은 에서 사용할 수 있습니다 https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"^] 사이트.
+
+
+* NFS 액세스는 VMware VAAI에서 사용할 수 있도록 NFSv3 및 NFSv4를 통해 이루어집니다.
+
+
+자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_ontap_ontap_for_vsphere.html["TR-4597: ONTAP용 VMware vSphere"^] VSC 릴리즈에 대한 설명서를 제공합니다.

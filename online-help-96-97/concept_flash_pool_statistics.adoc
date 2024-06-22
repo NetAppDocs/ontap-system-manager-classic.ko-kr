@@ -1,0 +1,40 @@
+---
+permalink: online-help-96-97/concept_flash_pool_statistics.html 
+sidebar: sidebar 
+keywords: flash, pool, statistics, system, manager, ssd, tier, read, write, workload, aggregate, online, help 
+summary: System Manager를 사용하면 선택한 Flash Pool 애그리게이트에 대한 실시간 SSD 계층 읽기 및 쓰기 워크로드를 볼 수 있습니다. 
+---
+= System Manger - ONTAP 9.7 이하를 사용하여 Flash Pool 통계 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 선택한 Flash Pool 애그리게이트에 대한 실시간 SSD 계층 읽기 및 쓰기 워크로드를 볼 수 있습니다.
+
+
+
+== Flash Pool 애그리게이트 통계 창
+
+선택한 Flash Pool 애그리게이트에 대한 실시간 SSD 계층 읽기 및 쓰기 워크로드를 볼 수 있습니다.
+
+All-Flash 최적화 속성을 가진 노드가 포함된 클러스터에서는 이 페이지를 사용할 수 없습니다.
+
+* * Flash Pool Aggregate에 대한 통계 표시 *
++
+Flash Pool 애그리게이트 목록에서 통계를 확인할 Flash Pool 애그리게이트를 선택할 수 있습니다.
+
+
+
+
+
+=== SSD 캐시 읽기 워크로드
+
+SSD 계층에서 수행하는 읽기 작업과 비교하여 Flash Pool 애그리게이트에 전송된 총 읽기 요청의 그래픽 보기를 표시합니다.
+
+
+
+=== SSD 캐시 쓰기 워크로드
+
+SSD 계층에서 수행하는 쓰기 작업과 비교하여 Flash Pool 애그리게이트에 전송된 총 쓰기 요청의 그래픽 뷰를 표시합니다.

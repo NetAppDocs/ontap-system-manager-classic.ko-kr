@@ -1,0 +1,28 @@
+---
+permalink: online-help-96-97/task_specifying_advanced_options_for_flexcache_volume.html 
+sidebar: sidebar 
+keywords: flexcache, volume, online, help, advanced, options, specify 
+summary: System Manager 9.6부터 FlexCache 볼륨을 편집할 때 FlexCache 볼륨과 연결할 고급 옵션을 지정할 수 있습니다. 
+---
+= FlexCache 볼륨에 대한 고급 옵션 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager 9.6부터 FlexCache 볼륨을 편집할 때 FlexCache 볼륨과 연결할 고급 옵션을 지정할 수 있습니다.
+
+.단계
+. * 선택 사항: * FlexCache 볼륨 편집 * 창에서 을 클릭합니다 image:../media/advanced_options.gif[""] 고급 옵션을 지정합니다.
++
+고급 옵션 창이 표시됩니다. 여기에는 다양한 옵션을 지정할 수 있는 섹션(왼쪽 열의 제목)이 포함되어 있습니다.
+
+. * 선택 사항: * 일반 세부 정보 * 섹션에서 볼륨에 대한 권한을 편집할 수 있습니다.
+. 애그리게이트 * 섹션에서 * 애그리게이트 선택 * 전환 버튼을 사용하여 모범 사례 기본값을 무시하고 애그리게이트 목록에서 원하는 항목을 선택할 수 있습니다.
+. 스토리지 효율성 * 섹션에서 볼륨에 대해 압축 및 중복제거를 활성화할 수 있습니다.
++
+FlexCache 볼륨에 대해서는 기본적으로 중복제거가 활성화되어 있지 않습니다. 지정된 볼륨 크기가 중복 제거를 실행하는 데 필요한 제한을 초과하는 경우 System Manager에서는 기본 중복 제거 일정을 사용합니다.
+
+. 변경 사항을 업데이트하려면 * 적용 * 을 클릭합니다.
+

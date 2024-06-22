@@ -1,0 +1,36 @@
+---
+permalink: snmp-config/task_adding_snmp_traphost.html 
+sidebar: sidebar 
+keywords: system, manager, add, traphost, snmp, notification, trap, protocol, generate, cluster, data, host, add an snmp traphost 
+summary: 'ONTAP 9.7 이하 버전의 ONTAP System Manager "클래식" 인터페이스를 사용하여 클러스터에서 트랩이 생성될 때 SNMP 알림(SNMP 트랩 프로토콜 데이터 단위)을 수신할 트랩 호스트(SNMP 관리자)를 추가할 수 있습니다.' 
+---
+= SNMP traaphost를 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager_CLASSIC_INTERFACE를 ONTAP 9.7 이하와 함께 사용하여 클러스터에서 트랩이 생성될 때 SNMP 알림(SNMP 트랩 프로토콜 데이터 단위)을 수신하는 Traphost(SNMP 관리자)를 추가할 수 있습니다.
+
+.시작하기 전에
+IPv6 주소가 있는 SNMP 트라프호스트를 구성하는 경우 클러스터에서 IPv6를 활성화해야 합니다.
+
+.이 작업에 대해
+SNMP 및 SNMP 트랩은 기본적으로 사용하도록 설정됩니다. SNMP 지원의 NetApp 기술 보고서 TR-4220 에는 SNMP 트랩이 지원하는 모든 기본 이벤트 목록이 포함되어 있습니다.
+
+http://www.netapp.com/us/media/tr-4220.pdf["NetApp 기술 보고서 4220: Data ONTAP의 SNMP 지원"^]
+
+.단계
+. SNMP 창에서 * EDIT * 를 클릭하여 * SNMP 설정 편집 * 대화 상자를 엽니다.
+. [[step2-verify-enable-trap] * Trap Hosts * 탭에서 * 트랩 사용 * 확인란이 선택되어 있는지 확인하고 * 추가 * 를 클릭합니다.
+. [[step3-enter-traphost-ip]] traphost IP 주소를 입력한 다음 * Trap Hosts * 창에서 * OK * 를 클릭합니다.
++
+SNMP traphost의 IP 주소는 IPv4 또는 IPv6일 수 있습니다.
+
++
+image::../media/snmp_add_traphost.gif[이 이미지에는 SNMP 설정 편집 대화 상자가 표시됩니다,Traphosts tab,in which the traphost status "enabled" is checked and the example traphost IP address "192.0.2.0" is entered.]
+
+. 다른 traaphost를 추가하려면 를 반복합니다 <<step2-verify-enable-traps,2단계>> 및 <<step3-enter-traphost-ip,3단계>>.
+. traphosts 추가를 마치면 * SNMP 설정 편집 * 대화 상자에서 * 확인 * 을 클릭합니다.
+

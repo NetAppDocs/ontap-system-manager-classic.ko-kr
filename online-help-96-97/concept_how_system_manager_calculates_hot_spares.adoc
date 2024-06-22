@@ -1,0 +1,30 @@
+---
+permalink: online-help-96-97/concept_how_system_manager_calculates_hot_spares.html 
+sidebar: sidebar 
+keywords: system, manager, hot, spares, disk, storage, raid, online, help 
+summary: 핫 스페어는 스토리지 시스템에 할당되지만 RAID 그룹에서 사용되지 않는 디스크입니다. 핫 스페어는 데이터를 포함하지 않으며 RAID 그룹에서 디스크 장애가 발생할 경우 RAID 그룹에 할당됩니다. System Manager는 가장 큰 디스크를 핫 스페어로 사용합니다. 
+---
+= ONTAP 9.7 이전의 핫 스페어와 System Manager의 작동 방식
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+핫 스페어는 스토리지 시스템에 할당되지만 RAID 그룹에서 사용되지 않는 디스크입니다. 핫 스페어는 데이터를 포함하지 않으며 RAID 그룹에서 디스크 장애가 발생할 경우 RAID 그룹에 할당됩니다. ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)에서는 가장 큰 디스크를 핫 스페어로 사용합니다.
+
+RAID 그룹에 서로 다른 디스크 유형이 있는 경우 각 디스크 유형의 가장 큰 디스크가 핫 스페어로 남게 됩니다. 예를 들어 RAID 그룹에 SATA 디스크 10개와 SAS 디스크 10개가 있는 경우 가장 큰 SATA 디스크와 가장 큰 크기의 SAS 디스크가 핫 스페어로 사용됩니다.
+
+가장 큰 크기의 디스크를 파티셔닝하면 핫 스페어가 파티션된 RAID 그룹과 분할되지 않은 RAID 그룹에 대해 별도로 제공됩니다. 가장 큰 크기의 디스크가 분할되지 않은 경우 단일 스페어 디스크가 제공됩니다.
+
+디스크 그룹에 루트 파티션이 있는 경우 가장 큰 크기의 분할되지 않은 디스크는 핫 스페어로 남아 있습니다. 동일한 크기의 분할되지 않은 디스크를 사용할 수 없는 경우, 스페어 루트 파티션은 루트 분할된 그룹의 핫 스페어로 남게 됩니다.
+
+단일 스페어 디스크는 여러 RAID 그룹의 핫 스페어로 사용될 수 있습니다. System Manager는 옵션에 설정된 값을 기준으로 핫 스페어를 계산합니다 `raid.min_spare_count` 노드 레벨입니다. 예를 들어, SSD RAID 그룹에 10개의 SSD와 옵션이 있는 경우 `raid.min_spare_count` 가 로 설정되어 있습니다 `1` System Manager는 노드 레벨에서 SSD 1개를 핫 스페어로 남겨 두고 다른 9개의 SSD를 SSD 관련 작업에 사용합니다. 마찬가지로, HDD RAID 그룹에 10개의 HDD가 있고 옵션이 있는 경우 `raid.min_spare_count` 가 로 설정되어 있습니다 `2` 노드 레벨에서 System Manager는 2개의 HDD를 핫 스페어로 남겨 두고 다른 8개의 HDD를 HDD 관련 작업에 사용합니다.
+
+Aggregate를 생성하고, 애그리게이트를 편집하고, HDD 또는 SSD를 애그리게이트에 추가할 때 System Manager는 RAID 그룹에 핫 스페어 규칙을 적용합니다. 핫 스페어 규칙은 스토리지 풀을 생성하거나 기존 스토리지 풀에 디스크를 추가할 때도 사용됩니다.
+
+System Manager의 핫 스페어 규칙에는 다음과 같은 예외가 있습니다.
+
+* 다중 디스크 캐리어의 mSATA 또는 디스크의 경우 핫 스페어 수는 노드 레벨에서 설정된 값의 두 배이며 숫자는 언제든지 2보다 작을 수 없습니다.
+* 디스크가 어레이 LUN 또는 가상 스토리지 어플라이언스의 일부인 경우 핫 스페어가 사용되지 않습니다.
+

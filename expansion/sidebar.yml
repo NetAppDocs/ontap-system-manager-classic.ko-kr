@@ -1,0 +1,61 @@
+---
+section: expansion
+title: 클러스터 관리
+entries:
+- title: 클러스터 확장 관리
+  entries:
+  - title: 개요
+    url: "/expansion/index.html"
+  - title: 클러스터 확장 워크플로우
+    url: "/expansion/concept_cluster_expansion_workflow.html"
+    entries:
+    - title: 클러스터를 확장할 준비가 되었는지 확인합니다
+      url: "/expansion/task_verifying_cluster_is_ready_for_expansion.html"
+      entries:
+      - title: 계획된 구성을 확인합니다
+        url: "/expansion/task_verifying_planned_configuration.html"
+      - title: 필요한 네트워크 정보를 수집합니다
+        url: "/expansion/task_gathering_required_information.html"
+      - title: 스위치를 추가하거나 교체합니다
+        url: "/expansion/task_adding_or_replacing_switches.html"
+    - title: 확장을 위해 클러스터를 준비합니다
+      url: "/expansion/task_preparing_cluster_for_expansion.html"
+      entries:
+      - title: 노드 잠김 라이센스를 추가합니다
+        url: "/expansion/task_adding_node_locked_licenses.html"
+      - title: 시스템 상태를 확인합니다
+        url: "/expansion/task_verifying_health_system.html"
+      - title: 클러스터 구성을 백업합니다
+        url: "/expansion/task_backing_up_cluster_configuration.html"
+      - title: 확장 시작에 대한 AutoSupport 메시지를 생성합니다
+        url: "/expansion/task_generating_autosupport_message_about_starting_expansion.html"
+    - title: 새 노드를 설치합니다
+      url: "/expansion/task_installing_new_nodes.html"
+      entries:
+      - title: 컨트롤러를 설치합니다
+        url: "/expansion/task_installing_controllers.html"
+      - title: 노드 관리 LIF를 구성합니다
+        url: "/expansion/concept_configuring_node_management_lifs.html"
+      - title: 노드를 업그레이드 또는 다운그레이드합니다
+        url: "/expansion/task_upgrading_or_downgrading_nodes.html"
+      - title: 하드웨어 레벨 HA가 활성화되어 있는지 확인합니다
+        url: "/expansion/task_ensuring_hardware_level_ha_is_enabled.html"
+      - title: System Manager를 사용하여 클러스터에 노드를 추가합니다
+        url: "/expansion/task_adding_nodes_to_cluster_using_system_manager.html"
+      - title: CLI를 사용하여 클러스터에 노드를 연결합니다
+        url: "/expansion/concept_joining_nodes_to_cluster_using_cli.html"
+    - title: 확장을 완료합니다
+      url: "/expansion/task_completing_expansion.html"
+      entries:
+      - title: System Manager에서 노드 세부 정보를 구성합니다
+        url: "/expansion/task_configuring_node_details_system_manager.html"
+      - title: 새 노드에서 AutoSupport를 구성합니다
+        url: "/expansion/task_configuring_autosupport_on_new_nodes_using_cli.html"
+      - title: 서비스 프로세서 네트워크를 구성합니다
+        url: "/expansion/task_configuring_service_processor_network_cli.html"
+      - title: 확장된 클러스터의 구성을 검증합니다
+        url: "/expansion/task_validating_configuration_expanded_cluster.html"
+      - title: 확장 완료에 대한 AutoSupport 메시지를 생성합니다
+        url: "/expansion/task_generating_autosupport_message_about_completing_expansion.html"
+      - title: 새 노드의 LUN 경로를 업데이트합니다
+        url: "/expansion/task_updating_lun_paths_for_new_nodes.html"

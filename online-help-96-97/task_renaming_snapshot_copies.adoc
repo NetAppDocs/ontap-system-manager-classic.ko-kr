@@ -1,0 +1,38 @@
+---
+permalink: online-help-96-97/task_renaming_snapshot_copies.html 
+sidebar: sidebar 
+keywords: rename, snapshot, copy, system, manager, online, help 
+summary: System Manager를 사용하면 스냅샷 복사본의 이름을 변경하여 스냅샷 복사본을 구성하고 관리할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 스냅샷 복사본의 이름을 바꿉니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 방식을 사용하여 스냅샷 복사본의 이름을 변경하여 스냅샷 복사본을 구성하고 관리할 수 있습니다.
+
+.이 작업에 대해
+SnapVault 관계에 있는 SnapLock DP 볼륨의 스냅샷 복사본(WORM 상태로 커밋됨)은 이름을 바꿀 수 없습니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 필요한 볼륨을 클릭합니다.
+. 볼륨에 대한 자세한 내용을 보려면 * 자세한 정보 표시 * 링크를 클릭하십시오.
+. Snapshot 복사본 * 탭을 클릭합니다.
++
+선택한 볼륨에 대해 사용 가능한 스냅샷 복사본 목록이 표시됩니다.
+
+. 이름을 바꿀 스냅샷 복사본을 선택한 다음 * 추가 작업 * > * 이름 바꾸기 * 를 클릭합니다.
+. 새 이름을 지정한 다음 * 이름 바꾸기 * 를 클릭합니다.
++
+유효한 문자는 ASCII 문자, 숫자, 하이픈(-), 밑줄(_), 마침표(.) 및 더하기(+) 기호입니다.
+
+. Volumes * 창의 * Snapshot Copies * 탭에서 스냅샷 복사본 이름을 확인합니다.
+
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]

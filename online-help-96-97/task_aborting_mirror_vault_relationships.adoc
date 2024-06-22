@@ -1,0 +1,25 @@
+---
+permalink: online-help-96-97/task_aborting_mirror_vault_relationships.html 
+sidebar: sidebar 
+keywords: abort, mirror, vault, relationship, online, help, data, transfer 
+summary: 데이터 전송을 중지하려면 볼륨 복제 작업을 중단할 수 있습니다. 예약된 업데이트, 수동 업데이트 또는 초기 데이터 전송을 중단할 수 있습니다. 
+---
+= 시스템 관리자-ONTAP 9.7 이전 버전과의 미러 및 볼트 관계를 중단합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 전송을 중지하려면 ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 볼륨 복제 작업을 중단할 수 있습니다. 예약된 업데이트, 수동 업데이트 또는 초기 데이터 전송을 중단할 수 있습니다.
+
+.단계
+. 보호 * > * 볼륨 관계 * 를 클릭합니다.
+. 데이터 전송을 중지할 미러 및 볼트 관계를 선택한 다음 * 운영 * > * 중단 * 을 클릭합니다.
+. 작업을 확인하려면 * 예, 전송을 중단하겠습니다 * 확인란을 선택합니다.
+. * 선택 사항: * 부분적으로 전송된 데이터 유지 * 확인란을 선택하여 대상 볼륨으로 이미 전송된 데이터를 보존합니다.
+. Abort * 를 클릭합니다.
+
+
+.결과
+작업이 완료되고 작업이 완료된 후 "유휴"로 표시될 때까지 전송 상태가 "중단 중"으로 표시됩니다.

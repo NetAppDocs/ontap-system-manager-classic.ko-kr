@@ -1,0 +1,85 @@
+---
+permalink: iscsi-config-rhel/task_configuring_dm_multipath.html 
+sidebar: sidebar 
+keywords: dm-multipath, manage, path, linux, host, storage, cluster, configuring, configure, lun, scsi, device, component, fail, cluster, configure, configure dm-multipath 
+summary: DM 다중 경로는 Linux 호스트와 스토리지 클러스터 간의 여러 경로를 관리합니다. Linux 호스트에 SCSI 디바이스로 표시되는 LUN에서 DM 다중 경로를 구성하면 경로 또는 구성 요소에 장애가 발생할 경우 Linux 호스트가 스토리지 클러스터의 LUN에 액세스할 수 있습니다. 
+---
+= DM 다중 경로를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DM 다중 경로는 Linux 호스트와 스토리지 클러스터 간의 여러 경로를 관리합니다. Linux 호스트에 SCSI 디바이스로 표시되는 LUN에서 DM 다중 경로를 구성하면 경로 또는 구성 요소에 장애가 발생할 경우 Linux 호스트가 스토리지 클러스터의 LUN에 액세스할 수 있습니다.
+
+.시작하기 전에
+상호 운용성 매트릭스 툴에서 필요한 버전의 DM 다중 경로를 식별해야 합니다.
+
+https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"]
+
+[NOTE]
+====
+권장되는 접근 방식은 각 패브릭 또는 이더넷 네트워크에 대해 노드당 두 개의 경로를 구성하는 것입니다. 따라서 노드를 해당 파트너 노드로 전환하지 않고도 경로가 실패하게 됩니다. Windows 기반 운영 체제에서는 물리적 포트에 대해 LAG(Link Aggregation)를 사용하지 않는 것이 좋습니다.
+
+====
+.단계
+. 를 편집합니다 `/etc/multipath.conf` 다음과 같은 파일:
++
+.. 제외할 타사 SCSI 장치(블랙리스트)가 있는지 확인합니다.
++
+이 장치는 에 들어갈 때 표시되지 않는 장치입니다 `sanlun lun show` 명령.
+
++
+*** 제외할 비 NetApp SCSI 장치가 있는 경우 의 블랙리스트 섹션에 장치의 WWID(Worldwide Identifier)를 입력하십시오 `multipath.conf` 파일.
++
+비 NetApp SCSI 장치의 WWID를 표시하려면 제외할 장치에서 다음 명령을 입력합니다. 여기서 `SCSI_device_name` 은(는) 지정하는 장치입니다. `/lib/udev/scsi_id -gud /dev/SCSI_device_name`
+
++
+예를 들어, IF를 입력합니다 `/dev/sda` 제외할 비 NetApp SCSI 장치이므로 다음을 입력합니다.
+
++
+`/lib/udev/scsi_id -gud /dev/sda`
+
++
+그러면 디바이스의 WWID가 표시되며, 이 ID를 복사하여 에 붙여 넣을 수 있습니다 `multipath.conf` 파일.
+
++
+의 블랙리스트 섹션을 보여 주는 다음 예제입니다 `multipath.conf` 파일, WWID가 포함된 비 NetApp SCSI 장치입니다 `3600508e000000000753250f933cc4606` 제외됨:
+
++
+[listing]
+----
+blacklist {
+            **wwid       3600508e000000000753250f933cc4606**
+            devnode    "^(ram|raw|loop|fd|md|dm-|sr|scd|st)[0-9]*"
+            devnode    "^hd[a-z]"
+            devnode     "^cciss.*"
+}
+----
+*** 제외할 디바이스가 없는 경우 에서 _WWID_줄을 제거합니다 `multipath.conf` 파일.
+
+
+.. 부팅 로더의 커널 행 끝에 다음 문자열을 추가하여 NetApp에서 권장하는 DM 다중 경로 설정을 활성화합니다. `rdloaddriver=scsi_dh_alua`
+
+
+. DM 다중 경로 데몬을 시작합니다.
++
+`/etc/init.d/multipathd start`
+
+. 시스템 부팅 중에 다중 경로 데몬이 항상 시작되도록 다중 경로 서비스를 부팅 시퀀스에 추가합니다.
++
+`chkconfig multipathd on`
+
+. Linux 호스트를 재부팅합니다.
+. 를 확인합니다 `rdloaddriver` 를 실행할 때 출력에 설정이 표시됩니다 `cat /proc/cmdline`.
++
+를 클릭합니다 `rdloaddriver` 설정이 커널에 전달되는 여러 부팅 옵션 중 하나로 나타납니다.
+
++
+[listing]
+----
+# cat /proc/cmdline
+ro root=/dev/mapper/vg_ibmx3650210104-lv_root rd_NO_LUKS LANG=en_US.UTF-8 rd_NO_MD rd_LVM_LV=vg_ibmx3650210104/lv_root SYSFONT=latarcyrheb-sun16 rd_LVM_LV=vg_ibmx3650210104/lv_swap crashkernel=129M@0M  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet **rdloaddriver=scsi_dh_alua**
+----
+

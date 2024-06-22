@@ -1,0 +1,33 @@
+---
+permalink: smb-config/task_configuring_verifying_client_access.html 
+sidebar: sidebar 
+keywords: client, access, share, setting, ntfs, file, permission, windows, explorer, modify, share, acl, system, manager, affect, group, volume, configure, verify, vonfigure and verify cifs client access 
+summary: 준비가 되면 Windows 탐색기에서 NTFS 파일 권한을 설정하고 System Manager에서 공유 ACL을 수정하여 선택한 클라이언트에 공유에 대한 액세스 권한을 부여할 수 있습니다. 그런 다음 영향을 받는 사용자 또는 그룹이 볼륨에 액세스할 수 있는지 테스트해야 합니다. 
+---
+= CIFS 클라이언트 액세스를 구성하고 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+준비가 되면 Windows 탐색기에서 NTFS 파일 권한을 설정하고 System Manager에서 공유 ACL을 수정하여 선택한 클라이언트에 공유에 대한 액세스 권한을 부여할 수 있습니다. 그런 다음 영향을 받는 사용자 또는 그룹이 볼륨에 액세스할 수 있는지 테스트해야 합니다.
+
+.단계
+. 공유에 액세스할 수 있는 클라이언트 및 사용자 또는 그룹을 결정합니다.
+. Windows 클라이언트에서 관리자 역할을 사용하여 파일 및 폴더에 대한 사용자 또는 그룹 권한을 부여합니다.
++
+.. NTFS 권한을 관리할 수 있는 충분한 관리 권한이 있는 관리자로 Windows 클라이언트에 로그인합니다.
+.. Windows 탐색기에서 드라이브를 마우스 오른쪽 단추로 클릭한 다음 * 속성 * 을 선택합니다.
+.. 보안 * 탭을 선택하고 필요에 따라 그룹 및 사용자에 대한 보안 설정을 조정합니다.
+
+
+. System Manager에서 공유 ACL을 수정하여 Windows 사용자 또는 그룹이 공유에 액세스할 수 있도록 합니다.
++
+.. Shares * 창으로 이동합니다.
+.. 공유를 선택하고 * 편집 * 을 클릭합니다.
+.. 사용 권한 * 탭을 선택하고 사용자 또는 그룹에 공유에 대한 액세스 권한을 부여합니다.
+
+
+. Windows 클라이언트에서 이제 공유 및 파일에 액세스할 수 있는 사용자 중 하나로 로그인하고 공유에 액세스하고 파일을 생성할 수 있는지 확인합니다.
+

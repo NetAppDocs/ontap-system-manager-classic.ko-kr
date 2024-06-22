@@ -1,0 +1,27 @@
+---
+permalink: online-help-96-97/task_resetting_cifs_domain_controllers.html 
+sidebar: sidebar 
+keywords: reset, cifs, domain, controller, system, manager, online, help 
+summary: System Manager를 사용하여 지정된 도메인의 도메인 컨트롤러에 대한 CIFS 연결을 재설정할 수 있습니다. 도메인 컨트롤러 정보를 재설정하지 않으면 연결 오류가 발생할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 CIFS 도메인 컨트롤러를 재설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 지정된 도메인의 도메인 컨트롤러에 대한 CIFS 연결을 재설정할 수 있습니다. 도메인 컨트롤러 정보를 재설정하지 않으면 연결 오류가 발생할 수 있습니다.
+
+.이 작업에 대해
+기본 도메인 컨트롤러 목록에서 도메인을 추가하거나 삭제한 후 스토리지 시스템의 사용 가능한 도메인 컨트롤러의 검색 정보를 업데이트해야 합니다. CLI(Command-Line Interface)를 통해 ONTAP에서 스토리지 시스템의 사용 가능한 도메인 컨트롤러 검색 정보를 업데이트할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 도메인 * 탭에서 * 재설정 * 을 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_cifs_window.adoc[CIFS 창]

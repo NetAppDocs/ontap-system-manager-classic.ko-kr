@@ -1,0 +1,28 @@
+---
+permalink: online-help-96-97/task_viewing_flexclone_volumes_hierarchy.html 
+sidebar: sidebar 
+keywords: flexclone, volume, system, manager, parent, volume, online, help 
+summary: System Manager를 사용하여 FlexClone 볼륨 및 상위 볼륨의 계층 구조를 볼 수 있습니다. 
+---
+= FlexClone 볼륨 계층 - ONTAP 9.7 이하 버전을 봅니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하면 FlexClone 볼륨 및 상위 볼륨의 계층 구조를 볼 수 있습니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 볼륨 목록에서 필요한 볼륨을 선택합니다.
+. More Actions * > * Clone * > * View Hierarchy * 를 클릭합니다.
+
+
+.결과
+하위 FlexClone 볼륨이 하나 이상 있는 볼륨이 표시됩니다. FlexClone 볼륨은 각 상위 볼륨의 하위 볼륨으로 표시됩니다.
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]

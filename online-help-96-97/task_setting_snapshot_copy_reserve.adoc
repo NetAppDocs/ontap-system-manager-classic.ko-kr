@@ -1,0 +1,29 @@
+---
+permalink: online-help-96-97/task_setting_snapshot_copy_reserve.html 
+sidebar: sidebar 
+keywords: set, up, snapshot, copy, reserve, system, manager, online, help 
+summary: 'System Manager를 사용하여 볼륨의 스냅샷 복사본에 대한 공간(백분율로 측정됨)을 예약할 수 있습니다. 스냅샷 복사본 예약 공간을 설정하면 스냅샷 복사본에 활성 파일 시스템 공간을 사용하지 않도록 충분한 디스크 공간을 할당할 수 있습니다.' 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 스냅샷 복사본 예약 공간을 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.7 이하에서 ONTAP System Manager의 기존 버전(사용 가능)을 사용하여 볼륨의 스냅샷 복사본에 대한 공간(백분율로 측정됨)을 예약할 수 있습니다. 스냅샷 복사본 예약 공간을 설정하면 스냅샷 복사본에 활성 파일 시스템 공간을 사용하지 않도록 충분한 디스크 공간을 할당할 수 있습니다.
+
+.이 작업에 대해
+스냅샷 복사본에 대해 예약된 기본 공간은 SAN 및 VMware 볼륨에 대해 5%입니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 스냅샷 복사본 예약 공간을 설정할 볼륨을 선택합니다.
+. 추가 작업 * > * 스냅샷 관리 * > * 구성 설정 * 을 클릭합니다.
+. 스냅샷 복사본을 예약할 볼륨 공간의 비율을 입력하거나 선택한 다음 * 확인 * 을 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]

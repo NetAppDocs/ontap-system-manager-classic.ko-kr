@@ -1,0 +1,25 @@
+---
+permalink: online-help-96-97/concept_luns.html 
+sidebar: sidebar 
+keywords: system, manager, manager, lun, access, cluster, tab, online, help 
+summary: System Manager를 사용하여 LUN을 관리할 수 있습니다. 
+---
+= System Manager로 LUN 관리 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 기존(ONTAP 9.7 이하 버전에서 사용 가능)를 사용하여 LUN을 관리할 수 있습니다.
+
+LUN 탭을 사용하여 클러스터의 모든 LUN에 액세스하거나 SVM * > * LUN * 을 사용하여 SVM과 관련된 LUN에 액세스할 수 있습니다.
+
+[NOTE]
+====
+LUN 탭은 FC/FCoE 및 iSCSI 라이센스를 활성화한 경우에만 표시됩니다.
+
+====
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN 관리"^]

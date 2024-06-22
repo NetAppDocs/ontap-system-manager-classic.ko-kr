@@ -1,0 +1,52 @@
+---
+permalink: online-help-96-97/task_editing_aggregates.html 
+sidebar: sidebar 
+keywords: online, help, edit, aggregates, raid, type, group, size, online, help 
+summary: 필요한 경우 System Manager를 사용하여 기존 애그리게이트의 애그리게이트 이름, RAID 유형 및 RAID 그룹 크기를 변경할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 애그리게이트를 편집합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전 을 사용하면 필요에 따라 기존 애그리게이트의 애그리게이트 이름, RAID 유형 및 RAID 그룹 크기를 변경할 수 있습니다.
+
+.시작하기 전에
+RAID4에서 RAID-DP로 애그리게이트의 RAID 유형을 수정하려면 애그리게이트에 핫 스페어를 제외한 충분한 호환 스페어 디스크가 있어야 합니다.
+
+.이 작업에 대해
+* 어레이 LUN을 지원하는 ONTAP 시스템의 RAID 그룹은 변경할 수 없습니다.
++
+RAID0은 유일한 옵션입니다.
+
+* 분할된 디스크의 RAID 유형은 변경할 수 없습니다.
++
+RAID-DP는 분할된 디스크에 사용할 수 있는 유일한 옵션입니다.
+
+* SnapLock 준수 애그리게이트의 이름은 변경할 수 없습니다.
+* Aggregate가 SSD와 스토리지 풀로 구성된 경우 Aggregate의 이름만 수정할 수 있습니다.
+* 3중 패리티 디스크 크기가 10TB이고 다른 디스크의 크기가 10TB 이하인 경우 RAID 유형으로 RAID-DP 또는 RAID-TEC를 선택할 수 있습니다.
+* 3중 패리티 디스크 크기가 10TB이고 다른 디스크 중 하나의 크기가 10TB를 초과하는 경우 RAID-TEC만 RAID 유형에 사용할 수 있습니다.
+
+
+.단계
+. 다음 방법 중 하나를 선택합니다.
++
+** Applications & Tiers * > * Storage Tiers * 를 클릭합니다.
+** 스토리지 * > * 애그리게이트 및 디스크 * > * 애그리게이트 * 를 클릭합니다.
+
+
+. 편집할 Aggregate를 선택하고 * Edit * 를 클릭합니다.
+. [Aggregate 편집] * 대화 상자에서 필요에 따라 애그리게이트 이름, RAID 유형 및 RAID 그룹 크기를 수정합니다.
+. 저장 * 을 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_aggregates_window.adoc[애그리게이트 창]
+
+xref:concept_what_compatible_spare_disks_are.adoc[호환되는 스페어 디스크입니다]
+
+xref:reference_storage_tiers_window.adoc[Storage Tiers 창]

@@ -1,0 +1,46 @@
+---
+permalink: nfs-config-esxi/task_deploying_netapp_nfs_plugin_for_vmware_vaai.html 
+sidebar: sidebar 
+keywords: plug-in, software, library, integrate, vmware, virtual, disk, libraries, install, esxi, host, nfs, improve, copy, offload, space, reservation, option, deploy, deploy the nfs plug-in for vmware vaai 
+summary: 플러그인은 ESXi 호스트에 설치된 VMware 가상 디스크 라이브러리를 통합하는 소프트웨어 라이브러리입니다. VMware VAAI용 NFS 플러그인을 다운로드하고 설치하면 복제 오프로드 및 공간 예약 옵션을 사용하여 클론 생성 작업의 성능을 향상시킬 수 있습니다. 
+---
+= VMware VAAI용 NFS 플러그인을 구축합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+플러그인은 ESXi 호스트에 설치된 VMware 가상 디스크 라이브러리를 통합하는 소프트웨어 라이브러리입니다. VMware VAAI용 NFS 플러그인을 다운로드하고 설치하면 복제 오프로드 및 공간 예약 옵션을 사용하여 클론 생성 작업의 성능을 향상시킬 수 있습니다.
+
+.이 작업에 대해
+NFS 플러그인을 설치할 ESXi 호스트에 상주하는 가상 머신에 대한 일관된 액세스를 제공하기 위해 계획된 유지 보수 작업 중에 가상 머신을 마이그레이션하거나 NFS 플러그인을 설치할 수 있습니다.
+
+.단계
+. VMware VAAI용 NFS 플러그인을 다운로드합니다.
++
+https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"]
+
++
+온라인 번들을 다운로드해야 합니다 (`NetAppNasPlugIn.vib`)를 참조하십시오
+
+. 각 ESXi 호스트에서 VAAI가 설정되어 있는지 확인합니다.
++
+VMware vSphere 5.0 이상에서는 기본적으로 VAAI가 설정됩니다.
+
+. Virtual Storage Console에서 * Tools * > * NFS VAAI Tools * 로 이동합니다.
+. 를 업로드하려면 * 파일 선택 * 을 클릭합니다 `NetAppNasPlugIn.vib` 파일.
+. 업로드 * 를 클릭합니다.
++
+가 보입니다 `uploaded successfully` 메시지.
+
+. 호스트에 설치 * 를 클릭합니다.
+. 플러그인을 설치할 ESXi 호스트를 선택하고 * 설치 * 를 클릭한 다음 * 확인 * 을 클릭합니다.
+. ESXi 호스트를 재부팅하여 플러그인을 활성화합니다.
++
+플러그인을 설치한 후 설치를 완료하기 전에 ESXi 호스트를 재부팅해야 합니다.
+
++
+스토리지 시스템을 재부팅할 필요가 없습니다.
+
+

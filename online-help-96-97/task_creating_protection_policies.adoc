@@ -1,0 +1,31 @@
+---
+permalink: online-help-96-97/task_creating_protection_policies.html 
+sidebar: sidebar 
+keywords: create, protection, policies, online, help, system, manager 
+summary: System Manager를 사용하여 비동기식 미러 정책, 볼트 정책 또는 미러 및 볼트 정책을 생성하고 이러한 정책을 데이터 보호 관계에 적용할 수 있습니다. 
+---
+= 보호 정책을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager를 사용하여 비동기식 미러 정책, 볼트 정책 또는 미러 및 볼트 정책을 생성하고 이러한 정책을 데이터 보호 관계에 적용할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. 보호 정책을 생성할 스토리지 가상 시스템(SVM)을 선택하고 * SVM 설정 * 을 클릭합니다.
+. Policies * 창에서 * Protection Policies * 를 클릭합니다.
+. Create * 를 클릭합니다.
+. Create Policy * 대화상자에서 생성할 정책 유형을 선택합니다.
+. 정책 이름 및 전송 우선 순위를 지정합니다.
++
+낮음이란 전송 우선 순위가 가장 낮다는 것을 나타내며, 보통 일반 우선 순위 전송 후에 전송이 예약됩니다. 기본적으로 우선 순위는 보통으로 설정됩니다.
+
+. 비동기식 미러 유형의 정책에 대해 * Transfer All Source Snapshot Copies * 확인란을 선택하여 소스 볼륨의 모든 스냅샷 복사본을 백업하는 미러 정책에 "'all_source_snapshots" 규칙을 포함시킵니다.
+. 데이터 전송 중에 전송되는 데이터를 압축하려면 * 네트워크 압축 사용 * 확인란을 선택합니다.
+. 정책에 대한 추가 설명을 추가하려면 * 의견 추가 * 를 클릭합니다.
+. 볼트 또는 미러 볼트 유형의 정책에 대해 SnapMirror 레이블과 대상 보존 수를 지정합니다.
+. Create * 를 클릭합니다.
+

@@ -1,0 +1,155 @@
+---
+permalink: online-help-96-97/concept_snmp.html 
+sidebar: sidebar 
+keywords: system, manager, configure, snmp, svm, cluster, online, help, test, trap, host, configuration, window, command, protocol, 
+summary: System Manager를 사용하여 SNMP를 구성하여 클러스터의 SVM을 모니터링할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 SNMP를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 클러스터에서 SVM을 모니터링하도록 SNMP를 구성할 수 있습니다.
+
+
+
+== SNMP를 설정하거나 해제합니다
+
+System Manager를 사용하여 클러스터에서 SNMP를 설정하거나 해제할 수 있습니다. SNMP를 사용하면 클러스터의 SVM(스토리지 가상 머신)을 모니터링하여 사전에 문제를 예방하고 문제가 발생하지 않도록 방지할 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]*.
+. Setup* 창에서 * SNMP * 를 클릭합니다.
+. SNMP* 창에서 * 활성화 * 또는 * 비활성화 * 를 클릭합니다.
+
+
+
+
+== SNMP 정보를 편집합니다
+
+System Manager의 Edit SNMP Settings 대화 상자를 사용하여 스토리지 시스템 위치 및 담당자 정보를 업데이트하고 시스템의 SNMP 커뮤니티를 지정할 수 있습니다.
+
+.이 작업에 대해
+System Manager는 SNMP 프로토콜 SNMPv1, SNMPv2c 및 SNMP 커뮤니티를 사용하여 스토리지 시스템을 검색합니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]*.
+. Setup* 창에서 * SNMP * 를 클릭합니다.
+. 편집 * 을 클릭합니다.
+. General * 탭에서 스토리지 시스템 및 SNMP 커뮤니티의 연락처 담당자 정보와 위치 정보를 지정합니다.
++
+커뮤니티 이름은 32자여야 하며 /:"'|와 같은 특수 문자를 포함할 수 없습니다.
+
+. ** SNMPv3** 탭에서 다음을 수행합니다.
++
+.. SNMPv3 사용자를 추가하려면 * 추가 * 를 클릭합니다.
+.. 사용자 이름을 지정하고 필요한 경우 엔진 ID를 수정합니다.
+.. 인증 프로토콜 * 을 선택하고 자격 증명을 입력합니다.
+.. 개인 정보 보호 프로토콜 * 을 선택하고 자격 증명을 입력합니다.
+.. 확인 * 을 클릭하여 변경 사항을 저장합니다.
+
+
+. 확인 * 을 클릭합니다.
+. SNMP* 창에서 SNMP 설정에 대한 변경 사항을 확인합니다.
+
+
+
+
+== SNMP 트랩을 설정하거나 해제합니다
+
+SNMP 트랩을 사용하면 스토리지 시스템의 다양한 구성 요소의 상태와 상태를 모니터링할 수 있습니다. System Manager의 Edit SNMP Settings 대화 상자를 사용하여 스토리지 시스템에서 SNMP 트랩을 설정하거나 해제할 수 있습니다.
+
+.이 작업에 대해
+SNMP가 기본적으로 활성화되어 있지만 SNMP 트랩은 기본적으로 비활성화되어 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]*.
+. Setup* 창에서 * SNMP * 를 클릭합니다.
+. SNMP * 창에서 * 편집 * 을 클릭합니다.
+. SNMP 설정 편집 * 대화 상자에서 * 트랩 호스트 * 탭을 선택한 다음 * 트랩 사용 * 확인란을 선택하거나 선택 취소하여 SNMP 트랩을 활성화하거나 비활성화합니다.
+. SNMP 트랩을 사용하도록 설정한 경우 트랩을 보낼 호스트의 호스트 이름 또는 IP 주소를 추가합니다.
+. 확인 * 을 클릭합니다.
+
+
+
+
+== 트랩 호스트 구성을 테스트합니다
+
+System Manager를 사용하여 트랩 호스트 설정을 올바르게 구성했는지 테스트할 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]*.
+. Setup* 창에서 * SNMP * 를 클릭합니다.
+. SNMP * 창에서 * Test Trap Host * 를 클릭합니다.
+. 확인 * 을 클릭합니다.
+
+
+
+
+== SNMP 창
+
+SNMP 창을 사용하면 시스템에 대한 현재 SNMP 설정을 볼 수 있습니다. 시스템의 SNMP 설정을 변경하고, SNMP 프로토콜을 활성화하고, 트랩 호스트를 추가할 수도 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 활성화/비활성화 *
++
+SNMP를 설정하거나 해제합니다.
+
+* * 편집 *
++
+스토리지 시스템에 대한 SNMP 커뮤니티를 지정하고 트랩을 설정 또는 해제할 수 있는 Edit SNMP Settings 대화 상자를 엽니다.
+
+* * 테스트 트랩 호스트 *
++
+구성된 모든 호스트에 테스트 트랩을 전송하여 테스트 트랩이 모든 호스트에 도달하는지 여부와 SNMP 구성이 올바르게 설정되었는지 여부를 확인합니다.
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+
+
+
+
+=== 세부 정보
+
+세부 정보 영역에는 스토리지 시스템의 SNMP 서버 및 호스트 트랩에 대한 다음 정보가 표시됩니다.
+
+* SNMP *
++
+SNMP 활성화 여부를 표시합니다.
+
+* * 트랩 *
++
+SNMP 트랩이 활성화되어 있는지 여부를 표시합니다.
+
+* * 위치 *
++
+SNMP 서버의 주소를 표시합니다.
+
+* * 연락처 *
++
+SNMP 서버의 연락처 세부 정보를 표시합니다.
+
+* * 트랩 호스트 IP 주소 *
++
+트랩 호스트의 IP 주소를 표시합니다.
+
+* * 커뮤니티 이름 *
++
+SNMP 서버의 커뮤니티 이름을 표시합니다.
+
+* * 보안 이름 *
++
+SNMP 서버의 보안 스타일을 표시합니다.
+
+
+
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/networking/index.html["네트워크 관리"]

@@ -1,0 +1,14 @@
+---
+permalink: expansion/task_preparing_cluster_for_expansion.html 
+sidebar: sidebar 
+keywords: prepare, cluster, expansion, node-locked, license, verify, system, health, configuration, generate autosupport, message, prepare the cluster for expansion 
+summary: 확장을 위해 클러스터를 준비하려면 노드 잠김 라이센스를 추가하고, 시스템 상태를 확인하고, 클러스터의 구성을 백업하고, AutoSupport 메시지를 생성해야 합니다. 
+---
+= 확장을 위해 클러스터를 준비합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+확장을 위해 클러스터를 준비하려면 노드 잠김 라이센스를 추가하고, 시스템 상태를 확인하고, 클러스터의 구성을 백업하고, AutoSupport 메시지를 생성해야 합니다.

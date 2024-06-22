@@ -1,0 +1,97 @@
+---
+permalink: online-help-96-97/concept_kerberos_interface_services.html 
+sidebar: sidebar 
+keywords: kerberos, interface, service, system, manager, manage, online, help, edit, configuration, buttons, command, window 
+summary: System Manager를 사용하여 Kerberos 인터페이스 서비스를 관리할 수 있습니다. 
+---
+= 시스템 관리자-ONTAP 9.7 이하를 사용하여 Kerberos 인터페이스 서비스를 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하여 Kerberos 인터페이스 서비스를 관리할 수 있습니다.
+
+
+
+== Kerberos 구성을 편집합니다
+
+System Manager를 사용하여 Kerberos를 사용하도록 설정하고 SVM(스토리지 가상 시스템)과 연결된 Kerberos 구성을 편집할 수 있습니다. 그러면 SVM에서 NFS용 Kerberos 보안 서비스를 사용할 수 있습니다.
+
+.시작하기 전에
+* SVM 레벨에서 적어도 하나의 Kerberos 영역이 구성되어 있어야 합니다.
+* SVM에 데이터 LIF가 2개 이상 있어야 합니다.
++
+하나의 데이터 LIF는 UNIX 및 CIFS 관련 Kerberos 트래픽 모두에 대해 SPN(Service Principal Name)에서 사용됩니다. 다른 데이터 LIF는 Kerberos가 아닌 트래픽에 액세스하는 데 사용됩니다.
+
++
+[NOTE]
+====
+CIFS 서버는 기본 NFS Kerberos 액세스에 필요하지 않습니다. CIFS 서버는 다중 프로토콜 액세스를 위해 또는 Active Directory를 이름 매핑을 위해 LDAP 서버로 사용할 때 필요합니다.
+
+====
+
+
+.이 작업에 대해
+Microsoft Active Directory Kerberos를 사용하는 경우 도메인에서 사용되는 SPN의 처음 15자는 고유해야 합니다. Microsoft Active Directory는 최대 15자의 SPN에 대한 제한이 있으며 중복 SPN을 허용하지 않습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 서비스 * 창에서 * Kerberos 인터페이스 * 를 클릭합니다.
+. Kerberos 인터페이스* 창에서 인터페이스를 선택한 다음 * 편집 * 을 클릭합니다.
+. Kerberos 구성 편집 * 대화 상자에서 필요한 내용을 변경한 다음 * 확인 * 을 클릭합니다.
+
+
+
+
+== Kerberos 인터페이스 창
+
+Kerberos 인터페이스 창을 사용하여 Kerberos를 사용하도록 설정하고 SVM(스토리지 가상 머신)에 대한 Kerberos 구성을 편집할 수 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 편집 *
++
+Kerberos를 사용하도록 설정하고 SVM과 연결된 Kerberos 구성을 편집하는 데 사용할 수 있는 Kerberos 구성 편집 대화 상자를 엽니다.
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+
+
+
+
+=== Kerberos 인터페이스 목록
+
+Kerberos 구성에 대한 자세한 내용은 에 나와 있습니다.
+
+* * 인터페이스 이름 *
++
+SVM에 대한 Kerberos 구성과 연결된 논리 인터페이스를 지정합니다.
+
+* * 서비스 담당자 이름 *
++
+Kerberos 구성과 일치하는 SPN(서비스 사용자 이름)을 지정합니다.
+
+* * 영역 *
++
+Kerberos 구성과 연결된 Kerberos 영역의 이름을 지정합니다.
+
+* * Kerberos 상태 *
++
+Kerberos 활성화 여부를 지정합니다.
+
+
+
+* 관련 정보 *
+
+link:https://www.netapp.com/pdf.html?item=/media/10720-tr-4067.pdf["NetApp 기술 보고서 4067: NetApp ONTAP의 NFS"^]
+
+link:https://www.netapp.com/pdf.html?item=/media/19384-tr-4616.pdf["NetApp 기술 보고서 4616: ONTAP에서 Microsoft Active Directory와 NFS Kerberos"^]
+
+link:https://www.netapp.com/pdf.html?item=/media/19423-tr-4835.pdf["NetApp 기술 보고서 4835: ONTAP에서 LDAP를 구성하는 방법"^]

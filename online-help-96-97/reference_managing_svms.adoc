@@ -1,0 +1,45 @@
+---
+permalink: online-help-96-97/reference_managing_svms.html 
+sidebar: sidebar 
+keywords: storage, virtual, machine, svm, administrator, system, manager, online, help 
+summary: 'SVM(스토리지 가상 시스템) 관리자는 클러스터 관리자가 할당한 기능에 따라 SVM과 볼륨, 프로토콜, 서비스 등의 리소스를 관리할 수 있습니다. SVM 관리자는 SVM을 생성, 수정 또는 삭제할 수 없습니다.' 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 SVM 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manger Classic(ONTAP 9.7 이하에서 사용 가능)에서는 SVM(스토리지 가상 시스템) 관리자가 클러스터 관리자가 할당한 기능에 따라 SVM과 볼륨, 프로토콜, 서비스 등의 리소스를 관리할 수 있습니다. SVM 관리자는 SVM을 생성, 수정 또는 삭제할 수 없습니다.
+
+[NOTE]
+====
+SVM 관리자는 System Manager에 로그인할 수 없습니다.
+
+====
+SVM 관리자는 다음 관리 기능 전체 또는 일부를 사용할 수 있습니다.
+
+* 데이터 액세스 프로토콜 구성
++
+SVM 관리자는 NFS, CIFS, iSCSI, 파이버 채널(FC) 프로토콜(이더넷을 통한 파이버 채널 또는 FCoE 포함)과 같은 데이터 액세스 프로토콜을 구성할 수 있습니다.
+
+* 서비스 구성
++
+SVM 관리자는 LDAP, NIS 및 DNS 등의 서비스를 구성할 수 있습니다.
+
+* 스토리지 관리
++
+SVM 관리자는 볼륨, 할당량, Qtree, 파일을 관리할 수 있습니다.
+
+* SAN 환경에서 LUN 관리
+* 볼륨의 스냅샷 복사본 관리
+* SVM 모니터링
++
+SVM 관리자는 작업, 네트워크 연결, 네트워크 인터페이스, SVM 상태를 모니터링할 수 있습니다.
+
+
+
+* 관련 정보 *
+
+https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"]

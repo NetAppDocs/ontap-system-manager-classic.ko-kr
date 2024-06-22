@@ -1,0 +1,46 @@
+---
+permalink: online-help-96-97/task_changing_raid_group_when_adding_capacity_disks.html 
+sidebar: sidebar 
+keywords: change, raid, group, add, capacity, disk, online, help, hdd 
+summary: '용량 디스크(HDD)를 애그리게이트에 추가하는 동안 System Manager를 사용하여 디스크를 추가할 RAID 그룹을 변경할 수 있습니다.' 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 용량 디스크를 추가할 때 RAID 그룹을 변경하십시오
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+용량 디스크(HDD)를 애그리게이트에 추가할 때 ONTAP System Manager 클래식(ONTAP 9.7 이하에서는 사용 가능)을 사용하여 디스크를 추가할 RAID 그룹을 변경할 수 있습니다.
+
+.이 작업에 대해
+* RAID 유형이 RAID-DP이고 크기가 10TB보다 크거나 같은 FSA 또는 mSATA 유형의 디스크를 추가하는 경우 에만 추가할 수 있습니다 `Specific RAID group`그리고, 끝은 아닙니다 `New RAID group` 또는 `All RAID groups`.
++
+디스크 크기를 기존 애그리게이트의 크기로 축소한 후 디스크가 추가됩니다.
+
+* RAID 그룹이 RAID-TEC이고 크기가 10TB보다 크거나 같은 FSA 또는 mSATA 유형의 디스크를 추가하는 경우 에 추가할 수 있습니다 `All RAID groups`, `New RAID group`, 및 `Specific RAID group`.
++
+디스크 크기를 기존 애그리게이트의 크기로 축소한 후 디스크가 추가됩니다.
+
+
+
+.단계
+. 다음 방법 중 하나를 선택합니다.
++
+** Applications & Tiers * > * Storage Tiers * 를 클릭합니다.
+** 스토리지 * > * 애그리게이트 및 디스크 * > * 애그리게이트 * 를 클릭합니다.
+
+
+. Storage Tiers * 창에서 용량 디스크를 추가할 애그리게이트를 선택한 다음 menu: More Actions [Add Capacity] 를 클릭합니다.
+. Add Capacity * (용량 추가 *) 대화 상자에서 다음 단계를 수행합니다.
++
+.. 변경 * 을 클릭합니다.
+.. RAID 구성 변경 * 대화 상자에서 용량 디스크를 추가할 RAID 그룹을 지정합니다.
++
+기본값을 변경할 수 있습니다 `All RAID groups` 합니다 `Specific RAID group` 또는 `New RAID group`.
+
+.. 저장 * 을 클릭합니다.
+
+
+

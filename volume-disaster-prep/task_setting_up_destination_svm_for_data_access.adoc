@@ -1,0 +1,49 @@
+---
+permalink: volume-disaster-prep/task_setting_up_destination_svm_for_data_access.html 
+sidebar: sidebar 
+keywords: minimize, data, access, disruption, activating, activate, destination, volume, configuration, cifs, policies, policy, nas, environment, initiator, group, svm, set up the destination svm for data access 
+summary: LIF, CIFS 공유, NAS 환경을 위한 엑스포트 정책, 타겟 볼륨을 포함하는 SVM의 SAN 환경을 위한 LIF 및 이니시에이터 그룹과 같은 필수 구성을 설정하여 타겟 볼륨을 활성화할 때 데이터 액세스 중단을 최소화할 수 있습니다. 
+---
+= 데이터 액세스를 위해 대상 SVM을 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIF, CIFS 공유, NAS 환경을 위한 엑스포트 정책, 타겟 볼륨을 포함하는 SVM의 SAN 환경을 위한 LIF 및 이니시에이터 그룹과 같은 필수 구성을 설정하여 타겟 볼륨을 활성화할 때 데이터 액세스 중단을 최소화할 수 있습니다.
+
+.이 작업에 대해
+대상 볼륨이 포함된 SVM에 대해 * destination * 클러스터에서 이 작업을 수행해야 합니다.
+
+
+
+== 절차를 참조하십시오
+
+* NAS 환경:
++
+.. NAS LIF 생성:
+.. 소스에서 사용된 것과 동일한 공유 이름으로 CIFS 공유를 생성합니다.
+.. 적절한 NFS 엑스포트 정책을 생성합니다.
+.. 적절한 할당량 규칙을 생성합니다.
+
+
+* SAN 환경:
++
+.. SAN LIF 생성
+.. * 선택 사항: * 포트 세트 구성.
+.. 이니시에이터 그룹을 구성합니다.
+.. FC의 경우 FC 스위치를 조닝(Zoning)하여 SAN 클라이언트가 LIF에 액세스할 수 있도록 합니다.
+
+
+
+
+
+
+== 다음 단계
+
+소스 볼륨을 포함하는 SVM에서 변경이 있을 경우 타겟 볼륨이 포함된 SVM에서 수동으로 변경 사항을 복제해야 합니다.
+
+* 관련 정보 *
+
+https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"]

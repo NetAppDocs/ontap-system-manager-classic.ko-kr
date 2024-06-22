@@ -1,0 +1,25 @@
+---
+permalink: nfs-config-esxi/task_mounting_datastores_on_hosts.html 
+sidebar: sidebar 
+keywords: mount, datastore, host, access, storage, provision, automatic, add, vmware, environment, mount datastores on hosts 
+summary: 데이터 저장소를 마운트하면 호스트에서 스토리지에 액세스할 수 있습니다. 에서 데이터 저장소를 프로비저닝하면 해당 데이터 저장소가 호스트 또는 클러스터에 자동으로 마운트됩니다. VMware 환경에 호스트를 추가한 후 호스트에 데이터 저장소를 마운트해야 할 수 있습니다. 
+---
+= 호스트에 데이터 저장소를 마운트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 저장소를 마운트하면 호스트에서 스토리지에 액세스할 수 있습니다. 에서 데이터 저장소를 프로비저닝하면 해당 데이터 저장소가 호스트 또는 클러스터에 자동으로 마운트됩니다. VMware 환경에 호스트를 추가한 후 호스트에 데이터 저장소를 마운트해야 할 수 있습니다.
+
+.단계
+. vSphere Web Client * Home * 페이지에서 * Hosts and Clusters * 를 클릭합니다.
+. 탐색 창에서 호스트가 포함된 데이터 센터를 확장합니다.
+. 호스트를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp VSC * > * 데이터 저장소 마운트 * 를 선택합니다.
+. 마운트할 데이터 저장소를 선택한 다음 * 확인 * 을 클릭합니다.
+
+
+* 관련 정보 *
+
+https://docs.netapp.com/vapp-96/topic/com.netapp.doc.vsc-iag/home.html["9.6 릴리즈용 VMware vSphere Administration용 Virtual Storage Console, VASA Provider 및 Storage Replication Adapter"]

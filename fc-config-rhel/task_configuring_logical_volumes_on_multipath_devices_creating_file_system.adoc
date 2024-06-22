@@ -1,0 +1,27 @@
+---
+permalink: fc-config-rhel/task_configuring_logical_volumes_on_multipath_devices_creating_file_system.html 
+sidebar: sidebar 
+keywords: linux, host, access, scsi, device, lun, partition, file, system, multipath, device, underly, scsi, lofical, create, file, system, configure, configure logical volumes on multipath devices and creating a file system 
+summary: 'Linux 호스트가 새 SCSI 장치(LUN)에 처음 액세스할 때 파티션 또는 파일 시스템이 없습니다. 분할된 다중 경로 장치를 사용하려면 먼저 기본 SCSI 장치를 분할해야 합니다. 다중 경로 장치에 논리 볼륨을 생성하고 선택적으로 파일 시스템을 생성할 수도 있습니다.' 
+---
+= 다중 경로 장치에 논리 볼륨을 구성하고 파일 시스템을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux 호스트가 새 SCSI 장치(LUN)에 처음 액세스할 때 파티션 또는 파일 시스템이 없습니다. 분할된 다중 경로 장치를 사용하려면 먼저 기본 SCSI 장치를 분할해야 합니다. 다중 경로 장치에 논리 볼륨을 생성하고 선택적으로 파일 시스템을 생성할 수도 있습니다.
+
+.시작하기 전에
+SCSI 장치와 해당 다중 경로 장치는 Linux 호스트에서 검색되어야 합니다.
+
+.이 작업에 대해
+SCSI 디바이스에 최소 DM 다중 경로를 구성해야 합니다. DM 다중 경로를 초과하는 모든 구성은 선택 사항입니다. 다음 단계는 파티션 분할, 다중 경로 장치에 논리 볼륨 구성, 파일 시스템 생성 등의 추가 구성을 수행하려는 경우 일반적인 지침입니다. Linux 명령에 대한 자세한 내용은 Red Hat Enterprise Linux 설명서 및 man 페이지를 참조하십시오.
+
+.단계
+. 분할된 다중 경로 장치를 사용하려면 먼저 를 사용하여 기본 SCSI 장치를 파티션합니다 `fdisk` 또는 `parted` 유틸리티.
+. 를 사용하여 해당 다중 경로 파티션을 생성합니다 `kpartx` 유틸리티.
+. LVM(Logical Volume Manager) 명령을 사용하여 해당 다중 경로 장치에 논리적 볼륨을 생성합니다.
+. 를 사용하여 논리적 볼륨 또는 다중 경로 디바이스에 ext4 또는 XFS와 같은 파일 시스템을 생성합니다 `mkfs` 유틸리티.
+

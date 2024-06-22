@@ -1,0 +1,64 @@
+---
+permalink: online-help-96-97/concept_broadcast_domains.html 
+sidebar: sidebar 
+keywords: system, manager, create, manage, broadcast, domain, online, help, edit, settings, port, delete 
+summary: System Manager를 사용하여 브로드캐스트 도메인을 만들고 관리할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 브로드캐스트 도메인을 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 및 이전 버전에서 사용 가능)을 사용하여 브로드캐스트 도메인을 만들고 관리할 수 있습니다.
+
+
+
+== 브로드캐스트 도메인 설정을 편집합니다
+
+System Manager를 사용하여 이름, MTU 크기 및 브로드캐스트 도메인과 연결된 포트와 같은 브로드캐스트 도메인의 속성을 수정할 수 있습니다.
+
+.이 작업에 대해
+* 관리 포트 e0M이 할당된 브로드캐스트 도메인의 MTU 크기를 수정하면 안 됩니다.
+* 시스템 관리자를 사용하여 클러스터 IPspace에서 브로드캐스트 도메인을 편집할 수는 없습니다.
++
+대신 CLI(Command-Line Interface)를 사용해야 합니다.
+
+
+
+.단계
+. 네트워크 * > * 브로드캐스트 도메인 * 을 클릭합니다.
+. 수정할 브로드캐스트 도메인을 선택한 다음 * 편집 * 을 클릭합니다.
+. [브로드캐스트 도메인 편집] * 대화 상자에서 필요에 따라 브로드캐스트 도메인 속성을 수정합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+
+
+
+
+== 브로드캐스트 도메인을 삭제합니다
+
+브로드캐스트 도메인이 더 이상 필요하지 않은 경우 System Manager를 사용하여 브로드캐스트 도메인을 삭제할 수 있습니다.
+
+.시작하기 전에
+삭제할 브로드캐스트 도메인에 서브넷이 연결되어 있지 않아야 합니다.
+
+.이 작업에 대해
+* 브로드캐스트 도메인을 삭제하면 브로드캐스트 도메인과 연결된 포트가 기본 IPspace에 할당되고 포트의 MTU 설정은 변경되지 않습니다.
+* 시스템 관리자를 사용하여 클러스터 IPspace에 있는 브로드캐스트 도메인을 삭제할 수 없습니다.
++
+대신 CLI(Command-Line Interface)를 사용해야 합니다.
+
+
+
+.단계
+. 네트워크 * > * 브로드캐스트 도메인 * 을 클릭합니다.
+. 삭제할 브로드캐스트 도메인을 선택한 다음 * 삭제 * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * 삭제 * 를 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_network_window.adoc[네트워크 창]
+
+https://docs.netapp.com/us-en/ontap/networking/index.html["네트워크 관리"]

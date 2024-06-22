@@ -1,0 +1,28 @@
+---
+permalink: online-help-96-97/task_editing_luns.html 
+sidebar: sidebar 
+keywords: edit, lun, properties, online, help, system, manager 
+summary: System Manager의 LUN 속성 대화 상자를 사용하여 LUN의 이름, 설명, 크기, 공간 예약 설정 또는 매핑된 이니시에이터 호스트를 변경할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 LUN을 편집합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.7 이하에서 사용 가능한 ONTAP System Manager 클래식 의 LUN 속성 대화 상자를 사용하여 LUN의 이름, 설명, 크기, 공간 예약 설정 또는 매핑된 이니시에이터 호스트를 변경할 수 있습니다.
+
+.이 작업에 대해
+LUN 크기를 조정할 때 호스트 유형과 LUN을 사용하는 애플리케이션에 권장되는 호스트 측 단계를 수행해야 합니다.
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. LUN 관리 * 탭의 LUN 목록에서 편집할 LUN을 선택하고 * 편집 * 을 클릭합니다.
+. 필요한 사항을 변경합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_luns_window.adoc[LUN 창]

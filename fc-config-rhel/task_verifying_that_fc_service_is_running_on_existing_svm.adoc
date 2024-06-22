@@ -1,0 +1,35 @@
+---
+permalink: fc-config-rhel/task_verifying_that_fc_service_is_running_on_existing_svm.html 
+sidebar: sidebar 
+keywords: exist, storage, virtual, machine, svm, verify, fc, service, run, ontap, system, manager, logical, interface, lif, create, verify that the fc service is running on an existing svm 
+summary: '기존 SVM(스토리지 가상 머신)을 사용하도록 선택한 경우 ONTAP System Manager를 사용하여 SVM에서 FC 서비스가 실행되고 있는지 확인해야 합니다. 또한 FC 논리 인터페이스(LIF)가 이미 생성되어 있는지도 확인해야 합니다.' 
+---
+= FC 서비스가 기존 SVM에서 실행되고 있는지 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 SVM(스토리지 가상 머신)을 사용하도록 선택한 경우 ONTAP System Manager를 사용하여 SVM에서 FC 서비스가 실행되고 있는지 확인해야 합니다. 또한 FC 논리 인터페이스(LIF)가 이미 생성되어 있는지도 확인해야 합니다.
+
+.시작하기 전에
+새 LUN을 생성할 기존 SVM을 선택해야 합니다.
+
+.단계
+. SVM * 창으로 이동합니다.
+. 필요한 SVM을 선택합니다.
+. SVM 설정 * 탭을 선택합니다.
+. 프로토콜 * 창에서 * FC/FCoE * 를 선택합니다.
+. FC 서비스가 실행 중인지 확인합니다.
++
+image::../media/vserver_service_fc_fcoe_running_fc_rhel.gif[그림은 FC 서비스가 실행 중이고 FC LIF가 4개인 System Manager의 FC/FCoE 창을 보여 줍니다.]
+
++
+FC 서비스가 실행되고 있지 않으면 FC 서비스를 시작하거나 새 SVM을 생성합니다.
+
+. 각 노드에 대해 2개 이상의 FC LIF가 나열되는지 확인합니다.
++
+노드당 FC LIF가 2개 미만인 경우 SVM에서 FC 구성을 업데이트하거나 FC용 새 SVM을 생성하십시오.
+
+

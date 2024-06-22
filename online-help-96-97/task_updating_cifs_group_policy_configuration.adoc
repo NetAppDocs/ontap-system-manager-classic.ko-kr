@@ -1,0 +1,53 @@
+---
+permalink: online-help-96-97/task_updating_cifs_group_policy_configuration.html 
+sidebar: sidebar 
+keywords: update, cifs, group, policy, configuration, online, help, enable, disable, modify, reload, set, up 
+summary: 'CLI(Command-Line Interface)를 통해 정책 구성이 변경된 후 그룹 정책을 업데이트해야 합니다. System Manager의 CIFS 창을 사용하여 그룹 정책을 업데이트할 수 있습니다.' 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 CIFS 그룹 정책 구성을 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)에서 CIFS 창을 사용하여 그룹 정책을 업데이트 및 관리할 수 있습니다.
+
+
+
+== CIFS 그룹 정책 구성을 업데이트합니다
+
+CLI(Command-Line Interface)를 통해 정책 구성이 변경된 후 그룹 정책을 업데이트해야 합니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 도메인 * 탭을 클릭합니다.
+. 그룹 정책 * 영역에서 업데이트할 그룹 정책 구성을 선택한 다음 * 업데이트 * 를 클릭합니다.
+
+
+
+
+== CIFS 그룹 정책 구성을 설정하거나 해제합니다
+
+System Manager의 CIFS 창에서 CIFS 그룹 정책 구성을 설정하거나 해제할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 도메인 * 탭을 클릭합니다.
+. 그룹 정책 * 영역에서 활성화 또는 비활성화할 그룹 정책 구성을 선택한 다음 필요에 따라 * 활성화 * 또는 * 비활성화 * 를 클릭합니다.
+
+
+
+
+== CIFS 그룹 정책을 다시 로드합니다
+
+정책 상태가 변경된 경우 CIFS 그룹 정책을 다시 로드해야 합니다. System Manager의 CIFS 창을 사용하여 그룹 정책을 다시 로드할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 도메인 * 탭을 클릭합니다.
+. Group Policy * 영역에서 다시 로드할 그룹 정책 구성을 선택한 다음 * Reload * 를 클릭합니다.
+

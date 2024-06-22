@@ -1,0 +1,70 @@
+---
+permalink: expansion/task_updating_lun_paths_for_new_nodes.html 
+sidebar: sidebar 
+keywords: cluster, configure, san, lif, add, update, path, lun, node, update lun paths for the new nodes 
+summary: 클러스터가 SAN에 대해 구성된 경우, 새로 추가된 노드에 SAN LIF를 생성한 다음 경로를 업데이트해야 합니다. 
+---
+= 새 노드의 LUN 경로를 업데이트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터가 SAN에 대해 구성된 경우, 새로 추가된 노드에 SAN LIF를 생성한 다음 경로를 업데이트해야 합니다.
+
+.이 작업에 대해
+이 절차는 클러스터에 LUN이 포함된 경우에만 필요합니다. 클러스터에 파일만 있는 경우 이 절차를 건너뛸 수 있습니다.
+
+.단계
+. 클러스터의 각 SVM(스토리지 가상 머신)에 대해 새로 추가된 노드에 새 LIF를 생성합니다.
++
+.. 를 사용하여 FC 또는 iSCSI 프로토콜을 사용하는 SVM을 식별합니다 `vserver show` 명령과 함께 `-fields allowed-protocols` 매개 변수 및 출력 검토
++
+[listing]
+----
+cluster1::> vserver show -fields allowed-protocols
+vserver allowed-protocols
+------- -----------------
+vs1     cifs,ndmp
+vs2     fcp
+vs3     iscsi
+...
+----
+.. FC 또는 iSCSI를 사용하는 각 SVM에 대해 를 사용하여 새로 추가된 각 노드에 대해 최소 2개의 데이터 LIF를 생성합니다 `network interface create` 명령과 함께 `-role data` 매개 변수.
++
+[listing]
+----
+cluster1::> network interface create -vserver vs1 -lif lif5 -role data
+-data-protocol iscsi -home-node cluster1-3 -home-port e0b
+-address 192.168.2.72 -netmask 255.255.255.0
+----
+.. 각 SVM에 대해 를 사용하여 클러스터의 모든 노드에 대한 LIF가 있는지 확인합니다 `network interface show` 명령과 함께 `-vserver` 매개 변수.
+
+
+. 포틀세트 업데이트:
++
+.. 를 사용하여 포틀세트가 있는지 확인합니다 `lun portset show` 명령.
+.. 새로운 LIF를 기존 호스트에 표시하려면 를 사용하여 각 새로운 LIF를 포세트에 추가합니다 `lun portset add` command -- 각 LIF에 대해 한 번 수행합니다.
+
+
+. FC 또는 FCoE를 사용하는 경우 조닝 업데이트:
++
+.. 조닝이 올바르게 설정되었는지 확인하여 호스트의 기존 이니시에이터 포트가 새 노드의 새 타겟 포트에 연결되도록 합니다.
+.. 스위치 조닝을 업데이트하여 새 노드를 기존 이니시에이터에 연결합니다.
++
+조닝 설정은 사용하는 스위치에 따라 다릅니다.
+
+.. LUN을 새 노드로 이동할 계획인 경우 를 사용하여 호스트에 새 경로를 표시합니다 `lun mapping add-reporting-nodes` 명령.
+
+
+. 모든 호스트 운영 체제에서 새로 추가된 경로를 다시 검색합니다.
+. 호스트 운영 체제에 따라 오래된 경로를 제거합니다.
+. MPIO 구성에 경로를 추가하거나 제거합니다.
+
+
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/san-config/index.html["SAN 구성"^]
+
+https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN 관리"^]

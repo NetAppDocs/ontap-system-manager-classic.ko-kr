@@ -1,0 +1,48 @@
+---
+permalink: expansion/index.html 
+sidebar: sidebar 
+keywords: nondisruptive, expand, exist, cluster, ha, pair, expansion, overview 
+summary: HA 쌍을 추가하면 기존 클러스터를 빠르고 중단 없이 확장할 수 있습니다. 클러스터가 클수록 클러스터에서 사용할 수 있는 성능과 스토리지 용량이 늘어납니다. 
+---
+= 클러스터 확장 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HA 쌍을 추가하면 기존 클러스터를 빠르고 중단 없이 확장할 수 있습니다. 클러스터가 클수록 클러스터에서 사용할 수 있는 성능과 스토리지 용량이 늘어납니다.
+
+다음 조건이 참인 경우에만 이 절차를 사용해야 합니다.
+
+* 기존 클러스터는 다음 요구사항을 충족합니다.
++
+** ONTAP 9를 실행하고 있습니다.
+** 최소 2개의 노드가 포함되어 있습니다.
++
+이 절차의 예에서는 2노드 클러스터를 사용하지만 2개 이상의 노드가 있는 클러스터에도 적용됩니다.
+
++
+단일 노드 클러스터에 노드를 추가하려면 다른 절차를 따라야 합니다.
+
++
+https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-controller-add/home.html["두 번째 컨트롤러를 추가하여 HA 쌍 생성"]
+
+** IPv6 주소 지정 또는 스토리지 암호화를 사용하지 않습니다.
+** MetroCluster 구성이 아닙니다.
+
+
+* 추가하려는 컨트롤러 모듈은 다음 요구사항을 충족합니다.
++
+** 새 데이터가 없으면 새로 지워질 뿐만 아니라 클러스터에 속하지 않은 상태로 새 클러스터에 추가할 준비가 된 것입니다.
+** ONTAP 9를 지원합니다.
+** ONTAP 9 릴리즈 제품군 버전을 실행하고 있습니다.
+
+
+* System Manager로 ONTAP 구성 작업을 수행할 때 ONTAP 9.7 이상을 지원하는 ONTAP System Manager UI가 아니라 ONTAP 9.7 이전 릴리즈용 _Classic_System Manager UI를 사용해야 합니다.
++
+https://docs.netapp.com/us-en/ontap/["ONTAP 시스템 관리자 설명서"]
+
+* 사용 가능한 모든 옵션을 탐색하는 것이 아니라 모범 사례를 사용하려고 합니다.
+* 많은 개념적 배경을 읽고 싶지 않습니다.
+

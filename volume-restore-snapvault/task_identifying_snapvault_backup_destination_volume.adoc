@@ -1,0 +1,28 @@
+---
+permalink: volume-restore-snapvault/task_identifying_snapvault_backup_destination_volume.html 
+sidebar: sidebar 
+keywords: identify, snapvault, backup, destination, volume, restore, data, source, corrupt, identify the snapvault backup destination volume 
+summary: 소스 볼륨의 데이터가 손상되었거나 손실될 때 데이터를 복원할 SnapVault 백업 대상 볼륨을 식별해야 합니다. 
+---
+= SnapVault 백업 대상 볼륨을 식별합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+소스 볼륨의 데이터가 손상되었거나 손실될 때 데이터를 복원할 SnapVault 백업 대상 볼륨을 식별해야 합니다.
+
+.이 작업에 대해
+소스 * 클러스터에서 이 작업을 수행해야 합니다.
+
+.단계
+. URL을 입력합니다 `+https://IP-address-of-cluster-management-LIF+` 웹 브라우저에서 클러스터 관리자 자격 증명을 사용하여 System Manager에 로그인합니다.
+. Volumes * 창으로 이동합니다.
+. SnapVault 관계에서 타겟 볼륨과 볼륨을 포함하는 SVM의 이름을 식별합니다.
++
+** ONTAP 9.3 이상: 볼륨을 두 번 클릭하여 세부 정보를 확인한 다음 * 보호 * 를 클릭합니다.
+** ONTAP 9.2 이하: 볼륨 창 아래쪽에 있는 * 데이터 보호 * 탭을 클릭합니다.
+
+
+

@@ -1,0 +1,40 @@
+---
+permalink: volume-move/task_updating_lun_reporting_nodes_after_moving_volume.html 
+sidebar: sidebar 
+keywords: volume, move, lun, ha, pair, remote, node, lun, map, slm, reporting-node, partner, lun reporting nodes 
+summary: '이동한 볼륨에 포함된 LUN과 볼륨이 현재 다른 HA 쌍에 있는 경우 SLM(Selective LUN Map) 보고 노드 목록에서 모든 원격 노드를 제거해야 합니다. 그런 다음 LUN 맵에는 소유자 노드와 해당 HA 파트너만 포함되어 최적화된 LUN 경로만 사용할 수 있습니다.' 
+---
+= 볼륨을 이동한 후 LUN 보고 노드를 업데이트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이동한 볼륨에 포함된 LUN과 볼륨이 현재 다른 HA 쌍에 있는 경우 SLM(Selective LUN Map) 보고 노드 목록에서 모든 원격 노드를 제거해야 합니다. 그런 다음 LUN 맵에는 소유자 노드와 해당 HA 파트너만 포함되어 최적화된 LUN 경로만 사용할 수 있습니다.
+
+.이 작업에 대해
+이 절차는 볼륨을 HA 쌍에서 다른 HA 쌍으로 이동한 경우에만 필요합니다. 볼륨이 동일한 HA 쌍의 다른 노드에 있는 경우 이 절차를 건너뛸 수 있습니다.
+
+.단계
+. 를 사용하여 reporting-nodes 목록에서 모든 원격 노드를 제거합니다 `lun mapping remove-reporting-nodes` 명령과 함께 `-remote-nodes` 매개 변수.
++
+[listing]
+----
+cluster1::> lun mapping remove-reporting-nodes -vserver SVM1 -volume vol1 -igroup ig1 -remote-nodes true
+----
+. 를 사용하여 LUN 매핑에 소유자 노드 및 해당 파트너만 포함되어 있는지 확인합니다 `lun mapping show` 명령과 함께 `-fields reporting-nodes` 매개 변수.
++
+[listing]
+----
+cluster1::> lun mapping show -vserver SVM1 -volume vol1 -fields reporting-nodes
+vserver  path        igroup   reporting-nodes
+-------- ----------- -------- ---------------------------------------------
+SVM1     /vol/vol1   ig1      cluster1-3,cluster1-4
+----
+. 호스트 운영 체제에 대한 오래된 디바이스 항목을 제거합니다.
+. 호스트에서 재검색하여 호스트의 사용 가능한 경로를 새로 고칩니다.
++
+호스트를 재검색하는 특정 단계는 호스트 설명서를 참조하십시오.
+
+

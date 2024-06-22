@@ -1,0 +1,27 @@
+---
+permalink: peering/task_creating_svm_peers.html 
+sidebar: sidebar 
+keywords: storage, virtual, machine, svm, peer, enable, establish, relationship, data, protection, create, create svm peer relationship 
+summary: 'ONTAP 9.3부터 ONTAP 9.7까지 ONTAP System Manager의 "클래식" 인터페이스를 사용하여 SVM 피어 관계를 구축할 수 있습니다. SVM(스토리지 가상 시스템) 피어링을 통해 두 SVM 간에 피어 관계를 설정하여 데이터 보호를 제공할 수 있습니다.' 
+---
+= SVM 피어 관계 생성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.3부터 ONTAP 9.7까지 ONTAP System Manager_classic_interface를 사용하여 SVM 피어 관계를 생성할 수 있습니다. SVM(스토리지 가상 시스템) 피어링을 통해 두 SVM 간에 피어 관계를 설정하여 데이터 보호를 제공할 수 있습니다.
+
+.단계
+. 이니시에이터 SVM을 선택합니다.
+. 허용된 SVM 목록에서 타겟 SVM을 선택합니다.
+. SVM 피어링 시작 * 을 클릭합니다.
+. 계속 * 을 클릭합니다.
+
+
+
+
+== 다음 단계
+
+요약 창에서 인터클러스터 LIF, 클러스터 피어 관계 및 SVM 피어 관계를 볼 수 있습니다.

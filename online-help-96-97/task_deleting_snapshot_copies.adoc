@@ -1,0 +1,50 @@
+---
+permalink: online-help-96-97/task_deleting_snapshot_copies.html 
+sidebar: sidebar 
+keywords: delete, snapshot, copy, online, help, system, manager 
+summary: 스냅샷 복사본을 삭제하여 디스크 공간을 절약하거나 System Manager를 사용하여 디스크 공간을 확보할 수 있습니다. 스냅샷 복사본이 더 이상 필요하지 않은 경우에도 스냅샷 복사본을 삭제할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 스냅샷 복사본을 삭제합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스냅샷 복사본을 삭제하여 디스크 공간을 절약하거나 ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 디스크 공간을 절약할 수 있습니다. 스냅샷 복사본이 더 이상 필요하지 않은 경우에도 스냅샷 복사본을 삭제할 수 있습니다.
+
+.시작하기 전에
+사용 중이거나 잠겨 있는 스냅샷 복사본을 삭제하려면 스냅샷 복사본을 사용하고 있는 애플리케이션에서 스냅샷 복사본을 릴리즈해야 합니다.
+
+.이 작업에 대해
+* FlexClone 볼륨이 해당 스냅샷 복사본을 사용 중인 경우 상위 볼륨의 기본 스냅샷 복사본을 삭제할 수 없습니다.
++
+기본 스냅샷 복사본은 FlexClone 볼륨을 만드는 데 사용되는 스냅샷 복사본입니다. 기본 스냅샷 복사본에는 항상 상태가 표시됩니다 `busy` 및 응용 프로그램 종속성 AS `busy,vclone` 상위 볼륨에 있습니다.
+
+* SnapMirror 관계에 사용되는 잠긴 스냅샷 복사본은 삭제할 수 없습니다.
++
+스냅샷 복사본은 잠겨 있으며 다음 업데이트에 필요합니다.
+
+* 스냅샷 복사본이 만료되기 전에 SnapVault 관계에 사용되는 SnapLock DP 볼륨에서 스냅샷 복사본을 삭제할 수 없습니다.
+* SnapVault 관계에 있는 SnapLock DP 볼륨의 만료되지 않은 스냅샷 복사본(WORM 상태로 커밋됨)은 삭제할 수 없습니다.
+
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 필요한 볼륨을 확장합니다.
+. 볼륨에 대한 자세한 내용을 보려면 * 자세한 정보 표시 * 링크를 클릭하십시오.
+. Snapshot 복사본 * 탭을 클릭합니다.
++
+선택한 볼륨에 대해 사용 가능한 스냅샷 복사본 목록이 표시됩니다.
+
+. 삭제할 스냅샷 복사본을 선택합니다.
+. 삭제 * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * 삭제 * 를 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]
+
+https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"]

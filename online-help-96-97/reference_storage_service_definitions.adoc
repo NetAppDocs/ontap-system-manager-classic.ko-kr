@@ -1,0 +1,123 @@
+---
+permalink: online-help-96-97/reference_storage_service_definitions.html 
+sidebar: sidebar 
+keywords: storage, service, definition, online, help, performance, factor 
+summary: ONTAP에는 해당 최소 성능 요소에 매핑된 사전 정의된 스토리지 서비스가 포함되어 있습니다. 
+---
+= System Manager-ONTAP 9.7 및 그 이전 버전에 대한 스토리지 서비스 정의
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하 버전에서 사용 가능)에는 해당하는 최소 성능 요소에 매핑된 사전 정의된 스토리지 서비스가 포함되어 있습니다.
+
+클러스터 또는 SVM에서 사용 가능한 실제 스토리지 서비스 세트는 SVM에서 애그리게이트를 구성하는 스토리지 유형에 따라 결정됩니다.
+
+다음 표에는 최소 성능 요소가 사전 정의된 스토리지 서비스에 매핑되는 방식이 나와 있습니다.
+
+|===
+| 스토리지 서비스 | 예상 IOPS(SLA) | 최대 IOPS(SLO) | 최소 볼륨 IOPS | 예상 지연 시간 | 예상 IOPS가 적용됩니까? 
+
+
+ a| 
+값
+ a| 
+TB당 128개
+ a| 
+TB당 512
+ a| 
+75를
+ a| 
+17ms
+ a| 
+AFF: 예
+
+그렇지 않으면 아니오
+
+
+
+ a| 
+성능
+ a| 
+TB당 2048개
+ a| 
+TB당 4096
+ a| 
+500입니다
+ a| 
+2ms
+ a| 
+예
+
+
+
+ a| 
+익스트림
+ a| 
+TB당 6144
+ a| 
+12288/TB
+ a| 
+1000입니다
+ a| 
+1ms
+ a| 
+예
+
+|===
+다음 표에는 각 미디어 또는 노드 유형에 대해 사용 가능한 스토리지 서비스 수준이 정의되어 있습니다.
+
+|===
+| 미디어 또는 노드 | 사용 가능한 스토리지 서비스 수준입니다 
+
+
+ a| 
+디스크
+ a| 
+값
+
+
+
+ a| 
+가상 머신 디스크
+ a| 
+값
+
+
+
+ a| 
+FlexArray LUN을 나타냅니다
+ a| 
+값
+
+
+
+ a| 
+하이브리드
+ a| 
+값
+
+
+
+ a| 
+최적의 용량을 제공하는 플래시
+ a| 
+값
+
+
+
+ a| 
+솔리드 스테이트 드라이브(SSD) - 비 AFF
+ a| 
+값
+
+
+
+ a| 
+최적의 성능을 발휘하는 플래시-SSD(AFF)
+ a| 
+최고의 성능, 가치
+
+|===

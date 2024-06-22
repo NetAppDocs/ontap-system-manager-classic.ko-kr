@@ -1,0 +1,94 @@
+---
+permalink: online-help-96-97/concept_ldap_configuration_services.html 
+sidebar: sidebar 
+keywords: ldap, configuration, service, system, manager, online, help, storage, virtual, machine, ldap, client, window 
+summary: System Manager를 사용하여 LDAP 구성을 관리할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 LDAP 구성을 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하여 LDAP 구성을 관리할 수 있습니다.
+
+
+
+== 활성 LDAP 클라이언트를 편집합니다
+
+System Manager를 사용하여 활성 LDAP 클라이언트를 SVM(스토리지 가상 시스템)에 연결할 수 있습니다. SVM은 이름 서비스 또는 이름 매핑에 LDAP를 사용할 수 있도록 지원합니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 서비스 * 창에서 * LDAP 구성 * 을 클릭합니다.
+. LDAP Configuration * 창에서 * Edit * 를 클릭합니다.
+. Active LDAP 클라이언트 * 대화 상자에서 편집할 LDAP 클라이언트를 선택하고 다음 작업을 수행합니다.
++
+** Active Directory 도메인 서버를 수정합니다.
+** 기본 Active Directory 서버를 수정합니다.
+
+
+. 확인 * 을 클릭합니다.
+. 변경한 내용이 * LDAP Configuration * (LDAP 구성 *) 창에서 업데이트되었는지 확인합니다.
+
+
+
+
+== 활성 LDAP 클라이언트를 삭제합니다
+
+SVM(스토리지 가상 머신)을 연결하지 않으려는 경우 System Manager를 사용하여 활성 LDAP 클라이언트를 삭제할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. SVM 설정 * 탭을 클릭합니다.
+. 서비스 * 창에서 * LDAP 구성 * 을 클릭합니다.
+. 삭제 * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * 삭제 * 를 클릭합니다.
+
+
+
+
+== LDAP Configuration 창
+
+LDAP 구성 창을 사용하여 SVM(스토리지 가상 머신) 레벨에서 활성 LDAP 클라이언트를 편집 또는 삭제할 수 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 편집 *
++
+Active Directory 도메인 서버 및 기본 Active Directory 서버와 같은 Active LDAP 클라이언트의 속성을 편집할 수 있는 Active LDAP 클라이언트 대화 상자를 엽니다.
+
+* * 삭제 *
++
+활성 LDAP 클라이언트를 삭제할 수 있는 Active LDAP 클라이언트 삭제 대화 상자를 엽니다.
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+
+
+
+
+=== LDAP Configuration 영역
+
+활성 LDAP 클라이언트에 대한 세부 정보를 표시합니다.
+
+* * LDAP 클라이언트 이름 *
++
+활성 LDAP 클라이언트의 이름을 표시합니다.
+
+* * Active Directory 도메인 서버 *
++
+Active LDAP 클라이언트의 Active Directory 도메인을 표시합니다.
+
+* * 기본 Active Directory 서버 *
++
+Active LDAP 클라이언트의 기본 Active Directory 서버를 표시합니다.
+
+

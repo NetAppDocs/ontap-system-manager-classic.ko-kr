@@ -1,0 +1,45 @@
+---
+permalink: iscsi-config-windows/task_recording_iscsi_node_name.html 
+sidebar: sidebar 
+keywords: record, iscsi, initiator, node, program, windows, host, record the iscsi intiator node name, name 
+summary: Windows 호스트의 iSCSI 이니시에이터 프로그램에서 iSCSI 이니시에이터 노드 이름을 기록해야 합니다. 
+---
+= iSCSI 이니시에이터 노드 이름을 기록합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows 호스트의 iSCSI 이니시에이터 프로그램에서 iSCSI 이니시에이터 노드 이름을 기록해야 합니다.
+
+.단계
+. iSCSI 초기자 속성 * 대화 상자를 엽니다.
++
+|===
+| 사용 중인 경우... | 다음으로 이동... 
+
+
+ a| 
+Windows Server 2012 또는 Windows Server 2012 R2 또는 Windows Server 2016의 경우
+ a| 
+* 서버 관리자 * > * 대시보드 * > * 도구 * > * iSCSI 초기자 * > * 구성 *
+
+
+
+ a| 
+Windows Server 2008, Windows Server 2008 R2
+ a| 
+* 시작 * > * 관리 도구 * > * iSCSI 초기자 *
+
+|===
+. 이니시에이터 이름 * 또는 * 이니시에이터 노드 이름 * 값을 텍스트 파일에 복사하거나 기록합니다.
++
+대화 상자의 정확한 레이블은 Windows 버전에 따라 다릅니다. iSCSI 이니시에이터 노드 이름은 다음 예와 같이 표시되어야 합니다.
+
++
+[listing]
+----
+iqn.1991-05.com.microsoft:server3
+----
+

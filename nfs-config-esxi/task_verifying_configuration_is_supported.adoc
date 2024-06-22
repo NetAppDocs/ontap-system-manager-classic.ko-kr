@@ -1,0 +1,46 @@
+---
+permalink: nfs-config-esxi/task_verifying_configuration_is_supported.html 
+sidebar: sidebar 
+keywords: reliable, operation, verify, configuration, support, nfs, verify that the configuration is supported 
+summary: 안정적인 작동을 위해서는 전체 구성이 지원되는지 확인해야 합니다. 에는 NFS 및 가상 스토리지 콘솔에 대해 지원되는 구성이 나와 있습니다. 
+---
+= 구성이 지원되는지 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+안정적인 작동을 위해서는 전체 구성이 지원되는지 확인해야 합니다. 에는 NFS 및 가상 스토리지 콘솔에 대해 지원되는 구성이 나와 있습니다.
+
+.단계
+. 로 이동하여 다음 구성 요소의 지원되는 조합이 있는지 확인합니다.
++
+https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"]
+
++
+** ONTAP 소프트웨어
+** NFS 스토리지 프로토콜
+** ESXi 운영 체제 버전입니다
+** 게스트 운영 체제 유형 및 버전
+** 구축
+** VAAI용 NFS 플러그인
+
+
+. 선택한 설정의 설정 이름을 클릭합니다.
++
+해당 구성에 대한 세부 정보가 구성 세부 정보 창에 표시됩니다.
+
+. 다음 탭의 정보를 검토합니다.
++
+** 참고
++
+에는 사용자의 구성에 특정한 중요한 경고 및 정보가 나와 있습니다.
+
+** 정책 및 지침
++
+에는 모든 NAS 구성에 대한 일반 지침이 나와 있습니다.
+
+
+
+

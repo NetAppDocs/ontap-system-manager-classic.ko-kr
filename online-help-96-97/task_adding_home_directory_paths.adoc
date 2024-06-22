@@ -1,0 +1,38 @@
+---
+permalink: online-help-96-97/task_adding_home_directory_paths.html 
+sidebar: sidebar 
+keywords: cifs, system, manager, online, help, storage, add , delete, home, directory 
+summary: System Manager를 사용하여 스토리지 시스템에서 사용자의 CIFS 홈 디렉토리 위치를 확인하는 데 사용할 수 있는 경로를 하나 이상 지정할 수 있습니다. 
+---
+= 홈 디렉토리 경로 관리 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 스토리지 시스템에서 사용자의 CIFS 홈 디렉토리 위치를 확인하는 데 사용할 수 있는 경로를 하나 이상 지정할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. Configuration * 탭의 * Home Directories * 영역에서 * Manage * 를 클릭합니다.
+. 홈 디렉토리 관리 * 대화 상자에서 스토리지 시스템이 사용자의 CIFS 홈 디렉토리를 검색하는 데 사용할 경로를 지정합니다.
+. 추가 * 를 클릭한 다음 * 저장 후 닫기 * 를 클릭합니다.
+
+
+
+
+== 홈 디렉토리 경로를 삭제합니다
+
+스토리지 시스템에서 사용자의 CIFS 홈 디렉토리 위치를 확인하기 위해 경로를 사용하지 않도록 하려면 System Manager를 사용하여 홈 디렉토리 경로를 삭제할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. Configuration * 탭의 * Home Directories * 영역에서 * Manage * 를 클릭합니다.
+. 홈 디렉토리 관리 * 대화 상자에서 삭제할 홈 디렉토리 경로를 선택한 다음 * 삭제 * 를 클릭합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+
+
+* 관련 정보 *

@@ -1,0 +1,24 @@
+---
+permalink: online-help-96-97/task_deleting_protection_policies.html 
+sidebar: sidebar 
+keywords: delete, protection, policies, online, help, system, manager 
+summary: 더 이상 정책을 사용하지 않으려는 경우 System Manager를 사용하여 보호 정책을 삭제할 수 있습니다. 
+---
+= 보호 정책을 삭제하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+더 이상 정책을 사용하지 않으려는 경우 System Manager를 사용하여 보호 정책을 삭제할 수 있습니다.
+
+.이 작업에 대해
+클러스터 레벨 미러 정책 또는 볼트 정책이 표시되지 않습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM(스토리지 가상 시스템)을 선택하고 * SVM 설정 * 을 클릭합니다.
+. 보호 정책 * 창에서 삭제할 정책을 선택한 다음 * 삭제 * 를 클릭합니다.
+. Delete Policy * (정책 삭제 *) 대화 상자에서 * Delete * (삭제 *)를 클릭합니다.
+

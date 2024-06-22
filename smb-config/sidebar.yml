@@ -1,0 +1,46 @@
+---
+section: smb-config
+title: SMB/CIFS 구성
+entries:
+- title: 개요
+  url: "/smb-config/index.html"
+- title: SMB/CIFS 구성 워크플로우
+  url: "/smb-config/concept_cifs_nfs_configuration_workflow.html"
+  entries:
+  - title: Aggregate를 생성합니다
+    url: "/smb-config/task_creating_aggregate.html"
+  - title: 새 볼륨을 프로비저닝할 위치를 결정합니다
+    url: "/smb-config/task_deciding_where_to_provision_new_volume.html"
+- title: 새 CIFS 지원 SVM을 생성합니다
+  url: "/smb-config/task_creating_protocol_enabled_svm.html"
+  entries:
+  - title: CIFS 볼륨으로 새 SVM을 생성하고 공유합니다
+    url: "/smb-config/task_creating_new_svm.html"
+  - title: DNS 서버의 SMB 서버를 매핑합니다
+    url: "/smb-config/task_mapping_smb_server_dns_server.html"
+  - title: SMB 클라이언트 액세스를 확인합니다
+    url: "/smb-config/task_verifying_smb_client_access.html"
+  - title: CIFS 클라이언트 액세스를 구성하고 확인합니다
+    url: "/smb-config/task_configuring_verifying_client_access.html"
+- title: 기존 SVM에 대한 SMB/CIFS 액세스를 구성합니다
+  url: "/smb-config/task_configuring_access_to_existing_svm.html"
+  entries:
+  - title: 기존 SVM에 CIFS 액세스 추가
+    url: "/smb-config/concept_adding_nas_access_to_existing_svm.html"
+  - title: DNS 서버의 SMB 서버를 매핑합니다
+    url: "/smb-config/task_mapping_smb_server_dns_server.html"
+  - title: SMB 클라이언트 액세스를 확인합니다
+    url: "/smb-config/task_verifying_smb_client_access.html"
+  - title: CIFS 클라이언트 액세스를 구성하고 확인합니다
+    url: "/smb-config/task_configuring_verifying_client_access.html"
+- title: CIFS 지원 SVM에 CIFS 볼륨을 추가합니다
+  url: "/smb-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html"
+  entries:
+  - title: 볼륨을 생성하고 구성합니다
+    url: "/smb-config/task_creating_configuring_volume.html"
+  - title: 공유를 생성하고 해당 권한을 설정합니다
+    url: "/smb-config/task_creating_share_setting_its_permissions.html"
+  - title: SMB 클라이언트 액세스를 확인합니다
+    url: "/smb-config/task_verifying_smb_client_access.html"
+  - title: CIFS 클라이언트 액세스를 구성하고 확인합니다
+    url: "/smb-config/task_configuring_verifying_client_access.html"

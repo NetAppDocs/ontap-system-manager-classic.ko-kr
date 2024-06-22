@@ -1,0 +1,30 @@
+---
+permalink: fc-config-windows/task_updating_hba_driver_firmware_bios.html 
+sidebar: sidebar 
+keywords: fc, host, bus, adapter, hba, windows, run, support, driver, firmware, bios, version, update, update the hba driver firmware and bios 
+summary: 'Windows 호스트의 FC HBA(호스트 버스 어댑터)가 지원되는 드라이버, 펌웨어 및 BIOS 버전을 실행하고 있지 않으면 업데이트해야 합니다.' 
+---
+= HBA 드라이버, 펌웨어 및 BIOS를 업데이트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows 호스트의 FC HBA(호스트 버스 어댑터)가 지원되는 드라이버, 펌웨어 및 BIOS 버전을 실행하고 있지 않으면 업데이트해야 합니다.
+
+.시작하기 전에
+상호 운용성 매트릭스 툴에서 지원되는 구성 드라이버, 펌웨어 및 BIOS 버전을 식별해야 합니다.
+
+https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"]
+
+.이 작업에 대해
+HBA 공급업체가 드라이버, 펌웨어, BIOS 및 HBA 유틸리티를 제공합니다.
+
+.단계
+. HBA 공급업체의 HBA 유틸리티를 사용하여 설치된 HBA 드라이버, 펌웨어 및 BIOS 버전을 나열합니다.
+. HBA 공급업체의 지원 사이트에서 필요에 따라 새 드라이버, 펌웨어 및 BIOS를 다운로드하여 설치합니다.
++
+설치 지침 및 필요한 설치 유틸리티는 다운로드와 함께 제공됩니다.
+
+

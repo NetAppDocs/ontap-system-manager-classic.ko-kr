@@ -1,0 +1,42 @@
+---
+permalink: expansion/task_upgrading_or_downgrading_nodes.html 
+sidebar: sidebar 
+keywords: join, install, node, cluster, run, ontap, upgrade, downgrade 
+summary: 새로 설치된 노드를 클러스터에 결합하기 전에 해당 노드가 클러스터에서 실행 중인 동일한 버전의 ONTAP를 실행 중인지 확인해야 합니다. 노드가 다른 버전을 실행 중인 경우 클러스터와 일치하도록 노드를 업그레이드 또는 다운그레이드해야 합니다. 
+---
+= 노드를 업그레이드 또는 다운그레이드합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새로 설치된 노드를 클러스터에 결합하기 전에 해당 노드가 클러스터에서 실행 중인 동일한 버전의 ONTAP를 실행 중인지 확인해야 합니다. 노드가 다른 버전을 실행 중인 경우 클러스터와 일치하도록 노드를 업그레이드 또는 다운그레이드해야 합니다.
+
+.단계
+. 클러스터에 설치된 ONTAP의 버전을 확인합니다. `cluster image show`
+. 노드에서 ONTAP의 현재 버전을 봅니다.
++
+.. 첫 번째 노드에서 소프트웨어 버전을 확인합니다. `system node image show`
++
+[listing]
+----
+::*> system node image show
+                 Is      Is                                Install
+Node     Image   Default Current Version                   Date
+-------- ------- ------- ------- ------------------------- -------------------
+localhost
+         image1  false   false   9.3                    MM/DD/YYYY TIMESTAMP
+         image1  true    true    9.3                    MM/DD/YYYY TIMESTAMP
+2 entries were displayed.
+----
+.. 두 번째 노드에 대해 이전 단계를 반복합니다.
+
+
+. 클러스터의 ONTAP 버전과 노드를 비교하여 다음 작업 중 하나를 수행합니다.
++
+** 클러스터의 ONTAP 버전과 노드가 동일한 경우 업그레이드나 다운그레이드가 필요하지 않습니다.
+** 클러스터의 ONTAP 버전과 노드가 다른 경우 를 사용할 수 있습니다 link:https://docs.netapp.com/us-en/ontap/upgrade/index.html["ONTAP를 업그레이드합니다"] 이전 버전이 있는 노드에서는 또는 를 사용할 수 있습니다 link:https://docs.netapp.com/us-en/ontap/revert/index.html["ONTAP를 되돌립니다"] 최신 버전의 노드
+
+
+

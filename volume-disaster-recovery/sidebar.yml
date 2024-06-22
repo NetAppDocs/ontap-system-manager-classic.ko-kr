@@ -1,0 +1,29 @@
+---
+section: volume-disaster-recovery
+title: 볼륨 재해 복구
+entries:
+- title: 개요
+  url: "/volume-disaster-recovery/index.html"
+- title: 볼륨 재해 복구 워크플로우
+  url: "/volume-disaster-recovery/concept_volume_disaster_recovery_workflow.html"
+  entries:
+  - title: 대상 볼륨을 활성화합니다
+    url: "/volume-disaster-recovery/task_activating_destination_volume.html"
+    entries:
+    - title: 소스 볼륨의 상태를 확인합니다
+      url: "/volume-disaster-recovery/task_verifying_source_volume_status.html"
+    - title: SnapMirror 관계를 발전시킬 수 있습니다
+      url: "/volume-disaster-recovery/task_breaking_snapmirror_relationship.html"
+    - title: 대상 볼륨 상태를 확인합니다
+      url: "/volume-disaster-recovery/task_verifying_destination_volume_status.html"
+  - title: 데이터 액세스를 위한 대상 볼륨을 구성합니다
+    url: "/volume-disaster-recovery/task_configuring_destination_volume_for_data_access.html"
+  - title: 소스 볼륨을 다시 활성화합니다
+    url: "/volume-disaster-recovery/task_reactivating_source_volume.html"
+    entries:
+    - title: 소스 볼륨을 재동기화합니다
+      url: "/volume-disaster-recovery/task_resynchronizing_source_volume.html"
+    - title: 소스 볼륨을 업데이트합니다
+      url: "/volume-disaster-recovery/task_updating_source_volume.html"
+    - title: 소스 볼륨을 다시 활성화합니다
+      url: "/volume-disaster-recovery/task_returning_recovered_volume_to_source_role.html"

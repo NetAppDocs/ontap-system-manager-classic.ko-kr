@@ -1,0 +1,26 @@
+---
+permalink: snmp-config/reference_where_to_find_additional_information.html 
+sidebar: sidebar 
+keywords: reference, manual, configure, snmp, where to find additional information 
+summary: SNMP 구성에 도움이 되는 다른 참조 설명서가 있습니다. 
+---
+= 추가 정보를 찾을 수 있는 위치
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SNMP 구성에 도움이 되는 다른 참조 설명서가 있습니다.
+
+자세한 내용은 다음 문서를 참조하십시오.
+
+* https://docs.netapp.com/us-en/ontap/networking/index.html["네트워크 관리"^]
++
+서브넷, 인터클러스터 LIF, 라우트, 방화벽 정책 및 기타 네트워킹 구성 요소를 구성하는 방법에 대해 설명합니다. 또한 SVM(데이터 스토리지 가상 시스템)에서 SNMP 커뮤니티 또는 보안 사용자를 생성하는 방법과 SNMP 트라프호스트를 관리하는 방법에 대해서도 설명합니다.
+
+* http://www.netapp.com/us/media/tr-4220.pdf["NetApp 기술 보고서 4220: Data ONTAP의 SNMP 지원"^]
++
+7-Mode 및 클러스터 환경의 SNMP 지원과 SNMP 트랩에서 지원되는 모든 기본 이벤트 목록을 포함하여 ONTAP의 SNMP 지원에 대해 설명합니다.
+
+

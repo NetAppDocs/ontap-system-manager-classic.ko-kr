@@ -1,0 +1,14 @@
+---
+permalink: online-help-96-97/concept_setting_up_physical_storage.html 
+sidebar: sidebar 
+keywords: physical, storage, set, up, online, help, disk, node, spare, aggregates 
+summary: 물리적 스토리지 설정은 디스크를 노드에 할당하고, 스페어 디스크를 제로잉하고, 애그리게이트를 생성하는 것으로 구성됩니다. 
+---
+= 물리적 스토리지 설정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+물리적 스토리지 설정은 디스크를 노드에 할당하고, 스페어 디스크를 제로잉하고, 애그리게이트를 생성하는 것으로 구성됩니다.

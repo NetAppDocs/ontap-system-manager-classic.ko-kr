@@ -1,0 +1,36 @@
+---
+permalink: fc-config-windows/task_record_wwpn_for_each_host_fc_port.html 
+sidebar: sidebar 
+keywords: worldwide, port, name, wwpn, require, zone, fc, switch, create, igroup, host, lun, record, record the wwpn for each host fc port 
+summary: 'FC 스위치를 조닝하고 호스트에서 LUN에 액세스할 수 있는 igroup을 생성하려면 WWPN(Worldwide Port Name)이 필요합니다.' 
+---
+= 각 호스트 FC 포트의 WWPN을 기록합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FC 스위치를 조닝하고 호스트에서 LUN에 액세스할 수 있는 igroup을 생성하려면 WWPN(Worldwide Port Name)이 필요합니다.
+
+.시작하기 전에
+호스트에서 HBA에 대한 공급업체의 HBA 유틸리티를 설치하고 HBA가 지원되는 드라이버, 펌웨어 및 BIOS 버전을 실행 중인지 확인해야 합니다.
+
+.이 작업에 대해
+WWPN은 모든 구성에 사용됩니다. WWNN(Worldwide Node Name)을 기록할 필요는 없습니다.
+
+.단계
+. FC HBA 유형에 대해 HBA 유틸리티를 실행합니다.
+. HBA를 선택합니다.
+. 각 포트의 WWPN을 기록합니다.
++
+다음 예에서는 이전에 OneCommand Manager로 알려진 Emulex HBA Manager를 보여 줍니다.
+
++
+image::../media/emulex_hba_fc_fc_windows.gif[이미지는 각 포트의 WWPN 값과 함께 OneCommand Manager에 표시되는 2포트 HBA를 보여 줍니다.]
+
++
+QLogic QConvergConsole과 같은 다른 유틸리티는 동일한 정보를 제공합니다.
+
+. 호스트의 각 FC HBA에 대해 이전 단계를 반복합니다.
+

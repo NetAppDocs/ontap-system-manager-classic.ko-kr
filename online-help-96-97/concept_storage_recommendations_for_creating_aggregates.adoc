@@ -1,0 +1,42 @@
+---
+permalink: online-help-96-97/concept_storage_recommendations_for_creating_aggregates.html 
+sidebar: sidebar 
+keywords: storage, recommendations, create, aggregate, system, manager, online, help 
+summary: System Manager 9.4부터는 스토리지 권장 사항을 기반으로 애그리게이트를 생성할 수 있습니다. 그러나 스토리지 권장 사항을 기반으로 한 Aggregate 생성이 고객 환경에서 지원되는지 여부를 확인해야 합니다. 사용하는 환경에서 스토리지 권장 사항에 따라 애그리게이트 생성을 지원하지 않는 경우, RAID 정책 및 디스크 구성을 결정한 다음 애그리게이트를 수동으로 생성해야 합니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 애그리게이트를 생성하기 위한 스토리지 권장 사항입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager 9.4부터는 스토리지 권장 사항을 기반으로 애그리게이트를 생성할 수 있습니다. 그러나 스토리지 권장 사항을 기반으로 한 Aggregate 생성이 고객 환경에서 지원되는지 여부를 확인해야 합니다. 사용하는 환경에서 스토리지 권장 사항에 따라 애그리게이트 생성을 지원하지 않는 경우, RAID 정책 및 디스크 구성을 결정한 다음 애그리게이트를 수동으로 생성해야 합니다.
+
+System Manager는 클러스터에서 사용 가능한 스페어 디스크를 분석하고 모범 사례에 따라 스페어 디스크를 사용하여 애그리게이트를 생성하는 방법에 대한 권장 사항을 생성합니다. System Manager에는 이름과 사용 가능한 크기를 포함하여 권장되는 애그리게이트의 요약이 표시됩니다.
+
+대부분의 경우 스토리지 권장사항은 현재 환경에 가장 적합합니다. 하지만 클러스터에서 ONTAP 9.3 이상이 실행 중이거나 환경에 다음 구성이 포함되어 있는 경우 애그리게이트를 수동으로 생성해야 합니다.
+
+* 타사 어레이 LUN을 사용하는 Aggregate
+* Cloud Volumes ONTAP 또는 ONTAP Select가 있는 가상 디스크
+* MetroCluster 구성
+* SyncMirror 기능
+* mSATA 디스크
+* Flash Pool 애그리게이트로 전환 가능
+* 노드에 여러 디스크 유형 또는 크기가 접속되어 있습니다
+
+
+또한 사용자 환경에 다음과 같은 디스크 조건이 존재하는 경우, 스토리지 권장 사항을 사용하여 애그리게이트를 생성하기 전에 디스크 조건을 수정해야 합니다.
+
+* 디스크가 누락되었습니다
+* 스페어 디스크 숫자의 변동
+* 할당되지 않은 디스크
+* 제로화되지 않은 스페어(9.6 이전의 ONTAP 버전용)
+* 유지 관리 테스트를 진행 중인 디스크
+
+
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["디스크 및 애그리게이트 관리"]
+
+xref:task_zeroing_disks.adoc[스페어 디스크를 제로화하는 중입니다]

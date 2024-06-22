@@ -1,0 +1,51 @@
+---
+permalink: fc-config-rhel/index.html 
+sidebar: sidebar 
+keywords: fc, service, storage, virtual, machine, svm, provision, lun, fc, host, bus, adapter, hba, linux, server, configuration, red hat enterprise linux 
+summary: 스토리지 가상 시스템에서 FC 서비스를 빠르게 설정하고, LUN을 프로비저닝하고, Red Hat Enterprise Linux 서버의 FC 호스트 버스 어댑터를 사용하여 LUN을 사용할 수 있도록 설정할 수 있습니다. 
+---
+= Red Hat Enterprise Linux용 FC 구성 개요
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager의 클래식 인터페이스(ONTAP 9.7 이하)를 사용하여 Red Hat Enterprise Linux 서버에서 SVM(스토리지 가상 시스템)에서 FC 서비스를 빠르게 설정하고, LUN을 프로비저닝하고, FC HBA(호스트 버스 어댑터)를 사용하여 LUN을 사용할 수 있습니다.
+
+다음의 경우 SVM에서 FC 서비스를 설정하려면 다음 절차를 따르십시오.
+
+* 호스트에서 지원되는 버전의 Red Hat Enterprise Linux 6.4 이상을 실행하고 있습니다.
+* 기존 FC HBA 및 스위치를 사용하고 있습니다.
++
+
+NOTE: FCoE(Fibre Channel over Ethernet)는 이 절차에서 다루지 않습니다.
+
+* 클러스터의 각 노드에서 사용 가능한 FC 타겟 포트가 2개 이상 있습니다.
+온보드 FC 및 UTA2("CNA")와 일부 어댑터를 구성할 수 있습니다. 이러한 포트 구성은 ONTAP CLI(Command-Line Interface)에서 수행되며 이 절차에서는 적용되지 않습니다.
+* FC SAN 부팅을 구성하지 않습니다.
+
+
+이러한 가정이 현재 상황에 맞지 않는 경우 다음 리소스를 참조하십시오.
+
+* https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN 관리"^]
+* https://docs.netapp.com/us-en/ontap/san-config/index.html["SAN 구성"^]
+* https://docs.netapp.com/us-en/ontap-sanhost/hu_luhu_71.html["Linux Unified Host Utilities 7.1 설치"^]
+
+
+
+
+== ONTAP에서 이 작업을 수행하는 다른 방법
+
+|===
+
+
+| 에서 이러한 작업을 수행하려면... | 자세한 내용은... 
+
+
+| 재설계된 System Manager(ONTAP 9.7 이상에서 사용 가능) | link:https://docs.netapp.com/us-en/ontap/task_san_provision_linux.html["Linux 서버용 SAN 스토리지 용량 할당"^] 
+
+
+| ONTAP CLI(Command Line Interface) | link:https://docs.netapp.com/us-en/ontap/san-admin/lun-setup-workflow-concept.html["CLI를 사용한 LUN 설정 워크플로우"^] 
+|===

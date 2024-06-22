@@ -1,0 +1,80 @@
+---
+permalink: volume-move/index.html 
+sidebar: sidebar 
+keywords: nondisruptive, data, volume, node, storage, virtual, machine, svm, ontap, cluster, volume move overview, move, overview 
+summary: 'ONTAP 9.7 이하 버전의 ONTAP System Manager 클래식 인터페이스를 사용하면 ONTAP 9 클러스터에서 동일한 SVM(스토리지 가상 머신) 내의 한 노드에서 다른 노드로 데이터 볼륨을 중단 없이 이동할 수 있습니다.' 
+---
+= 볼륨 이동 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.7 이하 버전의 ONTAP System Manager 클래식 인터페이스를 사용하면 ONTAP 9 클러스터에서 동일한 SVM(스토리지 가상 머신) 내의 한 노드에서 다른 노드로 데이터 볼륨을 중단 없이 이동할 수 있습니다.
+
+
+
+== 이러한 절차를 사용하기 위한 요구 사항
+
+이 절차를 수행하기 전에 다음 조건이 충족되는지 확인하십시오.
+
+* 클러스터에서 ONTAP 9가 실행 중입니다.
+* 클러스터 관리자 권한이 있습니다.
+* 사용 가능한 모든 옵션을 탐색하는 것이 아니라 모범 사례를 사용하려고 합니다.
+* ONTAP 9.7 이상을 위한 ONTAP 시스템 관리자 UI가 아니라 ONTAP 9.7 이전 릴리즈용 _Classic_System Manager UI를 사용하려고 합니다.
++
+일부 작업의 경우 ONTAP CLI(명령줄 인터페이스)를 사용해야 합니다.
+
+* 이동할 볼륨을 알고 있습니다.
++
+이동할 볼륨을 결정하는 데 도움이 필요하면 Active IQ Unified Manager(이전의 OnCommand Unified Manager)을 사용하면 됩니다.
+
+* 이동할 볼륨은 데이터 볼륨입니다.
+* 신규 또는 용도 변경된 하드웨어는 모두 완전히 설치되며 이미 애그리게이트를 갖추고 있습니다.
+* 클러스터에 LUN이 있으면 모든 노드에 LUN당 2개의 경로가 있습니다.
+* 클러스터 네트워크 포트에서 흐름 제어가 활성화되지 않았습니다.
+* 네임스페이스가 포함된 볼륨의 경우 클러스터에서 ONTAP 9.6 이상이 실행되고 있습니다.
++
+ONTAP 9.5를 실행하는 NVMe 구성에는 볼륨 이동이 지원되지 않습니다.
+
+
+
+
+
+== ONTAP에서 이 작업을 수행하는 다른 방법
+
+|===
+
+
+| 을 사용하여 이 작업을 완료하려면... | 자세한 내용은... 
+
+
+ a| 
+재설계된 System Manager(ONTAP 9.7 이상에서 사용 가능)
+ a| 
+https://docs.netapp.com/us-en/ontap/volumes/manage-volumes-task.html["볼륨 관리"^]
+
+
+
+ a| 
+ONTAP 명령줄 인터페이스입니다
+ a| 
+https://docs.netapp.com/us-en/ontap/volumes/index.html["논리적 스토리지 관리"^]
+
+|===
+
+
+== 볼륨 이동을 위한 대체 솔루션
+
+볼륨을 이동하기 전에 다음 접근 방식이 현재 상황에 더 적합한지 평가해야 합니다.
+
+* 운영 중단 없이 컨트롤러를 업그레이드하려는 경우 물리적 데이터 이동이 필요하지 않은 ARL(Aggregate relocation)을 사용할 수 있습니다.
++
+https://docs.netapp.com/us-en/ontap/high-availability/index.html["고가용성"^]
+
+* 포함된 볼륨이 없는 LUN만 이동하려는 경우 LUN 이동 프로세스를 사용할 수 있습니다.
++
+https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN 관리"^]
+
+

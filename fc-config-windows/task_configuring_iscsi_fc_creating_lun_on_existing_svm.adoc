@@ -1,0 +1,48 @@
+---
+permalink: fc-config-windows/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html 
+sidebar: sidebar 
+keywords: configure, fc, exist, storage, virtual, machine, svm, create, lun, contain, volume, wizard, information, protocol, configure fc on an existing svm 
+summary: '기존 SVM(스토리지 가상 머신)에서 FC를 구성하고 단일 마법사로 LUN 및 포함된 볼륨을 생성할 수 있습니다. FC 프로토콜은 SVM에서 이미 활성화되었지만 구성되지 않아야 합니다. 이 정보는 여러 프로토콜을 구성하지만 FC를 아직 구성하지 않은 SVM용으로 제공됩니다.' 
+---
+= 기존 SVM에서 FC를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 SVM(스토리지 가상 머신)에서 FC를 구성하고 단일 마법사로 LUN 및 포함된 볼륨을 생성할 수 있습니다. FC 프로토콜은 SVM에서 이미 활성화되었지만 구성되지 않아야 합니다. 이 정보는 여러 프로토콜을 구성하지만 FC를 아직 구성하지 않은 SVM용으로 제공됩니다.
+
+.시작하기 전에
+FC 패브릭을 구성하고 원하는 물리적 포트를 패브릭에 연결해야 합니다.
+
+.단계
+. SVM * 창으로 이동합니다.
+. 구성할 SVM을 선택합니다.
+. SVM** Details** 창에서 * FC/FCoE * 가 회색 배경으로 표시되어 프로토콜이 활성화되었지만 완전히 구성되지 않았음을 나타내는지 확인합니다.
++
+FC/FCoE * 가 녹색 배경으로 표시되면 SVM이 이미 구성된 것입니다.
+
++
+image::../media/existing_svm_protocols_fc_windows.gif[Image(영상)는 회색 배경이 있는 4개의 프로토콜을 모두 포함한 세부 정보 페이지를 표시합니다.]
+
+. 회색 배경이 있는 * FC/FCoE * 프로토콜 링크를 클릭합니다.
++
+Configure FC/FCoE Protocol 창이 표시됩니다.
+
+. FC 서비스 및 LIF를 * FC/FCoE 프로토콜 구성 * 페이지에서 구성합니다.
++
+.. FC*용 데이터 LIF 구성 확인란을 선택합니다.
+.. 를 입력합니다 `2` LIF per node * 필드에서.
++
+가용성과 데이터 이동성을 보장하기 위해 각 노드에 두 개의 LIF가 필요합니다.
+
+.. FCP 스토리지에 대한 LUN 프로비저닝 * 영역에 호스트 이니시에이터의 원하는 LUN 크기, 호스트 유형 및 WWPN을 입력합니다.
+.. 제출 및 닫기 * 를 클릭합니다.
+
+
++
+image::../media/svm_wizard_fc_details.gif[그림 에서는 SVM 설정 마법사의 4단계, FC 세부 정보 작성을 보여 줍니다.]
+
+. 요약 * 페이지를 검토하고 LIF 정보를 기록한 다음 * 확인 * 을 클릭합니다.
+

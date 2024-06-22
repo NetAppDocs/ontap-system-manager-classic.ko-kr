@@ -1,0 +1,39 @@
+---
+permalink: online-help-96-97/task_breaking_snapmirror_relationships.html 
+sidebar: sidebar 
+keywords: snapmirror, break, relationship, dp, rw, online, help 
+summary: SnapMirror 소스를 사용할 수 없게 되고 클라이언트 애플리케이션이 미러 대상에서 데이터에 액세스할 수 있게 하려면 SnapMirror 관계를 끊어야 합니다. 
+---
+= ONTAP 9.7 이전에서 System Manager로 SnapMirror 관계를 구축하십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하면 SnapMirror 관계를 끊을 수 있습니다. SnapMirror 소스를 사용할 수 없게 되고 클라이언트 애플리케이션이 미러 대상에서 데이터에 액세스할 수 있게 하려면 SnapMirror 관계를 끊어야 합니다. SnapMirror 관계가 손상되면 타겟 볼륨 유형이 "데이터 보호"(DP)에서 "읽기/쓰기"(RW)로 변경됩니다.
+
+.시작하기 전에
+* SnapMirror 대상이 중지 상태 또는 유휴 상태여야 합니다.
+* 대상 볼륨은 대상 SVM(스토리지 가상 시스템) 네임스페이스에 마운트되어야 합니다.
+
+
+.이 작업에 대해
+* 소스를 복구 또는 교체하고 소스를 업데이트하고 시스템의 원래 구성을 다시 설정하는 동안 대상 볼륨을 사용하여 데이터를 제공할 수 있습니다.
+* ONTAP 시스템과 SolidFire 스토리지 시스템 간의 SnapMirror 관계를 끊을 수 있습니다.
+* FlexGroup 볼륨 관계를 끊는 경우 페이지를 새로 고쳐 관계의 업데이트된 상태를 확인해야 합니다.
+
+
+.단계
+. 보호 * > * 볼륨 관계 * 를 클릭합니다.
+. 분리할 미러 관계를 선택합니다.
+. Operations * > * Break * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * Break * (휴식 *)를 클릭합니다.
+
+
+.결과
+데이터 보호 SnapMirror 관계가 끊어집니다. 대상 볼륨 유형이 데이터 보호(DP)에서 읽기 전용, 읽기/쓰기(RW)로 변경됩니다. 시스템은 나중에 사용할 수 있도록 데이터 보호 미러링 관계의 기본 스냅샷 복사본을 저장합니다.
+
+* 관련 정보 *
+
+xref:reference_protection_window.adoc[보호 윈도우]

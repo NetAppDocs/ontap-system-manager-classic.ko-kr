@@ -1,0 +1,17 @@
+---
+permalink: smb-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html 
+sidebar: sidebar 
+keywords: add, cifs, volume, cifs-enabled, svm, involves, creating, create, configure, configuring, share, set, permission, verify, windows, administration, host, add a cifs volume to a cifs-enabled svm 
+summary: CIFS 지원 SVM에 CIFS 볼륨을 추가하려면 볼륨을 생성 및 구성하고, 공유를 생성하고, 사용 권한을 설정하고, Windows 관리 호스트에서 액세스를 확인해야 합니다. 그런 다음 CIFS 클라이언트 액세스를 구성할 수 있습니다. 
+---
+= CIFS 지원 SVM에 CIFS 볼륨을 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CIFS 지원 SVM에 CIFS 볼륨을 추가하려면 볼륨을 생성 및 구성하고, 공유를 생성하고, 사용 권한을 설정하고, Windows 관리 호스트에서 액세스를 확인해야 합니다. 그런 다음 CIFS 클라이언트 액세스를 구성할 수 있습니다.
+
+.시작하기 전에
+CIFS가 SVM에서 완전히 설정되어야 합니다.

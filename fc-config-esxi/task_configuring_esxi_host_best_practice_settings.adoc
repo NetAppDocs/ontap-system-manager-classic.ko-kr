@@ -1,0 +1,23 @@
+---
+permalink: fc-config-esxi/task_configuring_esxi_host_best_practice_settings.html 
+sidebar: sidebar 
+keywords: ensure, host, multipath, practice, setting, correct, esxi, host, manage, fc, path, storage, failover, event, configure, configure the esxi host best practice settings 
+summary: ESXi 호스트에서 FC 경로 손실이나 스토리지 페일오버 이벤트를 올바르게 관리할 수 있도록 호스트 다중 경로 및 모범 사례 설정이 올바른지 확인해야 합니다. 
+---
+= ESXi 호스트 Best Practice 설정을 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ESXi 호스트에서 FC 경로 손실이나 스토리지 페일오버 이벤트를 올바르게 관리할 수 있도록 호스트 다중 경로 및 모범 사례 설정이 올바른지 확인해야 합니다.
+
+.단계
+. VMware vSphere Web Client * Home * 페이지에서 * vCenter * > * Hosts * 를 클릭합니다.
+. 호스트를 마우스 오른쪽 버튼으로 클릭한 다음 * Actions * > * NetApp VSC * > * Set Recommended Values * 를 선택합니다.
+. NetApp 권장 설정 * 대화 상자에서 모든 옵션이 선택되었는지 확인한 다음 * 확인 * 을 클릭합니다.
++
+vCenter Web Client에 작업 진행률이 표시됩니다.
+
+

@@ -1,0 +1,51 @@
+---
+settings:
+  name: System Manager Classic
+  noindex: true
+  internal:
+    pdf_enabled: false
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  search: ontap-system-manager-classic
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: System Manager Classic 문서
+    url: "/index.html"
+  - title: NAS 스토리지를 프로비저닝합니다
+    entries:
+    - section: nfs-config
+    - section: nfs-config-esxi
+    - section: nas-multiprotocol-config
+    - section: smb-config
+  - title: SAN 스토리지 용량 할당
+    entries:
+    - section: fc-config-esxi
+    - section: fc-config-rhel
+    - section: fc-config-windows
+    - section: iscsi-config-esxi
+    - section: iscsi-config-rhel
+    - section: iscsi-config-windows
+  - title: 데이터 보호 및 재해 복구
+    entries:
+    - section: peering
+    - section: volume-disaster-recovery
+    - section: volume-disaster-prep
+    - section: volume-backup-snapvault
+    - section: volume-restore-snapvault
+  - title: 클러스터 관리
+    entries:
+    - section: expansion
+    - section: volume-move
+    - section: snmp-config
+  - title: System Manager 9.6 및 9.7을 사용한 클러스터 관리
+    entries:
+    - section: online-help-96-97
+  - title: ONTAP 문서
+    url: https://docs.netapp.com/us-en/ontap/
+  - title: 법적 고지
+    url: "/reference_legal_notices.html"
+product-family:
+  name: ONTAP
+  repo: ontap-family

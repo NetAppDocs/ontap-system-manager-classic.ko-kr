@@ -1,0 +1,52 @@
+---
+permalink: snmp-config/task_adding_snmpv3_security_user.html 
+sidebar: sidebar 
+keywords: snmpv3, offer, advance, security, passphrase, encryption, system, manager, cluster, level, snmp, utilities, utility, traphost, authentication, privacy, setting, add an snmpv3 security user 
+summary: 'ONTAP 9.7 이하와 ONTAP System Manager "클래식" 인터페이스를 사용하여 클러스터 수준에서 SNMPv3 사용자를 추가할 수 있습니다.' 
+---
+= SNMPv3 보안 사용자를 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.7 이하와 함께 ONTAP System Manager_CLASSIC_INTERFACE를 사용하여 클러스터 레벨에 SNMPv3 사용자를 추가할 수 있습니다.
+
+SNMPv3 사용자는 지정한 인증 및 개인 정보 보호 설정을 사용하여 traphost(SNMP 관리자)에서 SNMP 유틸리티를 실행할 수 있습니다. SNMPv3는 암호 구문 및 암호화를 사용하여 고급 보안을 제공합니다.
+
+.이 작업에 대해
+클러스터 수준에서 SNMPv3 사용자를 추가하면 해당 사용자는 ""GMT" 방화벽 정책이 적용된 모든 LIF를 통해 클러스터에 액세스할 수 있습니다.
+
+.단계
+. SNMP 창에서 * Edit * 를 클릭하여 * Edit SNMP Settings * 대화 상자를 엽니다.
+. SNMPv3 * 탭에서 * 추가 * 를 클릭하여 * SNMPv3 사용자 추가 * 대화 상자를 엽니다.
+. 다음 값을 입력합니다.
++
+.. SNMPv3 사용자 이름을 입력합니다.
++
+보안 사용자 이름은 31자를 초과할 수 없으며 다음 특수 문자를 포함할 수 없습니다.
+
++
+`, / : " ' |`
+
+.. 엔진 ID로 기본값을 선택합니다 `Local Engine ID`.
++
+엔진 ID는 SNMPv3 메시지에 대한 인증 및 암호화 키를 생성하는 데 사용됩니다.
+
+.. 인증 프로토콜을 선택하고 인증 암호를 입력합니다.
++
+암호는 8자 이상이어야 합니다.
+
+.. 선택 사항: 개인 정보 보호 프로토콜을 선택하고 암호를 입력합니다.
+
+
++
+image::../media/snmp_cfg_v3user_step3.gif[이 이미지는 Edit SNMP Settings(SNMP 설정 편집) 대화 상자 안에 Add SNMP3 User diaglg(SNMP3 사용자 추가) 상자를 표시합니다,in which the example user name "snmpv3user" is entered,the Engine ID is "LocalEngineID"]
+
+. SNMPv3 사용자 추가 * 대화 상자에서 * 확인 * 을 클릭합니다.
++
+보안 사용자 이름을 여러 개 추가할 때마다 * OK * 를 클릭하여 추가할 수 있습니다. 예를 들어, SNMP를 사용하여 다른 권한이 필요한 여러 애플리케이션을 모니터링하는 경우 각 모니터링 또는 관리 기능에 대해 SNMPv3 사용자를 추가해야 할 수 있습니다.
+
+. 사용자 이름 추가를 마치면 * SNMP 설정 편집 * 대화 상자에서 * 확인 * 을 클릭합니다.
+

@@ -1,0 +1,70 @@
+---
+permalink: expansion/task_gathering_required_information.html 
+sidebar: sidebar 
+keywords: expand, cluster, network, information, require, configure, node-management, lif, service, ip, adress, node, gather the required network information 
+summary: 클러스터를 확장하려면 나중에 노드 관리 LIF 및 두 노드의 서비스 프로세서 IP 주소를 구성하는 데 필요한 네트워킹 정보를 확보해야 합니다. 
+---
+= 필요한 네트워크 정보를 수집합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터를 확장하려면 나중에 노드 관리 LIF 및 두 노드의 서비스 프로세서 IP 주소를 구성하는 데 필요한 네트워킹 정보를 확보해야 합니다.
+
+.단계
+. 클러스터에 추가할 각 노드에 대해 하나씩, 두 개의 노드 관리 LIF를 구성하려면 다음 세부 정보를 확인하십시오.
++
+** IP 주소입니다
+** 네트워크 마스크
+** 게이트웨이
+** 포트
+
+
+. 일반적으로 사이트에 노드 관리 LIF에 대한 DNS 항목이 있는 경우 새 노드에 대해 DNS 항목이 만들어졌는지 확인합니다.
+. 를 사용하여 클러스터에서 SP에 대한 자동 또는 수동 네트워크 구성을 사용하는지 확인합니다 `system service-processor network auto-configuration show` 명령.
++
+서브넷 이름이 둘 중 하나에 표시되는 경우 `SP IPv4 Subnet Name` 또는 `SP IPv6 Subnet Name` 열에서 클러스터는 자동 SP 네트워킹을 사용하고 있습니다. 두 열이 모두 비어 있으면 클러스터에서 수동 SP 네트워킹을 사용하고 있는 것입니다.
+
++
+다음 출력에서 sub1 서브넷은 cluster1 SP가 자동 네트워크 구성을 사용한다는 것을 나타냅니다.
+
++
+[listing]
+----
+cluster1::> system service-processor network auto-configuration show
+Cluster Name         SP IPv4 Subnet Name          SP IPv6 Subnet Name
+-------------------- ---------------------------- -------------------
+cluster1             sub1                            -
+----
++
+다음 출력에서 빈 서브넷 필드는 cluster1 SP가 수동 네트워크 구성을 사용한다는 것을 나타냅니다.
+
++
+[listing]
+----
+cluster1::> system service-processor network auto-configuration show
+Cluster Name         SP IPv4 Subnet Name          SP IPv6 Subnet Name
+-------------------- ---------------------------- -------------------
+cluster1             -                            -
+----
+. SP 네트워크 구성에 따라 다음 작업 중 하나를 수행합니다.
++
+** SP에서 수동 네트워크 구성을 사용하는 경우 나중에 새 노드에서 SP를 구성할 때 사용할 두 개의 IP 주소를 가져옵니다.
+** SP가 자동 네트워크 구성을 사용하는 경우 를 사용하여 SP에서 사용하는 서브넷에 두 새 노드에 대해 사용 가능한 IP 주소가 있는지 확인합니다 `network subnet show` 명령.
+다음 출력에서 sub1 서브넷에는 2개의 주소를 사용할 수 있습니다.
+
+
++
+[listing]
+----
+cluster1::>  network subnet show
+IPspace: Default
+Subnet                     Broadcast                   Avail/
+Name      Subnet           Domain    Gateway           Total   Ranges
+--------- ---------------- --------- --------------- --------- ---------------
+sub1      10.53.33.1/18    Default   10.53.0.1          2/4    10.53.33.3-10.53.33.6
+...
+----
+

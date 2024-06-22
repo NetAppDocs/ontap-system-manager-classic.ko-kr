@@ -1,0 +1,88 @@
+---
+permalink: volume-backup-snapvault/task_creating_snapvault_relationship_92_earlier.html 
+sidebar: sidebar 
+keywords: create, snapvault, relationship, source, volume, cluster, destination, peer, backup, create the snapvault relationship, ontap 9.2 or earlier 
+summary: 피어링된 클러스터에서 소스 볼륨과 타겟 볼륨 간에 SnapVault 관계를 생성하여 SnapVault 백업을 생성해야 합니다. 
+---
+= SnapVault 관계 생성(ONTAP 9.2 이하)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+피어링된 클러스터에서 소스 볼륨과 타겟 볼륨 간에 SnapVault 관계를 생성하여 SnapVault 백업을 생성해야 합니다.
+
+.시작하기 전에
+* 대상 클러스터에 대한 클러스터 관리자 사용자 이름과 암호가 있어야 합니다.
+* 대상 Aggregate에 사용 가능한 공간이 있어야 합니다.
+
+
+.이 작업에 대해
+소스 * 클러스터에서 이 작업을 수행해야 합니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 볼륨 * 탭을 클릭합니다.
+. 백업할 볼륨을 선택한 다음 * 보호 * 를 클릭합니다.
+. [보호 관계 작성] * 대화 상자의 [관계 유형 *] 드롭다운 목록에서 * 볼트 * 를 선택합니다.
+. 대상 볼륨 * 섹션에서 피어링된 클러스터를 선택합니다.
+. 타겟 볼륨에 SVM을 지정합니다.
++
+|===
+| SVM이... | 그러면... 
+
+
+ a| 
+자세히 들여다보았습니다
+ a| 
+목록에서 피어링된 SVM을 선택합니다.
+
+
+
+ a| 
+피어링되지 않았습니다
+ a| 
+.. SVM을 선택합니다.
+.. 인증 * 을 클릭합니다.
+.. 피어링된 클러스터의 클러스터 관리자 자격 증명을 입력하고 * Create * 를 클릭합니다.
+
+
+|===
+. 새 대상 볼륨 생성:
++
+.. 새 볼륨 * 옵션을 선택합니다.
+.. 기본 볼륨 이름을 사용하거나 새 볼륨 이름을 입력합니다.
+.. 대상 애그리게이트를 선택합니다.
+.. 중복 제거 사용 * 확인란이 선택되어 있는지 확인합니다.
+
+
++
+image::../media/dest_vol_snapvault.gif[대상 볼륨 SnapVault]
+
+. Configuration Details * 섹션에서 를 선택합니다 `XDPDefault` 보호 정책에 따라 설정합니다.
+. 스케줄 목록에서 보호 스케줄을 선택합니다.
+. 기본 스냅샷 복사본을 전송하려면 * 관계 초기화 * 확인란이 선택되어 있는지 확인한 다음 * 생성 * 을 클릭합니다
++
+image::../media/config_details_snapvault.gif[구성 세부 정보 SnapVault]
+
++
+마법사는 지정된 볼트 정책 및 스케줄과 관계를 작성합니다. 소스 볼륨에서 타겟 볼륨으로 데이터의 기본 전송을 시작하여 관계가 초기화됩니다.
+
++
+상태 섹션에는 각 작업의 상태가 표시됩니다.
+
++
+image::../media/create_snapvault_success.gif[SnapVault 생성 성공]
+
+. SnapVault 관계의 관계 상태가 에 있는지 확인합니다 `Snapmirrored` 상태.
++
+.. 볼륨 목록에서 볼륨을 선택한 다음 * 데이터 보호 * 를 클릭합니다.
+.. Data Protection * 하단 탭에서 생성한 SnapMirror 관계가 나열되고 관계 상태가 인지 확인합니다 `Snapmirrored` 및 유형은 입니다 `Vault`.
++
+image::../media/data_protection_window_sv.gif[데이터 보호 창 SV]
+
+
+
+

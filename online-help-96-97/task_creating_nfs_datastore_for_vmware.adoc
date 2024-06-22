@@ -1,0 +1,25 @@
+---
+permalink: online-help-96-97/task_creating_nfs_datastore_for_vmware.html 
+sidebar: sidebar 
+keywords: create, nfs, datastore, vmware, online, help, system, manager 
+summary: System Manager의 Create NFS Datastore for VMware 마법사를 사용하여 VMware용 NFS 데이터 저장소를 생성할 수 있습니다. NFS 데이터 저장소에 대한 볼륨을 생성하고 NFS 데이터 저장소를 액세스할 수 있는 ESX 서버를 지정할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 VMware용 NFS 데이터 저장소를 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)에서 VMware용 NFS 데이터 저장소 생성 마법사를 사용하여 VMware용 NFS 데이터 저장소를 생성할 수 있습니다. NFS 데이터 저장소에 대한 볼륨을 생성하고 NFS 데이터 저장소를 액세스할 수 있는 ESX 서버를 지정할 수 있습니다.
+
+.시작하기 전에
+NFS 서비스의 라이센스가 있어야 합니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 볼륨을 선택한 다음 * 추가 작업 * > * VMware용 스토리지 용량 할당 * 을 클릭합니다.
+. VMware * 용 NFS 데이터 저장소 생성 마법사에서 필요에 따라 정보를 입력하거나 선택합니다.
+. 세부 정보를 확인한 다음 * 마침 * 을 클릭하여 마법사를 완료합니다.
+

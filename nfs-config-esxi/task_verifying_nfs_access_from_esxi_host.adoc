@@ -1,0 +1,27 @@
+---
+permalink: nfs-config-esxi/task_verifying_nfs_access_from_esxi_host.html 
+sidebar: sidebar 
+keywords: provision, datastore, esxi, verify, nfs, access, creating, create, virtual, machine, power, verify nfs access from an esxi host 
+summary: 데이터 저장소를 프로비저닝한 후에는 데이터 저장소에 가상 머신을 생성하고 전원을 켜서 ESXi 호스트에 NFS 액세스가 있는지 확인할 수 있습니다. 
+---
+= ESXi 호스트에서 NFS 액세스를 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 저장소를 프로비저닝한 후에는 데이터 저장소에 가상 머신을 생성하고 전원을 켜서 ESXi 호스트에 NFS 액세스가 있는지 확인할 수 있습니다.
+
+.단계
+. vSphere Web Client * Home * 페이지에서 * 호스트 및 클러스터 * 를 클릭합니다.
+. 탐색 창에서 데이터 센터를 확장하여 이전에 생성한 데이터 저장소를 찾습니다.
+. Create a new virtual machine * 을 클릭하고 마법사에 필요한 정보를 입력합니다.
++
+NFS 액세스를 확인하려면 이전에 생성한 데이터 센터, ESXi 호스트 및 데이터 저장소를 선택해야 합니다.
+
++
+가상 머신이 vSphere Web Client 인벤토리에 나타납니다.
+
+. 가상 머신의 전원을 켭니다.
+

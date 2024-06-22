@@ -1,0 +1,14 @@
+---
+permalink: online-help-96-97/concept_updating_clusters.html 
+sidebar: sidebar 
+keywords: update, clusters, online, help, system, manager 
+summary: 'System Manager를 사용하여 고가용성(HA) 쌍의 클러스터 또는 개별 노드를 업데이트할 수 있습니다. MetroCluster 구성에서 클러스터를 업데이트할 수도 있습니다.' 
+---
+= System Manager로 클러스터 업데이트 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하여 고가용성(HA) 쌍의 클러스터 또는 개별 노드를 업데이트할 수 있습니다. MetroCluster 구성에서 클러스터를 업데이트할 수도 있습니다.

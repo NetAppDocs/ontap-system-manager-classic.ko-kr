@@ -1,0 +1,189 @@
+---
+permalink: online-help-96-97/concept_autosupport.html 
+sidebar: sidebar 
+keywords: autosupport, notification, message, monitor, system, health, storage, email, recipient, severity, view, 
+summary: System Manager를 사용하면 스토리지 시스템 상태를 모니터링하는 데 도움이 되는 AutoSupport 알림을 구성할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 AutoSupport 알림을 관리합니다
+:allow-uri-read: 
+
+
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하면 스토리지 시스템 상태를 모니터링하는 데 도움이 되는 AutoSupport 알림을 구성할 수 있습니다.
+
+
+
+== AutoSupport 알림을 설정합니다
+
+시스템 관리자의 AutoSupport 설정 편집 대화 상자를 사용하여 이메일 알림을 보낼 이메일 주소를 지정하고 여러 이메일 호스트 이름을 추가하여 AutoSupport 알림을 설정할 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]* > * AutoSupport *.
+. 노드를 선택한 다음 * 편집 * 을 클릭합니다.
+. e-메일 수신자 * 탭에서 e-메일 알림을 보낼 e-메일 주소를 입력하고 각 e-메일 받는 사람에 대한 e-메일 수신자와 메시지 내용을 지정한 다음 메일 호스트를 추가합니다.
++
+호스트 이름의 이메일 주소는 최대 5개까지 추가할 수 있습니다.
+
+. 기타 * 탭의 드롭다운 목록에서 이메일 메시지를 전송하기 위한 전송 프로토콜을 선택하고 HTTP 또는 HTTPS 프록시 서버 세부 정보를 지정합니다.
+. 확인 * 을 클릭합니다.
+. AutoSupport 알림에 대해 설정한 구성이 * AutoSupport * 창에서 올바르게 설정되었는지 확인합니다.
+
+
+
+
+== AutoSupport 설정을 활성화 또는 비활성화합니다
+
+시스템 관리자를 사용하여 스토리지 시스템에서 AutoSupport 설정을 활성화하거나 비활성화할 수 있습니다. AutoSupport 메시지를 사용하면 스토리지 시스템 상태를 모니터링하거나 기술 지원 부서 및 내부 지원 조직에 알림을 보낼 수 있습니다.
+
+.이 작업에 대해
+AutoSupport 옵션은 기본적으로 활성화되어 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]* > * AutoSupport *.
+. 노드를 선택한 다음 * 활성화 * 또는 * 비활성화 * 를 클릭합니다.
+. 확인 * 을 클릭합니다.
+. AutoSupport 상태가 변경 사항을 올바르게 표시하는지 확인합니다.
+
+
+
+
+== AutoSupport e-메일 수신자를 추가합니다
+
+시스템 관리자의 AutoSupport 설정 편집 대화 상자의 * 이메일 수신자 * 탭을 사용하여 AutoSupport 알림 수신자의 이메일 주소를 추가할 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]* > * AutoSupport *.
+. 노드를 선택한 다음 * 편집 * 을 클릭합니다.
+. 전자 메일 받는 사람* 탭에서 전자 메일 받는 사람의 주소를 입력하고 받는 사람이 전체 메시지를 받을지 아니면 짧은 메시지를 받을지 지정한 다음 * 추가 * 를 클릭합니다.
+. 확인 * 을 클릭합니다.
+. 지정한 세부 정보가 * AutoSupport * 창에 표시되는지 확인합니다.
+
+
+
+
+== AutoSupport 설정을 테스트합니다
+
+시스템 관리자의 AutoSupport 테스트 대화 상자를 사용하여 AutoSupport 설정이 올바르게 구성되었는지 테스트할 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]* > * AutoSupport *.
+. 노드를 선택한 다음 * 테스트 * 를 클릭합니다.
+. AutoSupport 테스트 * 대화 상자에서 AutoSupport 제목 텍스트 ""Test AutoSupport"" 또는 수신자에게 AutoSupport 설정 테스트 중임을 알리는 텍스트를 입력합니다.
+. Test * 를 클릭합니다.
++
+제목 ""Test AutoSupport(테스트 제목)" 또는 * AutoSupport subject(제목) * 필드에 입력한 텍스트가 있는 이메일 메시지가 지정된 수신자에게 전송됩니다.
+
+
+
+
+
+== AutoSupport 데이터를 생성합니다
+
+System Manager를 사용하면 단일 노드 또는 여러 노드에 대한 AutoSupport 데이터를 생성하여 상태를 모니터링하고 기술 지원 팀에 알림을 보낼 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]* > * AutoSupport *.
+. 노드를 선택한 다음 * AutoSupport 요청 * > * AutoSupport 생성 * 을 클릭합니다.
++
+기본적으로 AutoSupport 데이터는 모든 노드에 대해 생성됩니다.
+
+. AutoSupport* 생성 대화 상자에서 다음 단계를 수행하십시오.
++
+.. 특정 노드에 대한 AutoSupport 데이터를 생성하려면 * 모든 노드에 대한 AutoSupport 데이터 생성 * 확인란의 선택을 취소한 다음 노드를 선택합니다.
+.. 케이스 번호를 입력합니다.
+
+
+. Generate * 를 클릭합니다.
+. Confirmation * (확인 *) 대화 상자에서 * OK * (확인 *)를 클릭합니다.
+
+
+
+
+== AutoSupport 요약을 봅니다
+
+System Manager를 사용하면 이전의 모든 AutoSupport 데이터의 상태와 세부 정보를 볼 수 있으므로 기술 지원 부서에 전송된 데이터를 검토할 수 있습니다. 또한 정보를 보고 스토리지 시스템의 상태 및 성능을 파악할 수 있습니다.
+
+.단계
+. 를 클릭합니다image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]* > * AutoSupport *.
+. 노드를 선택한 다음 * AutoSupport 요청 * > * 이전 요약 보기 * 를 클릭합니다.
++
+모든 노드에 대한 AutoSupport 데이터가 표시됩니다.
+
+. 확인 * 을 클릭합니다.
+
+
+
+
+== AutoSupport 심각도 유형
+
+AutoSupport 메시지에는 각 메시지의 용도를 이해하는 데 도움이 되는 심각도 유형이 있습니다. 예를 들어 긴급 문제에 즉시 주의를 기울이거나 정보를 제공하는 용도로만 사용됩니다.
+
+메시지에는 다음 심각도 중 하나가 있습니다.
+
+* * 경고 *: 경고 메시지는 조치를 취하지 않을 경우 다음 단계의 이벤트가 발생할 수 있음을 나타냅니다.
++
+24시간 이내에 경고 메시지에 대해 조치를 취해야 합니다.
+
+* * 비상 *: 중단이 발생했을 때 비상 메시지가 표시됩니다.
++
+긴급 메시지에 대해 즉시 조치를 취해야 합니다.
+
+* * 오류 *: 오류 조건은 무시할 경우 발생할 수 있는 상황을 나타냅니다.
+* * 알림 *: 정상이지만 심각한 상태입니다.
+* * 정보 *: 무시할 수 있는 문제에 대한 세부 정보를 제공하는 정보 메시지입니다.
+* *Debug*: 디버그 수준 메시지는 수행해야 하는 지침을 제공합니다.
+
+
+내부 지원 조직이 이메일을 통해 AutoSupport 메시지를 수신하는 경우, 이메일 메시지의 제목 줄에 심각도가 표시됩니다.
+
+
+
+== AutoSupport 창
+
+AutoSupport(시스템 설정) 창에서 시스템의 현재 AutoSupport 설정을 볼 수 있습니다. 시스템의 AutoSupport 설정을 변경할 수도 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 활성화 *
++
+AutoSupport 알림을 활성화합니다. 기본값은 * Enable * 입니다.
+
+* * 비활성화 *
++
+AutoSupport 알림을 비활성화합니다.
+
+* * 편집 *
++
+AutoSupport 설정 편집 대화 상자를 엽니다. 이 대화 상자에서 이메일 알림을 보낼 이메일 주소를 지정하고 호스트 이름의 이메일 주소를 여러 개 추가할 수 있습니다.
+
+* * 테스트 *
++
+AutoSupport 테스트 메시지를 생성할 수 있는 AutoSupport 테스트 대화 상자를 엽니다.
+
+* * AutoSupport 요청 *
++
+에서는 다음과 같은 AutoSupport 요청을 제공합니다.
+
++
+** * AutoSupport를 생성합니다
++
+선택한 노드 또는 모든 노드에 대한 AutoSupport 데이터를 생성합니다.
+
+** * 이전 요약 보기 *
++
+이전의 모든 AutoSupport 데이터의 상태와 세부 정보를 표시합니다.
+
+
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+
+
+
+
+=== 세부 정보 영역
+
+Details 영역에는 노드 이름, AutoSupport 상태, 사용된 전송 프로토콜 및 프록시 서버 이름과 같은 AutoSupport 설정 정보가 표시됩니다.

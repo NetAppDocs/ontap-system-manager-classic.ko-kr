@@ -1,0 +1,34 @@
+---
+permalink: online-help-96-97/task_changing_status_volume.html 
+sidebar: sidebar 
+keywords: flexvol, change, status, volume, online, help, system, manager 
+summary: 볼륨을 오프라인으로 전환하거나 볼륨을 온라인으로 전환하거나 볼륨에 대한 액세스를 제한하려는 경우 System Manager를 사용하여 FlexVol 볼륨의 상태를 변경할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 볼륨 상태를 변경합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 방식을 사용하여 볼륨을 오프라인으로 전환하거나, 볼륨을 다시 온라인 상태로 전환하거나, 볼륨에 대한 액세스를 제한하려는 경우 FlexVol 볼륨의 상태를 변경할 수 있습니다.
+
+.시작하기 전에
+* 볼륨이 볼륨 복사본 작업의 대상이 되거나 SnapMirror 복제 작업이 수행되도록 하려면 볼륨이 제한된 상태여야 합니다.
+* NAS 볼륨을 오프라인으로 전환하려면 NAS 볼륨을 마운트 해제해야 합니다.
+
+
+.이 작업에 대해
+볼륨을 오프라인으로 전환하여 볼륨에 대한 유지 관리를 수행하거나, 볼륨을 이동하거나, 볼륨을 제거할 수 있습니다. 볼륨이 오프라인이면 클라이언트가 볼륨을 읽기 또는 쓰기 액세스할 수 없습니다. 루트 볼륨을 오프라인으로 전환할 수 없습니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 상태를 수정할 볼륨을 선택합니다.
+. More Actions * > * Change status to * 메뉴에서 필요한 볼륨 상태를 선택합니다.
+. 확인 대화 상자에서 * 확인 * 을 클릭하여 볼륨 상태를 변경합니다.
+
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]

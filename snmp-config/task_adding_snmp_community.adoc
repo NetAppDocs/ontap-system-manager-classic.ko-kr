@@ -1,0 +1,32 @@
+---
+permalink: snmp-config/task_adding_snmp_community.html 
+sidebar: sidebar 
+keywords: system, manager, add, community, administrative, storage, virtual, machine, svm, cluster, snmpv1, snmpv2c, protocol, add an anmp community 
+summary: 'ONTAP 9.7 이하 버전에서 ONTAP System Manager의 "클래식" 인터페이스를 사용하여 SNMPv1 또는 SNMPv2c를 실행하는 클러스터의 관리 스토리지 가상 시스템(SVM)에 커뮤니티를 추가할 수 있습니다. System Manager는 SNMP 프로토콜 SNMPv1 및 SNMPv2c 및 SNMP 커뮤니티를 사용하여 스토리지 시스템을 검색합니다.' 
+---
+= SNMP 커뮤니티를 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.7 이하와 함께 ONTAP System Manager_CLASSIC_INTERFACE를 사용하여 SNMPv1 또는 SNMPv2c를 실행하는 클러스터의 관리 스토리지 가상 시스템(SVM)에 커뮤니티를 추가할 수 있습니다. System Manager는 SNMP 프로토콜 SNMPv1 및 SNMPv2c 및 SNMP 커뮤니티를 사용하여 스토리지 시스템을 검색합니다.
+
+.이 작업에 대해
+이 절차는 클러스터의 관리 SVM에 SNMP 커뮤니티를 추가하기 위한 것입니다. 데이터 SVM에 SNMP 커뮤니티를 추가하는 절차는 에서 설명합니다 https://docs.netapp.com/us-en/ontap/networking/index.html["네트워크 관리"].
+
+ONTAP를 새로 설치하면 SNMPv1 및 SNMPv2c가 기본적으로 비활성화됩니다. SNMP 커뮤니티를 생성하면 SNMPv1 및 SNMPv2c가 활성화됩니다.
+
+.단계
+. SNMP 창에서 * Edit * 를 클릭하여 * Edit SNMP Settings * 대화 상자를 엽니다.
+. 일반 * 탭에서 ONTAP 시스템의 담당자 및 위치를 지정합니다.
+. 추가 * 를 클릭하고 커뮤니티 이름을 입력한 다음 * 커뮤니티 이름 * 창에서 * 확인 * 을 클릭합니다.
++
+여러 커뮤니티 이름을 추가할 수 있습니다. 커뮤니티 이름은 최대 32자까지 입력할 수 있으며 다음 특수 문자를 포함할 수 없습니다. `, / : " ' |`
+
++
+image::../media/snmp_cfg_comm_step3.gif[이 이미지에는 SNMP 설정 편집 대화 상자가 표시됩니다,General tab,in which the example community name "comty1" is entered.]
+
+. 커뮤니티 이름 추가를 마치면 * SNMP 설정 편집 * 대화 상자에서 * 확인 * 을 클릭합니다.
+

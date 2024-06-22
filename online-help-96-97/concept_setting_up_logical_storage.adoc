@@ -1,0 +1,14 @@
+---
+permalink: online-help-96-97/concept_setting_up_logical_storage.html 
+sidebar: sidebar 
+keywords: online, help, set, up, logical, storage, svm, volume 
+summary: '논리적 스토리지 설정은 SVM(스토리지 가상 머신) 및 볼륨을 생성하는 것으로 구성됩니다.' 
+---
+= System Manager Classic-ONTAP 9.7 이하를 사용하여 논리적 스토리지를 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 논리적 스토리지를 설정할 수 있습니다. 논리적 스토리지 설정은 SVM(스토리지 가상 머신) 및 볼륨을 생성하는 것으로 구성됩니다.

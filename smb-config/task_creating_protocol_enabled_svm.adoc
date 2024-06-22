@@ -1,0 +1,14 @@
+---
+permalink: smb-config/task_creating_protocol_enabled_svm.html 
+sidebar: sidebar 
+keywords: cifs-enabled, svm, involve, cifs, volume, share, add, map, dns, server, verify, windows, administration, host, configure, cifs, client, access, create a new cifs-enabled svm 
+summary: 새 CIFS 지원 SVM을 설정하려면 CIFS 볼륨 및 공유를 통해 새 SVM을 생성하고, DNS 서버에 매핑을 추가하고, Windows 관리 호스트에서 CIFS 액세스를 확인해야 합니다. 그런 다음 CIFS 클라이언트 액세스를 구성할 수 있습니다. 
+---
+= 새 CIFS 지원 SVM을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새 CIFS 지원 SVM을 설정하려면 CIFS 볼륨 및 공유를 통해 새 SVM을 생성하고, DNS 서버에 매핑을 추가하고, Windows 관리 호스트에서 CIFS 액세스를 확인해야 합니다. 그런 다음 CIFS 클라이언트 액세스를 구성할 수 있습니다.

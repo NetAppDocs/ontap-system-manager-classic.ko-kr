@@ -1,0 +1,16 @@
+---
+permalink: fc-config-rhel/concept_fc_configuration_workflow.html 
+sidebar: sidebar 
+keywords: storage, available, host, fc, provision, volume, lun, virtual, machine, svm, connect, fc configuration and provisioning workflow 
+summary: 'FC를 사용하여 호스트에서 스토리지를 사용할 수 있도록 하면 SVM(스토리지 가상 머신)에 볼륨 및 LUN을 프로비저닝하고 호스트에서 LUN에 연결합니다.' 
+---
+= FC 구성 및 프로비저닝 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FC를 사용하여 호스트에서 스토리지를 사용할 수 있도록 하면 SVM(스토리지 가상 머신)에 볼륨 및 LUN을 프로비저닝하고 호스트에서 LUN에 연결합니다.
+
+image::../media/fc_red_hat_linux_workflow.gif[이 이미지는 주변 텍스트로 설명됩니다.]

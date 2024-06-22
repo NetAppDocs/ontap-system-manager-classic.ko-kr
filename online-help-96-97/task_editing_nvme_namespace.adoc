@@ -1,0 +1,26 @@
+---
+permalink: online-help-96-97/task_editing_nvme_namespace.html 
+sidebar: sidebar 
+keywords: edit, nvme, namespace, online, help, system, manager 
+summary: System Manager를 사용하면 네임스페이스가 매핑되는 하위 시스템을 변경하여 네임스페이스를 편집할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 NVMe 네임스페이스를 편집합니다
+:allow-uri-read: 
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager Classic을 사용하면 네임스페이스가 매핑된 서브시스템을 변경하여 네임스페이스를 편집할 수 있습니다.
+
+.이 작업에 대해
+이 창에서는 NVMe 하위 시스템 설정만 수정할 수 있으며 다른 네임스페이스 세부 정보는 편집할 수 없습니다.
+
+.단계
+. NVMe * > * NVMe namespaces * 를 클릭합니다.
+. NVMe 네임스페이스 창 * 에서 편집할 네임스페이스를 선택합니다.
+. 하위 시스템 옵션 선택:
++
+** 없음: 이 옵션을 선택하면 이 네임스페이스에 대한 기존 하위 시스템 매핑만 해제됩니다. 선택한 네임스페이스에 대한 하위 시스템 매핑이 없는 경우 이 옵션이 미리 선택됩니다.
+** 기존 하위 시스템 사용: 이 옵션은 서브시스템과 네임스페이스 간 매핑이 있는 경우 미리 선택됩니다. 다른 하위 시스템을 선택하면 이전에 매핑된 하위 시스템의 매핑을 해제함으로써 새 하위 시스템이 매핑됩니다.
+
+
+

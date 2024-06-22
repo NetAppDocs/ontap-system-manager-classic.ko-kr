@@ -1,0 +1,37 @@
+---
+permalink: nfs-config/task_configuring_verifying_client_access_new_svm.html 
+sidebar: sidebar 
+keywords: client, access, unix, file, permission, administration, host, add, export, rule, system, manager, user, group, volume, configure, configure and verify nfs client access, create a new nfs-enabled svm 
+summary: 준비가 되면 UNIX 관리 호스트에서 UNIX 파일 사용 권한을 설정하고 System Manager에서 내보내기 규칙을 추가하여 공유에 대한 특정 클라이언트 액세스 권한을 부여할 수 있습니다. 그런 다음 영향을 받는 사용자 또는 그룹이 볼륨에 액세스할 수 있는지 테스트해야 합니다. 
+---
+= NFS 클라이언트 액세스 구성 및 확인(새 NFS 지원 SVM 생성)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+준비가 되면 UNIX 관리 호스트에서 UNIX 파일 사용 권한을 설정하고 System Manager에서 내보내기 규칙을 추가하여 공유에 대한 특정 클라이언트 액세스 권한을 부여할 수 있습니다. 그런 다음 영향을 받는 사용자 또는 그룹이 볼륨에 액세스할 수 있는지 테스트해야 합니다.
+
+.단계
+. 공유에 액세스할 수 있는 클라이언트 및 사용자 또는 그룹을 결정합니다.
+. UNIX 관리 호스트에서 루트 사용자를 사용하여 볼륨에 대한 UNIX 소유권 및 권한을 설정합니다.
+. System Manager에서 내보내기 정책에 규칙을 추가하여 NFS 클라이언트가 공유에 액세스하도록 허용합니다.
++
+.. SVM(스토리지 가상 시스템)을 선택하고 * SVM 설정 * 을 클릭합니다.
+.. Policies * 창에서 * Export Policies * 를 클릭합니다.
+.. 볼륨과 동일한 이름의 엑스포트 정책을 선택합니다.
+.. 내보내기 규칙 * 탭에서 * 추가 * 를 클릭하고 클라이언트 집합을 지정합니다.
+.. 규칙 인덱스 * 에 대해 * 2 * 를 선택하여 이 규칙이 관리 호스트에 대한 액세스를 허용하는 규칙 이후에 실행되도록 합니다.
+.. NFSv3 * 를 선택합니다.
+.. 원하는 액세스 세부 정보를 지정하고 * 확인 * 을 클릭합니다
++
+서브넷을 입력하여 클라이언트에 전체 읽기/쓰기 액세스 권한을 부여할 수 있습니다 `10.1.1.0/24` 클라이언트 사양 * 으로 지정하고 * 슈퍼 사용자 액세스 허용 * 을 제외한 모든 액세스 확인란을 선택합니다.
+
++
+image::../media/export_rule_for_clients_nfs_nfs.gif[이 스크린샷은 이전 텍스트로 설명됩니다.]
+
+
+
+. UNIX 클라이언트에서 이제 볼륨에 액세스할 수 있는 사용자 중 하나로 로그인하여 볼륨을 마운트하고 파일을 생성할 수 있는지 확인합니다.
+

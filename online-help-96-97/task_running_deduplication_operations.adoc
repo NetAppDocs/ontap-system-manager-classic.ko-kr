@@ -1,0 +1,36 @@
+---
+permalink: online-help-96-97/task_running_deduplication_operations.html 
+sidebar: sidebar 
+keywords: run, deduplication, operation, system, manager, online, help, flexvol, volume 
+summary: System Manager를 사용하면 FlexVol 볼륨을 생성한 직후 중복제거를 실행하거나 지정된 시간에 중복제거를 실행하도록 예약할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 중복 제거 작업을 실행합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 FlexVol 볼륨을 생성한 직후 중복제거를 실행하거나 지정된 시간에 중복제거를 실행하도록 예약할 수 있습니다.
+
+.시작하기 전에
+* 볼륨에서 중복 제거를 활성화해야 합니다.
+* 볼륨이 온라인 상태이고 마운트되어야 합니다.
+
+
+.이 작업에 대해
+중복제거는 작업 중에 시스템 리소스를 사용하는 백그라운드 프로세스이므로 진행 중인 다른 작업에 영향을 줄 수 있습니다. 다른 작업을 수행하려면 먼저 중복 제거를 취소해야 합니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 중복 제거를 실행할 볼륨을 선택합니다.
+. 추가 작업 * > * 스토리지 효율성 * 을 클릭합니다.
+. 볼륨에서 중복 제거를 처음으로 실행하는 경우 * Storage Efficiency * (스토리지 효율성 *) 대화 상자에서 * Scan Entire Volume * (전체 볼륨 스캔 *)을 선택하여 전체 볼륨 데이터에 대해 중복 제거를 실행합니다.
+. 시작 * 을 클릭합니다.
+. 볼륨 * 창의 * 스토리지 효율성 * 탭에서 중복 제거 작업에 대한 마지막 실행 세부 정보를 봅니다.
+
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]

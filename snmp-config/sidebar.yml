@@ -1,0 +1,21 @@
+---
+section: snmp-config
+title: SNMP 구성
+entries:
+- title: 개요
+  url: "/snmp-config/index.html"
+- title: SNMP 구성 워크플로우
+  url: "/snmp-config/concept_snmp_configuration_workflow.html"
+  entries:
+  - title: SNMP가 활성화되어 있는지 확인합니다
+    url: "/snmp-config/task_verifying_snmp_is_enabled.html"
+  - title: SNMP 커뮤니티를 추가합니다
+    url: "/snmp-config/task_adding_snmp_community.html"
+  - title: SNMPv3 보안 사용자를 추가합니다
+    url: "/snmp-config/task_adding_snmpv3_security_user.html"
+  - title: SNMP traaphost를 추가합니다
+    url: "/snmp-config/task_adding_snmp_traphost.html"
+  - title: SNMP 트랩을 테스트합니다
+    url: "/snmp-config/task_testing_snmp_traps.html"
+  - title: SNMP 폴링을 테스트합니다
+    url: "/snmp-config/task_testing_snmp_polling.html"

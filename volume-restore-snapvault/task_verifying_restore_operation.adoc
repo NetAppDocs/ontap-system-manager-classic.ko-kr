@@ -1,0 +1,34 @@
+---
+permalink: volume-restore-snapvault/task_verifying_restore_operation.html 
+sidebar: sidebar 
+keywords: perform, restore, operation, snapvault, backup, destination, volume, verify, source cluster, verify the restore operation 
+summary: SnapVault 백업 대상 볼륨에서 복구 작업을 수행한 후에는 소스 클러스터에서 복구 작업의 상태를 확인해야 합니다. 
+---
+= 복구 작업을 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapVault 백업 대상 볼륨에서 복구 작업을 수행한 후에는 소스 클러스터에서 복구 작업의 상태를 확인해야 합니다.
+
+.이 작업에 대해
+소스 * 클러스터에서 이 작업을 수행해야 합니다.
+
+.단계
+. Volumes * 창으로 이동합니다.
+. 볼륨 목록에서 소스 볼륨을 선택하고 ONTAP 버전에 따라 다음 작업 중 하나를 수행합니다.
++
+** ONTAP 9.3부터: 소스 볼륨을 두 번 클릭하여 세부 정보를 확인한 다음, * 보호 * 를 클릭하여 SnapMirror 관계에서 타겟 볼륨과 볼륨이 포함된 SVM 이름을 확인합니다.
+** ONTAP 9.2 이하: * 데이터 보호 * 아래쪽 탭을 클릭하여 SnapMirror 관계의 타겟 볼륨과 볼륨이 들어 있는 SVM 이름을 식별하십시오.
+유형 필드가 표시됩니다 `Restore` 일시적으로. 복원 작업이 완료되면 필드가 표시됩니다 `Vault`.
++
+SnapVault 관계의 모든 문제를 해결해야 합니다. SnapMirror 관계에 대한 문제 해결 절차도 SnapVault 관계에 적용됩니다.
+
++
+http://www.netapp.com/us/media/tr-4015.pdf["NetApp 기술 보고서 4015: ONTAP 9.1, 9.2에 대한 SnapMirror 구성 및 모범 사례"^]
+
+
+
+

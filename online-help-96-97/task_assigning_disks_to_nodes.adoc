@@ -1,0 +1,36 @@
+---
+permalink: online-help-96-97/task_assigning_disks_to_nodes.html 
+sidebar: sidebar 
+keywords: system, manager, assign, disk, node, online, help 
+summary: System Manager를 사용하면 할당되지 않은 디스크의 소유권을 특정 노드에 할당하여 애그리게이트 또는 스토리지 풀의 용량을 늘릴 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 노드를 디스크에 할당합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 할당되지 않은 디스크의 소유권을 특정 노드에 할당하여 애그리게이트 또는 스토리지 풀의 용량을 늘릴 수 있습니다.
+
+.이 작업에 대해
+* 다음 조건이 맞으면 디스크를 할당할 수 있습니다.
++
+** 선택한 디스크의 컨테이너 유형은 "할당되지 않음"이어야 합니다.
+** HA Pair의 노드에 디스크를 연결해야 합니다.
+** 디스크가 노드에 표시되어야 합니다.
+
+
+* MetroCluster 구성의 경우 System Manager를 사용하여 디스크를 할당할 수 없습니다.
++
+대신 명령줄 인터페이스를 사용해야 합니다.
+
+
+
+.단계
+. 스토리지 * > * 애그리게이트 및 디스크 * > * 디스크 * 를 클릭합니다.
+. Disks * 창에서 * Inventory * 탭을 선택합니다.
+. 할당할 디스크를 선택한 다음 * 할당 * 을 클릭합니다.
+. 디스크 할당 * 대화 상자에서 디스크를 할당할 노드를 선택합니다.
+. 할당 * 을 클릭합니다.
+

@@ -1,0 +1,147 @@
+---
+permalink: online-help-96-97/concept_lun_multiprotocol_type_guidelines.html 
+sidebar: sidebar 
+keywords: guidelines, lun, multiprotocol, type, operating, system, host, layout, data, minimum, maximum, size, online, help 
+summary: LUN 다중 프로토콜 유형 또는 운영 체제 유형은 LUN에 액세스하는 호스트의 운영 체제를 지정합니다. 또한 LUN의 데이터 레이아웃과 LUN의 최소 및 최대 크기를 결정합니다. 
+---
+= System Manager - ONTAP 9.7 및 이전 버전에서 LUN 멀티 프로토콜 유형을 사용하기 위한 지침
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)에서는 LUN 멀티프로토콜 유형 또는 운영 체제 유형으로 LUN에 액세스하는 호스트의 운영 체제를 지정합니다. 또한 LUN의 데이터 레이아웃과 LUN의 최소 및 최대 크기를 결정합니다.
+
+[NOTE]
+====
+모든 ONTAP 버전이 모든 LUN 멀티프로토콜 유형을 지원하는 것은 아닙니다. 최신 정보는 상호 운용성 매트릭스 툴을 참조하십시오.
+
+====
+다음 표에는 LUN 멀티프로토콜 유형 값과 각 유형 사용에 대한 지침이 설명되어 있습니다.
+
+|===
+| LUN 멀티프로토콜 유형입니다 | 사용 시기 
+
+
+ a| 
+AIX
+ a| 
+호스트 운영 체제가 AIX인 경우
+
+
+
+ a| 
+HP-UX를 참조하십시오
+ a| 
+호스트 운영 체제가 HP-UX인 경우
+
+
+
+ a| 
+Hyper-V
+ a| 
+Windows Server 2008 또는 Windows Server 2012 Hyper-V를 사용 중이고 LUN에 VHD(가상 하드 디스크)가 포함되어 있는 경우 LUN 유형에 Hyper_v를 사용하는 경우 igroup OS 유형에 Hyper_V를 사용해야 합니다.
+
+[NOTE]
+====
+원시 LUN의 경우 LUN 다중 프로토콜 유형에서 사용되는 하위 운영 체제의 유형을 사용할 수 있습니다.
+
+====
+
+
+ a| 
+리눅스
+ a| 
+호스트 운영 체제가 Linux인 경우
+
+
+
+ a| 
+NetWare를 참조하십시오
+ a| 
+호스트 운영 체제가 NetWare인 경우
+
+
+
+ a| 
+오픈 VMS
+ a| 
+호스트 운영 체제가 OpenVMS인 경우
+
+
+
+ a| 
+Solaris
+ a| 
+호스트 운영 체제가 Solaris 이고 Solaris EFI 레이블을 사용하지 않는 경우
+
+
+
+ a| 
+Solaris EFI
+ a| 
+Solaris EFI 레이블을 사용하는 경우
+
+[NOTE]
+====
+Solaris EFI 레이블에 다른 LUN 멀티프로토콜 유형을 사용하면 LUN 정렬 불량 문제가 발생할 수 있습니다.
+
+====
+
+
+ a| 
+VMware
+ a| 
+ESX Server를 사용하는 경우 LUN이 VMFS로 구성됩니다.
+
+[NOTE]
+====
+RDM을 사용하여 LUN을 구성하는 경우 게스트 운영 체제를 LUN 다중 프로토콜 유형으로 사용할 수 있습니다.
+
+====
+
+
+ a| 
+Windows 2003 MBR
+ a| 
+호스트 운영 체제가 MBR 분할 방법을 사용하는 Windows Server 2003인 경우
+
+
+
+ a| 
+Windows 2003 GPT
+ a| 
+GPT 파티셔닝 방법을 사용하고 호스트에서 사용할 수 있는 경우 Windows Server 2003, 서비스 팩 1 이상에서는 GPT 파티션 방법을 사용할 수 있으며 모든 64비트 버전의 Windows에서 이를 지원합니다.
+
+
+
+ a| 
+Windows 2008 이상
+ a| 
+호스트 운영 체제가 Windows Server 2008 이상인 경우 MBR 및 GPT 파티셔닝 방법이 모두 지원됩니다.
+
+
+
+ a| 
+Xen
+ a| 
+Xen을 사용하는 경우 LUN은 Linux LVM과 Dom0으로 구성됩니다.
+
+[NOTE]
+====
+물리적 LUN의 경우 LUN 멀티프로토콜 유형에서 사용하는 게스트 운영 체제의 유형을 사용할 수 있습니다.
+
+====
+|===
+* 관련 정보 *
+
+xref:task_creating_luns.adoc[LUN 생성 중]
+
+https://mysupport.netapp.com/NOW/products/interoperability["NetApp 상호 운용성"]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1148981["Solaris Host Utilities 6.1 설치 및 설정 가이드"]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1148983["Solaris Host Utilities 6.1 빠른 명령 참조"]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1148982["Solaris Host Utilities 6.1 릴리스 정보"]

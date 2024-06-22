@@ -1,0 +1,42 @@
+---
+permalink: smb-config/index.html 
+sidebar: sidebar 
+keywords: content, describe, smb, cifs, access, volume, exist, storage, virtual, machine, svm, system manager classic 
+summary: 'ONTAP System Manager 클래식 인터페이스(ONTAP 9.7 이하)를 사용하면 새 SVM(스토리지 가상 머신) 또는 기존 SVM(스토리지 가상 머신)에서 새 볼륨에 SMB/CIFS 액세스를 빠르게 설정할 수 있습니다.' 
+---
+= SMB/CIFS 구성 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식 인터페이스(ONTAP 9.7 이하)를 사용하면 새 SVM(스토리지 가상 머신) 또는 기존 SVM(스토리지 가상 머신)에서 새 볼륨에 SMB/CIFS 액세스를 빠르게 설정할 수 있습니다.
+
+다음과 같은 방법으로 볼륨에 대한 액세스를 구성하려면 다음 절차를 따르십시오.
+
+* 사용 가능한 모든 옵션을 탐색하는 것이 아니라 모범 사례를 사용하려고 합니다.
+* 데이터 네트워크는 기본 IPspace, 기본 브로드캐스트 도메인 및 기본 페일오버 그룹을 사용합니다.
++
+데이터 네트워크가 수평인 경우 이 기본 객체를 사용하면 링크 장애가 발생할 경우 LIF가 올바르게 페일오버됩니다. 기본 개체를 사용하지 않는 경우 을 참조해야 합니다 https://docs.netapp.com/us-en/ontap/networking/index.html["네트워크 관리 설명서"^] LIF 경로 페일오버를 구성하는 방법에 대한 자세한 내용은 를 참조하십시오.
+
+* NTFS 파일 권한은 새 볼륨을 보호하는 데 사용됩니다.
+
+
+ONTAP SMB 프로토콜 기능 범위에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/ontap/smb-admin/index.html["SMB 참조 개요"^].
+
+
+
+== ONTAP에서 이 작업을 수행하는 다른 방법
+
+|===
+
+
+| 에서 이러한 작업을 수행하려면... | 자세한 내용은... 
+
+
+| 재설계된 System Manager(ONTAP 9.7 이상에서 사용 가능) | link:https://docs.netapp.com/us-en/ontap/task_nas_provision_windows_smb.html["SMB를 사용하여 Windows 서버용 NAS 스토리지 용량 할당"^] 
+
+
+| ONTAP 명령줄 인터페이스입니다 | link:https://docs.netapp.com/us-en/ontap/smb-config/index.html["CLI를 사용한 SMB 구성 개요"^] 
+|===

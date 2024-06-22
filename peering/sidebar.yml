@@ -1,0 +1,29 @@
+---
+section: peering
+title: 클러스터 및 SVM 피어링 구성
+entries:
+- title: 개요
+  url: "/peering/index.html"
+- title: 클러스터 피어링을 위한 사전 요구사항
+  url: "/peering/reference_prerequisites_for_cluster_peering.html"
+- title: 클러스터 및 SVM 피어링 워크플로우
+  url: "/peering/concept_cluster_peering_workflow.html"
+  entries:
+  - title: 클러스터 피어링을 준비합니다
+    url: "/peering/task_preparing_for_cluster_peering.html"
+  - title: 피어 관계 구성(ONTAP 9.3부터 시작)
+    url: "/peering/concept_creating_peer_relationships_93_later.html"
+    entries:
+    - title: 인터클러스터 LIF 만들기(ONTAP 9.3부터 시작)
+      url: "/peering/task_creating_intercluster_lifs.html"
+    - title: 클러스터 피어 관계 생성(ONTAP 9.3부터 시작)
+      url: "/peering/task_creating_cluster_peer_relationship_starting_with_ontap_9_3.html"
+    - title: SVM 피어 관계를 생성합니다
+      url: "/peering/task_creating_svm_peers.html"
+  - title: 피어 관계 구성(ONTAP 9.2 이하)
+    url: "/peering/concept_creating_peer_relationship_between_clusters_92_earlier.html"
+    entries:
+    - title: 모든 노드에 대한 인터클러스터 인터페이스 만들기(ONTAP 9.2 이하)
+      url: "/peering/task_creating_intercluster_interfaces_on_all_nodes.html"
+    - title: 클러스터 피어 관계 생성(ONTAP 9.2 이하)
+      url: "/peering/task_creating_cluster_peer_relationships_92_earlier.html"

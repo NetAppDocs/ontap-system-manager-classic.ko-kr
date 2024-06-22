@@ -1,0 +1,19 @@
+---
+section: volume-disaster-prep
+title: 볼륨 재해 복구 준비
+entries:
+- title: 개요
+  url: "/volume-disaster-prep/index.html"
+- title: 볼륨 재해 복구 준비 워크플로우
+  url: "/volume-disaster-prep/concept_snapmirror_intercluster_configuration_workflow.html"
+  entries:
+  - title: 클러스터 피어 관계 및 SVM 피어 관계를 확인합니다
+    url: "/volume-disaster-prep/task_verifying_cluster_peer_relationship.html"
+  - title: SnapMirror 관계 생성(ONTAP 9.3부터)
+    url: "/volume-disaster-prep/task_creating_snapmirror_relationships_93_later.html"
+  - title: SnapMirror 관계 생성(ONTAP 9.2 이하)
+    url: "/volume-disaster-prep/task_creating_snapmirror_relationships_92_earlier.html"
+  - title: 데이터 액세스를 위해 대상 SVM을 설정합니다
+    url: "/volume-disaster-prep/task_setting_up_destination_svm_for_data_access.html"
+  - title: SnapMirror 데이터 전송 상태를 모니터링합니다
+    url: "/volume-disaster-prep/task_monitoring_status_snapmirror_data_transfers.html"

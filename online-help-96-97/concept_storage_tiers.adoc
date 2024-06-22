@@ -1,0 +1,18 @@
+---
+permalink: online-help-96-97/concept_storage_tiers.html 
+sidebar: sidebar 
+keywords: system, manager, storage, tiers, aggregates, security, requirements, backup, performance, data, sharing, online, help 
+summary: System Manager를 사용하여 애그리게이트를 만들어 다양한 보안 요구사항, 백업 요구사항, 성능 요구사항, 사용자의 데이터 공유 요구사항을 지원할 수 있습니다. 
+---
+= 제공합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager를 사용하여 애그리게이트를 만들어 다양한 보안 요구사항, 백업 요구사항, 성능 요구사항, 사용자의 데이터 공유 요구사항을 지원할 수 있습니다.
+
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["디스크 및 애그리게이트 관리"]

@@ -1,0 +1,33 @@
+---
+permalink: online-help-96-97/task_deleting_flexgroup_volumes.html 
+sidebar: sidebar 
+keywords: delete, flexgroup, volumes, online, help, system, manager 
+summary: FlexGroup 볼륨이 더 이상 필요하지 않은 경우 System Manager를 사용하여 FlexGroup 볼륨을 삭제할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 FlexGroup 볼륨을 삭제합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FlexGroup 볼륨이 더 이상 필요하지 않은 경우 ONTAP 9.7 이하에서 사용 가능한 ONTAP System Manager 클래식 버전을 사용하여 FlexGroup 볼륨을 삭제할 수 있습니다.
+
+.시작하기 전에
+* FlexGroup 볼륨의 연결 경로를 마운트 해제해야 합니다.
+* FlexGroup 볼륨이 오프라인 상태여야 합니다.
+
+
+.이 작업에 대해
+System Manager에서는 FlexGroup 볼륨의 구성요소 관리 레벨을 지원하지 않습니다.
+
+.단계
+. 스토리지 * > * 볼륨 * 을 클릭합니다.
+. SVM * 필드의 드롭다운 메뉴에서 * 모든 SVM * 을 선택합니다.
+. 삭제할 FlexGroup 볼륨을 선택한 다음 * 삭제 * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * 확인 * 을 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_volumes_window.adoc[볼륨 창]

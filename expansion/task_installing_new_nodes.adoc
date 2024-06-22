@@ -1,0 +1,14 @@
+---
+permalink: expansion/task_installing_new_nodes.html 
+sidebar: sidebar 
+keywords: cluster, install, controller, configure, node-management, run, ontap, repurpose, hardware-level, ha, address, maintenance, mode, join, install the new node 
+summary: 클러스터가 준비되면 컨트롤러를 설치하고 노드 관리 LIF를 구성해야 합니다. 
+---
+= 새 노드를 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터가 준비되면 컨트롤러를 설치하고 노드 관리 LIF를 구성해야 합니다. 컨트롤러가 기존 클러스터와 동일한 ONTAP 버전을 실행하지 않거나 용도를 변경하여 하드웨어 수준 HA를 제공하지 않는 경우 유지보수 모드에서 이러한 문제를 해결해야 합니다. 마지막으로, 노드를 클러스터에 결합할 수 있습니다.

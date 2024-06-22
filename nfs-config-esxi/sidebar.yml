@@ -1,0 +1,44 @@
+---
+section: nfs-config-esxi
+title: VSC를 사용한 ESXi용 NFS 구성
+entries:
+- title: 개요
+  url: "/nfs-config-esxi/index.html"
+- title: ESXi 워크플로우를 위한 NFS 클라이언트 구성
+  url: "/nfs-config-esxi/task_nfs_client_configuration_for_esxi_workflow.html"
+  entries:
+  - title: 구성이 지원되는지 확인합니다
+    url: "/nfs-config-esxi/task_verifying_configuration_is_supported.html"
+  - title: NFS 클라이언트 구성 워크시트를 작성합니다
+    url: "/nfs-config-esxi/reference_completing_nfs_configuration_worksheet.html"
+  - title: 설치합니다
+    url: "/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html"
+  - title: 스토리지 클러스터를 VSC에 추가합니다
+    url: "/nfs-config-esxi/task_adding_storage_cluster_to_virtual_storage_cluster.html"
+  - title: 최상의 성능을 위해 네트워크를 구성합니다
+    url: "/nfs-config-esxi/task_configuring_your_network_for_best_performance.html"
+  - title: ESXi 호스트를 구성합니다
+    url: "/nfs-config-esxi/task_configuring_esxi_host.html"
+    entries:
+    - title: 호스트 포트 및 vSwitch를 구성합니다
+      url: "/nfs-config-esxi/task_configuring_host_iscsi_ports_vswitches.html"
+    - title: ESXi 호스트 Best Practice 설정을 구성합니다
+      url: "/nfs-config-esxi/task_configuring_esxi_host_best_practice_settings.html"
+  - title: Aggregate를 생성합니다
+    url: "/nfs-config-esxi/task_creating_aggregate.html"
+  - title: 새 볼륨을 프로비저닝할 위치를 결정합니다
+    url: "/nfs-config-esxi/task_deciding_where_to_provision_new_volume.html"
+  - title: 새 NFS 지원 SVM을 생성합니다
+    url: "/nfs-config-esxi/task_creating_new_nfs_enabled_svm.html"
+  - title: 기존 SVM에 NFS 액세스를 추가합니다
+    url: "/nfs-config-esxi/concept_adding_nfs_access_to_existing_svm.html"
+  - title: 기존 SVM에서 NFS가 활성화되어 있는지 확인합니다
+    url: "/nfs-config-esxi/task_verifying_that_nfs_is_enabled_on_existing_svm.html"
+  - title: 데이터 저장소를 프로비저닝하고 포함하는 볼륨을 생성합니다
+    url: "/nfs-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html"
+  - title: ESXi 호스트에서 NFS 액세스를 확인합니다
+    url: "/nfs-config-esxi/task_verifying_nfs_access_from_esxi_host.html"
+  - title: VMware VAAI용 NFS 플러그인을 구축합니다
+    url: "/nfs-config-esxi/task_deploying_netapp_nfs_plugin_for_vmware_vaai.html"
+  - title: 호스트에 데이터 저장소를 마운트합니다
+    url: "/nfs-config-esxi/task_mounting_datastores_on_hosts.html"

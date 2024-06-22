@@ -1,0 +1,125 @@
+---
+permalink: expansion/concept_joining_nodes_to_cluster_using_cli.html 
+sidebar: sidebar 
+keywords: install, controller, module, cluster, setup, command, join nodes to the cluster using the cli 
+summary: 새로 설치된 컨트롤러 모듈이 준비되면 cluster setup 명령을 사용하여 각 모듈을 클러스터에 추가할 수 있습니다. 
+---
+= CLI를 사용하여 클러스터에 노드를 연결합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새로 설치된 컨트롤러 모듈이 준비되면 를 사용하여 각 컨트롤러 모듈을 클러스터에 추가할 수 있습니다 `cluster setup` 명령.
+
+.이 작업에 대해
+* 두 노드에서 이 절차를 수행해야 합니다.
+* 각 노드를 한 번에 하나씩 조인해야 하며 동시에 조인할 수는 없습니다.
+
+
+.단계
+. [[step1]] 를 사용하여 클러스터 설정 마법사를 시작합니다 `cluster setup` 명령을 입력합니다.
++
+[listing]
+----
+::> cluster setup
+
+Welcome to the cluster setup wizard....
+
+Use your web browser to complete cluster setup by accessing
+https://10.63.11.29
+
+Otherwise, press Enter to complete cluster setup using the
+command line interface:
+----
++
+[NOTE]
+====
+GUI 기반 클러스터 설정 마법사를 사용하는 방법은 를 참조하십시오 xref:task_adding_nodes_to_cluster_using_system_manager.html[System Manager를 사용하여 클러스터에 노드 추가].
+
+====
+. Enter 키를 눌러 CLI를 사용하여 이 작업을 완료합니다. 새 클러스터를 생성하거나 기존 클러스터를 결합할지 묻는 메시지가 표시되면 를 입력합니다 `join`.
++
+[listing]
+----
+Do you want to create a new cluster or join an existing cluster? {create, join}:
+join
+----
+. 기존 클러스터 인터페이스 구성을 묻는 메시지가 표시되면 를 누릅니다 `Enter` 를 눌러 수락합니다.
++
+[listing]
+----
+Existing cluster interface configuration found:
+
+Port    MTU     IP              Netmask
+e1a     9000    169.254.87.75   255.255.0.0
+
+Do you want to use this configuration? {yes, no} [yes]:
+----
+. 표시되는 메시지에 따라 기존 클러스터를 결합합니다.
++
+[listing]
+----
+Step 1 of 3: Join an Existing Cluster
+You can type "back", "exit", or "help" at any question.
+
+Enter the name of the cluster you would like to join [cluster1]: cluster1
+
+Joining cluster cluster1
+
+Starting cluster support services ..
+
+This node has joined the cluster cluster1.
+
+Step 2 of 3: Configure Storage Failover (SFO)
+You can type "back", "exit", or "help" at any question.
+
+SFO will be enabled when the partner joins the cluster.
+
+Step 3 of 3: Set Up the Node
+
+Cluster setup is now complete.
+----
++
+노드 이름은 클러스터 이름과 일치하도록 자동으로 변경됩니다.
+
+. [[step5]] 클러스터에서 를 사용하여 노드가 클러스터의 일부인지 확인합니다 `cluster show` 명령.
++
+[listing]
+----
+cluster1::> cluster show
+Node                  Health  Eligibility
+--------------------- ------- ------------
+cluster1-1            true    true
+cluster1-2            true    true
+cluster1-3            true    true
+3 entries were displayed.
+----
+. 반복합니다 link:#step1["1단계"] 부터 까지 link:#step5["5단계"] 새로 설치된 두 번째 컨트롤러 모듈입니다.
++
+클러스터 설정 마법사는 다음과 같은 방법으로 두 번째 노드에서 다릅니다.
+
++
+** 파트너가 이미 클러스터에 포함되어 있으므로 기존 클러스터에 결합하는 것이 기본값입니다.
+** 두 노드에서 스토리지 페일오버가 자동으로 설정됩니다.
+
+
+. 를 사용하여 스토리지 페일오버가 설정되고 가능한지 확인합니다 `storage failover show` 명령.
++
+다음 출력에서는 새로 추가된 노드를 비롯하여 클러스터의 모든 노드에서 스토리지 페일오버가 설정 및 가능함을 보여 줍니다.
+
++
+[listing]
+----
+cluster1::> storage failover show
+                              Takeover
+Node           Partner        Possible State
+-------------- -------------- -------- -------------------------------------
+cluster1-1     cluster1-2     true     Connected to cluster1-2
+cluster1-2     cluster1-1     true     Connected to cluster1-1
+cluster1-3     cluster1-4     true     Connected to cluster1-3
+cluster1-4     cluster1-3     true     Connected to cluster1-4
+4 entries were displayed.
+----
+

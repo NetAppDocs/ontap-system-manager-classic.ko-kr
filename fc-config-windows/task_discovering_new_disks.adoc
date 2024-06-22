@@ -1,0 +1,46 @@
+---
+permalink: fc-config-windows/task_discovering_new_disks.html 
+sidebar: sidebar 
+keywords: lun, storage, virtual, machine, svm, appear, disk, windows, host, automatic, discover, manual, rescan, discover new disk 
+summary: 'SVM(스토리지 가상 머신)의 LUN은 Windows 호스트에 디스크로 표시됩니다. 시스템에 추가하는 LUN의 새 디스크는 호스트에서 자동으로 검색되지 않습니다. 디스크를 검색하려면 디스크를 수동으로 다시 검색해야 합니다.' 
+---
+= 새 디스크를 검색합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM(스토리지 가상 머신)의 LUN은 Windows 호스트에 디스크로 표시됩니다. 시스템에 추가하는 LUN의 새 디스크는 호스트에서 자동으로 검색되지 않습니다. 디스크를 검색하려면 디스크를 수동으로 다시 검색해야 합니다.
+
+.단계
+. Windows 컴퓨터 관리 유틸리티를 엽니다.
++
+|===
+| 사용 중인 경우... | 다음으로 이동... 
+
+
+ a| 
+Windows Server 2012 를 참조하십시오
+ a| 
+* 도구 * > * 컴퓨터 관리 *
+
+
+
+ a| 
+Windows Server 2008 을 참조하십시오
+ a| 
+* 시작 * > * 관리 도구 * > * 컴퓨터 관리 *
+
+
+
+ a| 
+Windows Server 2016 을 참조하십시오
+ a| 
+* 시작 * * > 관리 도구 * > 컴퓨터 관리 *
+
+|===
+. 탐색 트리에서 * Storage * 노드를 확장합니다.
+. 디스크 관리 * 를 클릭합니다.
+. Action * > * Rescan Disks * 를 클릭합니다.
+

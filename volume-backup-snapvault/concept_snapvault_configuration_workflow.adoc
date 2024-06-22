@@ -1,0 +1,24 @@
+---
+permalink: volume-backup-snapvault/concept_snapvault_configuration_workflow.html 
+sidebar: sidebar 
+keywords: configuring, configure, snapvault, backup, relationship, verify, cluster, peer, relationship, snapvault, source, destination, volume, monitor, snapvault backup configuration workflow 
+summary: SnapVault 백업 관계 구성에는 클러스터 피어 관계 확인, 소스 볼륨과 타겟 볼륨 간의 SnapVault 관계 생성, SnapVault 관계 모니터링이 포함됩니다. 
+---
+= SnapVault 백업 구성 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapVault 백업 관계 구성에는 클러스터 피어 관계 확인, 소스 볼륨과 타겟 볼륨 간의 SnapVault 관계 생성, SnapVault 관계 모니터링이 포함됩니다.
+
+image::../media/snapvault_workflow.gif[이 그림은 SnapVault 백업 구성 워크플로우 흐름도입니다. 워크플로의 단계가 항목과 일치합니다.]
+
+백업 데이터를 테스트하거나 소스 볼륨이 손실된 경우 대상 볼륨에서 데이터를 복원하는 데 도움이 되는 추가 설명서가 제공됩니다.
+
+* xref:../volume-restore-snapvault/index.html[SnapVault를 사용한 볼륨 복원 관리]
++
+ONTAP의 SnapVault 백업에서 볼륨을 빠르게 복원하는 방법에 대해 설명합니다
+
+

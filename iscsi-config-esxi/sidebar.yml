@@ -1,0 +1,44 @@
+---
+section: iscsi-config-esxi
+title: VSC를 사용한 ESXi용 iSCSI 구성
+entries:
+- title: 개요
+  url: "/iscsi-config-esxi/index.html"
+- title: iSCSI 구성 워크플로우
+  url: "/iscsi-config-esxi/concept_iscsi_configuration_provisioning_workflow.html"
+  entries:
+  - title: iSCSI 구성이 지원되는지 확인합니다
+    url: "/iscsi-config-esxi/task_verifying_that_iscsi_fc_configuration_is_supported.html"
+  - title: iSCSI 구성 워크시트를 작성합니다
+    url: "/iscsi-config-esxi/reference_completing_iscsi_configuration_worksheet.html"
+  - title: Virtual Storage Console을 설치합니다
+    url: "/iscsi-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html"
+  - title: 스토리지 클러스터 또는 SVM을 VMware vSphere용 VSC에 추가합니다
+    url: "/iscsi-config-esxi/task_adding_storage_cluster_to_virtual_storage_cluster.html"
+  - title: 최상의 성능을 위해 네트워크를 구성합니다
+    url: "/iscsi-config-esxi/task_configuring_your_network_for_best_performance.html"
+  - title: 호스트 iSCSI 포트 및 vSwitch를 구성합니다
+    url: "/iscsi-config-esxi/task_configuring_host_iscsi_ports_vswitches.html"
+  - title: iSCSI 소프트웨어 어댑터를 활성화합니다
+    url: "/iscsi-config-esxi/task_enabling_iscsi_software_adapter.html"
+  - title: iSCSI 포트를 iSCSI 소프트웨어 어댑터에 바인딩합니다
+    url: "/iscsi-config-esxi/task_binding_iscsi_ports_to_iscsi_software_adapter.html"
+  - title: ESXi 호스트 Best Practice 설정을 구성합니다
+    url: "/iscsi-config-esxi/task_configuring_esxi_host_best_practice_settings.html"
+  - title: Aggregate를 생성합니다
+    url: "/iscsi-config-esxi/task_creating_aggregate.html"
+  - title: 볼륨 용량을 할당할 위치를 결정합니다
+    url: "/iscsi-config-esxi/task_deciding_where_to_provision_volume.html"
+    entries:
+    - title: iSCSI 서비스가 기존 SVM에서 실행되고 있는지 확인합니다
+      url: "/iscsi-config-esxi/task_verifying_iscsi_is_running_on_existing_vserver.html"
+    - title: 기존 SVM에서 iSCSI를 구성합니다
+      url: "/iscsi-config-esxi/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html"
+    - title: 새 SVM을 생성합니다
+      url: "/iscsi-config-esxi/task_creating_svm.html"
+  - title: 호스트에서 스토리지 클러스터로의 iSCSI 경로를 테스트합니다
+    url: "/iscsi-config-esxi/task_testing_iscsi_paths.html"
+  - title: 데이터 저장소를 프로비저닝하고 포함된 LUN 및 볼륨을 생성합니다
+    url: "/iscsi-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html"
+  - title: 호스트가 LUN에 쓰고 읽을 수 있는지 확인합니다
+    url: "/iscsi-config-esxi/task_verifying_host_can_write_to_read_from_lun.html"

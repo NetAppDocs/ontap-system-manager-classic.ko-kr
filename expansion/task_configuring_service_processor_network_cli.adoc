@@ -1,0 +1,70 @@
+---
+permalink: expansion/task_configuring_service_processor_network_cli.html 
+sidebar: sidebar 
+keywords: expand, cluster, configure, service, processor, sp, network, node, manual, network, configuration, automatic, configure the service processor network 
+summary: 클러스터를 확장한 후 새 노드에서 서비스 프로세서 네트워크를 구성해야 합니다. 
+---
+= 서비스 프로세서 네트워크를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터를 확장한 후 새 노드에서 서비스 프로세서(SP) 네트워크를 구성해야 합니다. SP에서 수동 네트워크 구성을 사용하는 경우 새 노드에서 SP의 IP 주소를 구성해야 합니다. SP에서 자동 네트워크 구성을 사용하는 경우 선택한 IP 주소를 확인해야 합니다.
+
+.단계
+. 클러스터 SP에서 수동 네트워크 구성을 사용하는 경우 를 사용하여 SP 네트워크의 두 노드에서 IP 주소를 구성합니다 `system service-processor network modify` 명령.
++
+다음 명령은 SP 네트워크를 cluster1-3 및 cluster1-4 노드로 구성합니다.
+
++
+[listing]
+----
+cluster1::> system service-processor network modify -node cluster1-3 -address-family IPv4 -enable true -ip-address 192.168.123.98-netmask 255.255.255.0 -gateway 192.168.123.1
+cluster1::> system service-processor network modify -node cluster1-4 -address-family IPv4 -enable true -ip-address 192.168.123.99 -netmask 255.255.255.0 -gateway 192.168.123.1
+----
+. 를 사용하여 두 새 노드에서 SP 네트워크가 올바르게 구성되었는지 확인합니다 `system service-processor network show` 명령을 입력합니다.
++
+상태는 입니다 `succeeded`. 모든 상황에서 확인이 필요합니다. SP 네트워크가 자동으로 구성되었더라도 성공적으로 구성되었는지 확인하고 할당된 IP 주소를 확인해야 합니다.
+
++
+다음 출력은 cluster1-3과 cluster1-4 노드 모두 성공적인 SP 네트워크 설정을 가지고 있음을 나타냅니다.
+
++
+[listing]
+----
+cluster1::> system service-processor network show -node cluster1-3
+                             Address
+Node          Status         Family    Link State  IP Address
+------------- -------------- --------- ----------- ------------------------
+cluster1-3    online         IPv4      up          192.168.123.98
+
+                                 DHCP: none
+                          MAC Address: 00:a0:98:43:a1:1e
+                      Network Gateway: 10.60.172.1
+             Network Mask (IPv4 only): 255.255.255.0
+            Prefix Length (IPv6 only): -
+                      IPv6 RA Enabled: -
+                          Subnet Name: -
+              SP Network Setup Status: succeeded
+                                     ...
+
+cluster1::> system service-processor network show -node cluster1-4
+                             Address
+Node          Status         Family    Link State  IP Address
+------------- -------------- --------- ----------- ------------------------
+cluster1-4    online         IPv4      up          192.168.123.99
+
+                                 DHCP: none
+                          MAC Address: 00:a0:98:43:a1:1e
+                      Network Gateway: 10.60.172.1
+             Network Mask (IPv4 only): 255.255.255.0
+            Prefix Length (IPv6 only): -
+                      IPv6 RA Enabled: -
+                          Subnet Name: -
+              SP Network Setup Status: succeeded
+                                     ...
+----
+. 사이트에 일반적으로 SP 네트워크에 대한 DNS 항목이 있는 경우 새 노드에 대해 DNS 항목이 생성되었는지 확인합니다.
+

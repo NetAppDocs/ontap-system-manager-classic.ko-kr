@@ -1,0 +1,44 @@
+---
+section: iscsi-config-rhel
+title: Red Hat Enterprise Linux용 iSCSI 구성
+entries:
+- title: 개요
+  url: "/iscsi-config-rhel/index.html"
+- title: iSCSI 구성 및 프로비저닝 워크플로우
+  url: "/iscsi-config-rhel/concept_iscsi_configuration_provisioning_workflow.html"
+  entries:
+  - title: iSCSI 구성이 지원되는지 확인합니다
+    url: "/iscsi-config-rhel/task_verifying_that_iscsi_fc_configuration_is_supported.html"
+  - title: iSCSI 구성 워크시트를 작성합니다
+    url: "/iscsi-config-rhel/reference_completing_iscsi_configuration_worksheet.html"
+  - title: Linux Unified Host Utilities를 설치하고 I/O 성능을 최적화합니다
+    url: "/iscsi-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html"
+  - title: iSCSI 노드 이름을 기록합니다
+    url: "/iscsi-config-rhel/task_recording_iscsi_node_name.html"
+  - title: iSCSI 교체 시간 초과 값을 설정합니다
+    url: "/iscsi-config-rhel/task_setting_iscsi_replacement_timeout_value.html"
+  - title: iSCSI 서비스를 시작합니다
+    url: "/iscsi-config-rhel/task_starting_iscsi_service.html"
+  - title: DM 다중 경로를 구성합니다
+    url: "/iscsi-config-rhel/task_configuring_dm_multipath.html"
+  - title: Aggregate를 생성합니다
+    url: "/iscsi-config-rhel/task_creating_aggregate.html"
+  - title: 볼륨 용량을 할당할 위치를 결정합니다
+    url: "/iscsi-config-rhel/task_deciding_where_to_provision_volume.html"
+    entries:
+    - title: iSCSI 서비스가 기존 SVM에서 실행되고 있는지 확인합니다
+      url: "/iscsi-config-rhel/task_verifying_iscsi_is_running_on_existing_vserver.html"
+    - title: LUN을 생성합니다
+      url: "/iscsi-config-rhel/task_creating_lun_its_containing_volume.html"
+    - title: 기존 SVM에서 iSCSI를 구성합니다
+      url: "/iscsi-config-rhel/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html"
+    - title: 새 SVM을 생성합니다
+      url: "/iscsi-config-rhel/task_creating_svm.html"
+  - title: 타겟으로 iSCSI 세션을 시작합니다
+    url: "/iscsi-config-rhel/task_starting_iscsi_sessions_with_target.html"
+  - title: 새로운 SCSI 디바이스(LUN) 및 다중 경로 디바이스를 검색합니다
+    url: "/iscsi-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html"
+  - title: 다중 경로 장치에 논리 볼륨을 구성하고 파일 시스템을 생성합니다
+    url: "/iscsi-config-rhel/task_configuring_logical_volumes_on_multipath_devices_creating_file_system.html"
+  - title: 호스트가 다중 경로 장치에 데이터를 쓰고 읽을 수 있는지 확인합니다
+    url: "/iscsi-config-rhel/task_verifying_that_host_can_write_to_read_fom_lun.html"

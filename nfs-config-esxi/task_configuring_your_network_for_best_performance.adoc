@@ -1,0 +1,32 @@
+---
+permalink: nfs-config-esxi/task_configuring_your_network_for_best_performance.html 
+sidebar: sidebar 
+keywords: ethernet, network, performance, configuration, value, configure, configure your network for best performance 
+summary: 이더넷 네트워크의 성능은 매우 다양합니다. 특정 구성 값을 선택하여 네트워크 성능을 극대화할 수 있습니다. 
+---
+= 최상의 성능을 위해 네트워크를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이더넷 네트워크의 성능은 매우 다양합니다. 특정 구성 값을 선택하여 네트워크 성능을 극대화할 수 있습니다.
+
+.단계
+. 호스트 및 스토리지 포트를 동일한 네트워크에 연결합니다.
++
+동일한 스위치에 연결하는 것이 가장 좋습니다.
+
+. 사용 가능한 최고 속도 포트를 선택합니다.
++
+10GbE 이상의 포트가 가장 적합합니다. 1GbE 포트는 최소 포트입니다.
+
+. 원하는 경우 점보 프레임을 사용하도록 설정하고 네트워크에서 지원합니다.
++
+점보 프레임은 ESXi 호스트 및 스토리지 시스템의 경우 MTU 9000이고, 대부분의 스위치의 경우 9216이어야 합니다. ESXi NIC, 스토리지 NIC 및 스위치를 비롯한 데이터 경로의 모든 네트워크 디바이스는 점보 프레임을 지원해야 하며 최대 MTU 값에 맞게 구성해야 합니다.
+
++
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/ontap/performance-admin/check-network-settings-data-switches-task.html["데이터 스위치의 네트워크 설정을 확인합니다"^] 스위치 공급업체 설명서를 참조하십시오.
+
+

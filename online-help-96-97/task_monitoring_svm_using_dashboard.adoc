@@ -1,0 +1,20 @@
+---
+permalink: online-help-96-97/task_monitoring_svm_using_dashboard.html 
+sidebar: sidebar 
+keywords: system, manager, health, performance, monitor, svms, online, help 
+summary: 'System Manager의 대시보드를 사용하면 스토리지 가상 시스템(SVM)의 상태와 성능을 모니터링할 수 있습니다.' 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 SVM 모니터링
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)의 대시보드를 사용하면 SVM(스토리지 가상 시스템)의 상태와 성능을 모니터링할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. 모니터링할 SVM의 이름을 선택합니다.
+. 대시보드 패널에서 세부 정보를 봅니다.
+

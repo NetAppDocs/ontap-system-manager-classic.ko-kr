@@ -1,0 +1,40 @@
+---
+permalink: online-help-96-97/task_provisioning_basic_template.html 
+sidebar: sidebar 
+keywords: sap, hana, provisioning, basic, template, online, help, system, manager 
+summary: System Manager를 사용하면 SAP HANA용 기본 템플릿을 빠르게 프로비저닝할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 기본 템플릿을 프로비저닝합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 SAP HANA용 기본 템플릿을 빠르게 프로비저닝할 수 있습니다.
+
+.이 작업에 대해
+클러스터 관리자는 기본 템플릿을 구성하여 애플리케이션을 프로비저닝할 수 있습니다. 이 예에서는 * SAP HANA 서버 * 를 구성하는 방법을 설명합니다.
+
+.단계
+. 응용 프로그램 및 계층 * > * 응용 프로그램 * 을 클릭합니다
+. 기본 * 탭에서 * SAP HANA 서버 * 템플릿을 선택합니다.
+. 데이터베이스 세부 정보** 섹션에서 다음을 지정합니다.
++
+** 데이터베이스 이름
+** 데이터베이스 크기
+** 로그 크기
+** tempdb 크기입니다
+** 서버 코어 수
+** SPAN HA 컨트롤러 노트
+
+
+. 스토리지 용량 할당 * 을 클릭합니다
+
+
+.결과
+SAP HANA 서버 애플리케이션이 프로비저닝됩니다.
+
+* 관련 정보 *
+
+link:reference_application_provisioning_settings.html["필드 설명은 애플리케이션 프로비저닝 설정 을 참조하십시오"]

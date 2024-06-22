@@ -1,0 +1,51 @@
+---
+permalink: volume-disaster-prep/task_monitoring_status_snapmirror_data_transfers.html 
+sidebar: sidebar 
+keywords: periodical, monitor, status, snapmirror, relationship, ensure, data, schedule, monitor the status of snapmirror data transfers 
+summary: SnapMirror 관계 상태를 주기적으로 모니터링하여 SnapMirror 데이터 전송이 지정된 일정에 따라 발생하는지 확인합니다. 
+---
+= SnapMirror 데이터 전송 상태를 모니터링합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 관계 상태를 주기적으로 모니터링하여 SnapMirror 데이터 전송이 지정된 일정에 따라 발생하는지 확인합니다.
+
+.이 작업에 대해
+대상 * 클러스터에서 이 작업을 수행해야 합니다.
+
+.단계
+. 실행 중인 System Manager 버전에 따라 다음 단계 중 하나를 수행하십시오.
++
+** ONTAP 9.4 이하: * 보호 * > * 관계 * 를 클릭합니다.
+** ONTAP 9.5부터 * 보호 * > * 볼륨 관계 * 를 클릭합니다.
+
+
+. 소스 볼륨과 타겟 볼륨 간의 SnapMirror 관계를 선택한 다음 * Details * Bottom 탭에서 상태를 확인합니다.
++
+세부 정보 탭에는 SnapMirror 관계의 상태가 표시되고 전송 오류 및 지연 시간이 표시됩니다.
+
++
+** IS health(정상 상태) 필드가 표시되어야 합니다 `Yes`.
++
+대부분의 SnapMirror 데이터 전송 실패 시 필드가 표시됩니다 `No`. 그러나 오류가 발생할 경우 필드가 계속 표시됩니다 `Yes`. 데이터 전송 오류가 발생하지 않았는지 확인하려면 세부 정보 섹션에서 전송 오류를 확인해야 합니다.
+
+** 관계 상태 필드가 표시되어야 합니다 `Snapmirrored`.
+** 지연 시간은 전송 일정 간격보다 길지 않아야 합니다.
++
+예를 들어, 전송 일정이 매시간 시간인 경우 지연 시간은 1시간 이상이어야 합니다.
+
++
+SnapMirror 관계의 모든 문제를 해결해야 합니다.
+
++
+http://www.netapp.com/us/media/tr-4015.pdf["NetApp 기술 보고서 4015: ONTAP 9.1, 9.2에 대한 SnapMirror 구성 및 모범 사례"^]
+
++
+image::../media/snapmirror_monitor_3_health_state_lag.gif[SnapMirror 모니터 3의 상태 지연]
+
+
+
+

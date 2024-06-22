@@ -1,0 +1,64 @@
+---
+permalink: online-help-96-97/concept_subnets.html 
+sidebar: sidebar 
+keywords: system, manager, manage, subnet, online, help, edit, settings, modify, delete, ip, address 
+summary: System Manager를 사용하여 서브넷을 관리할 수 있습니다. 
+---
+= System Manager - ONTAP 9.7 이하를 사용하여 서브넷을 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하여 서브넷을 관리할 수 있습니다.
+
+
+
+== 서브넷 설정을 편집합니다
+
+[role="lead"]
+System Manager를 사용하여 서브넷의 이름, 서브넷 주소, IP 주소 범위, 게이트웨이 주소 등과 같은 서브넷 특성을 수정할 수 있습니다.
+
+.이 작업에 대해
+* 시스템 관리자를 사용하여 클러스터 IPspace에서 서브넷을 편집할 수는 없습니다.
++
+대신 CLI(Command-Line Interface)를 사용해야 합니다.
+
+* 게이트웨이 주소를 수정해도 경로가 업데이트되지 않습니다.
++
+경로를 업데이트하려면 CLI를 사용해야 합니다.
+
+
+
+.단계
+. 네트워크 * > * 서브넷 * 을 클릭합니다.
+. 수정할 서브넷을 선택한 다음 * 편집 * 을 클릭합니다.
++
+해당 서브넷의 LIF가 아직 사용 중인 경우에도 서브넷을 수정할 수 있습니다.
+
+. [서브넷 편집] * 대화 상자에서 필요에 따라 서브넷 속성을 수정합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+
+
+
+
+== 서브넷을 삭제합니다
+
+서브넷이 더 이상 필요하지 않고 서브넷에 할당된 IP 주소를 재할당하려는 경우 System Manager를 사용하여 서브넷을 삭제할 수 있습니다.
+
+.시작하기 전에
+삭제할 서브넷에 서브넷의 IP 주소를 사용하는 LIF가 없어야 합니다.
+
+.이 작업에 대해
+시스템 관리자를 사용하여 클러스터 IPspace에서 서브넷을 삭제할 수는 없습니다. 대신 CLI(Command-Line Interface)를 사용해야 합니다.
+
+.단계
+. 네트워크 * > * 서브넷 * 을 클릭합니다.
+. 삭제할 서브넷을 선택한 다음 * 삭제 * 를 클릭합니다.
+. 확인 확인란을 선택한 다음 * 삭제 * 를 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:reference_network_window.adoc[네트워크 창]

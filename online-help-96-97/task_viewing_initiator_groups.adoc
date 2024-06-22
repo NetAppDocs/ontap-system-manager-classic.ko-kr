@@ -1,0 +1,21 @@
+---
+permalink: online-help-96-97/task_viewing_initiator_groups.html 
+sidebar: sidebar 
+keywords: view, initiator, group, lun, system, manager, online, help 
+summary: System Manager의 이니시에이터 그룹 탭을 사용하면 이러한 이니시에이터 그룹에 매핑된 이니시에이터 그룹 및 이니시에이터, 이니시에이터 그룹에 매핑된 LUN 및 LUN ID를 모두 볼 수 있습니다. 
+---
+= System Manager로 이니시에이터 그룹 확인 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)의 이니시에이터 그룹 * 탭을 사용하면 이러한 이니시에이터 그룹에 매핑된 모든 이니시에이터 그룹 및 이니시에이터와 이니시에이터 그룹에 매핑된 LUN 및 LUN ID를 볼 수 있습니다.
+
+.단계
+. 스토리지 * > * LUN * 을 클릭합니다.
+. 이니시에이터 그룹 * 을 클릭하고 상단 창에 나열된 이니시에이터 그룹을 검토합니다.
+. 이니시에이터 그룹을 선택하여 해당 그룹에 속한 이니시에이터를 봅니다. 이 이니시에이터는 아래쪽 창의 * Initiators * 탭에 나열됩니다.
+. 이니시에이터 그룹을 선택하여 매핑된 LUN을 표시합니다. 이 LUN은 아래쪽 창의 * Mapped LUNs * 에 나와 있습니다.
+

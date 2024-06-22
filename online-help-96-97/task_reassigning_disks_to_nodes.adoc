@@ -1,0 +1,56 @@
+---
+permalink: online-help-96-97/task_reassigning_disks_to_nodes.html 
+sidebar: sidebar 
+keywords: system, manager, reassign, disks, node, online, help, node, aggregate, storage, pool 
+summary: System Manager를 사용하여 스페어 디스크의 소유권을 한 노드에서 다른 노드로 재할당하여 애그리게이트 또는 스토리지 풀의 용량을 늘릴 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 디스크를 노드에 재할당합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 스페어 디스크의 소유권을 한 노드에서 다른 노드로 재할당하여 애그리게이트 또는 스토리지 풀의 용량을 높일 수 있습니다.
+
+.이 작업에 대해
+* 다음 조건에 해당하는 경우 디스크를 재할당할 수 있습니다.
++
+** 선택한 디스크의 컨테이너 유형은 "공유" 또는 "공유"여야 합니다.
+** HA 구성에서 디스크를 노드에 연결해야 합니다.
+** 디스크가 노드에 표시되어야 합니다.
+
+
+* 다음 조건에 해당하는 경우 디스크를 재할당할 수 없습니다.
++
+** 선택한 디스크의 컨테이너 유형은 "공유"이고 데이터 파티션은 스페어가 아닙니다.
+** 디스크가 스토리지 풀과 연결되어 있습니다.
+
+
+* 공유 디스크와 연결된 노드에서 스토리지 페일오버가 활성화되지 않은 경우 공유 디스크의 데이터 파티션을 재할당할 수 없습니다.
+* 파티션 디스크의 경우 디스크의 데이터 파티션만 재할당할 수 있습니다.
+* MetroCluster 구성의 경우 System Manager를 사용하여 디스크를 재할당할 수 없습니다.
++
+MetroCluster 구성을 위해 디스크를 재할당하려면 명령줄 인터페이스를 사용해야 합니다.
+
+
+
+[NOTE]
+====
+이후 ONTAP 릴리즈에서는 ONTAP CLI를 사용하여 디스크 소유권을 제거한 다음 새 소유자를 할당합니다.
+
+====
+.단계
+. 스토리지 * > * 애그리게이트 및 디스크 * > * 디스크 * 를 클릭합니다.
+. Disks * 창에서 * Inventory * 탭을 선택합니다.
+. 재할당할 디스크를 선택한 다음 * 할당 * 을 클릭합니다.
+. 경고 * 대화 상자에서 * 계속 * 을 클릭합니다.
+. 디스크 할당 * 대화 상자에서 디스크를 재할당할 노드를 선택합니다.
+. 할당 * 을 클릭합니다.
+
+
+.관련 정보
+* link:https://docs.netapp.com/us-en/ontap/disks-aggregates/remove-ownership-disk-task.html["ONTAP CLI를 사용하여 디스크 소유권 제거(ONTAP 9.3 이상)"]
+* link:https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html["ONTAP CLI를 사용하여 자동으로 디스크 할당(ONTAP 9.3 이상)"]
+* link:https://docs.netapp.com/us-en/ontap/disks-aggregates/manual-assign-disks-ownership-manage-task.html["ONTAP CLI를 사용하여 수동으로 디스크 할당(ONTAP 9.3 이상)"]
+

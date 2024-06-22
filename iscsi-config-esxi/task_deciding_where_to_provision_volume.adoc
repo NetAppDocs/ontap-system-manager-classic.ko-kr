@@ -1,0 +1,37 @@
+---
+permalink: iscsi-config-esxi/task_deciding_where_to_provision_volume.html 
+sidebar: sidebar 
+keywords: provision, volume, lun, add, exist, storage, virtual, machine, svm, iscsi, decide where to provision the volume 
+summary: LUN을 포함할 볼륨을 프로비저닝하기 전에 기존 스토리지 가상 시스템에 볼륨을 추가할지 또는 볼륨에 대한 새 SVM을 생성할지 결정해야 합니다. 기존 SVM에서 iSCSI를 구성해야 할 수도 있습니다. 
+---
+= 볼륨 용량을 할당할 위치를 결정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LUN을 포함할 볼륨을 프로비저닝하기 전에 볼륨을 기존 SVM(스토리지 가상 머신)에 추가할 것인지 또는 볼륨에 사용할 새 SVM을 생성할 것인지를 결정해야 합니다. 기존 SVM에서 iSCSI를 구성해야 할 수도 있습니다.
+
+.이 작업에 대해
+기존 SVM이 필요한 프로토콜로 이미 구성되어 있고 호스트에서 액세스할 수 있는 LIF가 있으면 기존 SVM을 더 쉽게 사용할 수 있습니다.
+
+새 SVM을 생성하여 스토리지 클러스터의 다른 사용자와 데이터 또는 관리를 분리할 수 있습니다. 별도의 SVM을 사용하여 서로 다른 프로토콜을 분리할 수 있는 이점은 없습니다.
+
+
+
+== 절차를 참조하십시오
+
+* 이미 iSCSI로 구성된 SVM에서 볼륨을 프로비저닝하려면 iSCSI 서비스가 실행 중인지 확인해야 합니다.
++
+link:task_verifying_iscsi_is_running_on_existing_vserver.html["iSCSI 서비스가 기존 SVM에서 실행 중인지 확인"]
+
+* iSCSI가 활성화되었지만 구성되지 않은 기존 SVM에서 볼륨을 프로비저닝하려면 기존 SVM에서 iSCSI를 구성합니다.
++
+link:task_configuring_iscsi_fc_creating_lun_on_existing_svm.html["기존 SVM에서 iSCSI 구성"]
+
++
+다른 프로토콜을 구성하는 동안 이 절차를 따르지 않아 SVM을 생성하지 않은 경우가 이에 해당합니다.
+
+* 새 SVM에서 볼륨을 프로비저닝하고 싶은 경우, link:task_creating_svm.html["새 SVM을 생성합니다"].
+

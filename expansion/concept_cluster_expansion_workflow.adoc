@@ -1,0 +1,16 @@
+---
+permalink: expansion/concept_cluster_expansion_workflow.html 
+sidebar: sidebar 
+keywords: cluster, expansion, workflow 
+summary: 클러스터 확장 워크플로우 
+---
+= 클러스터 확장 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 클러스터에 2개의 노드를 추가하는 작업은 클러스터가 확장 준비가 되었는지, 클러스터를 준비하고, 새 노드를 설치하고, 확장을 완료하는지 확인하는 것입니다.
+
+image::../media/cluster_expansion_workflow.gif[이 이미지는 주변 텍스트로 설명됩니다.]

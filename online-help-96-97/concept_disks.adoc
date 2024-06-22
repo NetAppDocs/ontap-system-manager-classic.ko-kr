@@ -1,0 +1,22 @@
+---
+permalink: online-help-96-97/concept_disks.html 
+sidebar: sidebar 
+keywords: system, manager, disk, manage, online, help 
+summary: System Manager를 사용하여 디스크를 관리할 수 있습니다. 
+---
+= System Manager로 디스크 관리 - ONTAP 9.7 이하
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하여 디스크를 관리할 수 있습니다.
+
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["디스크 및 애그리게이트 관리"^]
+
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html["FlexArray 가상화 설치 요구 사항 및 참조 자료"^]
+
+https://docs.netapp.com/us-en/ontap/concepts/index.html["ONTAP 개념"^]

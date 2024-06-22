@@ -1,0 +1,44 @@
+---
+section: fc-config-rhel
+title: Red Hat Enterprise Linux용 FC 구성
+entries:
+- title: 개요
+  url: "/fc-config-rhel/index.html"
+- title: FC 구성 및 프로비저닝 워크플로우
+  url: "/fc-config-rhel/concept_fc_configuration_workflow.html"
+  entries:
+  - title: FC 구성이 지원되는지 확인합니다
+    url: "/fc-config-rhel/task_verifying_that_iscsi_fc_configuration_is_supported.html"
+  - title: FC 구성 워크시트를 작성합니다
+    url: "/fc-config-rhel/reference_completing_iscsi_configuration_worksheet.html"
+  - title: HBA 공급업체에서 HBA 유틸리티를 설치합니다
+    url: "/fc-config-rhel/task_installing_hba_utility_from_hba_vendor.html"
+  - title: HBA 드라이버, 펌웨어 및 BIOS를 업데이트합니다
+    url: "/fc-config-rhel/task_updating_hba_driver_firmware_bios.html"
+  - title: Linux Unified Host Utilities를 설치하고 I/O 성능을 최적화합니다
+    url: "/fc-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html"
+  - title: 각 호스트 FC 포트의 WWPN을 기록합니다
+    url: "/fc-config-rhel/task_record_wwpn_for_each_host_fc_port.html"
+  - title: DM 다중 경로를 구성합니다
+    url: "/fc-config-rhel/task_configuring_dm_multipath.html"
+  - title: Aggregate를 생성합니다
+    url: "/fc-config-rhel/task_creating_aggregate.html"
+  - title: 볼륨 용량을 할당할 위치를 결정합니다
+    url: "/fc-config-rhel/task_deciding_where_to_provision_volume.html"
+    entries:
+    - title: FC 서비스가 기존 SVM에서 실행되고 있는지 확인합니다
+      url: "/fc-config-rhel/task_verifying_that_fc_service_is_running_on_existing_svm.html"
+    - title: LUN을 생성합니다
+      url: "/fc-config-rhel/task_creating_lun_its_containing_volume.html"
+    - title: 기존 SVM에서 FC를 구성합니다
+      url: "/fc-config-rhel/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html"
+    - title: 새 SVM을 생성합니다
+      url: "/fc-config-rhel/task_creating_svm.html"
+  - title: FC 스위치를 호스트 및 LIF WWPN으로 조닝(Zoning)합니다
+    url: "/fc-config-rhel/task_zoning_fc_switches_by_host_lif_wwpns.html"
+  - title: 새로운 SCSI 디바이스(LUN) 및 다중 경로 디바이스를 검색합니다
+    url: "/fc-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html"
+  - title: 다중 경로 장치에 논리 볼륨을 구성하고 파일 시스템을 생성합니다
+    url: "/fc-config-rhel/task_configuring_logical_volumes_on_multipath_devices_creating_file_system.html"
+  - title: 호스트가 다중 경로 장치에 데이터를 쓰고 읽을 수 있는지 확인합니다
+    url: "/fc-config-rhel/task_verifying_that_host_can_write_to_read_fom_lun.html"

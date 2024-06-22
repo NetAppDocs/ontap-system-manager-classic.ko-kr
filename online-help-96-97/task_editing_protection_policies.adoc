@@ -1,0 +1,31 @@
+---
+permalink: online-help-96-97/task_editing_protection_policies.html 
+sidebar: sidebar 
+keywords: edit, protection, policies, online, help, system, manager 
+summary: System Manager를 사용하여 보호 정책을 수정하고 정책을 데이터 보호 관계에 적용할 수 있습니다. 
+---
+= 보호 정책 편집
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager를 사용하여 보호 정책을 수정하고 정책을 데이터 보호 관계에 적용할 수 있습니다.
+
+.이 작업에 대해
+보호 정책이 클러스터 레벨에 표시되지 않습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM(스토리지 가상 시스템)을 선택하고 * SVM 설정 * 을 클릭합니다.
+. Policies * 창에서 * Protection Policies * 를 클릭합니다.
+. 편집할 보호 정책을 선택한 다음 * 편집 * 을 클릭합니다.
+. 전송 우선 순위를 수정한 다음 네트워크 압축을 설정하거나 해제합니다.
+. 비동기식 미러 정책의 경우 모든 소스 스냅샷 복사본을 백업합니다.
+. 볼트 정책 또는 미러 볼트 정책의 경우 SnapMirror 레이블 및 보존 수를 수정합니다.
++
+미러 볼트 정책에 대한 SM_Created 라벨을 제거할 수 없습니다.
+
+. 저장 * 을 클릭합니다.
+

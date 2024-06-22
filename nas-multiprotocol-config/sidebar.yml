@@ -1,0 +1,38 @@
+---
+section: nas-multiprotocol-config
+title: SMB/CIFS 및 NFS 멀티 프로토콜 구성
+entries:
+- title: 개요
+  url: "/nas-multiprotocol-config/index.html"
+- title: 멀티프로토콜 구성 워크플로우
+  url: "/nas-multiprotocol-config/concept_cifs_nfs_configuration_workflow.html"
+  entries:
+  - title: Aggregate를 생성합니다
+    url: "/nas-multiprotocol-config/task_creating_aggregate.html"
+  - title: 새 볼륨을 프로비저닝할 위치를 결정합니다
+    url: "/nas-multiprotocol-config/task_deciding_where_to_provision_new_volume.html"
+    entries:
+    - title: 기본 SVM을 생성합니다
+      url: "/nas-multiprotocol-config/task_creating_new_svm.html"
+    - title: 기존 SVM에 CIFS 및 NFS 액세스를 추가합니다
+      url: "/nas-multiprotocol-config/concept_adding_nas_access_to_existing_svm.html"
+    - title: SVM 루트 볼륨의 엑스포트 정책 열기(새 NFS 지원 SVM 생성)
+      url: "/nas-multiprotocol-config/task_opening_export_policy_svm_root_volume.html"
+    - title: DNS 서버의 SMB 서버를 매핑합니다
+      url: "/nas-multiprotocol-config/task_mapping_smb_server_dns_server.html"
+    - title: LDAP 구성(새 NFS 지원 SVM 생성)
+      url: "/nas-multiprotocol-config/task_configuring_ldap_new_svm.html"
+    - title: UNIX 및 Windows 사용자 이름을 매핑합니다
+      url: "/nas-multiprotocol-config/task_mapping_unix_windows_user_names.html"
+  - title: 볼륨을 생성하고 구성합니다
+    url: "/nas-multiprotocol-config/task_creating_configuring_volume.html"
+  - title: 공유를 생성하고 해당 사용 권한을 설정합니다
+    url: "/nas-multiprotocol-config/task_creating_share_setting_its_permissions.html"
+  - title: 볼륨에 대한 엑스포트 정책을 생성합니다
+    url: "/nas-multiprotocol-config/task_creating_export_policy_for_volume.html"
+  - title: SMB 클라이언트 액세스를 확인합니다
+    url: "/nas-multiprotocol-config/task_verifying_smb_client_access.html"
+  - title: UNIX 관리 호스트에서 NFS 액세스를 확인합니다
+    url: "/nas-multiprotocol-config/task_verifying_nfs_access_from_unix_administration_host.html"
+  - title: CIFS 및 NFS 클라이언트 액세스를 구성하고 확인합니다
+    url: "/nas-multiprotocol-config/task_configuring_verifying_client_access_new_svm.html"

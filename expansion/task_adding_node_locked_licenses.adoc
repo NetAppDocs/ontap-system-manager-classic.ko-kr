@@ -1,0 +1,43 @@
+---
+permalink: expansion/task_adding_node_locked_licenses.html 
+sidebar: sidebar 
+keywords: cluster, feature, node-locked, license, entitle, functionality, add, add node-locked licenses 
+summary: 클러스터에 노드 잠김 라이센스를 사용하는 기능이 있는 경우 새 노드에 대해 노드 잠김 라이센스가 설치되어 있는지 확인해야 합니다. 
+---
+= 노드 잠김 라이센스를 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터에 노드 잠김 라이센스를 사용하는 기능(라이센스가 부여된 기능에 특정 노드만 사용 가능)이 있는 경우 새 노드에 대해 노드 잠김 라이센스가 설치되어 있는지 확인해야 합니다. 노드를 클러스터에 가입하기 전에 라이센스를 추가해야 합니다.
+
+ONTAP 9.7 이하 릴리스에서 _Classic_System Manager UI를 사용하는 경우 이 작업을 완료하십시오. ONTAP 9.7 이상에서 System Manager UI를 사용하는 경우 를 참조하십시오 link:https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html["라이센스 키를 추가하여 새 기능을 활성화합니다"].
+
+라이센스 관리에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["라이센스 관리 개요"].
+
+.단계
+. 를 사용하여 각 라이센스 키를 추가합니다 `system license add` 명령.
++
+[listing]
+----
+cluster1::> system license add -license-code AAAAAAAAAAAAAA
+----
+. 를 사용하여 기존 라이센스를 봅니다 `system license show` 명령.
++
+[listing]
+----
+cluster1::> system license show
+
+Serial Number: 9-99-999999
+Owner: cluster1
+Package           Type    Description           Expiration
+----------------- ------- --------------------- --------------------
+Base              site    Cluster Base License  -
+NFS               license NFS License           -
+CIFS              license CIFS License          -
+...
+----
+. 출력을 검토하여 기존 및 새 노드의 일련 번호를 포함하여 모든 일련 번호에 대해 노드 잠김 라이센스가 표시되는지 확인합니다.
+

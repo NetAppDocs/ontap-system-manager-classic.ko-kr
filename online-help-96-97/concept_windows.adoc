@@ -1,0 +1,18 @@
+---
+permalink: online-help-96-97/concept_windows.html 
+sidebar: sidebar 
+keywords: system, manager, windows, create, manager, user, account, online, help 
+summary: System Manager를 사용하여 Windows 그룹 및 사용자 계정을 만들고 관리할 수 있습니다. 
+---
+= Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager를 사용하여 Windows 그룹 및 사용자 계정을 만들고 관리할 수 있습니다.
+
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/smb-admin/index.html["SMB/CIFS 관리"]

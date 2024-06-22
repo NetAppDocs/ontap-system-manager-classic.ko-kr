@@ -1,0 +1,50 @@
+---
+permalink: expansion/task_ensuring_hardware_level_ha_is_enabled.html 
+sidebar: sidebar 
+keywords: install, controller, module, reuse, maintenance, mode, ha, state, hardware-level, enable, ensure hardware-level ha is enabled 
+summary: 새로 설치된 컨트롤러 모듈을 재사용하는 것이 아니라 유지보수 모드로 전환하여 HA 상태가 HA로 설정되었는지 확인해야 합니다. 
+---
+= 하드웨어 레벨 HA가 활성화되어 있는지 확인합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새로 설치된 컨트롤러 모듈을 재사용하는 경우(새 모듈이 아님), 유지보수 모드로 전환하여 HA 상태가 HA로 설정되었는지 확인해야 합니다.
+
+.이 작업에 대해
+새 컨트롤러 모듈을 사용하는 경우 HA가 기본적으로 활성화되므로 이 절차를 건너뛸 수 있습니다. 그렇지 않으면 두 노드에서 이 절차를 수행해야 합니다.
+
+.단계
+. 첫 번째 노드에서 유지보수 모드로 전환합니다.
++
+.. 을 입력하여 노드 쉘을 종료합니다 `halt`.
++
+LOADER 프롬프트가 표시됩니다.
+
+.. 를 입력하여 유지보수 모드로 전환합니다 `boot_ontap maint`.
++
+일부 정보가 표시되면 유지보수 모드 프롬프트가 표시됩니다.
+
+
+
+. 유지보수 모드에서 컨트롤러 모듈 및 섀시가 HA 상태인지 확인합니다.
++
+.. 를 입력하여 컨트롤러 모듈 및 섀시의 HA 상태를 표시합니다 `ha-config show`.
+.. 컨트롤러의 표시된 상태가 가 아닌 경우 `HA`를 입력합니다 `ha-config modify controller ha`.
+.. 섀시의 표시된 상태가 가 아닌 경우 `HA`를 입력합니다 `ha-config modify chassis ha`.
+.. 를 입력하여 컨트롤러 모듈과 섀시 모두에서 HA가 활성화되어 있는지 확인합니다 `ha-config show`.
+
+
+. ONTAP로 돌아가기:
++
+.. 를 입력합니다 `halt` 유지 관리 모드를 종료합니다.
+.. 를 입력하여 ONTAP를 부팅합니다 `boot_ontap`
+.. 노드가 부팅되고 콘솔에서 클러스터 설정 마법사가 자동으로 시작되는 동안 기다립니다.
+.. Enter 키를 네 번 눌러 노드 관리 LIF의 기존 설정을 적용합니다.
+.. 노드에 로 로그인합니다 `admin` 사용자 - 암호가 필요하지 않습니다.
+
+
+. 클러스터에 추가할 다른 노드에서 이 절차를 반복합니다.
+

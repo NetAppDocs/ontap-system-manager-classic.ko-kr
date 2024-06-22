@@ -1,0 +1,75 @@
+---
+permalink: online-help-96-97/concept_nis_services.html 
+sidebar: sidebar 
+keywords: online, help, system, manager, nis, services, add, edit, manage, network, information, service, domain, svm, modify, command 
+summary: 'System Manager를 사용하여 NIS(Network Information Service) 도메인을 추가, 편집 및 관리할 수 있습니다.' 
+---
+= 시스템 관리자 - ONTAP 9.7 이하를 사용하여 NIS 서비스를 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 시스템 관리자 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 NIS(네트워크 정보 서비스) 도메인을 추가, 편집 및 관리할 수 있습니다.
+
+
+
+== NIS 도메인을 추가합니다
+
+NIS를 사용하여 호스트 정보를 중앙에서 관리할 수 있습니다. System Manager를 사용하여 스토리지 시스템의 NIS 도메인 이름을 추가할 수 있습니다. 언제든지 한 SVM(스토리지 가상 시스템)에서 NIS 도메인을 하나만 활성화할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 서비스 * 창에서 * NIS * 를 클릭합니다.
+. Create * 를 클릭합니다.
+. NIS 도메인 이름을 입력한 다음 하나 이상의 NIS 서버를 추가합니다.
+. Create * 를 클릭합니다.
+
+
+
+
+== NIS 도메인을 편집합니다
+
+System Manager를 사용하면 SVM(스토리지 가상 시스템) 인증 및 인증 요구사항에 따라 NIS 도메인을 수정할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 서비스 * 창에서 * NIS * 를 클릭합니다.
+. NIS 도메인을 선택한 다음 * 편집 * 을 클릭합니다.
+. 필요한 내용을 변경한 다음 * 편집 * 을 클릭합니다.
+
+
+
+
+== NIS 창을 엽니다
+
+NIS 창에서는 스토리지 시스템에 대한 현재 NIS 설정을 볼 수 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 생성 *
++
+NIS 도메인을 생성할 수 있는 NIS 도메인 생성 대화 상자를 엽니다.
+
+* * 편집 *
++
+NIS 서버를 추가, 삭제 또는 수정할 수 있는 NIS 도메인 편집 대화 상자를 엽니다.
+
+* * 삭제 *
++
+선택한 NIS 도메인을 삭제합니다.
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+
+
+* 관련 정보 *
+
+https://docs.netapp.com/us-en/ontap/nfs-config/index.html["NFS 구성"^]

@@ -1,0 +1,96 @@
+---
+permalink: online-help-96-97/concept_fc_fcoe_protocol.html 
+sidebar: sidebar 
+keywords: system, manager, configure, fc, fcoe, protocol, online, help, change, node, name, fibre, channel, san, start, stop 
+summary: System Manager를 사용하여 FC/FCoE 프로토콜을 구성할 수 있습니다. 
+---
+= System Manager-ONTAP 9.7 이하를 사용하여 FC/FCoE 프로토콜을 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 프로토콜을 사용하여 FC/FCoE 프로토콜을 구성할 수 있습니다.
+
+
+
+== FC 또는 FCoE 서비스를 시작하거나 중지합니다
+
+FC 서비스를 사용하면 LUN에 사용할 FC 타겟 어댑터를 관리할 수 있습니다. System Manager를 사용하면 FC 서비스를 시작하여 어댑터를 온라인으로 전환하고 스토리지 시스템의 LUN에 액세스할 수 있습니다. FC 서비스를 중지하여 FC 어댑터를 오프라인으로 전환하고 LUN에 대한 액세스를 해제할 수 있습니다.
+
+.시작하기 전에
+* FC 라이센스를 설치해야 합니다.
+* FC 어댑터가 타겟 스토리지 시스템에 있어야 합니다.
+
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 프로토콜 * 창에서 * FC/FCoE * 를 클릭합니다.
+. 필요에 따라 * 시작 * 또는 * 중지 * 를 클릭합니다.
+
+
+
+
+== FC 또는 FCoE 노드 이름을 변경합니다
+
+스토리지 시스템 섀시를 교체하고 동일한 Fibre Channel SAN에서 재사용하는 경우 교체된 스토리지 시스템의 노드 이름이 특정 경우에 중복될 수 있습니다. System Manager를 사용하여 스토리지 시스템의 노드 이름을 변경할 수 있습니다.
+
+.단계
+. 스토리지 * > * SVM * 을 클릭합니다.
+. SVM을 선택한 다음 * SVM 설정 * 을 클릭합니다.
+. 프로토콜 * 창에서 * FC/FCoE * 를 클릭합니다.
+. 편집 * 을 클릭합니다.
+. 새 이름을 입력한 다음 * 확인 * 을 클릭합니다.
+
+
+
+
+== FCoE 프로토콜입니다
+
+FCoE(Fibre Channel over Ethernet)는 호스트를 스토리지 시스템에 연결하기 위한 새로운 모델입니다. 기존 FC 프로토콜과 마찬가지로 FCoE는 기존 FC 관리 및 제어를 유지하지만 10기가비트 이더넷 네트워크를 하드웨어 전송으로 사용합니다.
+
+FCoE 연결을 설정하려면 지원되는 DCB(데이터 센터 브리징) 이더넷 스위치에 연결되어 있는 호스트에서 지원되는 CNA(통합 네트워크 어댑터)가 하나 이상 필요합니다. CNA는 통합 지점이며 HBA와 이더넷 어댑터 역할을 모두 수행합니다.
+
+일반적으로 기존 FC 연결을 사용하는 것과 동일한 방법으로 FCoE 연결을 구성하고 사용할 수 있습니다.
+
+
+
+== FC/FCoE 창
+
+FC/FCoE 창을 사용하여 FC 서비스를 시작 또는 중지할 수 있습니다.
+
+
+
+=== 명령 버튼
+
+* * 편집 *
++
+FC 또는 FCoE 노드 이름을 변경할 수 있는 노드 이름 편집 대화 상자를 엽니다.
+
+* * 시작 *
++
+FC/FCoE 서비스를 시작합니다.
+
+* * 중지 *
++
+FC/FCoE 서비스를 중지합니다.
+
+* * 새로 고침 *
++
+창에서 정보를 업데이트합니다.
+
+
+
+
+
+=== FC/FCoE 세부 정보
+
+세부 정보 영역에는 FC/FCoE 서비스 상태, 노드 이름 및 FC/FCoE 어댑터의 정보가 표시됩니다.
+
+* 관련 정보 *
+
+xref:task_configuring_fc_fcoe_protocol_on_svms.adoc[SVM에서 FC 프로토콜 및 FCoE 프로토콜 구성]
+
+https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN 관리"^]
