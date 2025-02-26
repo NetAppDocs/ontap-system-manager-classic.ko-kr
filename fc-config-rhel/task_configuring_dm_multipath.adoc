@@ -32,8 +32,6 @@ https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"]
 
 +
 *** 제외할 비 NetApp SCSI 장치가 있는 경우 의 블랙리스트 섹션에 장치의 WWID(Worldwide Identifier)를 입력하십시오 `multipath.conf` 파일.
-
-
 +
 비 NetApp SCSI 장치의 WWID를 표시하려면 제외할 장치에서 다음 명령을 입력합니다. 여기서 `SCSI_device_name` 은(는) 지정하는 장치입니다.
 
@@ -62,7 +60,6 @@ blacklist {
             devnode     "^cciss.*"
 }
 ----
-+
 *** 제외할 디바이스가 없는 경우 에서 _WWID_줄을 제거합니다 `multipath.conf` 파일.
 
 
