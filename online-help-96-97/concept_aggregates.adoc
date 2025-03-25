@@ -5,7 +5,12 @@ keywords: aggregates, system, manager, security, backup, performance, data, shar
 summary: System Manager를 사용하여 애그리게이트를 만들어 사용자의 다양한 보안, 백업, 성능 및 데이터 공유 요구사항을 지원할 수 있습니다. 
 ---
 = System Manager로 애그리게이트 관리 - ONTAP 9.7 이하
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 사용자의 다양한 보안, 백업, 성능 및 데이터 공유 요구사항을 지원하는 애그리게이트를 만들 수 있습니다.

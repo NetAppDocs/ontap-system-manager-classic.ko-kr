@@ -1,0 +1,10 @@
+---
+section: networking-failover
+title: NAS 경로 페일오버 워크플로우(ONTAP 9.7 이하)
+entries:
+- title: NAS 경로 페일오버 정보(ONTAP 9.7 이하)
+  url: "/networking-failover/set_up_nas_path_failover_9_to_97_cli.html"
+- title: NAS 경로 페일오버 워크플로우(ONTAP 9.7 이하)
+  url: "/networking-failover/workflow__nas_path_failover_overview_manual.html"
+- title: NAS 경로 페일오버 구성용 워크시트(ONTAP 9.7 이하)
+  url: "/networking-failover/worksheet_for_nas_path_failover_configuration_manual.html"

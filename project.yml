@@ -41,6 +41,11 @@ sidebar:
   - title: System Manager 9.6 및 9.7을 사용한 클러스터 관리
     entries:
     - section: online-help-96-97
+  - title: ONTAP 9.7 이하 버전의 네트워크 관리
+    entries:
+    - section: networking-failover
+    - section: networking-bd
+    - section: networking
   - title: ONTAP 문서
     url: https://docs.netapp.com/us-en/ontap/
   - title: 법적 고지

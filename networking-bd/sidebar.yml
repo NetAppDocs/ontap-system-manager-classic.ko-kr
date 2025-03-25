@@ -1,0 +1,20 @@
+---
+section: networking-bd
+title: 브로드캐스트 도메인(ONTAP 9.7 이하)
+entries:
+- title: 브로드캐스트 도메인 개요(ONTAP 9.7 이하)
+  url: "/networking-bd/configure_broadcast_domains_97_overview.html"
+- title: 브로드캐스트 도메인에 사용할 수 있는 포트 결정(ONTAP 9.7 이하)
+  url: "/networking-bd/determine_which_ports_can_be_used_for_a_broadcast_domains.html"
+- title: 브로드캐스트 도메인 생성(ONTAP 9.7 이하)
+  url: "/networking-bd/create_a_broadcast_domain97.html"
+- title: 브로드캐스트 도메인에서 포트 추가 또는 제거(ONTAP 9.7 이하)
+  url: "/networking-bd/add_or_remove_ports_from_a_broadcast_domain97.html"
+- title: 브로드캐스트 도메인 분할(ONTAP 9.7 이하)
+  url: "/networking-bd/split_broadcast_domains97.html"
+- title: 브로드캐스트 도메인 병합(ONTAP 9.7 이하)
+  url: "/networking-bd/merge_broadcast_domains97.html"
+- title: 브로드캐스트 도메인의 포트에 대한 MTU 값 변경(ONTAP 9.7 이하)
+  url: "/networking-bd/change_the_mtu_value_for_ports_in_a_broadcast_domain97.html"
+- title: 브로드캐스트 도메인 표시(ONTAP 9.7 이하)
+  url: "/networking-bd/display_broadcast_domains97.html"

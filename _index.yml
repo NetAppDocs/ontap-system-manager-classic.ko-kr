@@ -5,9 +5,11 @@ indexpage:
     Manager는 볼륨, LUN, Qtree, 공유 및 엑스포트 생성과 같은 공통 스토리지 작업을 간소화합니다. 시간을 절약하고 오류를 방지할
     수 있습니다.
   keywords: ontap, netapp, documentation, system, manager
-  lead: System Manager 클래식 인터페이스는 ONTAP 9.7 및 이전 ONTAP 9 릴리즈에서 사용할 수 있습니다. 이 사이트에서
-    System Manager Classic을 사용하는 구성 워크플로우와 ONTAP 9.6 및 9.7에 대한 System Manager Classic
-    온라인 도움말을 참조하십시오.
+  lead: ONTAP 9.7 이하 버전에서 사용할 수 있는 System Manager 인터페이스를 System Manager Classic이라고
+    하며, ONTAP 9.8 이상 버전용 System Manager 인터페이스와는 다른 사용자 탐색 기능을 제공합니다. ONTAP 9.7 이하
+    버전의 System Manager 사용자를 위해 이 문서 사이트에서는 System Manager Classic을 사용하는 구성 워크플로우와
+    ONTAP 9.6 및 9.7에 대한 System Manager Classic 온라인 도움말을 제공합니다. ONTAP 9.8부터 ONTAP 네트워킹의
+    기초가 크게 변경되었으며, 이 문서 사이트에서는 ONTAP 9.7 및 이전 버전에만 적용되는 네트워킹 정보를 제공합니다.
   tiles:
   - title: 시작하십시오
     links:
@@ -29,7 +31,7 @@ indexpage:
       url: "/smb-config/index.html"
   - title: SAN 스토리지 용량 할당
     links:
-    - title: VSC를 사용한 ESXi에 대한 FC 구성
+    - title: VSC를 사용하는 ESXi를 위한 FC 구성
       url: "/fc-config-esxi/index.html"
     - title: Red Hat Enterprise Linux용 FC 구성
       url: "/fc-config-rhel/index.html"
@@ -63,6 +65,18 @@ indexpage:
       url: "/snmp-config/index.html"
     - title: System Manger 9.6 및 9.7을 사용한 클러스터 관리
       url: "/online-help-96-97/index.html"
+  - title: 네트워크 관리
+    links:
+    - title: NAS 경로 페일오버 워크플로우(ONTAP 9.7 이하)
+      url: "/networking-failover/set_up_nas_path_failover_9_to_97_cli.html"
+    - title: 브로드캐스트 도메인 관리(ONTAP 9.7 이하)
+      url: "/networking-bd/configure_broadcast_domains_97_overview.html"
+    - title: 노드에서 NIC 제거(ONTAP 9.7 이하)
+      url: "/networking/remove_a_nic_from_the_node_97.html"
+    - title: LIF 역할(ONTAP 9.5 이하)
+      url: "/networking/lif_roles95.html"
+    - title: DNS 서비스 구성(ONTAP 9.7 이하)
+      url: "/networking/configure_dns_services_manual.html"
   - title: 더 많은 리소스
     links:
     - title: ONTAP 9 설명서
