@@ -44,7 +44,7 @@ SnapVault 관계의 모든 문제를 해결해야 합니다. SnapMirror 관계�
 http://www.netapp.com/us/media/tr-4015.pdf["NetApp 기술 보고서 4015: ONTAP 9.1, 9.2에 대한 SnapMirror 구성 및 모범 사례"^]
 
 +
-image::../media/monitor_sv.gif[모니터 SV]
+image::../media/monitor_sv.gif[SnapVault 관계 상태입니다]
 
 
 

@@ -24,11 +24,9 @@
   <block id="0329d06e24e712fa93416a0dd6c5b7fc" category="summary">클러스터가 준비되면 컨트롤러를 설치하고 노드 관리 LIF를 구성해야 합니다.</block>
   <block id="6659a60f476a4bc6bb0fb4f4102757a3" category="doc">새 노드를 설치합니다</block>
   <block id="82b39557b0069bd98188100e91cfae2e" category="paragraph">클러스터가 준비되면 컨트롤러를 설치하고 노드 관리 LIF를 구성해야 합니다. 컨트롤러가 기존 클러스터와 동일한 ONTAP 버전을 실행하지 않거나 용도를 변경하여 하드웨어 수준 HA를 제공하지 않는 경우 유지보수 모드에서 이러한 문제를 해결해야 합니다. 마지막으로, 노드를 클러스터에 결합할 수 있습니다.</block>
-  <block id="e9f56eb126455869bdb213c6b8827217" category="summary">저작권, 상표 및 기계 번역</block>
   <block id="ca4d696c3c3d4566b032bf5cba740486" category="summary">두 노드가 클러스터에 결합된 후 AutoSupport를 구성하고 SP 네트워크를 완료하여 새로 추가된 노드 구성을 완료해야 합니다.</block>
   <block id="e1fc6c6b1bea9d0f3e8bfcf9946ae71f" category="doc">확장을 완료합니다</block>
   <block id="ad683faa511f565152842bf2cc28c270" category="paragraph">두 노드가 클러스터에 결합된 후 AutoSupport를 구성하고 SP 네트워크를 완료하여 새로 추가된 노드 구성을 완료해야 합니다. 그런 다음, 확장된 클러스터를 확인하고 AutoSupport 메시지를 생성하여 확장을 완료합니다. 클러스터에서 SAN을 사용하는 경우 LUN 경로를 업데이트해야 합니다.</block>
-  <block id="b1ff5704b48e42d700d43961dd415064" category="summary">상표</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="paragraph"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -219,9 +217,6 @@
   <block id="3f710cadb0123c693533da68aaf5b596" category="section-title">다음 단계</block>
   <block id="6871e5e77d1bbcfaf45a526f739ae1c4" category="list-text">클러스터가 보호되는 경우 부분 피어링과 비정상적인 보호를 방지하기 위해 새로 추가된 노드에 필요한 수의 인터클러스터 LIF를 생성해야 합니다.</block>
   <block id="e5e21644bd8ca1cdc7c44d822e6b5d7e" category="list-text">클러스터에서 SAN 데이터 프로토콜이 활성화되어 있는 경우 데이터를 제공하는 데 필요한 수의 SAN 데이터 LIF를 생성해야 합니다.</block>
-  <block id="b4de17ead867a3cf0b9d11e57e562672" category="summary">기계 번역</block>
-  <block id="6b6c87870bfc5260f4e7282bb5b52dd6" category="paragraph">한글 콘텐츠에 대한 중요 정보는 netapp.com 을 참조하십시오.</block>
-  <block id="db9bfd81e26275c9db26e2db3ac172c3" category="paragraph"><block ref="db9bfd81e26275c9db26e2db3ac172c3" category="inline-link-rx"></block></block>
   <block id="3e1d317678e6347a5fa13b4bd9a4b314" category="summary">클러스터를 확장한 후 확장 프로세스가 완료되었음을 나타내는 AutoSupport 메시지를 보내야 합니다.</block>
   <block id="4c31c3d540d717a12e42d373054f9834" category="doc">확장 완료에 대한 AutoSupport 메시지를 생성합니다</block>
   <block id="04bf035c552b790ab05fa106250f7bbd" category="paragraph">클러스터를 확장한 후 확장 프로세스가 완료되었음을 나타내는 AutoSupport 메시지를 보내야 합니다. 이 메시지는 내부 및 외부 지원 담당자에게 확장이 완료되었으며 나중에 필요할 수 있는 문제 해결을 위한 타임 스탬프로 기능한다는 것을 알립니다.</block>
@@ -262,13 +257,6 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="47107fc361977e371fe1b26cb1308b1a" category="list-text">를 사용하여 기존 라이센스를 봅니다<block ref="684590f66f47755afa88d3f70f9f25ad" prefix=" " category="inline-code"></block> 명령.</block>
   <block id="7ace006c80a00947bf34b0fff7fa0b84" category="list-text">출력을 검토하여 기존 및 새 노드의 일련 번호를 포함하여 모든 일련 번호에 대해 노드 잠김 라이센스가 표시되는지 확인합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="summary">저작권</block>
-  <block id="e10b5b38785c3a24ec75723ab75b4360" category="paragraph">Copyright © 2021 NetApp, Inc. All rights reserved. 미국에서 인쇄됨</block>
-  <block id="2275e007ee598cef266c877f9c52ee25" category="paragraph">본 문서의 어떤 부분도 저작권 소유자의 사전 서면 승인 없이는 어떠한 형식이나 수단(그래픽, 전자 또는 기계 등)으로도 저작권 소유자의 사전 서면 승인 없이 전자 검색 시스템에 저장 또는 저장.</block>
-  <block id="ce4ad2236c56cc11a838f29c8c261bf7" category="paragraph">NetApp이 저작권을 가진 자료에 있는 소프트웨어에는 아래의 라이센스와 고지 사항이 적용됩니다.</block>
-  <block id="b110bc9db113b3149cb9e2ed905d4c6c" category="paragraph">본 소프트웨어는 NetApp에 의해 "있는 그대로" 제공되며 상품성 및 특정 목적에 대한 적합성에 대한 명시적 또는 묵시적 보증을 포함하여 이에 제한되지 않고, 어떠한 보증도 하지 않습니다. NetApp은 대체품 또는 대체 서비스의 조달, 사용 불능, 데이터 손실, 이익 손실, 또는 파생적 손해(소계 물품 또는 서비스의 조달, 사용 손실, 데이터 또는 수익 손실, 계약, 엄격한 책임 또는 불법 행위(과실 또는 그렇지 않은 경우)에 관계없이 어떠한 책임도 지지 않으며, 이는 이러한 손해의 가능성을 사전에 알고 있던 경우에도 마찬가지입니다.</block>
-  <block id="4fc9b260d15698bbd988f76ca839c5b6" category="paragraph">NetApp은 본 문서에 설명된 제품을 언제든지 예고 없이 변경할 권리를 보유합니다. NetApp은 NetApp의 명시적인 서면 동의를 받은 경우를 제외하고 본 문서에 설명된 제품을 사용하여 발생하는 어떠한 문제에도 책임을 지지 않습니다. 본 제품의 사용 또는 구입의 경우 NetApp에서는 어떠한 특허권, 상표권 또는 기타 지적 재산권이 적용되는 라이센스도 제공하지 않습니다.</block>
-  <block id="87bfcb691f34a9e3fdda83480f0acf78" category="paragraph">본 설명서에 설명된 제품은 하나 이상의 미국 특허 또는 해외 특허, 해외 특허, 해외 특허, 해외 특허, 해외 특허, 해외 특허, 해외 특허, 미국 출원 중인 특허로 보호됩니다.</block>
-  <block id="464821ce353b86f770de0d09b5f5aabe" category="paragraph">여기에 포함된 데이터는 상업용 품목(FAR 2.101에 정의)에 해당하며 NetApp, Inc의 독점 자산입니다 정부는 데이터가 제공된 미국 계약과 관련하여 해당 계약을 지원하는 데에만 데이터에 대한 전 세계적으로 비독점적이고 양도할 수 없으며 재사용이 불가능하며 데이터를 제공한 정부 계약입니다. 여기에 제공된 경우를 제외하고 데이터는 사용, 공개, 재생산, 수정, 수행 등의 할 수 또는 NetApp, Inc.의 사전 서면 승인 없이 표시됩니다. 미국 국방부에 대한 정부 라이선스는 DFARS 조항 252.227-7015(b)에 명시된 권한으로 제한됩니다.</block>
   <block id="edf395b0a461287b50491dbaa383b1b6" category="summary">클러스터를 확장하려면 고급 권한을 사용하여 백업 파일을 생성하여 클러스터 구성 정보를 저장하고 선택적으로 노드 구성을 저장해야 합니다.</block>
   <block id="4e96c94f849071959f33f30f4f95bf2b" category="doc">클러스터 구성을 백업합니다</block>
   <block id="486e131c42bd68bf6f1d4c477a83b1dc" category="list-text">를 사용하여 권한 수준을 advanced로 설정합니다<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block> 명령.</block>
@@ -553,14 +541,12 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="d3d98fa048d258c0324e828c27353505" category="list-text">ONTAP 9.3 이상을 실행 중인 경우 다음 단계를 수행하여 클러스터 피어 관계 및 SVM 피어 관계를 확인하십시오.</block>
   <block id="b7ea99ac89364f94c13349479a294349" category="list-text">구성 * &gt; * 클러스터 피어 * 를 클릭합니다.</block>
   <block id="804ed1169721f9a31d45ac25dea9d3b7" category="list-text">피어링된 클러스터가 인증되었으며 사용 가능한지 확인합니다.</block>
-  <block id="210fc08adc8ff148771c97038e36e4a2" category="image-alt">클러스터 퍼 930 재해</block>
   <block id="b00b5a06a64eaf7c4f42870166a2aad2" category="list-text">구성 * &gt; * SVM 피어 * 를 클릭합니다.</block>
   <block id="2cd2d1c721231aba4b1ddb6e9d895651" category="list-text">대상 SVM이 소스 SVM으로 피어링되었는지 확인합니다.</block>
   <block id="99836e3678844f90eef5cb688f7465e9" category="list-text">ONTAP 9.2 이하를 실행 중인 경우 다음 단계를 수행하여 클러스터 피어 관계 및 SVM 피어 관계를 확인하십시오.</block>
   <block id="90db7210ac0f4f1ad1b4dd4cfcfac5da" category="list-text">구성 * 탭을 클릭합니다.</block>
   <block id="2a2e870fff30043f3c9dcb4197a26ef5" category="list-text">클러스터 세부 정보 * 창에서 * 클러스터 피어 * 를 클릭합니다.</block>
   <block id="c21fd7a1920921211438047acb8b050d" category="list-text">피어링된 클러스터가 인증되고 사용 가능한지 확인합니다.</block>
-  <block id="0b15c5403001871b8dc99e6667f1290a" category="image-alt">클러스터 피어 상태 재해</block>
   <block id="2be054e35e4d5560ca990a7e9e6268aa" category="list-text">SVM * 탭을 클릭하고 소스 SVM을 선택합니다.</block>
   <block id="b6df2d1162d761beba29ffb0a8acc5cd" category="list-text">피어 스토리지 가상 시스템 * 영역에서 대상 SVM이 소스 SVM으로 피어링되었는지 확인합니다.</block>
   <block id="e0bdda06757b2ddd302f0b23a4dc96c3" category="paragraph">이 영역에서 피어링된 SVM이 없는 경우 SnapMirror 관계를 생성할 때 SVM 피어 관계를 생성할 수 있습니다.</block>
@@ -595,7 +581,6 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="fb0a81662f28f92400a38a3fc7257c04" category="paragraph">SnapMirror 관계의 모든 문제를 해결해야 합니다.</block>
   <block id="73b78c43309e115e0e384388b5b2344a" category="inline-link">NetApp 기술 보고서 4015: ONTAP 9.1, 9.2에 대한 SnapMirror 구성 및 모범 사례</block>
   <block id="0d3e0428120e2a5f798ccb69e7a1a227" category="paragraph"><block ref="0d3e0428120e2a5f798ccb69e7a1a227" category="inline-link-rx"></block></block>
-  <block id="d5acc2bd87e2b4fbcc92386c8cb98621" category="image-alt">SnapMirror 모니터 3의 상태 지연</block>
   <block id="505604a7f60ed1132f33db4c6fc8dc9e" category="summary">안정적인 운영을 위해서는 전체 FC 구성이 지원되는지 확인해야 합니다.</block>
   <block id="b8dca5a9dd8bb2f421089717f16a3b2f" category="doc">FC 구성이 지원되는지 확인합니다</block>
   <block id="db7238e539bbe82343523aa524ac5d58" category="list-text">상호 운용성 매트릭스 로 이동하여 지원되는 구성 요소 조합이 있는지 확인하십시오.</block>
@@ -883,13 +868,7 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="93b944d05af7d54cba8d7dc1adc744b1" category="list-text">NetApp Support 사이트에서 해당 버전의 Windows Unified Host Utilities를 다운로드하십시오.</block>
   <block id="1190124555424f6326b153d14c7adeb6" category="list-text">실행 파일을 실행하고 화면의 지침을 따릅니다.</block>
   <block id="257dcf2363da5a069ec4e8bae654f70b" category="list-text">메시지가 나타나면 Windows 호스트를 재부팅합니다.</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="6de6f1db3c6d9273da9d8e254b666753" category="paragraph">이 제품에 사용된 타사 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
-  <block id="1e6000d4849ef9f3e08d1d9908e9f163" category="inline-link-macro">ONTAP 9.9.1에 대한 참고 사항</block>
-  <block id="6f408b9c999245c7aa32bc9cb1a020f6" category="inline-link-macro">ONTAP 9.8에 대한 고지 사항</block>
   <block id="04b0bd5b1b4d414fdde93f809162d36d" category="inline-link-macro">ONTAP 9.7의 알림 사항</block>
   <block id="0c1d7dffcba488555d5eb39b8991e822" category="inline-link-macro">ONTAP 9.6 고지 사항</block>
   <block id="a11ac6880e72412c0f54ae19bea3d191" category="inline-link-macro">ONTAP 9.5 알림</block>
@@ -897,15 +876,6 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="bf7dcf6467a8a03b05b2d37d31d6eccd" category="inline-link-macro">ONTAP 9.3 공지 사항</block>
   <block id="0328352fdfda84af6968462d1a67d3a6" category="inline-link-macro">ONTAP 9.2 관련 고지 사항</block>
   <block id="83904100c7d6fe0102e8b2b5bd8ec4bb" category="inline-link-macro">ONTAP 9.1에 대한 참고 사항</block>
-  <block id="e34c6bf4588770e60093fd241f4c94cd" category="paragraph"><block ref="5d7354cfb327d65286a65782f8490ba6" category="inline-link-macro-rx"></block>
-<block ref="9c55eb1e0fbbd6c443bf0436871639ef" category="inline-link-macro-rx"></block>
-<block ref="84ee5be262ba420366f62cfd722d0bb9" category="inline-link-macro-rx"></block>
-<block ref="c4fa97eae3fc7b7bfd1757818737f725" category="inline-link-macro-rx"></block>
-<block ref="863fc1cf1c4ef06b9dbeab0269fcbe22" category="inline-link-macro-rx"></block>
-<block ref="bc609cdc163eb15a127f1d8965ceeebf" category="inline-link-macro-rx"></block>
-<block ref="91c2725aac92b0d17a3a041b2764f68c" category="inline-link-macro-rx"></block>
-<block ref="60d4a45fe1b65b8f6ff1a4825a003443" category="inline-link-macro-rx"></block>
-<block ref="0da6a5a2ec0e0b0adc52f0c7d86b1f9c" category="inline-link-macro-rx"></block></block>
   <block id="1efe07eef4e047f77d97d7a9521fe678" category="summary">ONTAP System Manager 클래식 인터페이스(ONTAP 9.7 이하)를 사용하면 ONTAP 볼륨을 사용하여 ESXi 호스트에 대한 NFS 액세스를 데이터 저장소에 빠르게 설정할 수 있습니다.</block>
   <block id="9fbe728d7eb2adabf531ccdcf064bc53" category="doc">VSC 개요를 사용한 ESXi용 NFS 구성</block>
   <block id="039d2d1f92ed5762bd1672bf32bb614a" category="paragraph">다음 경우에 이 절차를 사용합니다.</block>
@@ -2042,8 +2012,6 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="291619053227579fae6d00b2bcfab62f" category="paragraph">ESX 호스트의 FC HBA(호스트 버스 어댑터)가 지원되는 드라이버, 펌웨어 및 BIOS 버전을 실행하고 있지 않으면 업데이트해야 합니다.</block>
   <block id="710de516c6cbad99668973bb1f4c3c0d" category="paragraph">에서 구성에 대해 지원되는 드라이버, 펌웨어 및 BIOS 버전을 식별해야 합니다<block ref="ae0acc7a1cf35a69eb7b42685c902841" category="inline-link-rx"></block>.</block>
   <block id="982aef1e07fe09b104ef69dc47d79d37" category="list-text">ESXi 버전의 ESXi 호스트 콘솔 명령을 사용하여 설치된 HBA 드라이버, 펌웨어 및 BIOS 버전을 나열합니다.</block>
-  <block id="49b4e6a2e5626cd5db40b840d6113bed" category="inline-link">VMware KB 문서 1002413: Qlogic 또는 Emulex FC HBA의 펌웨어 식별</block>
-  <block id="a12ed0f6188622691e50debf584fcdcf" category="paragraph"><block ref="a12ed0f6188622691e50debf584fcdcf" category="inline-link-rx"></block></block>
   <block id="2157ff4fa230c3478676d1a9841d6742" category="summary">기존 스토리지 가상 시스템을 사용하기로 결정한 경우 ONTAP 시스템 관리자를 사용하여 SVM에서 FC 서비스가 실행 중인지 확인해야 합니다. 또한 FC 논리 인터페이스가 이미 생성되어 있는지도 확인해야 합니다.</block>
   <block id="27045e1024ed1f1f4ea149b9fcfc4e8f" category="summary">VMware vSphere용 Virtual Storage Console은 ESXi 호스트에서 NetApp FC 스토리지를 사용하는 데 필요한 많은 구성 및 프로비저닝 작업을 자동화합니다. Virtual Storage Console은 vCenter Server에 대한 플러그인입니다.</block>
   <block id="4593e2432306bcea64d49dcce3ddc04b" category="paragraph">테스트에 실패한 경우 스토리지 클러스터에서 FC 서비스가 실행되고 있는지 확인하고 LUN 및 FC 스위치 조닝에 대한 FC 경로를 확인하십시오.</block>
@@ -2128,7 +2096,6 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="462b95590d7acd7152240693f2733651" category="doc">소스 볼륨의 상태를 확인합니다</block>
   <block id="c59a59058714f4c78669e823c620680c" category="list-text">소스 볼륨을 선택한 다음 소스 볼륨이 오프라인 상태인지 확인합니다.</block>
   <block id="fdc1c760c29ca327926071ef4ce12c0d" category="list-text">SnapMirror 관계에서 대상 볼륨을 식별합니다.</block>
-  <block id="7c99e1c96275e73971c3274eea4bfc6a" category="image-alt">SnapMirror 타겟 93</block>
   <block id="54b184892f23afa68d9eab493ac216da" category="list-text">ONTAP 9.2 이하: 볼륨 페이지 아래쪽에 있는 * 데이터 보호 * 탭을 클릭하여 SnapMirror 관계의 타겟 볼륨과 볼륨이 들어 있는 SVM 이름을 식별하십시오.</block>
   <block id="7bba42ab30c3eef639318c4cbe6cb31e" category="image-alt">이미지는 대상 볼륨을 표시합니다</block>
   <block id="4b7d4ac6c63d48c124530d952203e03c" category="summary">대상 볼륨을 활성화하려면 SnapMirror 관계를 중지 및 해제해야 합니다. 일시 중지 후에는 SnapMirror 데이터 전송이 비활성화됩니다.</block>
@@ -2728,10 +2695,8 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="5afc224ecb9fcc7f50684353cdfccb80" category="paragraph">클러스터를 생성하려면 콘솔을 통해 로그인하고 클러스터 네트워크의 모든 노드에서 노드 관리 IP 주소를 구성해야 합니다. 노드에서 노드 관리 IP 주소를 구성한 후에는 ONTAP System Manager를 사용하여 다른 노드를 추가하고 클러스터를 생성할 수 있습니다.</block>
   <block id="990bb85c5a67a4d1782a863aa6cc1497" category="paragraph">ONTAP 소프트웨어의 MetroCluster 구성에서는 클러스터 설정 작업이 지원되지 않습니다.</block>
   <block id="4dfcde39ef2f0b93b09f7b13052dd23f" category="paragraph">템플릿 파일을 사용하거나 클러스터 설정 마법사에서 값을 수동으로 입력하여 클러스터를 설정할 수 있습니다.</block>
-  <block id="7d9a08439c0869dea94d925777b7aba3" category="image-alt">클러스터 설정 워크플로우</block>
   <block id="f1dc21dc6179a3fdff96b7b031c7ae81" category="summary">System Manager 또는 CLI(Command-Line Interface)를 사용하여 클러스터를 생성할 수 있습니다. System Manager를 사용하여 클러스터를 생성하려면 클러스터 네트워크의 모든 노드에서 노드 관리 IP 주소를 설정해야 합니다. CLI를 사용하여 클러스터를 생성한 경우 System Manager를 사용하여 클러스터를 구성할 수 있습니다.</block>
   <block id="1c867bc949570263498e870403b0e61a" category="doc">클러스터 환경 설정</block>
-  <block id="58369fe03b8cca246bfd9acff3681041" category="image-alt">안내식 클러스터 설정</block>
   <block id="7c5c5dd8c983200f4658fbc653960629" category="summary">System Manager 9.6부터, 더 이상 필요하지 않은 FlexCache 볼륨을 삭제할 수 있습니다.</block>
   <block id="2d911a2e75192035a8c705e9139ab46f" category="doc">FlexCache 볼륨을 삭제하는 중입니다</block>
   <block id="32eb59d1751d73c381a2d8a05a29e10e" category="list-text">FlexCache 볼륨의 연결 경로를 마운트 해제해야 합니다.</block>
@@ -2873,118 +2838,8 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="c43a320001422c6e6555386d6eb7ffa4" category="list-text">추가 작업 * &gt; * 크기 조정 * 을 클릭합니다.</block>
   <block id="5e7f2bb84ab8fc2c252782cc441d2850" category="list-text">마법사의 지시에 따라 정보를 입력하거나 선택합니다.</block>
   <block id="baf8d3396b691e5b2244efc835a2c55b" category="list-text">사용 가능한 공간에 대한 변경 사항과 * Volumes * 창에서 볼륨의 전체 공간을 확인합니다.</block>
-  <block id="f210a25eaf89fa55ced5c9c77e0b242b" category="summary">System Manager를 사용하여 공유를 생성, 편집 및 관리할 수 있습니다.</block>
-  <block id="258afb30ae69ea72441de6bfa02ded92" category="doc">System Manager - ONTAP 9.7 이하를 사용하여 공유를 관리합니다</block>
-  <block id="47e145cac11e2ed21e19d35136895102" category="paragraph">ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하여 공유를 생성, 편집 및 관리할 수 있습니다.</block>
-  <block id="a218828013e03d9b77f9be08cba59cdd" category="section-title">CIFS 공유를 생성합니다</block>
-  <block id="cdcdccf6b4cea67b1649f64dfc42ff76" category="paragraph">System Manager를 사용하여 CIFS 공유를 생성하면 CIFS 사용자가 액세스할 수 있는 폴더, qtree 또는 볼륨을 지정할 수 있습니다.</block>
-  <block id="3e859c820cd401f603bf6eb4bb47e006" category="paragraph">CIFS를 설정하고 시작하기 전에 CIFS 라이센스를 설치해야 합니다.</block>
-  <block id="36e4c7125d339b895d4735d2ebc3c84b" category="list-text">스토리지 * &gt; * 공유 * 를 클릭합니다.</block>
-  <block id="3c6b636b52f4ee0b5d619d487135638c" category="list-text">SVM * 필드의 드롭다운 메뉴에서 CIFS 공유를 생성할 SVM을 선택합니다.</block>
-  <block id="a5b98ff7955f554a6ab08c3a07b3fb83" category="list-text">Create Share * 창에서 * Browse * 를 클릭하고 공유할 폴더, qtree 또는 볼륨을 선택합니다.</block>
-  <block id="b4f2a0dfcf3a06588721c3cf46426f55" category="list-text">새 CIFS 공유의 이름을 지정합니다.</block>
-  <block id="ede7f1ea5f8033a3ddc8b303e6c3fe16" category="list-text">* 선택 사항: * SMB 3.0 이상을 지원하는 클라이언트가 무중단 작업 중에 지속적으로 파일을 열 수 있도록 하려면 * Hyper-V 및 SQL*에 대한 지속적인 가용성 사용 확인란을 선택합니다.</block>
-  <block id="81c3a43e87c04aa4f2867930228320dd" category="paragraph">이 옵션을 사용하여 연 파일은 페일오버, 반환 및 LIF 마이그레이션과 같은 운영 중단 이벤트로부터 보호됩니다.</block>
-  <block id="174695729a46aa0db160108074800cc8" category="paragraph">System Manager 9.6부터 FlexGroup 볼륨의 지속적인 가용성이 지원됩니다.</block>
-  <block id="44ec628d221f20d3a532dfdc1a49b9cc" category="list-text">SMB 3.0 암호화를 활성화하려면 이 공유에 액세스하는 동안 데이터 암호화 * 확인란을 선택합니다.</block>
-  <block id="c11f0d9c886f553934dce4b687e69569" category="list-text">공유에 대한 설명 또는 설명을 입력한 다음 * 생성 * 을 클릭합니다.</block>
-  <block id="546e6304bd126985d219dddabcbf5774" category="paragraph">CIFS 공유는 그룹의 ""모든 사용자에 대한 모든 권한""으로 설정된 액세스 권한으로 생성됩니다.</block>
-  <block id="4edcc08cf152edc7b42b029db1ecc67b" category="section-title">공유 액세스를 중지합니다</block>
-  <block id="a4c1c7b32cb8db1bee81e7e0947286fe" category="paragraph">폴더, qtree 또는 볼륨에 대한 공유 네트워크 액세스를 제거하려는 경우 System Manager를 사용하여 공유를 중지할 수 있습니다.</block>
-  <block id="97ab5031ba61fa20c45fa57196e475eb" category="paragraph">CIFS 라이센스를 설치해야 합니다.</block>
-  <block id="ca31348e1f2b9f2491ba1ae68c0b31f4" category="list-text">SVM * 필드의 드롭다운 메뉴에서 중지할 CIFS 공유가 있는 SVM을 선택합니다.</block>
-  <block id="8e97fc4679f75b5eedb5c8820c4301f1" category="list-text">공유 목록에서 공유를 중지할 공유를 선택한 다음 * 공유 중지 * 를 클릭합니다.</block>
-  <block id="cae7974fde4c42dc22986eda0127cd15" category="list-text">확인 확인란을 선택한 다음 * Stop * (중지 *)을 클릭합니다.</block>
-  <block id="6a780d4d415bbd377aa9fdc38651f67f" category="list-text">공유가 * Shares * 창에 더 이상 표시되지 않는지 확인합니다.</block>
-  <block id="c6d1ab85546f960ef1908682152ddb98" category="section-title">홈 디렉토리 공유를 생성합니다</block>
-  <block id="2ded840bb0d149049d94d6cc27cd4eb9" category="paragraph">System Manager를 사용하여 홈 디렉토리 공유를 생성하고 홈 디렉토리 검색 경로를 관리할 수 있습니다.</block>
-  <block id="07b21b3751e97e8be0734694465e1a54" category="paragraph">CIFS를 설정하고 시작해야 합니다.</block>
-  <block id="8833b993932917d5dc821b8ddc12292f" category="list-text">Create Home Directory * 를 클릭한 다음 사용자가 디렉터리에 매핑되는 방법을 결정하는 패턴 정보를 제공합니다.</block>
-  <block id="05f43ec9f04690f81f77fec126b3f286" category="list-text">생성한 홈 디렉토리가 * Shares * 창에 나열되는지 확인합니다.</block>
-  <block id="653ecc56780e9ae45a3425b21f179e73" category="section-title">공유 설정을 편집합니다</block>
-  <block id="8b8233970ae93cddab3fcb0f038a19cf" category="paragraph">System Manager를 사용하여 심볼 링크 설정, 사용자 또는 그룹의 공유 액세스 권한 및 공유에 대한 액세스 유형과 같은 공유 설정을 수정할 수 있습니다. 또한 Hyper-V를 통한 공유의 지속적인 가용성을 설정하거나 해제하고 ABE(액세스 기반 열거)를 설정 또는 해제할 수 있습니다. System Manager 9.6부터 FlexGroup 볼륨의 지속적인 가용성이 지원됩니다.</block>
-  <block id="7246a01d2a352fc6450f7f466d58dac5" category="list-text">공유 목록에서 수정할 공유를 선택한 다음 * 편집 * 을 클릭합니다.</block>
-  <block id="28d42a3f5ce4234a5cb6b5eda7721b12" category="list-text">Edit Share Settings * 대화 상자에서 필요에 따라 공유 설정을 수정합니다.</block>
-  <block id="b187cf812109744ed2a6197d64b4c287" category="list-text">General * 탭에서 Hyper-V를 통해 공유를 지속적으로 사용할 수 있도록 설정합니다</block>
-  <block id="24e24350d0c2bbfe6239c8cda68a9fdd" category="paragraph">지속적인 가용성을 활성화하면 SMB 3.0을 지원하는 SMB 3.0 및 클라이언트가 무중단 운영 중에 지속적으로 파일을 열 수 있습니다. 영구적으로 열려 있는 파일은 페일오버, 반환 및 LIF 마이그레이션과 같은 운영 중단 이벤트로부터 보호됩니다.</block>
-  <block id="c422043bdc2f7971f0ae6747690d03c7" category="list-text">사용 권한 * 탭에서 사용자 또는 그룹을 추가한 다음 사용 권한을 할당하여 액세스 유형을 지정합니다.</block>
-  <block id="5c0287506e18b638d89ba4098983d76a" category="list-text">옵션 * 탭에서 필요한 옵션을 선택합니다.</block>
-  <block id="d5ba1e032c63c476f97b1f0bded5e2ed" category="list-text">공유 * 창에서 선택한 공유에 대한 변경 사항을 확인합니다.</block>
-  <block id="1f06c32e4284c548639b045d1a680c1f" category="section-title">ONTAP에서 동적 홈 디렉터리를 활성화하는 방법</block>
-  <block id="ddb6804ce83c0756809d4eaa0da80de7" category="paragraph">ONTAP 홈 디렉터리를 사용하면 연결된 사용자와 변수 집합을 기반으로 서로 다른 디렉터리에 매핑되는 SMB 공유를 구성할 수 있습니다. 각 사용자에 대해 별도의 공유를 생성하는 대신 몇 가지 홈 디렉토리 매개 변수를 사용하여 하나의 공유를 구성하여 진입점(공유)과 홈 디렉토리(SVM의 디렉토리) 간의 사용자 관계를 정의할 수 있습니다.</block>
-  <block id="47d8b0af5d2931cb4e847ec858c73ecf" category="paragraph">게스트 사용자로 로그인한 사용자는 홈 디렉토리가 없으며 다른 사용자의 홈 디렉토리에 액세스할 수 없습니다. 사용자가 디렉토리에 매핑되는 방식을 결정하는 변수는 네 가지입니다.</block>
-  <block id="e61e15ac8c5f8d0b85109886001adfad" category="list-text">* 공유 이름 *</block>
-  <block id="bc684c6854b9c8f2cb609b73ffac4b9c" category="paragraph">사용자가 연결하는 공유의 이름입니다. 이 공유에 대한 홈 디렉토리 속성을 설정해야 합니다.</block>
-  <block id="9cec6f3479185182d510faeb5c88e095" category="paragraph">공유 이름에는 다음 동적 이름을 사용할 수 있습니다.</block>
-  <block id="cf46804cd7f94ff0f06229165a1e08bc" category="list-text"><block ref="61fdc52186559b1681736cfb53393d7a" prefix="" category="inline-code"></block> (사용자의 Windows 사용자 이름)</block>
-  <block id="c7d7c222f5eb544bb7a6e17489d16fb1" category="list-text"><block ref="a7bd935a88c629dc11c52e0c16c2a8a0" prefix="" category="inline-code"></block> (사용자의 Windows 도메인 이름)</block>
-  <block id="c3e0b780eb59c719da0f62c0418963e2" category="list-text"><block ref="b4e514e05859a94a7c7d3404f63dca8d" prefix="" category="inline-code"></block> (사용자의 매핑된 UNIX 사용자 이름)</block>
-  <block id="053021b69a316a9b62283baaca04bdee" category="paragraph">모든 홈 디렉토리에서 공유 이름을 고유하게 만들려면 공유 이름에 가 포함되어 있어야 합니다<block ref="61fdc52186559b1681736cfb53393d7a" prefix=" " category="inline-code"></block> 또는 을 누릅니다<block ref="b4e514e05859a94a7c7d3404f63dca8d" prefix=" " category="inline-code"></block> 변수. 공유 이름에는 둘 다 포함될 수 있습니다<block ref="a7bd935a88c629dc11c52e0c16c2a8a0" prefix=" " category="inline-code"></block> 및<block ref="61fdc52186559b1681736cfb53393d7a" prefix=" " category="inline-code"></block> 변수(예:<block ref="a7bd935a88c629dc11c52e0c16c2a8a0" prefix=" " category="inline-code"></block><block ref="61fdc52186559b1681736cfb53393d7a" prefix="/" category="inline-code"></block>), 또는 공유 이름에 정적 부분과 가변 부분(예: home_<block ref="61fdc52186559b1681736cfb53393d7a" prefix="" category="inline-code"></block>)를 클릭합니다.</block>
-  <block id="0521b4a71a02a28d9873367a66e9d83a" category="list-text">* 공유 경로 *</block>
-  <block id="7f794a8325e108e30caf0916da9858f8" category="paragraph">이 경로는 공유에 의해 정의되고 공유 이름 중 하나와 연관되며, SVM의 루트에서 사용자의 전체 홈 디렉토리 경로를 생성하기 위해 각 검색 경로에 추가됩니다. 정적(예:<block ref="106a6c241b8797f52e1e77317b96a201" prefix=" " category="inline-code"></block>), dynamic(예:<block ref="61fdc52186559b1681736cfb53393d7a" prefix=" " category="inline-code"></block>) 또는 두 가지 조합(예:<block ref="a2b6508e05db4948da997e79c88b26c6" prefix=" " category="inline-code"></block>)를 클릭합니다.</block>
-  <block id="6fcc718fd1fe6c61104b90deb1cf42a2" category="list-text">* 검색 경로 *</block>
-  <block id="2401c90889b207694e0799fda5109a63" category="paragraph">ONTAP에서 홈 디렉토리를 검색하도록 지정하는 SVM 루트의 절대 경로 세트입니다. 를 사용하여 하나 이상의 검색 경로를 지정할 수 있습니다<block ref="5a6a8dfa9830413979e30e9a232a26b9" prefix=" " category="inline-code"></block> 명령. 여러 개의 검색 경로를 지정하면 ONTAP는 유효한 경로를 찾을 때까지 지정된 순서대로 경로를 시도합니다.</block>
-  <block id="b8247bb8487a381712f3b1e7f9afee38" category="list-text">* 디렉토리 *</block>
-  <block id="94476d0b91f52a04ef07ba6853a8fe57" category="paragraph">사용자를 위해 생성한 사용자의 홈 디렉토리입니다. 디렉터리 이름은 일반적으로 사용자의 이름입니다. 검색 경로로 정의된 디렉토리 중 하나에 홈 디렉토리를 생성해야 합니다.</block>
-  <block id="d87a9db633a6535cd29bd2e3ceb1c8dd" category="paragraph">예를 들어, 다음 설정을 고려합니다.</block>
-  <block id="7180a0452db924e5e8285ae78d6355b2" category="list-text">사용자: John Smith</block>
-  <block id="03fdb6c3f4384c6171e95f71401eb5e0" category="list-text">사용자 도메인: Acme</block>
-  <block id="1a0691e264e3961203ea0cfedc4e5d2b" category="list-text">사용자 이름: jsmith</block>
-  <block id="33e9d5aa58536f2b75b2e74481b6da5f" category="list-text">SVM 이름: vs1</block>
-  <block id="67542d137c252a447549f5aea3bdae37" category="list-text">홈 디렉토리 공유 이름 #1: home_<block ref="61fdc52186559b1681736cfb53393d7a" prefix="" category="inline-code"></block> - 공유 경로:<block ref="61fdc52186559b1681736cfb53393d7a" prefix=" " category="inline-code"></block></block>
-  <block id="af46ee21386ad593388ff8e626ff1d79" category="list-text">홈 디렉토리 공유 이름 #2:<block ref="61fdc52186559b1681736cfb53393d7a" prefix=" " category="inline-code"></block> - 공유 경로:<block ref="4b4be07fc24b62eb35c983adef6588a7" prefix=" " category="inline-code"></block></block>
-  <block id="8bdaad80963ec7997b9171bbde3ccf58" category="list-text">검색 경로 #1:<block ref="f1fef4e82588d65ba30cd9aa01821bb8" prefix=" " category="inline-code"></block></block>
-  <block id="d5de8e98475d82f92b73735119bbb86e" category="list-text">검색 경로 #2:<block ref="516141bba2650fcf50f472110df9bbb3" prefix=" " category="inline-code"></block></block>
-  <block id="17a2b091f4b18b78a643898b857c0b7b" category="list-text">검색 경로 #3:<block ref="32467dc27b5c1dc6fdb3be6be9e0d4bd" prefix=" " category="inline-code"></block></block>
-  <block id="f79a499c73fbab60e0656b54d92e9a15" category="list-text">홈 디렉토리:<block ref="92fb357e2e22d96fcbb3dc91b7ad3c44" prefix=" " category="inline-code"></block></block>
-  <block id="364487be3ccdb0ddb95024d179f03f3e" category="paragraph">시나리오 1: 사용자가 에 연결합니다<block ref="4e9da487017687cc0e20849436bbd1ea" prefix=" " category="inline-code"></block>. 이는 첫 번째 홈 디렉토리 공유 이름과 일치하고 상대 경로를 생성합니다<block ref="39ce7e2a8573b41ce73b5ba41617f8f7" prefix=" " category="inline-code"></block>. 이제 ONTAP는 라는 디렉토리를 검색합니다<block ref="39ce7e2a8573b41ce73b5ba41617f8f7" prefix=" " category="inline-code"></block> 각 검색 경로를 순서대로 확인:</block>
-  <block id="da31e9584c464660c8d01fdcce993262" category="list-text"><block ref="99f56e83581477446df1f3c1ced8c2b0" prefix="" category="inline-code"></block> 존재하지 않습니다. 검색 경로 #2로 이동합니다.</block>
-  <block id="3ea0fe8fc6a7f1b43185c7059aa5790c" category="list-text"><block ref="92fb357e2e22d96fcbb3dc91b7ad3c44" prefix="" category="inline-code"></block> 이(가) 있습니다. 따라서 검색 경로 #3이 선택되지 않았습니다. 사용자가 홈 디렉토리에 연결되었습니다.</block>
-  <block id="a5e47d213ee8b7b800451b243c5340e3" category="paragraph">시나리오 2: 사용자가 에 연결합니다<block ref="2cb9e3fa2f4a596f846cef78a337560b" prefix=" " category="inline-code"></block>. 이렇게 하면 두 번째 홈 디렉토리 공유 이름과 일치하고 상대 경로가 생성됩니다<block ref="8e5f8e3dcb23383e32f49e7a055826f4" prefix=" " category="inline-code"></block>. 이제 ONTAP는 라는 디렉토리를 검색합니다<block ref="8e5f8e3dcb23383e32f49e7a055826f4" prefix=" " category="inline-code"></block> 각 검색 경로를 순서대로 확인:</block>
-  <block id="ba77d086e3046fd832fb4fe3435a490d" category="list-text"><block ref="e5eb2f73a2e9980fc90e088246bf2a31" prefix="" category="inline-code"></block> 존재하지 않습니다. 검색 경로 #2로 이동합니다.</block>
-  <block id="4a0368d08fff02c4b3d2ceeffbb4d136" category="list-text"><block ref="8211f5e2f4fb295058ab715023554df1" prefix="" category="inline-code"></block> 존재하지 않습니다. 검색 경로 #3으로 이동합니다.</block>
-  <block id="47cf52fe22b54398467dba6a9a1e4a7b" category="list-text"><block ref="8a86a2c448e1f60496b94e4c1a846e60" prefix="" category="inline-code"></block> 존재하지 않습니다. 홈 디렉토리가 없으므로 연결이 실패합니다.</block>
-  <block id="4918741feccad41b42cd99aa33e42f28" category="section-title">공유 창</block>
-  <block id="a7c99ceadac4e4924151c84d763c467f" category="paragraph">공유 창을 사용하여 공유를 관리하고 공유에 대한 정보를 볼 수 있습니다.</block>
-  <block id="fda574f52a0c012e098901afa3932b69" category="list-text">* 공유 생성 *</block>
-  <block id="d852a51701ee8f10a9ca310896bd4554" category="paragraph">공유를 생성할 수 있는 공유 생성 대화 상자를 엽니다.</block>
-  <block id="78051d4bf07107990835bebcaff82f9c" category="list-text">* 홈 디렉토리 생성 *</block>
-  <block id="73ebeda6b0e6d0bdc61b3514087f98b2" category="paragraph">새 홈 디렉토리 공유를 생성할 수 있는 홈 디렉토리 공유 생성 대화 상자를 엽니다.</block>
-  <block id="165ea29705bdce07533240e5baf023d6" category="paragraph">선택한 공유의 속성을 수정할 수 있는 설정 편집 대화 상자를 엽니다.</block>
-  <block id="78970f78ae18db72c079df474a70cac5" category="list-text">* 공유 중지 *</block>
-  <block id="9e4ba745eb5929a46ac85a66bbde51ec" category="paragraph">선택한 개체를 공유하지 않습니다.</block>
-  <block id="c871110fae62093309dc98c9c0f64df9" category="section-title">공유 목록</block>
-  <block id="729863cbd7aed54d8a3908488c22b0a6" category="paragraph">공유 목록에는 각 공유의 이름과 경로가 표시됩니다.</block>
-  <block id="9c29b201d911f46f3d4ec9a15dc66cc6" category="list-text">* 공유 이름 *</block>
-  <block id="3aba51888e43a206b38531d1ba5da58f" category="paragraph">공유 이름을 표시합니다.</block>
   <block id="973c986d28beec057d1064afec603777" category="list-text">* 경로 *</block>
-  <block id="e80af012f9ce34e9ab0beba04371d194" category="paragraph">공유된 기존 폴더, qtree 또는 볼륨의 전체 경로 이름을 표시합니다. 경로 구분 기호는 역슬래시 또는 슬래시일 수 있지만 ONTAP는 모든 경로 구분 기호를 슬래시 로 표시합니다.</block>
-  <block id="7b22a3952681ecb4cdbd6fe703765dae" category="list-text">* 홈 디렉토리 *</block>
-  <block id="cbc95fa902a86727e89b85af3f19d0fb" category="paragraph">홈 디렉토리 공유의 이름을 표시합니다.</block>
   <block id="9bdc480955b350f1fe8089392ad36cbe" category="list-text">* 설명 *</block>
-  <block id="c9b73398fbc4618f61034f91e3a7daec" category="paragraph">공유에 대한 추가 설명을 표시합니다(있는 경우).</block>
-  <block id="dd8a5de672229fa8ff58411a6a3e41ff" category="list-text">* 지속적으로 사용 가능한 공유 *</block>
-  <block id="2d6ca664e165a57792b1b59ede4c3890" category="paragraph">지속적인 가용성을 위해 공유가 설정되었는지 여부를 표시합니다. System Manager 9.6부터 FlexGroup 볼륨의 지속적인 가용성이 지원됩니다.</block>
-  <block id="97469443dfc3695c09f70f7590eeac08" category="paragraph">공유 목록 아래의 영역에는 각 공유에 대한 공유 속성 및 액세스 권한이 표시됩니다.</block>
-  <block id="e6ce8998f0d4cbe5a38c523c958f4162" category="list-text">* 속성 *</block>
-  <block id="217a0172345c647bc3f6a354cd7b6108" category="list-text">oplocks 상태입니다</block>
-  <block id="cf6115c8d6bbdd2a732e670a8a63edc1" category="paragraph">공유가 임시 잠금(oplocks)을 사용하는지 여부를 지정합니다.</block>
-  <block id="3a63af1322a4a738092f2dc891ab6afb" category="list-text">검색 가능</block>
-  <block id="14fda0af9c46576b371ec3b6e1fb623d" category="paragraph">Windows 클라이언트가 공유를 검색할 수 있는지 여부를 지정합니다.</block>
-  <block id="18bfc8152a3e795a4008c07d0c432528" category="list-text">스냅샷 표시</block>
-  <block id="d111a1648cc63acf08b9954ea5d1c5fb" category="paragraph">클라이언트에서 스냅샷 복사본을 볼 수 있는지 여부를 지정합니다.</block>
-  <block id="b8c91392a068a4dbf0999fb089045c52" category="list-text">지속적으로 사용 가능한 공유</block>
-  <block id="41aef6f60f95609aa7b5ca4777bfe44c" category="paragraph">지속적인 가용성을 위해 공유를 설정하거나 해제할지 여부를 지정합니다. System Manager 9.6부터 FlexGroup 볼륨의 지속적인 가용성이 지원됩니다.</block>
-  <block id="ced58c7b6a62adeb9dff9028fa5cf9db" category="list-text">액세스 기반 열거</block>
-  <block id="3af978aaedd422de2f12de5f6b53767e" category="paragraph">공유에 대해 ABE(액세스 기반 열거)를 사용할지 여부를 지정합니다.</block>
-  <block id="601881e1c15a5899164ae1415fa564f9" category="list-text">BranchCache입니다</block>
-  <block id="c042c62a5b971b02ac210ea6cea9f49b" category="paragraph">공유에서 BranchCache를 설정 또는 해제할지 여부를 지정합니다.</block>
-  <block id="5ba189119209879ea0338f2967d8829a" category="list-text">SMB 암호화</block>
-  <block id="a8e8461d71a3b3c9c05c1ca0cab3bf26" category="paragraph">SMB 3.0을 사용한 데이터 암호화가 SVM(스토리지 가상 머신) 레벨에서 활성화되는지 공유 레벨에서 활성화되는지를 지정합니다. SVM 레벨에서 SMB 암호화가 활성화된 경우 SMB 암호화는 모든 공유에 적용되며 값이 SVM 레벨에서 Enabled로 표시됩니다.</block>
-  <block id="361ba3dce11fe3e84d163ed8a377ee53" category="list-text">이전 버전</block>
-  <block id="b9aa6e095ab5ade3b6a47afb5635c76f" category="paragraph">클라이언트에서 이전 버전을 보고 복원할 수 있는지 여부를 지정합니다.</block>
-  <block id="6330d7da9b567d52cb7f38d3b59cad4c" category="list-text">* 공유 액세스 제어 *</block>
-  <block id="5ecdcfa6df2b43f1cd8b09359c0e9628" category="paragraph">공유에 대한 도메인 사용자, 도메인 그룹, 로컬 사용자 및 로컬 그룹의 액세스 권한을 표시합니다.</block>
   <block id="b1f7b0489956884280bdba01a96b051b" category="inline-xref-macro">CIFS를 설정하는 중입니다</block>
   <block id="e017ec9aae777eea6bb4e0e623c50b13" category="paragraph"><block ref="e017ec9aae777eea6bb4e0e623c50b13" category="inline-xref-macro-rx"></block></block>
   <block id="fc5c41a08a339689427e86a62085d18e" category="summary">기본 네트워크 구성을 사용하여 기능 SVM(스토리지 가상 시스템) 또는 SVM을 설정한 후에는 SVM 관리를 SVM 관리자에게 선택적으로 위임할 수 있습니다.</block>
@@ -3041,7 +2896,6 @@ System Manager에서 새로 추가된 노드를 검색합니다. 경고가 표�
   <block id="1bcaa70ba0011203f6ed88fca02c0c7e" category="list-text">FabricPool * 를 ""사용 안 함"" 위치에 두면 비 FabricPool 애그리게이트만 생성된 FlexGroup 볼륨에 포함되고 계층화 정책은 ""없음""으로 설정됩니다.</block>
   <block id="280912f92ac8838961caf4bcdd792e10" category="list-text">SVM에 FabricPool 애그리게이트가 없는 경우 * FabricPool * 이 "사용 안 함" 위치에 표시되며 변경할 수 없습니다.</block>
   <block id="2bdfe1e585cb4707ff4ee5a03fe0d58b" category="list-text">SVM에 FabricPool 애그리게이트만 존재하는 경우 * FabricPool * 버튼이 "활성화됨" 위치에 표시되며 변경할 수 없습니다.</block>
-  <block id="03552d367764e7839a614933f825001e" category="list-text">특정 애그리게이트를 지정하려면 을 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> (고급 옵션).</block>
   <block id="54cea90da7b4369891eee22f858ad14b" category="paragraph">생성하는 FlexGroup 볼륨과 연관된 애그리게이트는 모범 사례에 따라 기본적으로 선택됩니다. 애그리게이트 * 레이블 옆에 표시됩니다.</block>
   <block id="b7145e84aa34f2e12721b0af370554c0" category="list-text">보호 * 섹션에서 다음 작업을 수행합니다.</block>
   <block id="8d51cd39a18c87bf1f3c125efbb15875" category="list-text">볼륨 보호 * 옵션을 활성화합니다.</block>
@@ -3414,14 +3268,11 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="32032cf60e20cb1e13004a35c19895f0" category="list-text">* 선택 사항: * FlexCache Volume * 아래의 * Size * 필드에 FlexCache 볼륨의 새 크기를 입력하고 드롭다운 메뉴에서 측정 단위를 선택합니다.</block>
   <block id="390c84eadfb369c9bba59931c7fc2b02" category="list-text">* 선택 사항: * 암호화를 사용하거나 사용하지 않도록 설정합니다.</block>
   <block id="fa8ddae57fb0b13c4eb7a2f3b7deaa99" category="inline-link-macro">FlexCache 볼륨에 대한 고급 옵션 지정</block>
-  <block id="4db6d5da67865342306912fad857400f" category="list-text">* 선택 사항: * 를 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> FlexCache 볼륨 고급 설정을 수정합니다. 을 참조하십시오 <block ref="01d1f9ee7eafcb47c4d200eceb73ffd6" category="inline-link-macro-rx"></block>.</block>
   <block id="8491b775711be80e6a608ef1ebb96121" category="list-text">변경 사항을 저장하려면 * 저장 * 을 클릭합니다.</block>
   <block id="a56e31822510cde8f8a20d6f36849aa7" category="summary">System Manager를 사용하여 디스크를 관리할 수 있습니다.</block>
   <block id="d7a551057ba910463c17513387122618" category="doc">System Manager로 디스크 관리 - ONTAP 9.7 이하</block>
   <block id="4408c783f4f77dad27b39a90a5feb7d2" category="paragraph">ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하여 디스크를 관리할 수 있습니다.</block>
   <block id="edda3972d1bc3950c540b7172745645c" category="paragraph"><block ref="edda3972d1bc3950c540b7172745645c" category="inline-link-rx"></block></block>
-  <block id="70894d5c0a41692947485c0d0a19e60a" category="inline-link">FlexArray 가상화 설치 요구 사항 및 참조 자료</block>
-  <block id="b42d776faedad51898dbe5bf906051a2" category="paragraph"><block ref="b42d776faedad51898dbe5bf906051a2" category="inline-link-rx"></block></block>
   <block id="9dd326a487d106b896106eeadb347626" category="summary">System Manager 9.6부터 FlexCache 볼륨에 대한 정보를 볼 수 있습니다. 할당된 공간과 FlexCache 볼륨의 성능을 그래픽으로 표시할 수 있습니다.</block>
   <block id="af94d293d65ac05aba778e00e3ba5510" category="doc">FlexCache 볼륨 정보 보기</block>
   <block id="d5a19af6bd480993ed2b7a77e9921ee4" category="list-text">표시된 볼륨 목록에서 정보를 보려는 FlexCache 볼륨을 선택합니다.</block>
@@ -3602,7 +3453,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="11633eb84d1995cfa5bc65cc29e7c23a" category="list-text">정책에 대한 추가 설명을 추가하려면 * 의견 추가 * 를 클릭합니다.</block>
   <block id="f51d83be71182a7a9735e02d70d57f6e" category="list-text">볼트 또는 미러 볼트 유형의 정책에 대해 SnapMirror 레이블과 대상 보존 수를 지정합니다.</block>
   <block id="114168a53a6b42c89026b910fc64289f" category="summary">System Manager 9.6부터 FlexCache 볼륨을 편집할 때 FlexCache 볼륨과 연결할 고급 옵션을 지정할 수 있습니다.</block>
-  <block id="8f51b4e853f8f8190d9ce869e3f71555" category="list-text">* 선택 사항: * FlexCache 볼륨 편집 * 창에서 을 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 고급 옵션을 지정합니다.</block>
   <block id="cc6147bf70776e78f1689c5b5ec50cdf" category="paragraph">고급 옵션 창이 표시됩니다. 여기에는 다양한 옵션을 지정할 수 있는 섹션(왼쪽 열의 제목)이 포함되어 있습니다.</block>
   <block id="1f272132f306cd712954818240769549" category="list-text">* 선택 사항: * 일반 세부 정보 * 섹션에서 볼륨에 대한 권한을 편집할 수 있습니다.</block>
   <block id="ffe0fe06e388737190c902ee2d01f847" category="list-text">애그리게이트 * 섹션에서 * 애그리게이트 선택 * 전환 버튼을 사용하여 모범 사례 기본값을 무시하고 애그리게이트 목록에서 원하는 항목을 선택할 수 있습니다.</block>
@@ -3736,14 +3586,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="cafdb1219cee48c72aefb4a06983873c" category="list-text">텍스트 상자의 이름을 업데이트한 다음 * 제출 * 을 클릭합니다.</block>
   <block id="e801d2be7b11bcc8807e4f9a7c173b7f" category="paragraph">MetroCluster 사이트 A 상태가 표시되면 업데이트된 이름을 볼 수 있습니다.</block>
   <block id="e9551f243e2860df3b1dfddc05a6cf7f" category="list-text">원격 사이트(사이트 B)에서 MetroCluster 사이트 A의 업데이트된 이름을 볼 때 표시하려면 원격 사이트(사이트 B)의 CLI 내에서 다음 명령을 실행합니다.<block ref="53866ad7e92443056aec27897d674600" prefix=" " category="inline-code"></block></block>
-  <block id="936df13c62816bb541c8c569a83692db" category="summary">System Manager를 사용하여 애그리게이트를 만들어 사용자의 다양한 보안, 백업, 성능 및 데이터 공유 요구사항을 지원할 수 있습니다.</block>
-  <block id="aab5e3cd425b154cb96d27c6f7249138" category="doc">System Manager로 애그리게이트 관리 - ONTAP 9.7 이하</block>
-  <block id="9a37af394d1d31dd77ff0d7043b0269b" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 사용자의 다양한 보안, 백업, 성능 및 데이터 공유 요구사항을 지원하는 애그리게이트를 만들 수 있습니다.</block>
-  <block id="cd6f186b58ad08a0aa15702a06871670" category="paragraph">애그리게이트 창을 사용하여 애그리게이트에 대한 정보를 생성, 표시 및 관리할 수 있습니다.</block>
-  <block id="35381a31106f6d9e3114d4b4d6d38f12" category="paragraph">Aggregate 생성 대화 상자를 엽니다. 이 대화 상자에서 Aggregate를 생성할 수 있습니다.</block>
-  <block id="6f63d1aa5fa8cb0919b9d381b827eefb" category="paragraph">Aggregate 편집 대화 상자를 엽니다. 이 대화 상자에서 Aggregate의 이름이나 Aggregate에 제공할 RAID 보호 수준을 변경할 수 있습니다.</block>
-  <block id="6ddf98429421db1c79baf89c8d15ebc2" category="paragraph">선택한 애그리게이트를 삭제합니다.</block>
-  <block id="f990940885a7262711c74616e1416ff6" category="paragraph">루트 애그리게이트에 대해 이 버튼을 사용할 수 없습니다.</block>
   <block id="b0f857586a11d1835d63ccfd5a7c94b0" category="list-text">* 추가 작업 *</block>
   <block id="d9fec617ec0f6c9621190b472ac59feb" category="paragraph">에서는 다음 옵션을 제공합니다.</block>
   <block id="60f070e92e3980a1a93a915ce99841fb" category="list-text">* 상태를 * 로 변경합니다</block>
@@ -3753,58 +3595,25 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="8d9da4bc0e49a50e09ac9f7e56789d39" category="list-text">오프라인</block>
   <block id="0974133f9628072341df79d62c53b92a" category="paragraph">읽기 및 쓰기 액세스가 허용되지 않습니다.</block>
   <block id="034d70b46e41ec9d0306b0001e04cae7" category="list-text">제한</block>
-  <block id="b3144de0ef9237ecb5a3cb8485c2060a" category="paragraph">패리티 재구성과 같은 일부 작업은 허용되지만 데이터 액세스는 허용되지 않습니다.</block>
   <block id="4d20253a0478c684c2de0a0fb803cc03" category="list-text">* 용량 추가 *</block>
   <block id="4edae08fff3ee88387fcd0576d349d16" category="paragraph">용량(HDD 또는 SSD)을 기존 애그리게이트에 추가할 수 있도록 지원</block>
   <block id="ac25e29b281c5fe7e5c94b7d0ab40aee" category="list-text">* 캐시 추가 *</block>
   <block id="918ca2a2678c961296588bb076c8f0f6" category="paragraph">캐시 디스크(SSD)를 기존 HDD 애그리게이트 또는 Flash Pool 애그리게이트에 추가할 수 있습니다.</block>
-  <block id="3c14e506fc727ed3380560dc7037ad5c" category="paragraph">All-Flash 최적화 속성을 가진 노드가 포함된 클러스터에서는 이 버튼을 사용할 수 없습니다.</block>
   <block id="5ccaf135104488a13f1ac23cc6143691" category="list-text">* 미러 *</block>
   <block id="ddc1efb6fc657900eeb3bd6ee540d25c" category="paragraph">애그리게이트를 미러링할 수 있습니다.</block>
   <block id="07728bee97105d471c3ab19da1966201" category="list-text">* 볼륨 이동 *</block>
   <block id="69e5c422ce83897e32ce0b9ec4d7c9a8" category="paragraph">FlexVol 볼륨을 이동할 수 있습니다.</block>
-  <block id="339a40b6a613ea3ec552b5339bc261a8" category="list-text">* 클라우드 계층 연결 * 을 선택합니다</block>
-  <block id="87d2c400e633ce33a2a67a308be5bdda" category="paragraph">클라우드 계층을 애그리게이트에 연결할 수 있도록 지원</block>
-  <block id="c877851beb23e96091e8562c8d1b88a7" category="section-title">집계 목록</block>
-  <block id="5e78bc7f662cab6891c8ff38cb07a068" category="paragraph">각 애그리게이트의 이름 및 공간 사용 정보가 표시됩니다.</block>
   <block id="eb2dc6157e951f6bdf5569b2c253a984" category="list-text">* 상태 *</block>
-  <block id="986e97d621ddbef8a3235d5c6b7d4096" category="paragraph">집계 상태를 표시합니다.</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">* 이름 *</block>
-  <block id="5ce9fff649cdfda9f94e4cc7011234a9" category="paragraph">애그리게이트의 이름을 표시합니다.</block>
   <block id="04eaef0c64f7604067332b0b05e598d3" category="list-text">* 노드 *</block>
-  <block id="99001178cd0cb6fa6787aef67cb2cba7" category="paragraph">Aggregate의 디스크가 할당된 노드의 이름을 표시합니다.</block>
   <block id="e8a10e1832156c48d05e40d44124a4f9" category="paragraph">이 필드는 클러스터 수준에서만 사용할 수 있습니다.</block>
-  <block id="28e42dd5833ce63bcac5edc7f48a152d" category="paragraph">집계 유형을 표시합니다.</block>
-  <block id="b7d06b5b2888bd0cbb9cb0b77d8925c7" category="paragraph">All-Flash 최적화 속성을 가진 노드가 포함된 클러스터에는 이 필드가 표시되지 않습니다.</block>
-  <block id="25444e13e1490cfb73e044b4e98cba6b" category="list-text">* 사용됨(%) *</block>
-  <block id="e48543894493fb7fd6d6320e3e3fe0b6" category="paragraph">Aggregate에 사용된 공간의 비율을 표시합니다.</block>
   <block id="17451b8c728d0bc6a4f3dafe44501ab3" category="list-text">* 사용 가능한 공간 *</block>
-  <block id="b45bc28e9ea320c35412c90a6da0817f" category="paragraph">Aggregate의 사용 가능한 공간을 표시합니다.</block>
   <block id="effd2fa0311563a1e224e6c36de775bb" category="list-text">* 사용된 공간 *</block>
-  <block id="7750bf7a821da6870eb3fa224f646d87" category="paragraph">Aggregate의 데이터에 사용되는 공간의 크기를 표시합니다.</block>
   <block id="de68ee7ea3dbee1b91084b9a54b3f334" category="list-text">* 총 공간 *</block>
-  <block id="31b39c8fce21f1bdc9a05f612c2d7f92" category="paragraph">Aggregate의 총 공간을 표시합니다.</block>
-  <block id="ad194123577ad25914a0ad436f83d256" category="list-text">* FabricPool *</block>
-  <block id="c26194d8f7d34b5001790e724f7bc44e" category="paragraph">선택한 애그리게이트를 클라우드 계층에 연결할지 여부를 표시합니다.</block>
-  <block id="0cd040a51684da558c6c12a9a3c4ec13" category="list-text">* 클라우드 계층 *</block>
-  <block id="6d84d0d086fc6ac4cd08fb009eb3afff" category="paragraph">선택한 애그리게이트는 클라우드 계층에 연결된 경우 클라우드 계층의 이름이 표시됩니다.</block>
-  <block id="b9d57360a621fd7b1e32b17490f2c32b" category="list-text">* 볼륨 수 *</block>
-  <block id="f06ad6fa54f2513703034b7dfd6cab6d" category="paragraph">Aggregate와 연결된 볼륨의 수를 표시합니다.</block>
-  <block id="300f5ad4dc018c74937eef89a804af57" category="list-text">* 디스크 수 *</block>
-  <block id="887d1cc61a498f51a05d9edde203d8a0" category="paragraph">Aggregate를 생성하는 데 사용되는 디스크 수를 표시합니다.</block>
-  <block id="2dcf6cf8b63d51754222cbe105d055f9" category="list-text">* Flash Pool *</block>
-  <block id="7cf88a2e216a75f251bc3fb4939e9874" category="paragraph">Flash Pool 애그리게이트의 총 캐시 크기가 표시됩니다. NA 값은 Aggregate가 Flash Pool Aggregate가 아님을 나타냅니다.</block>
-  <block id="2377b182d295db38042880797b0706eb" category="list-text">* 미러링 *</block>
-  <block id="3669b26c14adf1b8df923887205025df" category="paragraph">Aggregate가 미러링되는지 여부를 표시합니다.</block>
   <block id="db0ee96118986edbb435bada8a7b6ae4" category="list-text">* SnapLock 유형 *</block>
-  <block id="03239fde94c3a6403d92ebc7e4d47ae3" category="paragraph">Aggregate의 SnapLock 유형을 표시합니다.</block>
-  <block id="8e0f7fc5c91a651d41ace5ca9df686d2" category="paragraph">선택한 Aggregate에 대한 정보를 보려면 Aggregate를 선택하십시오. 세부 정보 표시 를 클릭하여 선택한 애그리게이트에 대한 자세한 정보를 볼 수 있습니다.</block>
   <block id="9228c96f976b189d00d20754d7057173" category="list-text">* 개요 탭 *</block>
-  <block id="41baae8263adb4ec516ef9c10284e931" category="paragraph">선택한 Aggregate에 대한 자세한 정보를 표시하고 애그리게이트의 공간 할당, 애그리게이트의 공간 절약, IOPS 및 총 데이터 전송 성능의 그림 표현을 표시합니다.</block>
   <block id="53da544587b12f299b5208bfa37c41dd" category="list-text">* 디스크 정보 탭 *</block>
-  <block id="7684669141bc1d61ff12daea729dbbd5" category="paragraph">디스크 이름, 디스크 유형, 물리적 크기, 사용 가능한 크기, 디스크 위치 등의 디스크 레이아웃 정보를 표시합니다. 디스크 상태, 플렉스 이름, 플렉스 상태, RAID 그룹, RAID 유형, 및 선택한 애그리게이트의 스토리지 풀(있는 경우)이 있습니다. 다중 경로 구성을 위해 디스크 기본 경로와 연결되어 있는 디스크 포트 및 디스크 이름과 디스크 보조 경로도 표시됩니다.</block>
   <block id="3c62a3dcff986acc24aef37165a45e95" category="list-text">볼륨 탭 *</block>
-  <block id="68f887cbc24995b778d4f33a8db8a5ef" category="paragraph">Aggregate의 총 볼륨 수, 총 애그리게이트 공간 및 Aggregate에 커밋된 공간에 대한 세부 정보를 표시합니다.</block>
   <block id="e6a419981c51552ec6ad5c8357bab911" category="list-text">* 성능 탭 *</block>
   <block id="1b485d0caa650bce2a01d08ddaa170f3" category="paragraph">처리량 및 IOPS를 포함하여 애그리게이트의 성능 메트릭을 보여주는 그래프를 표시합니다. 처리량 및 IOPS를 위해 읽기, 쓰기, 총 전송에 대한 성능 메트릭 데이터가 표시되고, SSD와 HDD의 데이터는 별도로 기록됩니다.</block>
   <block id="e6d518267af76dc4ce9e2fadd8c3f25a" category="paragraph">클라이언트 시간대 또는 클러스터 시간대를 변경하면 성능 메트릭 그래프에 영향을 줍니다. 업데이트된 그래프를 보려면 브라우저를 새로 고쳐야 합니다.</block>
@@ -3961,7 +3770,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="1d226977e25ff0748c81b0ef9156e807" category="summary">FlexGroup 볼륨을 생성할 때 FlexGroup 볼륨과 연결할 옵션을 지정할 수 있습니다.</block>
   <block id="402229f8ce0167d0a78bbd044f5164cf" category="doc">System Manager-ONTAP 9.7 이하를 사용하여 FlexGroup 볼륨의 고급 옵션을 지정합니다</block>
   <block id="97da1d3682fa19cce007f55dd00e9257" category="paragraph">FlexGroup 볼륨을 생성할 때 ONTAP System Manager 클래식(ONTAP 9.7 이전 버전에서 사용 가능)을 사용하여 FlexGroup 볼륨과 연결할 옵션을 지정할 수 있습니다.</block>
-  <block id="033b2063dda0545cbfd4fa75d02943a7" category="list-text">* 선택 사항: * Create FlexGroup * 창에서 를 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 고급 옵션을 지정합니다.</block>
   <block id="771c51fdfe14e209bbf3372e85216fc9" category="list-text">일반 세부 정보 * 섹션에서 공간 예약 및 보안 스타일을 선택한 다음 볼륨에 대한 UNIX 권한을 설정합니다.</block>
   <block id="e722561c54240493896eff618531d51d" category="paragraph">다음과 같은 제한 사항에 유의해야 합니다.</block>
   <block id="6a02b35da34c235f387235cad63d8572" category="list-text">FabricPool 애그리게이트에는 공간 예약 옵션을 사용할 수 없습니다.</block>
@@ -4431,7 +4239,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="53b4513f2c85f3042617d06afa7e6787" category="list-text">* 풀 *</block>
   <block id="a239d33c7781f7db89a7f5b78175b890" category="paragraph">선택한 스토리지 LUN이 할당된 풀의 이름을 표시합니다.</block>
   <block id="208cfd8d72838668e354af8a85fd9dcf" category="paragraph">Array LUNs 목록 아래의 영역에는 선택한 스토리지 LUN에 대한 자세한 정보가 표시됩니다.</block>
-  <block id="cefd59017a4a065f49d52af021a7df7a" category="paragraph"><block ref="cefd59017a4a065f49d52af021a7df7a" category="inline-link-rx"></block></block>
   <block id="ff0f224e8e84ff31060820637ead03d3" category="summary">System Manager를 사용하여 하드웨어 캐시 모듈을 관리할 수 있습니다.</block>
   <block id="fc127a3a51a884e1e04b66f7100eb154" category="doc">System Manager - ONTAP 9.7 이하를 사용하여 하드웨어 캐시를 관리합니다</block>
   <block id="7b9cdbb20d7b7f588086eab7aa5c2913" category="paragraph">ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하여 하드웨어 캐시 모듈을 관리할 수 있습니다.</block>
@@ -4482,7 +4289,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="1302257e569da026aa67b8e89db540a7" category="summary">MetroCluster 구성에서 System Manager를 사용하여 클러스터를 업데이트할 수 있습니다. 클러스터 업데이트를 제외한 두 클러스터에서 각 작업을 수행해야 합니다.</block>
   <block id="a36ead175efb45759fee5f11ce0d539b" category="doc">System Manager-ONTAP 9.7 이하를 사용하여 MetroCluster 구성에서 클러스터를 업데이트합니다</block>
   <block id="5b53589c41b3f02720bf43be353e0006" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 MetroCluster 구성에서 클러스터를 업데이트할 수 있습니다. 클러스터 업데이트를 제외한 두 클러스터에서 각 작업을 수행해야 합니다.</block>
-  <block id="e21d029f0ed2c65ab82ac9c0fa962f8d" category="image-alt">클러스터 MCC 구성을 업데이트하는 중입니다</block>
   <block id="06ad2274f297ab67ff2225385dc0f3e8" category="paragraph"><block ref="06ad2274f297ab67ff2225385dc0f3e8" category="inline-link-rx"></block></block>
   <block id="dbe63deae24a1ac56f258042500b3305" category="summary">SVM(스토리지 가상 시스템)에서 iSCSI 프로토콜을 구성하여 System Manager를 통해 블록 레벨 데이터 액세스를 제공할 수 있습니다. iSCSI LIF 및 포트 세트를 생성한 다음 포트 세트에 LIF를 추가할 수 있습니다. LIF는 가장 적합한 어댑터에 생성되며 데이터 경로 이중화를 위해 포트 세트에 할당됩니다.</block>
   <block id="f5db4f9448aaa78931200f9e088d969e" category="doc">System Manager-ONTAP 9.7 이하를 사용하여 SVM에서 iSCSI 프로토콜을 구성합니다</block>
@@ -5330,7 +5136,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="13c1b8619e5d72fc421632cfdcc39164" category="summary">System Manager를 사용하여 고가용성(HA) 쌍의 클러스터 또는 개별 노드를 업데이트할 수 있습니다. 업데이트를 수행하려면 ONTAP 이미지를 선택하고 클러스터 또는 HA 쌍의 개별 노드가 업데이트 준비가 되었는지 확인한 다음 업데이트를 수행해야 합니다.</block>
   <block id="41900314c94464c2e9abd692d4c2e94a" category="doc">System Manager-ONTAP 9.7 이하를 사용하여 비 MetroCluster 구성에서 클러스터를 업데이트합니다</block>
   <block id="7c32eebc5c66a11a9625082f47b48aae" category="paragraph">ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 버전을 사용하여 고가용성(HA) 쌍의 클러스터 또는 개별 노드를 업데이트할 수 있습니다. 업데이트를 수행하려면 ONTAP 이미지를 선택하고 클러스터 또는 HA 쌍의 개별 노드가 업데이트 준비가 되었는지 확인한 다음 업데이트를 수행해야 합니다.</block>
-  <block id="a641131755584229b6a82aeeabc83cdb" category="image-alt">클러스터를 업데이트하는 중입니다</block>
   <block id="d27a348a8a5fed8494cd123b1de658a7" category="summary">System Manager를 사용하여 LDAP 클라이언트 구성을 추가, 편집 및 삭제할 수 있습니다.</block>
   <block id="6bdc6e23cb590c92f04dbf87942b2526" category="doc">System Manager - ONTAP 9.7 이하를 사용하여 LDAP 클라이언트 서비스를 구성합니다</block>
   <block id="1cc58ec3ba2b0eaeaf517b9ada71d80a" category="paragraph">ONTAP 9.7 이하에서 사용 가능한 ONTAP System Manager 클래식 을 사용하여 LDAP 클라이언트 구성을 추가, 편집 및 삭제할 수 있습니다.</block>
@@ -5342,7 +5147,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="d59c6b980e5f10012e7a6a8f810e2b53" category="list-text">SVM 레벨: * SVM * &gt; * SVM 설정 * &gt; * LDAP 클라이언트 * 를 클릭합니다.</block>
   <block id="8edf4fdc0a99903668ac5dc754e21f43" category="list-text">LDAP 클라이언트의 이름을 입력합니다.</block>
   <block id="0c5163f0f9f5192027f456fddded55c8" category="list-text">Active Directory 도메인 또는 LDAP 서버를 추가합니다.</block>
-  <block id="7c8b08ce095003f9a8b15aef9ca913bf" category="list-text">을 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> (고급 옵션), * 스키마 * 를 선택하고 * 적용 * 을 클릭합니다.</block>
   <block id="819aa7db437f104cac55b21e1b98c91f" category="list-text">기본 DN * 및 * TCP 포트 * 를 지정합니다.</block>
   <block id="fa19e45f0c7971c2a0a4dfe83b8694ac" category="list-text">바인딩 * 을 클릭한 다음 인증 세부 정보를 지정합니다.</block>
   <block id="c076e7171f87bf601582215d048e77ea" category="list-text">추가한 LDAP 클라이언트가 표시되는지 확인합니다.</block>
@@ -5572,7 +5376,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="503e6a1d24532cf16b90068dcf9d0814" category="list-text">FlexCache 볼륨 크기 조정 * 창에서 FlexCache 볼륨의 크기를 조정할 크기를 지정합니다.</block>
   <block id="2c228870bc26117c2bcc38d47fed7cbb" category="paragraph">기본적으로 기존 애그리게이트는 FlexCache 볼륨의 크기를 조정하는 데 사용됩니다. System Manager 9.6부터 볼륨에 허용되는 최대 크기가 크기 필드 옆에 표시됩니다.</block>
   <block id="ee06c3a75d2f90d528d0bdad6ee8b794" category="inline-link-macro">FlexCache 볼륨에 대한 고급 옵션 지정</block>
-  <block id="0141b877fcf49f33b47400dd7edb78c1" category="paragraph">새 리소스를 추가하여 FlexCache 볼륨을 확장하려면 를 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> (고급 옵션). 을 참조하십시오 <block ref="4f3fc931d92f22f55a489e2373f71d6c" category="inline-link-macro-rx"></block>.</block>
   <block id="689dc6ae2f8d54723af8baa6aff39f7d" category="list-text">FlexCache 볼륨의 크기를 조정하려면 * 저장 * 을 클릭합니다.</block>
   <block id="921b80fe6e8cca2c6db98a54b19efc65" category="summary">System Manager를 사용하면 볼륨의 자동 스냅샷 복사본을 자동으로 생성하는 일정을 설정할 수 있습니다. 사본을 만드는 시간과 빈도를 지정할 수 있습니다. 또한, 저장되는 스냅샷 복사본의 수를 지정할 수도 있습니다.</block>
   <block id="836f907e1a3a35e35703941bae06b845" category="doc">System Manager-ONTAP 9.7 이하를 사용하여 스냅샷 복사본의 자동 생성을 예약합니다</block>
@@ -5896,7 +5699,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="da167c465aa599598b528deacafa47eb" category="list-text">크기를 조정할 FlexGroup 볼륨을 선택한 다음 * 추가 작업 * &gt; * 크기 조정 * 을 클릭합니다.</block>
   <block id="fb7e107fc632fc3b47e98f65a2b1026f" category="list-text">FlexGroup 볼륨 크기 조정 * 창에서 FlexGroup 볼륨의 크기를 조정할 크기를 지정합니다.</block>
   <block id="42812d45e8b6d5528bed4f0e674b503f" category="paragraph">기본적으로 기존 애그리게이트는 FlexGroup 볼륨의 크기를 조정하는 데 사용됩니다. System Manager 9.6부터 볼륨에 허용되는 최소 크기가 크기 필드 옆에 표시됩니다.</block>
-  <block id="8fc29799fa5d7d61b9fce4781993418c" category="paragraph">새 리소스를 추가하여 FlexGroup 볼륨을 확장하려면 를 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> (고급 옵션).</block>
   <block id="dae0d20dbc1649cc1e11aab7858b03f2" category="list-text">스냅샷 복사본 예약 공간의 비율을 지정합니다.</block>
   <block id="30743dc8da0a0156886a97e9699f314a" category="list-text">크기 조정 * 을 클릭하여 FlexGroup 볼륨의 크기를 조정합니다.</block>
   <block id="e6ade167bc69389f90ba21383b403cee" category="summary">ONTAP 9.4 이상의 경우 NetApp Support 사이트에서 로컬 폴더로 ONTAP 소프트웨어 이미지를 복사할 수 있습니다. ONTAP 9.3 이전 버전에서 업그레이드하려면 ONTAP 소프트웨어 이미지를 네트워크의 HTTP 서버 또는 FTP 서버로 복사해야 합니다.</block>
@@ -5984,7 +5786,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="77cce86a4e36ee7f8b1df43dfe7261f3" category="list-text">스위치백 작업을 수행하기 전에 이전의 모든 구성 변경을 완료해야 합니다. 이렇게 하면 이러한 변경 사항이 협상된 전환 또는 스위치백 작업과 경쟁하는 것을 방지할 수 있습니다.</block>
   <block id="e05feb27d4f334232dd375e6020c3b53" category="section-title">MetroCluster 전환 및 스위치백 워크플로우 순서도</block>
   <block id="8e33bcb19b3ebee0d06e874b21519678" category="paragraph">다음 순서도는 스위치오버 및 스위치백 작업을 시작할 때 발생하는 단계와 프로세스를 보여줍니다.</block>
-  <block id="d2433a156dea88c5bc9b3fe8dbe2183e" category="image-alt">스위치오버 스위치백 워크플로우</block>
   <block id="5a80ad07474cac4dee95efc76e8c6388" category="summary">스토리지 권장 사항에 따라 애그리게이트를 생성할 수 있으며, 요구사항에 따라 수동으로 생성할 수도 있습니다. System Manager를 사용하여 Flash Pool 애그리게이트, SnapLock 애그리게이트 및 FabricPool 지원 애그리게이트를 만들어 하나 이상의 볼륨에 스토리지를 제공할 수 있습니다.</block>
   <block id="d08159a440a303f7b3b7c94dc1935c5a" category="doc">System Manager-ONTAP 9.7 이하를 사용하여 애그리게이트를 통해 스토리지를 프로비저닝합니다</block>
   <block id="f87363de91a44888ba803f5cb7e20111" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 스토리지 권장 사항에 따라 또는 요구사항에 따라 수동으로 애그리게이트를 만들 수 있습니다. System Manager를 사용하여 Flash Pool 애그리게이트, SnapLock 애그리게이트 및 FabricPool 지원 애그리게이트를 만들어 하나 이상의 볼륨에 스토리지를 제공할 수 있습니다.</block>
@@ -6215,7 +6016,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="9e007cde0294836d49fce82a0770d6fa" category="summary">피어링을 설정하려면 각 노드에 대한 인터클러스터 논리 인터페이스(LIF)를 생성하고 클러스터 피어링을 생성하고 SVM 피어링을 생성해야 합니다.</block>
   <block id="829111bc2f9e8438581c99c65c273ac5" category="doc">System Manager-ONTAP 9.7 이하 버전을 사용하여 피어링을 설정합니다</block>
   <block id="7e1817ade72aa48bb92d7c2ab07e88a1" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 피어링을 설정할 수 있습니다. 피어링을 설정하려면 각 노드에 대한 인터클러스터 논리 인터페이스(LIF)를 생성하고 클러스터 피어링을 생성하고 SVM 피어링을 생성해야 합니다.</block>
-  <block id="6af8acc69bcdc16b7f8e5adeec4d8b16" category="image-alt">피어링 워크플로우</block>
   <block id="48f1b7cd8c5e771ef4ce929e95a1d530" category="section-title">[[사전 요구 사항 - 피어링, 클러스터 피어링을 위한 사전 요구 사항]] 클러스터 피어링을 위한 사전 요구 사항</block>
   <block id="6b6ad8c82295777d87897d52b0fa88f0" category="paragraph">클러스터 피어링을 설정하기 전에 연결, 포트, IP 주소, 서브넷, 방화벽, 클러스터 명명 요구사항이 충족됩니다.</block>
   <block id="a8416e889da6102accaf0c0db08552a7" category="list-text">서브넷은 인터클러스터 통신에 사용되는 포트를 포함하는 브로드캐스트 도메인에 속해야 합니다.</block>
@@ -6528,7 +6328,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="7d613ace3ff4e6c511496c52961bf228" category="paragraph">ONTAP System Manger Classic(ONTAP 9.7 이하에서 사용 가능)을 사용하여 클라우드 계층을 구성 및 관리할 수 있습니다. 데이터를 계층에 저장하면 스토리지 시스템의 효율성이 향상됩니다. FabricPool 지원 애그리게이트를 사용하여 스토리지 계층을 관리할 수 있습니다. 클라우드 계층은 데이터 액세스 빈도 여부에 따라 데이터를 계층에 저장합니다.</block>
   <block id="ef3e2551fede2086c67b6a8bf70db3c4" category="list-text">ONTAP 9.2 이상을 실행해야 합니다.</block>
   <block id="d93c7ae1d0a683437e8cdf90782faccd" category="list-text">모든 플래시(All SSD) 애그리게이트가 있어야 합니다</block>
-  <block id="1d4f7d5b7c436f0c489b78bb854907f9" category="image-alt">FabricPool 워크플로</block>
   <block id="3ea40fea2e95ba7ab2a868e8a7d9fb54" category="section-title">클라우드 계층 추가</block>
   <block id="6b7613736554701bbd26dc07c42dfa16" category="paragraph">System Manager를 사용하여 SSD 애그리게이트 또는 VMDK(가상 머신 디스크) 애그리게이트에 클라우드 계층을 추가할 수 있습니다. 클라우드 계층은 자주 사용하지 않는 데이터에 대한 스토리지를 제공합니다.</block>
   <block id="98ee5417a1c5fcb1c3bee4ce46f259b8" category="list-text">객체 저장소에 연결하려면 액세스 키 ID와 암호 키가 있어야 합니다.</block>
@@ -6547,7 +6346,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="da5a736d7934ea0fda310527ffdb4d23" category="paragraph">선택에 따라 * 서비스 이름(FQDN) * 필드가 자동으로 서버 끝점으로 채워집니다.</block>
   <block id="a1e9aeb6148784e4a0c8a4f989ead80b" category="list-text">클라우드 계층의 액세스 키 ID, 클라우드 계층의 비밀 키 및 컨테이너 이름을 지정합니다.</block>
   <block id="bd14d3410b286c3b639ecc238d233ca2" category="paragraph">AWS C2S(Commercial Cloud Service)를 유형으로 선택한 경우 CAP URL, 서버 CA 인증서, 클라이언트 인증서를 지정해야 합니다.</block>
-  <block id="71bffb6a33e98f88fab832116ed7dced" category="list-text">다음 설정을 수정하려면 고급 옵션 아이콘을 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 변경 사항을 적용할 수 있는 * 고급 옵션 * 대화 상자 창을 표시하려면:</block>
   <block id="466c4f4287d2b270a412473911428058" category="list-text">클라우드 계층에 액세스하는 데 사용되는 포트 번호입니다</block>
   <block id="f2a1cbf8ea8f7901f12aa799b104a80d" category="list-text">클라우드 계층으로 데이터를 안전하게 전송할 수 있는 * SSL * 옵션을 활성화 또는 비활성화합니다</block>
   <block id="ff0167481b8bdc3a1e0af03f1a713dfa" category="list-text">* 선택 사항: * StorageGRID에 대한 클라우드 계층을 추가하거나 FabricPool에 IBM 클라우드 오브젝트 스토리지 환경(Cleversafe 등)을 사용하려면 CA 인증서를 지정해야 합니다. Object Store Certificate * 전환 버튼을 이동하고 인증서 내용을 복사하여 CA 인증서를 지정합니다. 그런 다음 서명된 인증서에 인증서 내용을 붙여 넣습니다.</block>
@@ -6694,7 +6492,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="e074b06c6bcffc41130111700ce589f4" category="summary">SAML(Security Assertion Markup Language) 인증을 설정하여 원격 사용자가 System Manager에 로그인하기 전에 IDP(Secure Identity Provider)를 통해 인증되도록 할 수 있습니다.</block>
   <block id="a30fa0b5cb2afd6f435aa35fc7ca5745" category="doc">시스템 관리자 - ONTAP 9.7 이하를 사용하여 SAML 인증을 설정합니다</block>
   <block id="782f1156076101990b814a229110b078" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 및 이전 버전에서 사용 가능)을 사용하여 SAML(Security Assertion Markup Language) 인증을 설정할 수 있습니다. 원격 사용자는 System Manager에 로그인하기 전에 IDP(Secure Identity Provider)를 통해 인증됩니다.</block>
-  <block id="a1c17e9e89d922e43d5aa0884477d0b3" category="image-alt">MFA 워크플로</block>
   <block id="bec16219366d2631eb9ed04aecabc005" category="section-title">SAML 인증을 활성화합니다</block>
   <block id="a1e6388446604ac005b86b7f11abf1b0" category="paragraph">System Manager를 사용하여 SAML(Security Assertion Markup Language) 인증을 구성하면 원격 사용자가 IDP(Secure Identity Provider)를 사용하여 로그인할 수 있습니다.</block>
   <block id="a1036b59d73505365ef378243a1e483a" category="list-text">원격 인증에 사용하려는 IDP를 구성해야 합니다.</block>
@@ -6944,7 +6741,6 @@ Volumes 창으로 이동하여 정의된 보호 관계가 없는 볼륨을 볼 �
   <block id="2fd31c025fae94406db26f660b0bcce6" category="list-text">계속 * 을 클릭하여 파일 추적 프로세스를 시작합니다.</block>
   <block id="10e8bbfe3840d1904e9ee75029024bb1" category="list-text">선택한 SVM에서 파일 또는 공유에 액세스하는 데 사용되는 프로토콜을 선택합니다.</block>
   <block id="0fddf3ba5354d0302fcdd3f1a444e4ab" category="list-text">사용자 이름 * 필드에 파일 또는 공유에 액세스하려는 사용자의 이름을 입력합니다.</block>
-  <block id="243f1fd197bf7fa79315a076feaf79fa" category="list-text">* 선택 사항: * 를 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 트레이스 범위를 좁히기 위해 더 많은 세부 정보를 지정합니다.</block>
   <block id="a1d52fca6609f6ceae1e7b0dc368c1a2" category="paragraph">고급 옵션 대화 상자 창에서 다음 세부 정보를 지정할 수 있습니다.</block>
   <block id="9430c8c9455d0a71e88758d5f0cb5f9c" category="list-text">* 클라이언트 IP 주소 *: 클라이언트의 IP 주소를 지정합니다.</block>
   <block id="0a2be69058c2dadb60ef8bd4f7128b12" category="list-text">* 파일 *: 추적할 파일 이름 또는 파일 경로를 지정합니다.</block>
@@ -7779,7 +7575,6 @@ ONTAP 시스템 관리자의 브라우저 액세스에는 HTTPS만 지원됩니�
   <block id="96ef680007b9b6a4ed27f07ba3a181df" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 SVM용 NVMe 프로토콜을 설정할 수 있습니다. SVM에서 NVMe 프로토콜을 사용하면 네임스페이스 또는 네임스페이스를 프로비저닝하고 이를 호스트 및 하위 시스템에 할당할 수 있습니다.</block>
   <block id="e23275ea7297d3239b7dd72d554793b1" category="paragraph">ONTAP 9.5부터 NVMe 프로토콜을 사용하는 HA 쌍의 각 노드에 대해 하나 이상의 NVMe LIF를 구성해야 합니다. 노드당 최대 2개의 NVMe LIF를 정의할 수도 있습니다. System Manager를 사용하여 SVM 설정을 생성하거나 편집할 때 NVMe LIF를 구성합니다.</block>
   <block id="1a169b0c93fde678e7545eea664d622c" category="paragraph">다음 그림에서는 NVMe를 설정하기 위한 워크플로우를 보여 줍니다.</block>
-  <block id="f986c0d1608453a3100a148119f1f6d3" category="image-alt">NVMe 설정 워크플로우</block>
   <block id="c8e9033e5faaaadf3419887a2963fcd3" category="summary">System Manager를 사용하여 CIFS 클라이언트가 클러스터의 파일에 액세스할 수 있도록 CIFS 서버를 설정 및 구성할 수 있습니다.</block>
   <block id="76a6394ebba69d649eac839a06da71d9" category="doc">System Manager - ONTAP 9.7 이하를 사용하여 CIFS 프로토콜을 구성합니다</block>
   <block id="8ddabe3ae143d491ee852f8d59f2a3dd" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 CIFS 클라이언트가 클러스터의 파일에 액세스할 수 있도록 CIFS 서버를 설정 및 구성할 수 있습니다.</block>
@@ -7921,10 +7716,8 @@ ONTAP 시스템 관리자의 브라우저 액세스에는 HTTPS만 지원됩니�
   <block id="7afec9c2554738ce7a7de58297d6c030" category="paragraph">System Manager 9.6부터 FlexGroup DP 볼륨의 이름을 바꿀 수도 있습니다.</block>
   <block id="a3bd68f70522585bc51163fa9590fa4e" category="list-text">* 선택 사항: * 암호화된 * 옵션을 활성화하여 볼륨에 대한 암호화를 활성화합니다.</block>
   <block id="82420e9f127f5641742dbb7e880fabbe" category="inline-link-macro">FlexGroup 볼륨에 대한 고급 옵션 지정</block>
-  <block id="9ee319675caed914c3f8a3702fba2502" category="list-text">* 선택 사항: * 를 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> FlexGroup 볼륨 설정을 수정합니다. 을 참조하십시오 <block ref="07a83aa5aab69a8b3aaebefbf523161a" category="inline-link-macro-rx"></block>.</block>
   <block id="4e5dab7015140f89b3c6813a37296dca" category="list-text">FlexGroup 볼륨의 크기를 조정할 크기를 지정합니다.</block>
   <block id="dc9d37a202e296240d704411fe802886" category="paragraph">기본적으로 기존 애그리게이트는 FlexGroup 볼륨의 크기를 조정하는 데 사용됩니다. 볼륨에 허용되는 최소 크기는 크기 필드 옆에 표시됩니다.</block>
-  <block id="6992875b19c0688c37cf36118301e391" category="paragraph">새 리소스를 추가하여 FlexGroup 볼륨을 확장하려면 를 클릭합니다 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> (고급 옵션). 을 참조하십시오 <block ref="07a83aa5aab69a8b3aaebefbf523161a" category="inline-link-macro-rx"></block>.</block>
   <block id="36336ab4893fca29807b6c8d48e5d614" category="summary">System Manager를 사용하여 이름 매핑 항목을 지정하여 다른 플랫폼의 사용자를 매핑할 수 있습니다.</block>
   <block id="94b62c27be996324d0173ca83ba2629b" category="doc">System Manager와 이름 매핑 - ONTAP 9.7 이전 버전</block>
   <block id="cee4c228dbc1bd4065b40bb31f18464c" category="paragraph">ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하면 이름 매핑 항목을 지정하여 다른 플랫폼의 사용자를 매핑할 수 있습니다.</block>
@@ -8367,68 +8160,6 @@ All-Flash 최적화 속성을 가진 애그리게이트에 포함된 볼륨에 �
   <block id="6554454b0b446406d68531c90f523542" category="paragraph">디스크 유형 혼합 및 디스크 RPM 혼합과 같은 RAID 혼합 옵션이 RAID 그룹에 대해 활성화된 경우, Aggregate의 기존 디스크의 디스크 유형 및 디스크 RPM은 호환 가능한 스페어를 얻기 위해 스페어 디스크의 유효 디스크 유형 및 유효 디스크 RPM과 일치합니다.</block>
   <block id="3c7ac17931d7b7b66cf7c263fc1c828c" category="inline-xref-macro">용량 디스크 추가 중</block>
   <block id="b43496159a45e73d14c7489b1036d050" category="paragraph"><block ref="b43496159a45e73d14c7489b1036d050" category="inline-xref-macro-rx"></block></block>
-  <block id="17b6d0d254f588212107e44b9311cacd" category="summary">System Manager를 사용하면 스토리지 시스템 상태를 모니터링하는 데 도움이 되는 AutoSupport 알림을 구성할 수 있습니다.</block>
-  <block id="a75e8acf7cda75c2cae76c182cea9cc1" category="doc">System Manager-ONTAP 9.7 이하를 사용하여 AutoSupport 알림을 관리합니다</block>
-  <block id="65cb7b95d3e9511248e4d454f7a1000b" category="paragraph">ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager 클래식 을 사용하면 스토리지 시스템 상태를 모니터링하는 데 도움이 되는 AutoSupport 알림을 구성할 수 있습니다.</block>
-  <block id="f53ffe37b23382fbc1ab9e0ff74a9ca1" category="section-title">AutoSupport 알림을 설정합니다</block>
-  <block id="899866a691c80f26e2daef7ca4226aa1" category="paragraph">시스템 관리자의 AutoSupport 설정 편집 대화 상자를 사용하여 이메일 알림을 보낼 이메일 주소를 지정하고 여러 이메일 호스트 이름을 추가하여 AutoSupport 알림을 설정할 수 있습니다.</block>
-  <block id="5201d100a8e314b3fbeeacae19e521d3" category="list-text">노드를 선택한 다음 * 편집 * 을 클릭합니다.</block>
-  <block id="687a771b0731f71db5005ea461393c80" category="list-text">e-메일 수신자 * 탭에서 e-메일 알림을 보낼 e-메일 주소를 입력하고 각 e-메일 받는 사람에 대한 e-메일 수신자와 메시지 내용을 지정한 다음 메일 호스트를 추가합니다.</block>
-  <block id="b3993d767356f296d9ae01951029b2e8" category="paragraph">호스트 이름의 이메일 주소는 최대 5개까지 추가할 수 있습니다.</block>
-  <block id="256162f8692cabf4b90ce635f28d203d" category="list-text">기타 * 탭의 드롭다운 목록에서 이메일 메시지를 전송하기 위한 전송 프로토콜을 선택하고 HTTP 또는 HTTPS 프록시 서버 세부 정보를 지정합니다.</block>
-  <block id="f8095d0bd0b763a9801c727b7b9c9e2c" category="list-text">AutoSupport 알림에 대해 설정한 구성이 * AutoSupport * 창에서 올바르게 설정되었는지 확인합니다.</block>
-  <block id="7cfccaa9582383c3fb3502dee8cd8fa0" category="section-title">AutoSupport 설정을 활성화 또는 비활성화합니다</block>
-  <block id="4a25ae18d6356c3e2e94389495282dca" category="paragraph">시스템 관리자를 사용하여 스토리지 시스템에서 AutoSupport 설정을 활성화하거나 비활성화할 수 있습니다. AutoSupport 메시지를 사용하면 스토리지 시스템 상태를 모니터링하거나 기술 지원 부서 및 내부 지원 조직에 알림을 보낼 수 있습니다.</block>
-  <block id="0403edc618662f219efdb5cec6ce921d" category="paragraph">AutoSupport 옵션은 기본적으로 활성화되어 있습니다.</block>
-  <block id="a178fec1a73600346ab5639de318ab04" category="list-text">노드를 선택한 다음 * 활성화 * 또는 * 비활성화 * 를 클릭합니다.</block>
-  <block id="8a9933d1b53dd6f17d6ec97c4891fc28" category="list-text">AutoSupport 상태가 변경 사항을 올바르게 표시하는지 확인합니다.</block>
-  <block id="05e7844ebc444b6fad146ea35ed30693" category="section-title">AutoSupport e-메일 수신자를 추가합니다</block>
-  <block id="d16928f0be7c6d00043db7f8f698713f" category="paragraph">시스템 관리자의 AutoSupport 설정 편집 대화 상자의 * 이메일 수신자 * 탭을 사용하여 AutoSupport 알림 수신자의 이메일 주소를 추가할 수 있습니다.</block>
-  <block id="2fb66b8ac10e5a7bcdd7a6b1230f7634" category="list-text">전자 메일 받는 사람* 탭에서 전자 메일 받는 사람의 주소를 입력하고 받는 사람이 전체 메시지를 받을지 아니면 짧은 메시지를 받을지 지정한 다음 * 추가 * 를 클릭합니다.</block>
-  <block id="12ddeca8b6e6bc6719229aed2ca28f10" category="list-text">지정한 세부 정보가 * AutoSupport * 창에 표시되는지 확인합니다.</block>
-  <block id="59141343290d3909b8aaa7db97777945" category="section-title">AutoSupport 설정을 테스트합니다</block>
-  <block id="32568cbbe429ec99cc04958091170933" category="paragraph">시스템 관리자의 AutoSupport 테스트 대화 상자를 사용하여 AutoSupport 설정이 올바르게 구성되었는지 테스트할 수 있습니다.</block>
-  <block id="ecdef053776ef467659a2f7843d75970" category="list-text">노드를 선택한 다음 * 테스트 * 를 클릭합니다.</block>
-  <block id="e8fd5a221ba9aaf9f296550b6f84c874" category="list-text">AutoSupport 테스트 * 대화 상자에서 AutoSupport 제목 텍스트 ""Test AutoSupport"" 또는 수신자에게 AutoSupport 설정 테스트 중임을 알리는 텍스트를 입력합니다.</block>
-  <block id="e5e2f833538b1021bce60cd294a0b820" category="list-text">Test * 를 클릭합니다.</block>
-  <block id="b4df96ee5421c196535d968ddf8dcdbf" category="paragraph">제목 ""Test AutoSupport(테스트 제목)" 또는 * AutoSupport subject(제목) * 필드에 입력한 텍스트가 있는 이메일 메시지가 지정된 수신자에게 전송됩니다.</block>
-  <block id="f8ac418fe34a9d032d82e1a5fe1cc538" category="section-title">AutoSupport 데이터를 생성합니다</block>
-  <block id="d7c288e747ce8081bd029cb8110b915a" category="paragraph">System Manager를 사용하면 단일 노드 또는 여러 노드에 대한 AutoSupport 데이터를 생성하여 상태를 모니터링하고 기술 지원 팀에 알림을 보낼 수 있습니다.</block>
-  <block id="560b99032ab2ade2fd44293f30542881" category="list-text">노드를 선택한 다음 * AutoSupport 요청 * &gt; * AutoSupport 생성 * 을 클릭합니다.</block>
-  <block id="b4c58686dbd257d5a4c2cfc900c2fffe" category="paragraph">기본적으로 AutoSupport 데이터는 모든 노드에 대해 생성됩니다.</block>
-  <block id="66901fe22b1302d615fd6a33ce3ed2a1" category="list-text">AutoSupport* 생성 대화 상자에서 다음 단계를 수행하십시오.</block>
-  <block id="907fe6e970abae806b1c310cc8ebfe5b" category="list-text">특정 노드에 대한 AutoSupport 데이터를 생성하려면 * 모든 노드에 대한 AutoSupport 데이터 생성 * 확인란의 선택을 취소한 다음 노드를 선택합니다.</block>
-  <block id="fe9737666daea356168fe09824dd7c16" category="list-text">케이스 번호를 입력합니다.</block>
-  <block id="cf4ac7ce33a0d726953e3d5617ce159f" category="list-text">Confirmation * (확인 *) 대화 상자에서 * OK * (확인 *)를 클릭합니다.</block>
-  <block id="44922bc3fbbb78111c1b1d7f3f6a16d5" category="section-title">AutoSupport 요약을 봅니다</block>
-  <block id="180585c2bf107777563ef87199b3a128" category="paragraph">System Manager를 사용하면 이전의 모든 AutoSupport 데이터의 상태와 세부 정보를 볼 수 있으므로 기술 지원 부서에 전송된 데이터를 검토할 수 있습니다. 또한 정보를 보고 스토리지 시스템의 상태 및 성능을 파악할 수 있습니다.</block>
-  <block id="40e9b033a605f4b9e70b7533dbe4cc68" category="list-text">노드를 선택한 다음 * AutoSupport 요청 * &gt; * 이전 요약 보기 * 를 클릭합니다.</block>
-  <block id="ec319ea6d5029219f5360564e39bce20" category="paragraph">모든 노드에 대한 AutoSupport 데이터가 표시됩니다.</block>
-  <block id="7cd2400c36efced648da662ee35c50db" category="section-title">AutoSupport 심각도 유형</block>
-  <block id="481b198660a6150c43056f34d7e2cf2e" category="paragraph">AutoSupport 메시지에는 각 메시지의 용도를 이해하는 데 도움이 되는 심각도 유형이 있습니다. 예를 들어 긴급 문제에 즉시 주의를 기울이거나 정보를 제공하는 용도로만 사용됩니다.</block>
-  <block id="696cbc725f30685e5fa8ce370d6f6954" category="paragraph">메시지에는 다음 심각도 중 하나가 있습니다.</block>
-  <block id="581092a5673e91e014d76b69ceebdf33" category="list-text">* 경고 *: 경고 메시지는 조치를 취하지 않을 경우 다음 단계의 이벤트가 발생할 수 있음을 나타냅니다.</block>
-  <block id="e2187f9725fb45cce9f73beddfb887f4" category="paragraph">24시간 이내에 경고 메시지에 대해 조치를 취해야 합니다.</block>
-  <block id="742c1bb29d3105108b3c147111efab2e" category="list-text">* 비상 *: 중단이 발생했을 때 비상 메시지가 표시됩니다.</block>
-  <block id="deadcded381dc54c5b4315a60e438efb" category="paragraph">긴급 메시지에 대해 즉시 조치를 취해야 합니다.</block>
-  <block id="0f8ace2d00677452acebed4ac5f08f28" category="list-text">* 오류 *: 오류 조건은 무시할 경우 발생할 수 있는 상황을 나타냅니다.</block>
-  <block id="bda1600937310f07d4e989c02fc850f5" category="list-text">* 알림 *: 정상이지만 심각한 상태입니다.</block>
-  <block id="915f01d0c8edc0c91010fd08de60d06e" category="list-text">* 정보 *: 무시할 수 있는 문제에 대한 세부 정보를 제공하는 정보 메시지입니다.</block>
-  <block id="5c1133334cd09acd3c04f0c1c5901533" category="list-text">*Debug*: 디버그 수준 메시지는 수행해야 하는 지침을 제공합니다.</block>
-  <block id="da1e3514a2d926808d163915057fbecc" category="paragraph">내부 지원 조직이 이메일을 통해 AutoSupport 메시지를 수신하는 경우, 이메일 메시지의 제목 줄에 심각도가 표시됩니다.</block>
-  <block id="6bcf33de034389db3d5853162953d505" category="section-title">AutoSupport 창</block>
-  <block id="1a7d77c8e798bc441a5334c9355a45d5" category="paragraph">AutoSupport(시스템 설정) 창에서 시스템의 현재 AutoSupport 설정을 볼 수 있습니다. 시스템의 AutoSupport 설정을 변경할 수도 있습니다.</block>
-  <block id="359380a3c78af945b2ae90f815244396" category="paragraph">AutoSupport 알림을 활성화합니다. 기본값은 * Enable * 입니다.</block>
-  <block id="da870272b32f4cbfade1d5a90b8e3f29" category="paragraph">AutoSupport 알림을 비활성화합니다.</block>
-  <block id="2e7e65a7e342af7e8e9f4a5bd5546e80" category="list-text">* 테스트 *</block>
-  <block id="e5ff12d5fe310fb00a01d79c857e3012" category="paragraph">AutoSupport 테스트 메시지를 생성할 수 있는 AutoSupport 테스트 대화 상자를 엽니다.</block>
-  <block id="c17beda1e1f2784da4409798c0b828aa" category="list-text">* AutoSupport 요청 *</block>
-  <block id="9efb97efa656bf8b294b9560fa48f2e3" category="paragraph">에서는 다음과 같은 AutoSupport 요청을 제공합니다.</block>
-  <block id="f7b81a92807ea0daac699e3be8d2f1a8" category="list-text">* AutoSupport를 생성합니다</block>
-  <block id="5f6eee0f282fb718d0b02e1081963d06" category="paragraph">선택한 노드 또는 모든 노드에 대한 AutoSupport 데이터를 생성합니다.</block>
-  <block id="4db536d8e0d23affd53ff50f18315229" category="list-text">* 이전 요약 보기 *</block>
-  <block id="49edbf7f86eb853da37612c4c1c8c81b" category="paragraph">이전의 모든 AutoSupport 데이터의 상태와 세부 정보를 표시합니다.</block>
-  <block id="85d7a739c6bad7aa6a52aeb9d15d8dc7" category="paragraph">Details 영역에는 노드 이름, AutoSupport 상태, 사용된 전송 프로토콜 및 프록시 서버 이름과 같은 AutoSupport 설정 정보가 표시됩니다.</block>
   <block id="cf18771d2723aa8f45b649802cca21bb" category="summary">System Manager를 사용하면 데이터를 보호하고 단일 애그리게이트 내에서 실시간으로 데이터를 미러링하여 복원력을 높일 수 있습니다. 미러링 애그리게이트는 디스크 및 어레이 LUN에 연결할 때 단일 장애 지점을 제거합니다.</block>
   <block id="082fcd43395a78c9af7e1c1aede841c9" category="doc">시스템 관리자-ONTAP 9.7 이하를 사용하여 애그리게이트 미러링</block>
   <block id="7320e70f830697cfb3f68adab3cec989" category="paragraph">ONTAP ONTAP 9.7 이하에서 사용 가능한 System Manager의 기존 방식을 사용하면 데이터를 보호하고 단일 애그리게이트 내에서 실시간으로 데이터를 미러링하여 복원력을 높일 수 있습니다. 미러링 애그리게이트는 디스크 및 어레이 LUN에 연결할 때 단일 장애 지점을 제거합니다.</block>
@@ -9021,7 +8752,6 @@ LDAP는 이 SVM에서 이름 서비스와 이름 매핑을 위한 기본 사용�
   <block id="56f7090374da6c285faf44a2d3d36387" category="paragraph">대부분의 데이터 전송 실패의 경우 필드가 표시됩니다<block ref="bafd7322c6e97d25b6299b5d6fe8920b" prefix=" " category="inline-code"></block>. 그러나 오류가 발생할 경우 필드가 계속 표시됩니다<block ref="93cba07454f06a4a960172bbd6e2a435" prefix=" " category="inline-code"></block>. 데이터 전송 오류가 발생하지 않았는지 확인하려면 세부 정보 섹션에서 전송 오류를 확인해야 합니다.</block>
   <block id="d984d9c45d9cc749d08f539d70415f1c" category="list-text">지연 시간은 전송 일정 간격보다 클 수 없습니다.</block>
   <block id="84ab02685a1be3ebfb0d9fdcdebd3620" category="paragraph">예를 들어, 전송 스케줄이 매일 인 경우 지연 시간은 1일을 초과할 수 없습니다.</block>
-  <block id="1eeba1edb754efde0f9cecd9c594e61f" category="image-alt">모니터 SV</block>
   <block id="f54fe60c5cda1542fbcb4223ed181b1a" category="summary">피어링된 클러스터에서 소스 볼륨과 타겟 볼륨 간에 SnapVault 관계를 생성하여 SnapVault 백업을 생성해야 합니다.</block>
   <block id="681b555578c6300aa44915faa6e62624" category="doc">SnapVault 관계 생성(ONTAP 9.3부터 시작)</block>
   <block id="111d55d127c8b160f91a1ed2a3d66659" category="list-text">백업할 볼륨을 선택한 다음 * 작업 * &gt; * 보호 * 를 클릭합니다.</block>
@@ -9035,17 +8765,13 @@ LDAP는 이 SVM에서 이름 서비스와 이름 매핑을 위한 기본 사용�
   <block id="0e4bdb912795a75f20bb4cf92e12ede0" category="list-text">보호 일정 * 을 선택합니다.</block>
   <block id="8a29542fd88167bed5c273f4dfaf8a32" category="paragraph">기본적으로 은(는) 입니다<block ref="bea79186fd7af2da67e59b4b15df5a26" prefix=" " category="inline-code"></block> 일정이 선택되었습니다.</block>
   <block id="a2c37d2ba543d4b2fa6945958d1b06a6" category="paragraph">모든 데이터 보호 관계는 기본적으로 초기화됩니다.</block>
-  <block id="cdce3cfd69d3c04640402322214fbd7b" category="image-alt">SnapVault 고급 옵션</block>
   <block id="ad4cee41b42d5d1487fc368bacee9035" category="list-text">Volumes:Protect Volumes * 페이지에서 * Validate * 를 클릭하여 볼륨에 일치하는 SnapMirror 레이블이 있는지 확인합니다.</block>
   <block id="15b9d1ba7d09ca92877eccf7c8dc834c" category="list-text">SnapVault 관계를 만들려면 * 저장 * 을 클릭합니다.</block>
   <block id="8692227f3e95b2f8bebdf8e94baa86d2" category="list-text">SnapVault 관계 상태가 에서 인지 확인합니다<block ref="d34e79870b17da17e894ddc837954dcc" prefix=" " category="inline-code"></block> 상태.</block>
   <block id="9c53011af7d95ac75de04cec46ecb8d2" category="list-text">Volumes * 창으로 이동한 다음 백업할 볼륨을 선택합니다.</block>
   <block id="94b31a2df9b136cec0223f40179bf9fa" category="list-text">볼륨을 확장하고 * 보호 * 를 클릭하여 볼륨의 데이터 보호 상태를 확인합니다.</block>
-  <block id="0acbaa58e2a15a8cfdca743b66a7589f" category="image-alt">SnapVault 9 3</block>
   <block id="7b1a6834c9e6f565e0e67a08da561eb0" category="summary">SnapVault 기술을 사용하여 데이터 보호를 위한 볼륨을 설정하기 전에 소스 클러스터와 타겟 클러스터가 피어 관계를 통해 서로 피어링되어 상호 통신하고 있는지 확인해야 합니다. 또한 소스 SVM과 타겟 SVM이 피어링되어 피어 관계를 통해 서로 통신하고 있는지 확인해야 합니다.</block>
   <block id="1d2c5f3cf91a6ac4437d06b0d35f22aa" category="doc">클러스터 피어 관계 및 SVM 피어 관계를 확인합니다</block>
-  <block id="9aaabaf6b02ac9896ad51eeefe73cf8f" category="image-alt">클러스터 퍼 930 백업</block>
-  <block id="c78e5ac9d023c52ba5fef3f2b6285cf3" category="image-alt">클러스터 피어 상태 백업</block>
   <block id="d9754d70c58cd9e08660aa07fe333726" category="paragraph">이 영역에서 피어링된 SVM이 없는 경우 SnapVault 관계를 생성할 때 SVM 피어 관계를 생성할 수 있습니다.</block>
   <block id="71d1ddff7dfe7c5d5d498435abd07d64" category="inline-xref-macro">SnapVault 관계 만들기(ONTAP 9.2 이하)</block>
   <block id="7aba3f692e5d868662f8bb21f2d6b326" category="paragraph"><block ref="7aba3f692e5d868662f8bb21f2d6b326" category="inline-xref-macro-rx"></block></block>
@@ -9053,17 +8779,13 @@ LDAP는 이 SVM에서 이름 서비스와 이름 매핑을 위한 기본 사용�
   <block id="7b54a4baecee8025c7a584063b284860" category="list-text">백업할 볼륨을 선택한 다음 * 보호 * 를 클릭합니다.</block>
   <block id="46a75c55e1d18259e0d99ca1a2d6e6dc" category="list-text">기본 볼륨 이름을 사용하거나 새 볼륨 이름을 입력합니다.</block>
   <block id="290b5b3199ef348f9cbd79b99c5bb958" category="list-text">중복 제거 사용 * 확인란이 선택되어 있는지 확인합니다.</block>
-  <block id="31cb8a9c222dc79d8a607e91c2ec5087" category="image-alt">대상 볼륨 SnapVault</block>
   <block id="853eaceca4495bec215242975ab75a5c" category="list-text">Configuration Details * 섹션에서 를 선택합니다<block ref="a56c1780b810accc7f0bc23193dc16aa" prefix=" " category="inline-code"></block> 보호 정책에 따라 설정합니다.</block>
   <block id="aff39a5b1ae1c8209559a8d4f0ddc867" category="list-text">기본 스냅샷 복사본을 전송하려면 * 관계 초기화 * 확인란이 선택되어 있는지 확인한 다음 * 생성 * 을 클릭합니다</block>
-  <block id="0d1bc641bee3f79300dd2bd71a01cd61" category="image-alt">구성 세부 정보 SnapVault</block>
   <block id="02a06f3e8dce89d13793f3516c1397b5" category="paragraph">마법사는 지정된 볼트 정책 및 스케줄과 관계를 작성합니다. 소스 볼륨에서 타겟 볼륨으로 데이터의 기본 전송을 시작하여 관계가 초기화됩니다.</block>
   <block id="9ed2c9c51f61eff07d1309d3b0a092ab" category="paragraph">상태 섹션에는 각 작업의 상태가 표시됩니다.</block>
-  <block id="571a6fbf06fcab2eacce2bf9f22f7d14" category="image-alt">SnapVault 생성 성공</block>
   <block id="12e1c92f78e02c7c7176879151b9f047" category="list-text">SnapVault 관계의 관계 상태가 에 있는지 확인합니다<block ref="d34e79870b17da17e894ddc837954dcc" prefix=" " category="inline-code"></block> 상태.</block>
   <block id="0a1f8ccbf1c3a92e6cf0a2fab027e9d7" category="list-text">볼륨 목록에서 볼륨을 선택한 다음 * 데이터 보호 * 를 클릭합니다.</block>
   <block id="ede5499c007334976c473361dd3cae93" category="list-text">Data Protection * 하단 탭에서 생성한 SnapMirror 관계가 나열되고 관계 상태가 인지 확인합니다<block ref="d34e79870b17da17e894ddc837954dcc" prefix=" " category="inline-code"></block> 및 유형은 입니다<block ref="5b70a213f150f01f0776fa9481ef2ddf" prefix=" " category="inline-code"></block>.</block>
-  <block id="88a39d6a7af7f65fcb4ad6f3ff576d67" category="image-alt">데이터 보호 창 SV</block>
   <block id="0dda7a83024c1a48482d48cb5cc0197e" category="summary">SnapVault 백업 관계 구성에는 클러스터 피어 관계 확인, 소스 볼륨과 타겟 볼륨 간의 SnapVault 관계 생성, SnapVault 관계 모니터링이 포함됩니다.</block>
   <block id="2f17efffc575aac669d2b6d5b6e3ce0c" category="doc">SnapVault 백업 구성 워크플로우</block>
   <block id="33d698c5405b59cf282a091b0fab54f4" category="image-alt">이 그림은 SnapVault 백업 구성 워크플로우 흐름도입니다. 워크플로의 단계가 항목과 일치합니다.</block>
@@ -9097,7 +8819,6 @@ LDAP는 이 SVM에서 이름 서비스와 이름 매핑을 위한 기본 사용�
   <block id="6a1430dbf84d6dc23f417c150bfc22be" category="sidebar">System Manager Classic 문서</block>
   <block id="8cd255c7908d433af7a81a9f59fbc06b" category="sidebar">System Manager 9.6 및 9.7을 사용한 클러스터 관리</block>
   <block id="c8db31d0d38042ea4fd10dd6bdfd347e" category="sidebar">ONTAP 문서</block>
-  <block id="d648f2a68a54fd1b3329efc3cf24d29c" category="sidebar">법적 고지</block>
   <block id="0fe674cba26a6125717793de11bb3096" category="sidebar">클러스터 확장 관리</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">개요</block>
   <block id="28ed8622e2b3c95e29e6f443b5b6cd84" category="sidebar">LUN을 초기화하고 포맷합니다</block>
@@ -9946,4 +9667,39 @@ LDAP는 이 SVM에서 이름 서비스와 이름 매핑을 위한 기본 사용�
   <block id="b1ddb251aa66bea48e797b1ba2490583" category="sidebar">일반 네트워킹 주제(ONTAP 9.7 이하)</block>
   <block id="a29d5547f6b6a3eb59e3d47cdb1c8b3e" category="sidebar">브로드캐스트 도메인(ONTAP 9.7 이하)</block>
   <block id="d7f29243972dcd66136a878c3167ee3a" category="sidebar">NAS 경로 페일오버 정보(ONTAP 9.7 이하)</block>
+  <block id="31a492c1ac21a132d45144f6d5949a5a" category="paragraph"><block ref="2cd65b4a044075cfd9ad4a91f42fdff4" category="inline-link-macro-rx"></block> <block ref="5e764cc3fdcc19ff667796e414159bdc" category="inline-link-macro-rx"></block> <block ref="561451f09c7bca700ea0d7833cd9e92e" category="inline-link-macro-rx"></block> <block ref="d23d341a344216fbf99a91152429d49c" category="inline-link-macro-rx"></block> <block ref="b35e8fbd7b0369b23734510994911ec4" category="inline-link-macro-rx"></block> <block ref="41d4305cf7a6acb595086f123121a781" category="inline-link-macro-rx"></block> <block ref="ea685649fabe77da53e843fec56f72b8" category="inline-link-macro-rx"></block></block>
+  <block id="021e58ded68582927279871a5a249d56" category="inline-image-macro">고급 옵션 아이콘</block>
+  <block id="e942e17609bdfacf699e4326db9a5c6c" category="list-text"><block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>(고급 옵션)을 클릭하고 * 스키마 * 를 선택한 다음 * 적용 * 을 클릭합니다.</block>
+  <block id="71d3f2fbd3f099e5e4004ce407520fc5" category="image-alt">MetroCluster 전환 및 스위치백 워크플로 순서도</block>
+  <block id="0a8898c3a5c1c7dfcdf9a1ea89ba1371" category="image-alt">NVMe 설정을 위한 워크플로</block>
+  <block id="c92735279096095430f4ba8938a4625a" category="image-alt">클러스터 환경 설정을 위한 워크플로</block>
+  <block id="0932f3e300e26042e0464118925831e7" category="image-alt">System Manager를 사용하여 MetroCluster 구성에서 클러스터를 업데이트합니다</block>
+  <block id="2138adc51055649c980ae237aae09678" category="image-alt">System Manager를 사용하여 비 MetroCluster 구성에서 클러스터를 업데이트합니다</block>
+  <block id="58eb14d339cce9656dd664894d1bed13" category="image-alt">시스템 관리자를 통해 클라우드 계층을 구성 및 관리하기 위한 워크플로우</block>
+  <block id="0f996dc5a102ad4590e9c4a6a1b2bea6" category="list-text">다음 설정을 수정하려면 고급 옵션 아이콘을 <block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block> 클릭하여 변경할 수 있는 * 고급 옵션 * 대화 상자 창을 표시합니다.</block>
+  <block id="b9749ab015e0a86ac53cf1e8355b0463" category="list-text">특정 집계를 지정하려면 (고급 옵션)을 클릭합니다<block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="6b4f7970ed14ffcd2cd01a5bcad00df4" category="list-text">* 선택 사항: * <block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>FlexCache 볼륨 고급 설정을 수정하려면 클릭하십시오. 을 <block ref="01d1f9ee7eafcb47c4d200eceb73ffd6" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="66a8e1c221410e093d9f8952f96aa718" category="list-text">* 선택 사항: * <block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>FlexGroup 볼륨 설정을 수정하려면 클릭하십시오. 을 <block ref="07a83aa5aab69a8b3aaebefbf523161a" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="12f0ba62a35184ad78e46495aed599c3" category="paragraph">새 리소스를 추가하여 FlexGroup 볼륨을 확장하려면 (고급 옵션)을 클릭합니다<block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>. 을 <block ref="07a83aa5aab69a8b3aaebefbf523161a" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="bd2994eecdfc948859d61e5e8af39d76" category="paragraph">새 리소스를 추가하여 FlexCache 볼륨을 확장하려면 (고급 옵션)을 클릭합니다<block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>. 을 <block ref="4f3fc931d92f22f55a489e2373f71d6c" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="1c2bb56fbb6f256a844ce48503a61592" category="paragraph">새 리소스를 추가하여 FlexGroup 볼륨을 확장하려면 (고급 옵션)을 클릭합니다<block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="4f0cd92236bc3ee5c59393dcb1cd46c4" category="image-alt">ONTAP System Manager로 클러스터를 설정하기 위한 워크플로우입니다</block>
+  <block id="34db6f0144d3faddcec6503e7b19a934" category="image-alt">피어링 설정을 위한 워크플로</block>
+  <block id="10fb5742f027d94f2d9a2be7a521980a" category="image-alt">System Manager를 사용하여 SAML 인증을 설정하기 위한 워크플로우입니다</block>
+  <block id="ac406f7b3ac832289490a9928155e573" category="list-text">* 선택 사항: * FlexCache 볼륨 편집 * 창에서 <block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>고급 옵션을 지정하려면 클릭하십시오.</block>
+  <block id="22c88cbfb69451eb5b1700c79078a2e8" category="list-text">*선택 사항:* FlexGroup 만들기* 창에서 <block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>고급 옵션을 지정하려면 클릭하십시오.</block>
+  <block id="a4f2dcacb59f6247563b33c78abb9af7" category="list-text">* 선택 사항: * <block ref="6c20450af8e0cd46e0829c03c729b979" category="inline-image-macro-rx" type="image"></block>추적의 범위를 좁히려면 더 자세한 정보를 지정하려면 클릭하십시오.</block>
+  <block id="98ff9d400ff71b78fe9bd8396d181d0c" category="image-alt">중복 제거 활성화 확인란이 있는 구성 대상 볼륨 탭</block>
+  <block id="c8c7c1580ea9ee0164932b98ebbba6e9" category="image-alt">관계 초기화 확인란이 있는 구성 세부 정보 탭</block>
+  <block id="a39ef4a00faaede12888a132ba359f72" category="image-alt">각 작업의 상태를 표시하는 상태 섹션이 있는 보호 관계 탭을 생성합니다</block>
+  <block id="0ff83997287948cdae3d09fc1f872456" category="image-alt">데이터 보호 하단 탭</block>
+  <block id="39c95ce3156249f19819bd55058330d0" category="image-alt">SnapVault 고급 옵션 탭</block>
+  <block id="7574361a6adbb68646e2913372161dd6" category="image-alt">볼륨의 데이터 보호 상태를 보여 주는 볼륨 창</block>
+  <block id="d0ab8e4cbb595e3b42eea0ebaa196387" category="image-alt">SnapVault 관계 상태입니다</block>
+  <block id="b49af746329694d471b02754b346b2e1" category="image-alt">피어링된 클러스터를 확인합니다</block>
+  <block id="f1708c3087f0b9656f84ffb11ef5f176" category="image-alt">클러스터 피어 섹션을 보여 주는 클러스터 세부 정보 창에 피어링된 클러스터가 인증되고 사용 가능한지 확인합니다</block>
+  <block id="f143a26d3aa1a2ec09915e966ba2e79d" category="image-alt">SnapMirror 데이터 전송 상태입니다</block>
+  <block id="2cb784360ea1f63614d3f5bcaa598a3f" category="image-alt">피어링된 클러스터가 인증되었으며 사용할 수 있는지 확인</block>
+  <block id="da91c7a4b0770d58391de5b02e703da7" category="image-alt">피어링된 클러스터가 인증되고 사용 가능함을 보여 주는 클러스터 피어 섹션</block>
+  <block id="9a1ae1f025bf3468de6eafb8382a5104" category="image-alt">SnapMirror 관계에서 대상 볼륨을 보여 주는 보호 탭 이미지</block>
 </blocks>

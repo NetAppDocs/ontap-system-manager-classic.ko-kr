@@ -29,7 +29,7 @@ ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용�
 +
 [NOTE]
 ====
-새 리소스를 추가하여 FlexGroup 볼륨을 확장하려면 를 클릭합니다 image:../media/advanced_options.gif[""] (고급 옵션).
+새 리소스를 추가하여 FlexGroup 볼륨을 확장하려면 (고급 옵션)을 클릭합니다image:../media/advanced_options.gif["고급 옵션 아이콘"].
 
 ====
 . 스냅샷 복사본 예약 공간의 비율을 지정합니다.

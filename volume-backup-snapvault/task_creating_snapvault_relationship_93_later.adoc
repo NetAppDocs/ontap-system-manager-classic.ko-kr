@@ -49,7 +49,7 @@ summary: 피어링된 클러스터에서 소스 볼륨과 타겟 볼륨 간에 S
 
 .. 변경 사항을 저장하려면 * 적용 * 을 클릭합니다.
 +
-image::../media/snapvault_advanced_options.gif[SnapVault 고급 옵션]
+image::../media/snapvault_advanced_options.gif[SnapVault 고급 옵션 탭]
 
 
 
@@ -62,6 +62,6 @@ image::../media/snapvault_advanced_options.gif[SnapVault 고급 옵션]
 
 
 +
-image::../media/snapvault_9_3.gif[SnapVault 9 3]
+image::../media/snapvault_9_3.gif[볼륨의 데이터 보호 상태를 보여 주는 볼륨 창]
 
 

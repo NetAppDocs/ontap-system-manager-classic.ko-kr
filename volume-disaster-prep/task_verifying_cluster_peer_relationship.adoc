@@ -22,7 +22,7 @@ summary: 재해 복구를 위한 볼륨을 설정하기 전에 소스 및 타겟
 .. 구성 * > * 클러스터 피어 * 를 클릭합니다.
 .. 피어링된 클러스터가 인증되었으며 사용 가능한지 확인합니다.
 +
-image::../media/cluster_pper_930_disaster.gif[클러스터 퍼 930 재해]
+image::../media/cluster_pper_930_disaster.gif[피어링된 클러스터가 인증되었으며 사용할 수 있는지 확인]
 
 .. 구성 * > * SVM 피어 * 를 클릭합니다.
 .. 대상 SVM이 소스 SVM으로 피어링되었는지 확인합니다.
@@ -34,7 +34,7 @@ image::../media/cluster_pper_930_disaster.gif[클러스터 퍼 930 재해]
 .. 클러스터 세부 정보 * 창에서 * 클러스터 피어 * 를 클릭합니다.
 .. 피어링된 클러스터가 인증되고 사용 가능한지 확인합니다.
 +
-image::../media/cluster_peer_health_disaster.gif[클러스터 피어 상태 재해]
+image::../media/cluster_peer_health_disaster.gif[피어링된 클러스터가 인증되고 사용 가능함을 보여 주는 클러스터 피어 섹션]
 
 .. SVM * 탭을 클릭하고 소스 SVM을 선택합니다.
 .. 피어 스토리지 가상 시스템 * 영역에서 대상 SVM이 소스 SVM으로 피어링되었는지 확인합니다.

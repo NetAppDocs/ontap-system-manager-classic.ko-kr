@@ -29,7 +29,7 @@ System Manager 9.6부터 기존 리소스의 크기를 조정하거나 새 리�
 +
 [NOTE]
 ====
-새 리소스를 추가하여 FlexCache 볼륨을 확장하려면 를 클릭합니다 image:../media/advanced_options.gif[""] (고급 옵션). 을 참조하십시오 link:https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_specifying_advanced_options_for_flexcache_volume.html["FlexCache 볼륨에 대한 고급 옵션 지정"].
+새 리소스를 추가하여 FlexCache 볼륨을 확장하려면 (고급 옵션)을 클릭합니다image:../media/advanced_options.gif["고급 옵션 아이콘"]. 을 link:https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_specifying_advanced_options_for_flexcache_volume.html["FlexCache 볼륨에 대한 고급 옵션 지정"]참조하십시오.
 
 ====
 . FlexCache 볼륨의 크기를 조정하려면 * 저장 * 을 클릭합니다.

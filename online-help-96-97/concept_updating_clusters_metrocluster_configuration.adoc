@@ -13,7 +13,7 @@ summary: MetroCluster 구성에서 System Manager를 사용하여 클러스터�
 [role="lead"]
 ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용하여 MetroCluster 구성에서 클러스터를 업데이트할 수 있습니다. 클러스터 업데이트를 제외한 두 클러스터에서 각 작업을 수행해야 합니다.
 
-image::../media/updating_cluster_mcc_configuration.gif[클러스터 MCC 구성을 업데이트하는 중입니다]
+image::../media/updating_cluster_mcc_configuration.gif[System Manager를 사용하여 MetroCluster 구성에서 클러스터를 업데이트합니다]
 
 * 관련 정보 *
 

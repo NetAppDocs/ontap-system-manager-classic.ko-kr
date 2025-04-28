@@ -70,7 +70,7 @@ ONTAP System Manager 클래식(ONTAP 9.7 이하에서 사용 가능)을 사용�
 ** SVM에 FabricPool 애그리게이트만 존재하는 경우 * FabricPool * 버튼이 "활성화됨" 위치에 표시되며 변경할 수 없습니다.
 
 
-. 특정 애그리게이트를 지정하려면 을 클릭합니다 image:../media/advanced_options.gif[""] (고급 옵션).
+. 특정 집계를 지정하려면 (고급 옵션)을 클릭합니다image:../media/advanced_options.gif["고급 옵션 아이콘"].
 +
 생성하는 FlexGroup 볼륨과 연관된 애그리게이트는 모범 사례에 따라 기본적으로 선택됩니다. 애그리게이트 * 레이블 옆에 표시됩니다.
 

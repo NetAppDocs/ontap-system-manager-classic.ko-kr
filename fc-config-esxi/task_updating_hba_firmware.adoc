@@ -26,7 +26,3 @@ HBA 공급업체가 드라이버, 펌웨어, BIOS 및 HBA 유틸리티를 제공
 설치 지침 및 필요한 설치 유틸리티는 다운로드와 함께 제공됩니다.
 
 
-
-* 관련 정보 *
-
-http://kb.vmware.com/kb/1002413["VMware KB 문서 1002413: Qlogic 또는 Emulex FC HBA의 펌웨어 식별"]

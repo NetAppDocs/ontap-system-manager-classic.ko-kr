@@ -13,7 +13,7 @@ summary: 'SAML(Security Assertion Markup Language) 인증을 설정하여 원격
 [role="lead"]
 ONTAP System Manager 클래식(ONTAP 9.7 및 이전 버전에서 사용 가능)을 사용하여 SAML(Security Assertion Markup Language) 인증을 설정할 수 있습니다. 원격 사용자는 System Manager에 로그인하기 전에 IDP(Secure Identity Provider)를 통해 인증됩니다.
 
-image::../media/mfa_workflow.gif[MFA 워크플로]
+image::../media/mfa_workflow.gif[System Manager를 사용하여 SAML 인증을 설정하기 위한 워크플로우입니다]
 
 
 

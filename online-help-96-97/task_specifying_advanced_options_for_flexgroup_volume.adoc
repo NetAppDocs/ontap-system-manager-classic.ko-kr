@@ -14,7 +14,7 @@ summary: FlexGroup 볼륨을 생성할 때 FlexGroup 볼륨과 연결할 옵션�
 FlexGroup 볼륨을 생성할 때 ONTAP System Manager 클래식(ONTAP 9.7 이전 버전에서 사용 가능)을 사용하여 FlexGroup 볼륨과 연결할 옵션을 지정할 수 있습니다.
 
 .단계
-. * 선택 사항: * Create FlexGroup * 창에서 를 클릭합니다 image:../media/advanced_options.gif[""] 고급 옵션을 지정합니다.
+. *선택 사항:* FlexGroup 만들기* 창에서 image:../media/advanced_options.gif["고급 옵션 아이콘"]고급 옵션을 지정하려면 클릭하십시오.
 +
 고급 옵션 창이 표시됩니다. 여기에는 다양한 옵션을 지정할 수 있는 섹션(왼쪽 열의 제목)이 포함되어 있습니다.
 

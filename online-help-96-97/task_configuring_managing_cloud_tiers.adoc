@@ -15,7 +15,7 @@ ONTAP System Manger Classic(ONTAP 9.7 이하에서 사용 가능)을 사용하�
 * 모든 플래시(All SSD) 애그리게이트가 있어야 합니다
 
 
-image::../media/fabricpool_workflow.gif[FabricPool 워크플로]
+image::../media/fabricpool_workflow.gif[시스템 관리자를 통해 클라우드 계층을 구성 및 관리하기 위한 워크플로우]
 
 
 
@@ -69,7 +69,7 @@ Add Cloud Tier 창이 표시됩니다.
 +
 AWS C2S(Commercial Cloud Service)를 유형으로 선택한 경우 CAP URL, 서버 CA 인증서, 클라이언트 인증서를 지정해야 합니다.
 
-. 다음 설정을 수정하려면 고급 옵션 아이콘을 클릭합니다 image:../media/advanced_options.gif[""] 변경 사항을 적용할 수 있는 * 고급 옵션 * 대화 상자 창을 표시하려면:
+. 다음 설정을 수정하려면 고급 옵션 아이콘을 image:../media/advanced_options.gif["고급 옵션 아이콘"] 클릭하여 변경할 수 있는 * 고급 옵션 * 대화 상자 창을 표시합니다.
 +
 ** 클라우드 계층에 액세스하는 데 사용되는 포트 번호입니다
 ** 클라우드 계층으로 데이터를 안전하게 전송할 수 있는 * SSL * 옵션을 활성화 또는 비활성화합니다

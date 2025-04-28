@@ -17,4 +17,4 @@ ONTAP 9.5부터 NVMe 프로토콜을 사용하는 HA 쌍의 각 노드에 대해
 
 다음 그림에서는 NVMe를 설정하기 위한 워크플로우를 보여 줍니다.
 
-image::../media/nvme_setup_workflow.gif[NVMe 설정 워크플로우]
+image::../media/nvme_setup_workflow.gif[NVMe 설정을 위한 워크플로]

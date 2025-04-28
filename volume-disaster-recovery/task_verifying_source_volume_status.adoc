@@ -23,7 +23,7 @@ summary: 소스 볼륨을 사용할 수 없는 경우 소스 볼륨이 오프라
 +
 ** ONTAP 9.3부터: 소스 볼륨을 두 번 클릭하여 세부 정보를 확인한 다음, * 보호 * 를 클릭하여 SnapMirror 관계에서 타겟 볼륨과 볼륨이 포함된 SVM 이름을 확인합니다.
 +
-image::../media/snapmirror_destination_93.gif[SnapMirror 타겟 93]
+image::../media/snapmirror_destination_93.gif[SnapMirror 관계에서 대상 볼륨을 보여 주는 보호 탭 이미지]
 
 ** ONTAP 9.2 이하: 볼륨 페이지 아래쪽에 있는 * 데이터 보호 * 탭을 클릭하여 SnapMirror 관계의 타겟 볼륨과 볼륨이 들어 있는 SVM 이름을 식별하십시오.
 +

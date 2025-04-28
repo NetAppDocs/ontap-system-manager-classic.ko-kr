@@ -59,13 +59,13 @@ summary: 피어링된 클러스터에서 소스 볼륨과 타겟 볼륨 간에 S
 
 
 +
-image::../media/dest_vol_snapvault.gif[대상 볼륨 SnapVault]
+image::../media/dest_vol_snapvault.gif[중복 제거 활성화 확인란이 있는 구성 대상 볼륨 탭]
 
 . Configuration Details * 섹션에서 를 선택합니다 `XDPDefault` 보호 정책에 따라 설정합니다.
 . 스케줄 목록에서 보호 스케줄을 선택합니다.
 . 기본 스냅샷 복사본을 전송하려면 * 관계 초기화 * 확인란이 선택되어 있는지 확인한 다음 * 생성 * 을 클릭합니다
 +
-image::../media/config_details_snapvault.gif[구성 세부 정보 SnapVault]
+image::../media/config_details_snapvault.gif[관계 초기화 확인란이 있는 구성 세부 정보 탭]
 
 +
 마법사는 지정된 볼트 정책 및 스케줄과 관계를 작성합니다. 소스 볼륨에서 타겟 볼륨으로 데이터의 기본 전송을 시작하여 관계가 초기화됩니다.
@@ -74,14 +74,14 @@ image::../media/config_details_snapvault.gif[구성 세부 정보 SnapVault]
 상태 섹션에는 각 작업의 상태가 표시됩니다.
 
 +
-image::../media/create_snapvault_success.gif[SnapVault 생성 성공]
+image::../media/create_snapvault_success.gif[각 작업의 상태를 표시하는 상태 섹션이 있는 보호 관계 탭을 생성합니다]
 
 . SnapVault 관계의 관계 상태가 에 있는지 확인합니다 `Snapmirrored` 상태.
 +
 .. 볼륨 목록에서 볼륨을 선택한 다음 * 데이터 보호 * 를 클릭합니다.
 .. Data Protection * 하단 탭에서 생성한 SnapMirror 관계가 나열되고 관계 상태가 인지 확인합니다 `Snapmirrored` 및 유형은 입니다 `Vault`.
 +
-image::../media/data_protection_window_sv.gif[데이터 보호 창 SV]
+image::../media/data_protection_window_sv.gif[데이터 보호 하단 탭]
 
 
 
